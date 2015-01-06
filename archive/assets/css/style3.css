@@ -1,0 +1,20 @@
+head {
+	font-family: Arial;
+    font-size: 15px;
+	color: #cccccc;
+}
+
+body{
+    font-family: Arial;
+    font-size: 15px;
+	color: #ffffdd;
+}
+short{
+	font-family: Verdana;
+    font-size: 16px;
+	color: #ffffff;
+}
+a {
+	color: #ffaaaa;
+	text-decoration:underline;
+}

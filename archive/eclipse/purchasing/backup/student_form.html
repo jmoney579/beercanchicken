@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!-- InstanceBegin template="/Templates/General_Page.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <link href="../assets/images/favicon.png" type="image/png" rel="icon" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Student Registration Form | Purchasing | EGEMS Info</title>
+    <!-- InstanceEndEditable -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/egems_stylesheet_main.css" />
+    <link type="text/css" href="../assets/css/slideshow1.css" rel="stylesheet" />
+    <link media="screen" type="text/css" href="../assets/lightbox/css/lightbox.css"
+      rel="stylesheet" />
+    <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/lightbox/js/prototype.js" type="text/javascript"></script>
+    <script src="../assets/lightbox/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+    <script src="../assets/lightbox/js/lightbox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.inactive_page').hover(function() {
+        $(this).addClass('active_page');
+        }, function() {
+        $(this).removeClass('active_page');
+        });
+       });
+      </script>
+    <script src="../assets/js/xfade2.js" type="text/javascript"></script>
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="suite_logo"><a href="../home.html"><img width="188"
+            height="56"
+            alt="Eclipse Software Products"
+            src="../assets/images/eclipse_logo_small.png" /></a></div>
+      <div class="page_content">
+        <div class="header_bar">Information Preservation for Geological
+          Collections and Research</div>
+        <div class="Header_image">
+          <div class="product_logo"><img width="320" height="72" alt="EGEMS Logo"
+              src="../assets/images/egems_logo_small.png" />
+            <p>Electronic Geological Management System</p>
+          </div>
+        </div>
+        <div id="navigation">
+          <ul style="border-left: none; border-right: none;" class="dropdown dropdown-horizontal">
+            <li style="background-image:none;"><a href="../index.html">Home</a></li>
+            <li><a href="../product_info/index.html" class="dir">Product Info</a>
+              <ul>
+                <li><a href="../product_info/institutions/index.html" style="margin-bottom: 2px;">For
+                    Institutions</a>
+                  <hr /> </li>
+                <li><a href="../product_info/private/index.html">For Private
+                    Collectors</a> </li>
+              </ul>
+            </li>
+            <li><a href="../support/index.html" class="dir">Support</a>
+              <ul>
+                <li><a href="../support/networking.xhtml">Data Sharing</a></li>
+                <hr />
+                <li><a href="../support/faq/index.html">FAQ</a></li>
+                <hr />
+                <li><a href="../support/requirements/index.html">Software
+                    Requirements</a></li>
+              </ul>
+            </li>
+            <li id="active"><a href="index.html">Purchasing</a></li>
+            <li><a href="../aboutus/index.html">About Us</a></li>
+            <li><a href="../contact/index.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="left_content">
+          <!-- InstanceBeginEditable name="Main_Content" -->
+          <h2>Product Registration<br />
+          </h2>
+          <p>Please complete the form below to register with us.  Once
+            completed, your registration will be processed and you will be
+            directed to our purchasing site.<br />
+          </p>
+          <p><br />
+          </p>
+          <h4>Stand-alone Package Registration Form<br />
+          </h4>
+          <p></p>
+          <script type="text/javascript" src="../assets/js/gen_validatorv31.js"
+language="JavaScript"></script>
+          <form name="purchasing" method="post" action="inst_reg_complete.php">
+            <input type="hidden" name="form_type" value="private" />
+            <table border="0" style="width: 650px; height: 368px;">
+              <tbody>
+                <tr>
+                  <td colspan="2"> <strong>Account Information</strong> </td>
+                </tr>
+                <tr>
+                  <th>Account Name:<br />
+                  </th>
+                  <td><input type="text" size="45" required="required" name="acct_name" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Name of Institution (If Applicable):<br />
+                  </th>
+                  <td><input type="text" size="45" name="institution" /> </td>
+                </tr>
+                <tr>
+                  <th>Approx. Collection Size:<br />
+                  </th>
+                  <td><input type="text" size="8" name="collect_size" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="1"><strong>Contact Information</strong><br />
+                    Institutional Users please enter your representative's
+                    contact information<br />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Title:<br />
+                  </th>
+                  <td>
+                    <select name="title">
+                      <option selected="selected" value="00">[Select]</option>
+                      <option value="Dr.">Dr.</option>
+                      <option value="Mr.">Mr.</option>
+                      <option value="Mrs.">Mrs.</option>
+                      <option value="Ms.">Ms.</option>
+                    </select>
+                    <br />
+                  </td>
+                </tr>
+                <tr>
+                  <th>First Name:<br />
+                  </th>
+                  <td><input type="text" size="45" name="first_name" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Last Name:<br />
+                  </th>
+                  <td><input type="text" size="45" name="last_name" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Street:<br />
+                  </th>
+                  <td><input type="text" size="45" name="street" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="1">City: <input type="text" size="30"
+                      name="city" />
+                    State:
+                    <select name="state">
+                      <option selected="selected" value="00">[Select]</option>
+                      <option value="AK">AK</option>
+                      <option value="AL">AL</option>
+                      <option value="AR">AR</option>
+                      <option value="AZ">AZ</option>
+                      <option value="CA">CA</option>
+                      <option value="CO">CO</option>
+                      <option value="CT">CT</option>
+                      <option value="DC">DC</option>
+                      <option value="DE">DE</option>
+                      <option value="FL">FL</option>
+                      <option value="GA">GA</option>
+                      <option value="HI">HI</option>
+                      <option value="IA">IA</option>
+                      <option value="ID">ID</option>
+                      <option value="IL">IL</option>
+                      <option value="IN">IN</option>
+                      <option value="KS">KS</option>
+                      <option value="KY">KY</option>
+                      <option value="LA">LA</option>
+                      <option value="MA">MA</option>
+                      <option value="MD">MD</option>
+                      <option value="ME">ME</option>
+                      <option value="MI">MI</option>
+                      <option value="MN">MN</option>
+                      <option value="MO">MO</option>
+                      <option value="MS">MS</option>
+                      <option value="MT">MT</option>
+                      <option value="NC">NC</option>
+                      <option value="ND">ND</option>
+                      <option value="NE">NE</option>
+                      <option value="NH">NH</option>
+                      <option value="NJ">NJ</option>
+                      <option value="NM">NM</option>
+                      <option value="NV">NV</option>
+                      <option value="NY">NY</option>
+                      <option value="OH">OH</option>
+                      <option value="OK">OK</option>
+                      <option value="OR">OR</option>
+                      <option value="PA">PA</option>
+                      <option value="RI">RI</option>
+                      <option value="SC">SC</option>
+                      <option value="SD">SD</option>
+                      <option value="TN">TN</option>
+                      <option value="TX">TX</option>
+                      <option value="UT">UT</option>
+                      <option value="VA">VA</option>
+                      <option value="VT">VT</option>
+                      <option value="WA">WA</option>
+                      <option value="WI">WI</option>
+                      <option value="WV">WV</option>
+                      <option value="WY">WY</option>
+                    </select>
+                    Zip Code: <input type="text" name="zip" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="2" rowspan="1"><input type="checkbox" value="accept"
+                      name="accept_license" />
+                    I agree to the End User License Terms [link to the terms]<br />
+                  </th>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="1">Phone Number: (<input type="text"
+                      maxlength="3"
+                      size="3"
+                      name="ph_areacode" />) <input
+                      type="text"
+                      maxlength="3"
+                      size="3"
+                      name="ph_first3" /> - <input
+                      type="text"
+                      maxlength="4"
+                      size="4"
+                      name="ph_last4" /><br />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="1">Fax Number: (<input type="text" maxlength="3"
+                      size="3"
+                      name="fx_areacode" />) <input
+                      type="text"
+                      maxlength="3"
+                      size="3"
+                      name="fx_first3" /> - <input
+                      type="text"
+                      maxlength="4"
+                      size="4"
+                      name="fx_last4" />
+                    (Optional)<br />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <script src="http://www.google.com/recaptcha/api/challenge?k=6Lc0Gc8SAAAAAJCDooD0LA3kbZPAmis-PTKGryQB%20"
+type="text/javascript">
+  </script> <noscript>
+     <iframe width="500" height="300" frameborder="0" src="http://www.google.com/recaptcha/api/noscript?k=6Lc0Gc8SAAAAAJCDooD0LA3kbZPAmis-PTKGryQB%20"></iframe><br />
+         <textarea cols="40" rows="3" name="recaptcha_challenge_field">       </textarea>
+       <input type="hidden" value="manual_challenge" name="recaptcha_response_field" />
+    </noscript> </td>
+                </tr>
+                <tr>
+                  <td style="text-align: right;" colspan="2" rowspan="1"><button
+                      type="submit"
+                      name="Submit">Submit</button><br />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("purchasing");
+frmvalidator.addValidation("acct_name","req","Please provide your Account Name"); 
+f
+frmvalidator.addValidation("institution","Please enter your instituition");
+frmvalidator.addValidation("collect_size","req","Please include your collection size"); 
+frmvalidator.addValidation("title","dontselect=00","Please indicate your title"); 
+frmvalidator.addValidation("first_name","req","Please include your first name");
+frmvalidator.addValidation("last_name","req","Please include your last name");  
+frmvalidator.addValidation("street","req","Please include your street address"); 
+frmvalidator.addValidation("city","req","Please include your City"); 
+frmvalidator.addValidation("state","dontselect=00","Please include your State"); 
+frmvalidator.addValidation("zip","req","Please include your Zip Code");
+frmvalidator.addValidation("accept_license","shouldselchk=accept","You must accept the terms and conditions to preceed with your purchase");  
+frmvalidator.addValidation("ph_areacode","req","Please include your Phone Number Area Code"); 
+frmvalidator.addValidation("ph_first3","req","The first three digits of your Phone Number are missing"); 
+frmvalidator.addValidation("ph_last4","req","The last four digits of your Phone Number are missing"); 
+</script> </form>
+          <p> </p>
+          <!-- InstanceEndEditable --> </div>
+        <div class="right_bar"><!-- InstanceBeginEditable name="Right_Bar" -->
+          <h3><br />
+            Problems with our registration form?</h3>
+          <p>Please let us know by contacting us via our <a href="../contact/index.html">contact
+              submission form</a> or you can contact us directly via <a href="mailto:customersupport@eclipseservices.biz">email</a>.<!-- InstanceEndEditable --></p>
+        </div>
+      </div>
+      <div class="footer_text">
+        <p>© 2012 ECLIPSE</p>
+        <p>Designed by <a href="http://jacqueswalker.com">Jacques Walker</a></p>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+  <!-- InstanceEnd -->
+</html>

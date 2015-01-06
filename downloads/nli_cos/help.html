@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>CAS Help Topics</title>
+
+  
+  
+    
+    
+    
+  
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="help.css" media="all">
+</head>
+<body id="cas">
+<div id="page">
+<div id="content">
+
+<div id="title">Help Topics</div>
+
+<h2><a name="about">About CAS</a></h2>
+<p>The Virginia Tech Central Authentication Service, CAS, is a
+<a indepth="true" href="single_sign_on.html">single sign-on</a>
+service that provides access to many secure VT Web sites and external sites that
+use <a href="http://www.middleware.vt.edu/doku.php?id=middleware:shib">Shibboleth</a>.
+</p>
+
+<p>The <a href="http://www.middleware.vt.edu/doku.php?id=middleware:cas">CAS wiki</a>
+provides policy and technical information for integrating VT applications with CAS.</p>
+
+<h2><a name="features">CAS Features</a></h2>
+<h3>Warn</h3>
+<p>The <em>warn</em> checkbox on the login form provides additional information about
+a service that requests secure access via CAS.  If the <em>warn</em> checkbox
+is selected, a screen like the following is displayed when a user attempts to
+access a CAS-enabled service.</p>
+
+<img src="warn-example.png">
+
+<h3>PDC Login</h3>
+<p>CAS supports authentication via an SSL (X.509) client certificate issued by
+the Virginia Tech User CA, which is commonly referred to as a Personal Digial
+Certificate (PDC). PDC login is more secure than standard username password
+login for the following reasons:</p>
+<ol>
+<li>Certificates are more resistant to theft.</li>
+<li>Certificates are much more resistant to brute force attacks (analogous to
+password guessing).</li>
+</ol>
+<p>At the present time, the only method of distributing PDCs is via the Aladdin eToken USB fob.</p>
+
+<h3>Single Sign-Out</h3>
+<p>When you end your CAS single sign-on session by logging out of CAS, CAS attempts to
+log you out of all the services that you visited during your session.  While this
+works well under normal circumstances, there are a number of fundamental limitations
+with this feature.  For that reason it is strongly recommended that you
+<strong>close your browser</strong> after logging out of CAS, particularly in
+cases where additional security is merited, such as a shared computer.</p>
+
+<h2><a name="login">Login Problems</a></h2>
+
+<h3>Forgotten Username/Password</h3>
+
+Try our guided help system:
+
+<ul>
+  <li><a href="https://auth.vt.edu/iforgot?type=username">Forgot username</a></li>
+  <li><a indepth="true" href="iforgot.html">Forgot password</a></li>
+</ul>
+
+<h3>Other Login Problems</h3>
+<p>Search the VT <a href="http://answers.vt.edu/kb/">Knowledge Base</a> for answers 
+or call 4Help at <strong>540-231-4357</strong>.</p>
+
+
+<h2><a name="incommon">InCommon Assurance</a></h2>
+<p>Virginia Tech is certified to assert InCommon Bronze and Silver qualifiers for PDC users
+  who need to access federated services requiring higher levels of trust according to the
+  <a indepth="true" href="default_013.html">InCommon Assurance Program</a>.
+  All CAS single sign-on sessions started with PDC authentication will convey these qualifiers
+  to federated services via the Virginia Tech Shibboleth IdP.
+</p>
+
+
+<h2><a name="terms">Terms of Use</a></h2>
+<h3>Acceptable Use Policy</h3>
+<p>Use of CAS is covered by the University
+<a href="http://www.policies.vt.edu/acceptableuse.php">Acceptable Use Policy</a>.
+</p>
+<p>
+In practical terms CAS is a University authentication system that shall be used
+to access services to which you are rightly entitled using credentials belonging
+to you.  Any other use is prohibited.
+</p>
+
+<h3>Privacy Policy</h3>
+<div class="block-text">
+<h4>Recorded Information</h4>
+<p>CAS records client IP addresses, user names, and accessed services in order to
+provide an audit trail in support of fraud, abuse, and other security investigations
+conducted by authorized University personnel.  Recorded data may also be used for
+diagnostic and troubleshooting purposes.  Recorded data (logs) are preserved for at least 30 days.
+</p>
+
+<h4>Disclosure of Personal Information</h4>
+<p>The data recorded by CAS is not disclosed to third parties unless under force
+of law.</p>
+
+<h4>Links</h4>
+<p>In a number of instances, CAS provides links to other Virginia Tech Web sites
+in order to support the primary purposes of the application.  While the privacy
+practices of all University services are similar, the details may vary with the site.
+Consult the privacy statement on each site for further information.</p>
+
+<p>The only links to external sites appear in the page footer.
+Virginia Tech is not responsible for the privacy practices or the content of such web sites.</p>
+
+<h4>Cookies</h4>
+<p>CAS uses a session cookie to track authenticated state exclusively if cookies
+are supported on the client browser.  CAS supports a cookie-less mode that provides
+a degraded user experience.</p>
+
+<h4>Security Practices</h4>
+<p>CAS is deployed and managed according to best practices with regard to security
+and availability.  In particular, sensitive information is transmitted to CAS using
+strong encryption.  Additionally, CAS does <em>not</em> store sensitive information
+such as user passwords.</p>
+</div>
+
+</div>
+
+</div> <!-- END PAGE -->
+
+
+
+
+
+</body></html>

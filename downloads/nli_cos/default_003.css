@@ -1,0 +1,82 @@
+/* ::::: http://127.0.0.1:8000/static//css/style2.css? ::::: */
+
+/* ::::: http://127.0.0.1:8000/static//css/nav_styles2.css ::::: */
+
+#navbar { background-color: rgb(84, 67, 110); clear: both; float: left; margin: 0px 0px 5px; padding: 0px; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px; z-index: 100; position: fixed; width: 100%; box-shadow: 0px 1px 8px rgb(0, 0, 0); }
+#navbar ul { margin: 0px; padding: 0px; list-style: none outside none; position: relative; width: 100%; }
+#navbar ul li { margin: 0px; float: left; position: relative; }
+#navbar #active, #navbar ul li:hover { color: rgb(204, 204, 204); }
+#navbar ul li a { display: block; margin: 0px 0px 15px; padding: 16px 12px 0px; font-size: 14px; line-height: 1em; text-decoration: none; color: rgb(255, 255, 255); font-weight: normal; font-style: normal; }
+.help { height: 20px; margin-left: 5px ! important; }
+.help:hover { height: 20px; }
+.help:active { height: 20px; }
+#navbar ul li a:hover { color: rgb(204, 204, 204); }
+#navbar ul li:last-of-type:hover { background-image: none; }
+#navbar ul li:last-of-type a:hover { background: none repeat scroll 0% 0% transparent; }
+#guest_serv { float: right; }
+#login { display: block; float: left; color: rgb(255, 255, 255); padding: 15px 20px 0px 12px; }
+#login a { color: rgb(255, 252, 94); float: right; width: 66px; }
+#login a:hover { color: rgb(204, 204, 204); }
+#login p { float: left; display: block; padding-right: 3px; margin: 0px; }
+.login_name { color: rgb(179, 239, 252); }
+.logout_link { background: url('logout.png') no-repeat scroll 44px 2px transparent; }
+/* ::::: http://127.0.0.1:8000/static//css/form_styles2.css ::::: */
+
+/* ::::: http://127.0.0.1:8000/static//css/pure_forms.css ::::: */
+
+input:not([type]) { padding: 0.5em 0.6em; display: inline-block; border: 1px solid rgb(204, 204, 204); box-shadow: 0px 1px 3px rgb(221, 221, 221) inset; border-radius: 4px; box-sizing: border-box; }
+input:focus:not([type]) { outline: 0px none; border-color: rgb(18, 159, 234); }
+input[disabled]:not([type]) { cursor: not-allowed; background-color: rgb(234, 237, 237); color: rgb(202, 210, 211); }
+input:focus:invalid, textarea:focus:invalid, select:focus:invalid { color: rgb(185, 74, 72); border-color: rgb(238, 95, 91); }
+input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus { border-color: rgb(233, 50, 45); }
+.pure-form-stacked input:not([type]) { display: block; margin: 0.25em 0px; }
+@media only screen and (max-width: 480px) {
+	input:not([type]), input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"], label { margin-bottom: 0.3em; display: block; }
+	.pure-group input:not([type]), .pure-group input[type="text"], .pure-group input[type="password"], .pure-group input[type="email"], .pure-group input[type="url"], .pure-group input[type="date"], .pure-group input[type="month"], .pure-group input[type="time"], .pure-group input[type="datetime"], .pure-group input[type="datetime-local"], .pure-group input[type="week"], .pure-group input[type="number"], .pure-group input[type="search"], .pure-group input[type="tel"], .pure-group input[type="color"] { margin-bottom: 0px; }
+}
+/* ::::: http://127.0.0.1:8000/static//css/table_styles2.css ::::: */
+
+table { color: rgb(0, 0, 0); width: 100%; border-collapse: collapse; box-shadow: 1px 1px 5px rgb(0, 0, 0); border: medium none; text-align: left; }
+.tablesorter th { background: url('tbarrow.gif') no-repeat scroll right 24px rgb(0, 102, 153); }
+.tablesorter th:hover { background: url('tbarrow.gif') no-repeat scroll right 24px rgb(0, 102, 153); cursor: pointer; }
+tbody { border: 0px none; }
+th { border: medium none; font-size: 14px; padding: 6px 11px 3px; height: 43px; background-color: rgb(0, 102, 153); color: rgb(255, 255, 255); }
+tr { border: 0px none; }
+tr:nth-child(2n) { background: none repeat scroll 0% 0% rgb(252, 241, 216); }
+tr:nth-child(2n+1) { background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+tr:hover { background: none repeat scroll 0% 0% rgb(197, 226, 247); }
+td { padding: 8px; border: medium none; font-size: 90%; }
+.transcript_coursesattendedtable tr:nth-child(2n), .transcript_coursesleadingtable tr:nth-child(2n) { background: none repeat scroll 0% 0% rgb(231, 228, 188); }
+.transcript_coursesattended td:first-child, .transcript_coursesleading td:first-child, .myschedule_coursesenrolledtable td:first-child, .myschedule_coursescoordinatingtable td:nth-child(3), .myschedule_coursesleadingtable td:nth-child(3) { width: 135px; }
+.transcript_coursesattended td:nth-child(3), .transcript_coursesleading td:nth-child(3) { width: 53px; }
+/* ::::: http://127.0.0.1:8000/static//css/print.css ::::: */
+
+/* ::::: http://127.0.0.1:8000/static//css/course_display_style.css ::::: */
+
+html { background: none repeat scroll 0% 0% rgb(253, 247, 234); }
+body { margin: 0px; }
+h2 { margin: 0px; }
+h3 { margin: 0px; color: rgb(0, 122, 199); }
+#everything { min-width: 1140px; }
+a { color: rgb(0, 153, 151); text-decoration: none; }
+a:hover { color: rgb(174, 174, 174); }
+#everything { width: 99%; text-align: left; position: relative; max-width: 1600px; margin: 0px auto; border-width: 1px; border-color: black; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color: rgb(0, 0, 0); font-size: 14px; padding-top: 54px; }
+#header { position: relative; color: rgb(255, 255, 255); font-size: 62px; font-variant: normal; text-transform: uppercase; font-style: normal; font-weight: normal; margin: -12px 0px 0px; float: left; padding: 0px; height: 66px; }
+#header_image { background: url('l_torg6.jpg') no-repeat scroll center center / cover  transparent; height: 210px; width: 100%; display: block; clear: both; }
+#qoute { font-size: 30px; color: rgb(255, 255, 255); font-weight: bold; padding: 45px 35px 0px 70px; text-align: right; width: 510px; }
+#content-all { float: left; margin: 10px 0px 50px; min-height: 515px; width: 99%; color: rgb(0, 0, 0); padding: 5px 5px 5px 7px; display: inline-flex; }
+#content, #widecontent { margin: 5px 0px 0px; min-height: 635px; color: rgb(0, 0, 0); padding: 5px 5px 5px 7px; display: block; overflow: auto; float: none; }
+#widecontent { width: 98%; }
+#content h1, #content h2, #widecontent h1, #widecontent h2 { margin: 0px 0px 0px -7px; padding: 0px 0px 3px 7px; }
+#footer { float: left; width: 37%; padding-left: 5px; display: none; }
+#footer img { padding-top: 8px; }
+#footer_copyright { clear: both; text-align: left; width: 100%; bottom: 0px; position: fixed; display: block; background-color: rgb(84, 67, 110); color: rgb(255, 255, 255); padding: 5px; left: 0px; font-size: 12px; height: 30px; }
+#footer_division { float: right; width: 150px; margin-top: -10px; }
+#footer_division img { width: 130px; }
+
+/* ::::: http://127.0.0.1:8000/static//css/jquery-ui-1.10.3.custom.css? ::::: */
+
+input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }
+/* ::::: http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css ::::: */
+
+input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }

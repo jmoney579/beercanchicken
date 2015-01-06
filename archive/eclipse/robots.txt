@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /Original HTML Files/
+Disallow: /assets/
+Disallow: /linklokipnret.php
+Disallow: /Templates/
+Disallow: /Downloads/
+Disallow: /egems/
+Disallow: /linklokipn.php
+Disallow: /cgi-bin/

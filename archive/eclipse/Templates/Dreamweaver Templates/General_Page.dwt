@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="icon" 
+      type="image/png" 
+      href="../assets/images/favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Product Info | EGEMS Info</title>
+<!-- TemplateEndEditable -->
+<link href="../../assets/css/egems_stylesheet_main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href='../../assets/css/slideshow1.css' type="text/css" />
+<link rel="stylesheet" href="../../assets/lightbox/css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../assets/lightbox/js/prototype.js"></script>
+<script type="text/javascript" src="../../assets/lightbox/js/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="../../assets/lightbox/js/lightbox.js"></script>
+	<script type="text/javascript">
+      $(document).ready(function() {
+        $('.inactive_page').hover(function() {
+        $(this).addClass('active_page');
+        }, function() {
+        $(this).removeClass('active_page');
+        });
+       });
+      </script>
+      <script type="text/javascript" src="../../assets/js/xfade2.js"></script>
+      <!-- TemplateBeginEditable name="head" -->
+      <!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div class="wrapper">
+<div class="suite_logo"><a href="../home.html"><img src="../assets/images/eclipse_logo_small.png" width="188" height="56" alt="Eclipse Software Products" /></a></div>
+
+<div class="page_content">
+  <div class="header_bar">Information Preservation for Geological Collections and Research</div>
+  <div class="Header_image">
+    <div class="product_logo"><img src="../assets/images/egems_logo_small.png" width="320" height="72" alt="EGEMS Logo" />
+      <p>Electronic Geological Management System</p>
+    </div>
+  </div>
+  <div id="navigation">
+    <ul class="dropdown dropdown-horizontal" style="border-left: none; border-right: none;">
+      <li style="background-image:none;"><a href="../index.html">Home</a></li>
+      <li><a class="dir" href="../product_info/index.html">Product Info</a>
+        <ul>
+          <li><a  style="margin-bottom: 2px;" href="../product_info/Institutions/index.html">For Institutions</a>
+            <hr />
+          </li>
+          <li><a href="../product_info/Private/index.html">For Private Collectors</a>
+          </li>
+        </ul>
+      </li>
+      <li><a class="dir" href="../Support/index.html">Support</a>
+      <ul>
+      	 <li><a href="../Support/FAQ/index.html">FAQ</a></li>
+         <hr />
+         <li><a href="../Support/Requirements/index.html">Software Requirements</a></li>
+      </ul>
+      </li>
+      <li><a href="../Purchasing/index.html">Purchasing</a></li>
+      <li><a href="../AboutUs/index.html">About Us</a></li>
+      <li><a href="../Contact/index.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="left_content">
+  <!-- TemplateBeginEditable name="Main_Content" -->
+    <h2>Lorem Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget nunc id tellus placerat interdum. Nulla facilisi. Vestibulum laoreet aliquam bibendum. Donec porttitor urna et dolor congue dictum. </p>
+    <div class="img_left"><a title="Molecular Diagram" href="../Images/molecule.jpg" rel="lightbox"><img src="../Images/molecule.jpg" width="131" height="135" /></a>
+      <div class="caption">
+        <p>Molecular Diagram and a second line of text</p>
+      </div>
+    </div>
+    Vestibulum eleifend tempor massa id rutrum. Cras semper faucibus egestas. Sed lacus massa, agilla tincidunt nisi.
+    <p></p>
+    <p>&nbsp;</p>
+    <h3>H3 Headline</h3>
+    <p>Suspendisse scelerisque pharetra dui, cras semper vestibulum sem sed molestie. Cras dictum, nisi id aliquet hendrerit, nunc est molestie ante, vel malesuada sapien enim eget lorem. Vestibulum commodo nibh a turpis consectetur commodo. In ut metus dui, sed <a href="#">dapibus ligula</a>. Praesent ullamcorper convallis nulla at feugiat. Nulla gravida ante velit. Phasellus imperdiet, est eu vestibulum condidin.<br />
+      <br />
+      H4 Headline</p>
+    <p>eget gravida velit vulputate sit amet. Nulla ut libero vel ligula adipiscing vulputate eget a leo. Vivamus consequat, nunc vel posuere luctus, massa velit ultrices est, eget consequat est elit non mi. Donec at odio quis mi blandit consectetur et in nunc:</p>
+    <ul>
+      <li>Bullet 1</li>
+      <li>Bullet 2
+        <ul>
+          <li>Sub 1</li>
+          <li>Sub 2</li>
+        </ul>
+      </li>
+      <li>Bullet 3</li>
+    </ul>
+    <p>Maecenas facilisis suscipit arcu quis cursus. </p>
+    <div class="img_right"><a title="Fossil" href="../Images/fossiles.jpg" rel="lightbox[fossil]"><img src="../Images/fossiles.jpg" width="149" height="125"/></a>
+      <div class="caption">
+        <p>Fossilized Organism</p>
+      </div>
+    </div>
+    Praesent in egestas sapien. Fusce porta aliquet sollicitudin. Proin eu nisi et nisl egestas varius.
+    <p></p>
+    <h5><br />
+      H5 Headline</h5>
+    <p>Maecenas interdum, nisi eu cursus vestibulum, purus tellus dapibus nisl, sit amet pulvinar mi urna eget odio. Quisque at arcu massa. Sed vel urna mauris, fringilla vestibulum risus. Etiam at nisi porttitor magna hendrerit tempus non vel nisi. Morbi quis dolor sem, sed ultrices nisl. Suspendisse potenti. Cras et lacinia neque. Phasellus orci erat, pharetra ut malesuada ut, convallis et velit. Integer a leo enim, ut lacinia neque. </p>
+    <div class="img_center"><img src="../Images/pyrite.jpg" width="140" height="140" />
+      <div class="caption">
+        <p>Center image caption</p>
+      </div>
+    </div>
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mauris erat, fermentum a varius eget, varius viverra nunc.
+    <p></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <!-- TemplateEndEditable -->
+  </div>
+  <div class="right_bar"><!-- TemplateBeginEditable name="Right_Bar" -->
+  <p>Content for  class "right_bar" Goes Here</p>
+  <!-- TemplateEndEditable --></div>
+</div>
+
+<div class="footer_text">
+  <p>&copy; 2012 Eclipse Services</p>
+  <p>Designed by <a href="http://jacqueswalker.com">Jacques Walker</a></p>
+</div>
+</div>
+<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,747 @@
+@CHARSET "US-ASCII";
+
+/**********************************************************************
+*   Jacques Walker Portfolio Site                                     *
+*   Designed and Developed by Jacques Walker                          *
+*   Contact: jacques [at] jacqueswalker.com                           *
+*   Copyright 2013                                                    *
+***********************************************************************/
+
+@import url("soc_nav.css");
+@import url("img_gallery.css");
+@import url("media_kit.css");
+@import url("form_style.css");
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+body{
+	margin: 0;
+}
+h1{
+	color: #33FF66;
+	margin:5px 0 5px;
+	font-size: 28px;
+}
+h2{
+	color: #FFD700;
+	margin:5px 0 5px;
+	font-size: 26px;
+}
+h3{
+	color: #CCCC33;
+	margin:5px 0 5px;
+	font-size: 23px;
+}
+h4{
+	color: #FF9900;
+	margin:5px 0px;
+	font-size: 20px;
+}
+h5{
+	color: #9966cc;
+	margin:5px 0 5px;
+	font-size: 17px;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover{
+	border-bottom: none;
+}	
+h1, h2, h3, h4, h5{
+	clear: both;
+	font-family: 'Pathway Gothic One', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+a{
+	color: #FFD700;
+	text-decoration: none;
+}
+a:hover{
+	color: #ccc;
+	border-bottom: 1px dotted #FFF;
+}
+iframe{
+	width: 85%;
+}
+/*------Table Styling-----*/
+table{
+	width: 70%;
+	border: none;
+	}
+table tr td{
+	text-align: left;
+	border: none;
+	}
+table h5{
+	color: #FFF;
+	font-size: 20px;
+	}
+/*-----------------------*/
+main{
+	width: 100%;
+	}
+video{
+	display: block;
+	}
+video#bgvid { 
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
+	background: url(/assets/images/cloudscape2.png) no-repeat;
+	background-size: cover;
+}
+.main_home {
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:365px;
+	background:url("../assets/images/cloudscape2.png") no-repeat scroll right top #0C420C;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	min-height: 891px;
+	overflow: auto;
+	display: block;
+}
+.main_resume {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:365px;
+	background:url("../assets/images/book.jpg") repeat-y scroll center center /*#650606*/ #999;	
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	min-height: 935px;
+	border-top: 10px solid #FFF;
+	overflow: auto;
+	display: block;
+}
+.main_portfolio {
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:365px;
+	background:url("../assets/images/blur2.jpg") repeat-y scroll right top #104352;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	min-height: 885px;
+	border-top: 10px solid #FFF;
+	overflow: auto;
+	display: block;
+}
+.main_about {
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:365px;
+	background:url("../assets/images/blur2.jpg") no-repeat scroll center top #000000;
+	min-height: 935px;
+	border-top: 10px solid #FFF;
+	overflow: auto;
+	display: block;
+}
+.main_contact {
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:365px;
+	background:url("../assets/images/savannah_back.jpg") no-repeat scroll center top #000000;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-color: #650606;
+	min-height: 935px;
+	border-top: 10px solid #FFF;
+	overflow:auto;
+	display: block;
+}
+/*.main_contact form{
+	width: 362px;
+	}*/
+nav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-transform: uppercase;
+	color: #FFF;
+	background-attachment: fixed;
+	background-image: url("../assets/images/nav_back.png");
+	background-repeat: repeat-x;
+	background-position: right top;
+	float: right;
+	height: 45px;
+	list-style-type: none;
+	position:fixed;
+	z-index: 1000;
+	display: block;
+	top:0;
+	left:0;
+	border-bottom: 5px solid #CCC;
+}
+.sidetext{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	opacity: 0.50;
+	font-size: 152px;
+	position: absolute;
+	bottom: 151px;
+	left: -150px;
+	-moz-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	text-transform: uppercase;
+	}
+.sub_sidetext{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	display: block;
+	margin-left: 10px;
+	margin-top: -22px;
+	}
+.main_resume .sidetext{
+	left: -241px;
+	bottom: 248px;
+	}
+.main_portfolio .sidetext{
+	left: -350px;
+	bottom: 362px;
+	}
+.main_contact .sidetext{
+	left: -273px;
+	bottom: 361px;
+	}
+#nav {
+   clear:both;
+   float:left;
+   margin:0;
+   padding:0;
+   font-family:Verdana, Geneva, sans-serif; /* Menu font */
+   font-size:90%; /* Menu text size */
+   z-index:1000; /* This makes the dropdown menus appear above the page content below */
+   position:relative;
+   background-image: url("../assets/images/nav_back.png");
+   width: 100%;
+}
+
+/* Top menu items */
+#nav ul {
+   margin:0;
+   padding:0;
+   list-style:none;
+   float:left;
+   position:relative;
+   /*right:50%;*/
+}
+#nav ul li {
+   margin:0 0 0 1px;
+   padding:0;
+   float:left;
+   position:relative;
+   /*left:50%;*/
+}
+#nav ul li a {
+   display:block;
+   margin:0;
+   padding: 7px 7px 10px;
+   font-size:1em;
+   line-height:29px;
+ /*  background:#ddd;*/
+   text-decoration:none;
+   color:#FFF;
+   font-weight:bold;
+}
+#nav ul li a.active{
+   color:#fff;
+   background:#000;
+}
+#nav ul li a:hover {
+   background:#000; /* Top menu items background colour */
+   color:#fff;
+   opacity: 1;
+   transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+ 	-moz-transition: all .3s ease-in-out;
+ 	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;  
+}
+#nav ul li:hover a,
+#nav ul li.hover a { /* This line is required for IE 6 and below */
+  /* background:#36f;*/ /* Top menu items background colour */
+   color:#fff;
+/*   border-bottom:1px solid #03f;*/
+}
+
+/* Submenu items */
+#nav ul ul {
+   /*display:none;  Sub menus are hiden by default */
+   opacity: 0;
+   position:absolute;
+   top:45px;
+   left:0;
+   right:auto; /*resets the right:50% on the parent ul */
+   width:10em; /* width of the drop-down menus */
+}
+#nav ul ul li {
+   left:auto;  /*resets the left:50% on the parent li */
+   margin:0; /* Reset the 1px margin from the top menu */
+   clear:left;
+   width:100%;
+}
+#nav ul ul li a,
+#nav ul li a.active li a,
+#nav ul li:hover ul li a,
+#nav ul li.hover ul li a { /* This line is required for IE 6 and below */
+   font-size:.8em;
+   font-weight:normal; /* resets the bold set for the top level menu items */
+   background:#000;
+   color:#FFF;
+   opacity: 0.8;
+   line-height:1.4em; /* overwrite line-height value from top menu */
+}
+#nav ul li:hover ul.last li a {
+	padding:2px 0 0 7px;
+}
+#nav ul ul li a:hover,
+#nav ul li a.active ul li a:hover,
+#nav ul li:hover ul li a:hover,
+#nav ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
+   background:#006699; /* Sub menu items background colour */
+   color:#fff;
+}
+#nav ul li  ul li a.active{
+   background:#006699; /* Sub menu items background colour */
+   color:#fff;
+}
+/* Flip the last submenu so it stays within the page */
+#nav ul ul.last {
+   left:auto; /* reset left:0; value */
+   right:0; /* Set right value instead */
+   width: 48px;
+}
+
+/* Make the sub menus appear on hover */
+#nav ul li:hover ul,
+#nav ul li.hover ul { /* This line is required for IE 6 and below */ 
+	opacity: 1;
+	transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+ 	-moz-transition: all .5s ease-in-out;
+ 	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;  
+}
+#nav_blog a{
+	color: #158fcc !important;
+	}
+
+header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 52px;
+	color: #FFF;
+	float: right;
+	width: 100%;
+	margin-top: 50px;
+	margin-right: 4%;
+	margin-bottom: 108px;
+	margin-left: 0px;
+	text-align: right;
+	text-shadow: 2px 2px #006699;
+}
+header a, a:hover{
+	color: #FFF;
+	border-bottom: none;
+}
+.page_title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 38px;
+	text-transform: uppercase;
+	color: #FFF;
+	clear: both;
+	float: right;
+	width: 32%;
+	text-align: right;
+	background: url("../assets/images/title_back.png") repeat right top;
+	padding: 0 5px 0 6px;
+	margin: 18px -7% -22px 0;
+	z-index: 10000;
+	text-align:center;
+	box-shadow: 4px 6px 1px #FFF;
+	min-width: 255px;
+}
+.page_title a{
+	color: #FFF;
+	}
+content section{
+	min-width: 20%;
+	width: 80%;
+	margin: 0 auto;
+	max-width: 900px;
+}
+section {
+	width: 68%;
+	margin: 0 auto;
+}
+
+
+content .page_body {
+	color: #FFF;
+	background-attachment: scroll;
+	background-image: url("../assets/images/page_back.png");
+	background-repeat: repeat;
+	background-position: right top;
+	padding: 15px 5px 5px;
+	float: right;
+	max-width: 850px;
+	min-height: 562px;
+	min-width:3px;
+	-webkit-box-shadow: 0px 0px 3px #333;
+	-moz-box-shadow: 0px 0px 3px #333;
+	-ms-box-shadow: 0px 0px 3px #333;
+	-o-box-shadow: 0px 0px 3px #333;
+	box-shadow: 0px 0px 3px #333;
+	margin-right: -38px;
+}
+.page_body {
+	color: #FFF;
+	background-attachment: scroll;
+	background-image: url("../assets/images/page_back.png");
+	background-repeat: repeat;
+	background-position: right top;
+	padding: 11px 5px 5px;
+	float: right;
+	max-width: 850px;
+	min-height: 758px;
+	min-width: 350px;
+}
+.cbox {
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-ms-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;
+	box-shadow: 0px 0px 5px #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-attachment: scroll;
+	background-image: url("../assets/images/page_back.png");
+	background-repeat: repeat;
+	background-position: center center;
+	float: left;
+	width: 199px;
+	margin-top: 0px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	min-height: 189px;
+}
+content .cbox {
+	min-height: 254px;
+}
+.cbox a {
+	text-decoration: none;
+	color: #FFF;
+}
+.cbox a:hover{
+	color: #CCC;
+	transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+ 	-moz-transition: all .3s ease-in-out;
+ 	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}	
+.cbox h3 {
+	margin: 4px 0 5px 0;
+	font-size: 17px;
+	background-color: #006699;
+	text-align: left;
+	padding: 0 3px;
+	color: #FFF;
+}
+content .cbox h3{
+	text-align: right;
+	color: #FFF;
+}
+.cbox h3.web{
+	background-color: #006699;
+}
+.cbox h3.mktg{
+	background-color: #650606;
+}
+.cbox h3.id{
+	background-color: #0c420c;
+}
+.cbox h2 {
+	margin: 4px 0 5px 0;
+	font-size: 17px;
+	background-color: #650606;
+	text-align:  left;
+	padding: 0 3px;
+	color: #FFF;
+}	
+.cbox h3 {
+	margin: 4px 0 5px 0;
+	font-size: 17px;
+	background-color: #0c420c;
+	text-align:  left;
+	padding: 0 3px;
+	color: #FFF;
+}	
+.cbox img{
+	text-align: center;
+	padding-left: 6px;
+	color: #FFF;
+}
+.cbox p{
+	margin: 0;
+}
+.pbox{
+	width: 28%;
+	}
+.pbox img{
+	width: 93%;
+	}
+.resume{
+	height: 100%;
+	width: 98%;
+	background-color: #FFF;
+	background-image: none;
+	color: #000;
+	opacity: 0.85;
+	padding-bottom: 25px;
+	}
+.resume h2{
+	font-size: 30px;
+}
+.resume h3{
+	font-size: 18px;
+	text-align: left !important;
+}
+.address{
+	float: right;
+	padding: 2px 22px 5px 0px;
+}
+aside {
+	/*float: left;*/
+	width: 100%;
+	margin: 0 auto;
+	overflow: auto;
+}
+#showcase{
+	margin-left: -38px;
+}
+figure{
+	float: left;
+	width: 138px;
+	margin: 0 13px 3px 0;
+	height: 118px;
+}
+figure img{
+	width: 134px;
+}
+figcaption{
+	width: 141px;
+	text-align: center;
+}
+.nowrap{
+	clear:both;
+	padding-top: 10px;
+}
+/* Content Gallery CSS */
+ul#gallery {
+    list-style-type: none;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+ul#gallery li {
+    background-color: #000000;
+	border:9px solid #c9c9c9;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-ms-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;
+	box-shadow: 0px 0px 5px #333;
+    color: #FFFFFF;
+    float: left;
+    font-family: "Kaufmann";
+    font-size: 17px;
+    height: 400px;
+    list-style: none outside none;
+    margin: -150px -147px -140px;
+    opacity: 0.9;
+    overflow: hidden;
+    padding: 30px 15px 15px;
+    text-align: left;
+    transform: scale(0.4);
+    transition: all 0.4s ease 0s;
+    width: 455px;
+    word-wrap: break-word;
+}
+ul#gallery li b {
+    font-size: 17px;
+}
+ul#gallery li p {
+    font-size: 17px;
+    margin: 15px;
+}
+ul#gallery li:hover {
+    transform: scale(1);
+    z-index: 10000;
+}
+
+ul#gallery li h1 {
+	background-color: #006699;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li h2 {
+  	background-color: #650606;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li h3{
+	background-color: #0c420c;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li h4{
+	background-color: #815836;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li:hover#mega{
+	transform: scale(1.4);
+}
+ul#gallery li#mega h3{
+	font-size: 20px;
+}
+ul#gallery li a {
+    color: blue;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul#gallery img {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 0 auto 10px;
+    text-align: left;
+	display: block;
+}
+ul#gallery li:hover img {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: auto;
+    text-align: left;
+    width: auto;
+}
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+	background: url("../assets/images/go_top.png") center center no-repeat #000;
+	width: 22px;
+	height: 16px;
+	opacity: 0.7;
+	-moz-border-radius: 7px;
+    	-webkit-border-radius: 7px;
+    	-khtml-border-radius: 7px;
+   	 border-radius: 7px;
+}
+
+.go-top:hover {
+	opacity: 0.9;
+}
+/* ----J-query Overrides----- */
+.ui-helper-reset {
+	font-size: 13px;
+	}
+.ui-accordion-header{
+	font-size: 22px;
+	color: #FFF;
+	background-image: none;
+	opacity: 0.9;
+	}
+.ui-widget-content{
+	background-image: url("../assets/images/tab_open_bkgrd.png");
+	background-color: transparent;
+	}
+.ui-widget-content a{
+	color: #FFD700;
+	}
+.ui-widget-content a:hover{
+	color: #FFF;
+	}
+.ui-widget-content hr{
+	clear:both;
+}

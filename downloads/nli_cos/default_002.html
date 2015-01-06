@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, max-width=1.0, user-scalable=yes">
+        
+        <title>NLI Enrollment System</title>
+       <link href="nli_icon.png" type="image/png" rel="icon">
+          
+        
+         <!--[if IE]>
+         	<link rel="stylesheet" href="/static//css/ie.css?" />
+         <![endif]-->
+        
+        <script src="jquery-2.0.3.min.js"></script>
+        <script src="jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="jquery.tablesorter-update.js"></script>
+        <script src="tablesorter.js"></script> 
+        <script src="home_popup.js"></script>
+         
+
+        <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+		<script>
+		$(function() {
+		$( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
+		});
+		</script>
+		<script language="Javascript">
+		function hideA()
+		{
+		
+		    document.getElementById("A").style.visibility="hidden";
+		    document.getElementById("B").style.visibility="visible";    
+		
+		}
+		
+		function hideB()
+		{
+		    document.getElementById("B").style.visibility="hidden";
+		    document.getElementById("A").style.visibility="visible";
+		
+		}
+		</script>
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput(num)
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce'+num).innerHTML+='<br/><input type="text" id="'+boxName+'+num" value="" "  /><br/>';
+		     countBox += 1;
+		}
+		</script>
+
+        
+        <script type="text/javascript">
+		function myFunction() {
+ 		$(function() {
+		$( "#dialog-confirm" ).dialog({
+		resizable: false,
+		height: 140,
+		width: 450,
+		modal: true,
+		buttons: {
+		"Confirm Selection": function() {
+			document.selectmachine.submit();
+			},
+		"Go back": function() {
+			$( this ).dialog( "close" );
+			}
+		}
+		});
+	});
+       $('form#selectmachine').submit(function(e){
+            e.preventDefault();
+ 
+            $("p#dialog-radio").html($("input#group1").val());
+            $('#dialog-confirm').dialog('open');
+        });
+    }
+
+</script>
+        
+
+    
+<link rel="stylesheet" type="text/css" href="default_002.css" media="all">
+</head>
+<body>
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+	         
+
+        <div id="navbar">
+         <div id="header">
+	        NLI  
+	    </div>
+            <ul>
+           
+    
+
+            
+        
+    		
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default.html">
+	            	Computer Selection
+	            </a>
+	            </li>
+	        	
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_001.html">
+	            	College Administrator
+	            </a>
+	            </li>
+	       		
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_002.html">
+	            	Department Administrator
+	            </a>
+	            </li>
+	        	
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_003.html">
+	            	Order Summary
+	            </a>
+	            </li>
+	        	
+			            
+
+       	
+    		<div id="guest_serv">
+    		    
+            	<li class="navbaritem">
+            	<a indepth="true" target="_top" class="help" href="default_005.html">Help</a>
+            	
+            	</li>
+            
+    			 <div id="login">       
+    		
+   			
+        			<p><span class="login_name">Hello admin</span> |</p>
+        		
+            		<a indepth="true" class="logout_link" href="#">Logout</a>
+        		
+    		
+			
+			</div>	
+			</div></ul>
+			</div>
+        
+ 
+
+
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+        <div id="everything" class="everything">
+        <div id="header_image">
+        	<div id="qoute">"Whatever you are, be a good one."<br>Abraham Lincoln</div>
+        </div> 	
+            <!--<div id="search"></div>-->		
+ 
+
+			    <div id="content-all">
+			        
+			        <div id="widecontent">
+<script type="text/javascript">
+$(function() {
+
+$( "#accordion" ).accordion({ active: 3 });
+});
+</script>
+
+
+	<script>
+	$(document).ready(function(){
+	    $('#custom_0').on('change', function() {
+	      if ( this.value == 'yes')
+	      //.....................^.......
+	      {
+	        $("#customdiv_0").hide();
+	      }
+	      else
+	      {
+	        $("#customdiv_0").show();
+	      }
+	    });
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('#custom_1').on('change', function() {
+	      if ( this.value == 'yes')
+	      //.....................^.......
+	      {
+	        $("#customdiv_1").hide();
+	      }
+	      else
+	      {
+	        $("#customdiv_1").show();
+	      }
+	    });
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('#custom_2').on('change', function() {
+	      if ( this.value == 'yes')
+	      //.....................^.......
+	      {
+	        $("#customdiv_2").hide();
+	      }
+	      else
+	      {
+	        $("#customdiv_2").show();
+	      }
+	    });
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('#custom_3').on('change', function() {
+	      if ( this.value == 'yes')
+	      //.....................^.......
+	      {
+	        $("#customdiv_3").hide();
+	      }
+	      else
+	      {
+	        $("#customdiv_3").show();
+	      }
+	    });
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('#custom_4').on('change', function() {
+	      if ( this.value == 'yes')
+	      //.....................^.......
+	      {
+	        $("#customdiv_4").hide();
+	      }
+	      else
+	      {
+	        $("#customdiv_4").show();
+	      }
+	    });
+	});
+	</script>
+
+
+
+<form action="#" method="post">
+<input name="csrfmiddlewaretoken" value="CkFh0AxBronxiOCycZE2rYhq9te4W2Ie" type="hidden">
+
+<h2>NLI Computer Ordering System: Department Administration</h2>
+<h3>Tomato Sauce</h3>
+    
+    <p>Welcome, Department Administrator.  Your department's computer allocation for 2014 – 2015 is <span style="color: rgb(4, 50, 254); font-weight: bold; font-size: large;">5</span>.</p>
+    
+    
+    <p>Please enter the PID for each employee you wish to receive a computer this year. Also required
+        is a default delivery address were all machines will be delivered, unless an alternate address is given along
+        with the receiver's PID. If you have a new hire or an employee that has not yet setup a PID,
+        check the box next to the PID entry field.</p>
+	
+<a indepth="true" href="default_003.html"> View current computer order summary </a>
+<br><br>
+
+
+<div role="tablist" class="hardware_acc .ui-accordian ui-accordion ui-widget ui-helper-reset" id="accordion">
+			<h3 tabindex="0" aria-selected="false" aria-controls="ui-accordion-accordion-panel-0" id="ui-accordion-accordion-header-0" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-top ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span id="step2">1</span> Default delivery address</h3>
+				<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-0" id="ui-accordion-accordion-panel-0" style="display: block; overflow: hidden; border-bottom-width: 5px; border-top-width: 0px; padding-bottom: 0px; padding-top: 0px; height: 481px;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">Please enter the default delivery address: <br><br>
+	<div id="form">
+	<table id="hardware" border="0" width="50%">
+				<tbody><tr><td>Building:</td><td> <input name="dept_building" id="dept_building" size="32" maxlength="255" value="" placeholder="Bulding/Hall" type="text"></td></tr>
+				<tr><td>Room: </td><td><input name="dept_room" id="dept_room" value="" maxlength="10" size="8" placeholder="Room #" type="text"></td></tr>
+				<tr><td>Street:</td> <td><input name="street" id="street" size="32" value="None" maxlength="255" placeholder="Street Address 1" type="text"></td>
+				</tr><tr><td>Street #2:</td> <td><input name="street2" id="street2" value="None" maxlength="255" size="32" placeholder="Street Address 2" type="text"></td>
+				</tr><tr><td>City:</td> <td><input name="city" id="city" value="None" size="32" maxlength="255" placeholder="City" type="text"></td>
+				</tr><tr><td>State: </td>  <td><input name="state" id="state" value="None" maxlength="2" size="2" type="text"></td>
+				</tr><tr><td>Zip: </td> <td><input name="zip" id="zip" value="None" size="16" maxlength="5" placeholder="ZIP" type="text"></td>
+    </tr></tbody></table>
+    <input value="Save" name="submit_address" id="submit_address" type="submit">
+    </div>
+	<br><br></div>
+			<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-1" id="ui-accordion-accordion-header-1" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span id="step2">2</span> Number of New Hires </h3>
+			<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-1" id="ui-accordion-accordion-panel-1" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom"> 
+			<div id="form">
+			<table id="hardware">
+			<tbody><tr>
+                <td>Number of new hires: <input name="newhires" id="newhires" value="0" maxlength="4" size="3" type="text"></td>
+            </tr>
+			<tr><td>New hires are faculty positions that have not yet been filled, or are too new to have a PID.</td></tr>
+			</tbody></table>
+			<input value="Save" name="submit_newhire" type="submit">
+			</div>
+			</div>
+			<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-2" id="ui-accordion-accordion-header-2" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span id="step2">3</span> Computer Refresh Participants</h3>
+			<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-2" id="ui-accordion-accordion-panel-2" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+		<div id="form" class="comp_part">
+	<table id="hardware" class="comp_part" border="1">
+		    <thead>
+
+		       <tr><td><h4>PID</h4></td><td colspan="2"><h4>Delivery address</h4></td>
+		    </tr></thead>
+		    <tbody>
+		    
+		    	<tr><td><input placeholder="PID" name="pid_0" id="pid_0" maxlength="8" value="admin" size="12" type="text"><input name="userid_0" id="userid_0" value="1" type="hidden"></td><td style="vertical-align: middle;" nowrap="">
+		    	<select style="vertical-align: middle;" name="custom_0" id="custom_0">
+		    	<option value="yes">Default</option>
+		    	<option value="no" selected="">Custom</option></select>
+		    	 <label for="custom_0"></label><br></td>
+		    	<td style="width: 700px;"><div id="customdiv_0">
+		    	<div id="labels">Room &amp; Hall: <br>
+		    	Street #1: <br>
+		    	Street #2: <br style="margin-bottom: 12px;">
+		    	City: </div>
+                <div id="comp_part_inputs"><input style="vertical-align: middle;" size="6" name="customaddress_room_0" id="customaddress_room_0" value="1200" placeholder="Room #" type="text"> 
+		    	 <input style="vertical-align: middle;" size="51" name="customaddress_building_0" id="customaddress_building_0" value="Torgersen Hall" placeholder="VT Campus Building/Hall" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street1_0" id="customaddress_street1_0" value="" placeholder="Address Line 1" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_0" id="customaddress_street2_0" value="" placeholder="Address Line 2" type="text"><br>
+		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_0" id="customaddress_city_0" value="" placeholder="City" type="text">
+		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_0" id="customaddress_state_0" value="" placeholder="State" type="text">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_0" id="customaddress_zip_0" value="" placeholder="Zip Code" type="number">
+               
+                </div>
+		    	</div></td></tr>
+
+		    
+		    	<tr><td><input placeholder="PID" name="pid_1" id="pid_1" maxlength="8" value="jawalker" size="12" type="text"><input name="userid_1" id="userid_1" value="5" type="hidden"></td><td style="vertical-align: middle;" nowrap="">
+		    	<select style="vertical-align: middle;" name="custom_1" id="custom_1">
+		    	<option value="yes">Default</option>
+		    	<option value="no">Custom</option></select>
+		    	 <label for="custom_1"></label><br></td>
+		    	<td><div id="customdiv_1" style="display: none;">
+		    	<div id="labels">Room &amp; Hall: <br>
+		    	Street #1: <br>
+		    	Street #2: <br style="margin-bottom: 12px;">
+		    	City: </div>
+                <div id="comp_part_inputs"><input style="vertical-align: middle;" size="6" name="customaddress_room_1" id="customaddress_room_1" value="" placeholder="Room #" type="text"> 
+		    	 <input style="vertical-align: middle;" size="51" name="customaddress_building_1" id="customaddress_building_1" value="" placeholder="VT Campus Building/Hall" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street1_1" id="customaddress_street1_1" value="" placeholder="Address Line 1" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_1" id="customaddress_street2_1" value="" placeholder="Address Line 2" type="text"><br>
+		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_1" id="customaddress_city_1" value="" placeholder="City" type="text">
+		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_1" id="customaddress_state_1" value="" placeholder="State" type="text">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_1" id="customaddress_zip_1" value="" placeholder="Zip Code" type="number">
+               
+                </div>
+		    	</div></td></tr>
+
+		    
+		    	<tr><td><input placeholder="PID" name="pid_2" id="pid_2" maxlength="8" value="" size="12" type="text"><input name="userid_2" id="userid_2" value="" type="hidden"></td><td style="vertical-align: middle;" nowrap="">
+		    	<select style="vertical-align: middle;" name="custom_2" id="custom_2">
+		    	<option value="yes">Default</option>
+		    	<option value="no">Custom</option></select>
+		    	 <label for="custom_2"></label><br></td>
+		    	<td><div id="customdiv_2" style="display: none;">
+		    	<div id="labels">Room &amp; Hall: <br>
+		    	Street #1: <br>
+		    	Street #2: <br style="margin-bottom: 12px;">
+		    	City: </div>
+                <div id="comp_part_inputs"><input style="vertical-align: middle;" size="6" name="customaddress_room_2" id="customaddress_room_2" value="" placeholder="Room #" type="text"> 
+		    	 <input style="vertical-align: middle;" size="51" name="customaddress_building_2" id="customaddress_building_2" value="" placeholder="VT Campus Building/Hall" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street1_2" id="customaddress_street1_2" value="" placeholder="Address Line 1" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_2" id="customaddress_street2_2" value="" placeholder="Address Line 2" type="text"><br>
+		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_2" id="customaddress_city_2" value="" placeholder="City" type="text">
+		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_2" id="customaddress_state_2" value="" placeholder="State" type="text">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_2" id="customaddress_zip_2" value="" placeholder="Zip Code" type="number">
+               
+                </div>
+		    	</div></td></tr>
+
+		    
+		    	<tr><td><input placeholder="PID" name="pid_3" id="pid_3" maxlength="8" value="" size="12" type="text"><input name="userid_3" id="userid_3" value="" type="hidden"></td><td style="vertical-align: middle;" nowrap="">
+		    	<select style="vertical-align: middle;" name="custom_3" id="custom_3">
+		    	<option value="yes">Default</option>
+		    	<option value="no">Custom</option></select>
+		    	 <label for="custom_3"></label><br></td>
+		    	<td><div id="customdiv_3" style="display: none;">
+		    	<div id="labels">Room &amp; Hall: <br>
+		    	Street #1: <br>
+		    	Street #2: <br style="margin-bottom: 12px;">
+		    	City: </div>
+                <div id="comp_part_inputs"><input style="vertical-align: middle;" size="6" name="customaddress_room_3" id="customaddress_room_3" value="" placeholder="Room #" type="text"> 
+		    	 <input style="vertical-align: middle;" size="51" name="customaddress_building_3" id="customaddress_building_3" value="" placeholder="VT Campus Building/Hall" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street1_3" id="customaddress_street1_3" value="" placeholder="Address Line 1" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_3" id="customaddress_street2_3" value="" placeholder="Address Line 2" type="text"><br>
+		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_3" id="customaddress_city_3" value="" placeholder="City" type="text">
+		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_3" id="customaddress_state_3" value="" placeholder="State" type="text">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_3" id="customaddress_zip_3" value="" placeholder="Zip Code" type="number">
+               
+                </div>
+		    	</div></td></tr>
+
+		    
+		    	<tr><td><input placeholder="PID" name="pid_4" id="pid_4" maxlength="8" value="" size="12" type="text"><input name="userid_4" id="userid_4" value="" type="hidden"></td><td style="vertical-align: middle;" nowrap="">
+		    	<select style="vertical-align: middle;" name="custom_4" id="custom_4">
+		    	<option value="yes">Default</option>
+		    	<option value="no">Custom</option></select>
+		    	 <label for="custom_4"></label><br></td>
+		    	<td><div id="customdiv_4" style="display: none;">
+		    	<div id="labels">Room &amp; Hall: <br>
+		    	Street #1: <br>
+		    	Street #2: <br style="margin-bottom: 12px;">
+		    	City: </div>
+                <div id="comp_part_inputs"><input style="vertical-align: middle;" size="6" name="customaddress_room_4" id="customaddress_room_4" value="" placeholder="Room #" type="text"> 
+		    	 <input style="vertical-align: middle;" size="51" name="customaddress_building_4" id="customaddress_building_4" value="" placeholder="VT Campus Building/Hall" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street1_4" id="customaddress_street1_4" value="" placeholder="Address Line 1" type="text"><br>
+		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_4" id="customaddress_street2_4" value="" placeholder="Address Line 2" type="text"><br>
+		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_4" id="customaddress_city_4" value="" placeholder="City" type="text">
+		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_4" id="customaddress_state_4" value="" placeholder="State" type="text">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_4" id="customaddress_zip_4" value="" placeholder="Zip Code" type="number">
+               
+                </div>
+		    	</div></td></tr>
+
+		    
+		    </tbody>
+		</table>
+		<input value="Save" name="submit_pid" type="submit">
+		</div>
+		</div>
+</div>
+<br>
+
+
+<p>Please use the table below to enter the new hire PIDs once they have been created.  The table should also be used to approve and lock the computer order.  Once the order has been approved/locked, the participant will no longer be able to change their order</p>
+
+
+<table class="tablesorter" border="1">
+    <thead>
+       <tr>
+           <th class="header">PID</th>
+           <th class="header">Last Name</th>
+           <th class="header">First Name</th>
+           <th class="header" style="text-align: left;">Custom delivery address</th>
+           <th class="header">Selection</th>
+           <th class="header">Delivery option</th>
+           <th class="header">Upgrade Charge</th>
+           <th class="header" style="text-align: center;">Approve/Lock</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+    	<tr>
+            <td><input name="pid2_0" id="pid2_0" value="admin" size="12" placeholder="PID" type="text">
+                <input name="userid2_0" id="userid2_0" value="1" type="hidden">
+            </td>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_0"></label>
+                1200 Torgersen Hall<br><br><br><br><br>
+            </td>
+            <td>
+                Macbook Pro<br><a indepth="true" href="default2.html">Change</a> 
+            </td>
+            <td> Direct Delivery </td>
+            <td style="text-align: center;"> $0  </td>
+            <td style="text-align: center;"><input name="approve_1" id="new_Macbook Pro" disabled="" type="checkbox"><label for="approve_1"></label></td></tr>
+    
+    	<tr>
+            <td><input name="pid2_1" id="pid2_1" value="jawalker" size="12" placeholder="PID" type="text">
+                <input name="userid2_1" id="userid2_1" value="5" type="hidden">
+            </td>
+            <td>Jacques</td>
+            <td>Walker</td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_1"></label>
+                 <br><br><br><br><br>
+            </td>
+            <td>
+                PC<br><a indepth="true" href="default2.html">Change</a> 
+            </td>
+            <td> Direct Delivery </td>
+            <td style="text-align: center;"> $0  </td>
+            <td style="text-align: center;"><input name="approve_2" id="new_PC" disabled="" type="checkbox"><label for="approve_2"></label></td></tr>
+    
+    	<tr>
+            <td><input name="pid2_2" id="pid2_2" value="" size="12" placeholder="PID" type="text">
+                <input name="userid2_2" id="userid2_2" value="" type="hidden">
+            </td>
+            <td></td>
+            <td></td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_2"></label>
+                 <br><br><br><br><br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td> Direct Delivery </td>
+            <td style="text-align: center;"> $0  </td>
+            <td style="text-align: center;"><input name="approve_" id="new_" disabled="" type="checkbox"><label for="approve_"></label></td></tr>
+    
+    	<tr>
+            <td><input name="pid2_3" id="pid2_3" value="" size="12" placeholder="PID" type="text">
+                <input name="userid2_3" id="userid2_3" value="" type="hidden">
+            </td>
+            <td></td>
+            <td></td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_3"></label>
+                 <br><br><br><br><br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td> Direct Delivery </td>
+            <td style="text-align: center;"> $0  </td>
+            <td style="text-align: center;"><input name="approve_" id="new_" disabled="" type="checkbox"><label for="approve_"></label></td></tr>
+    
+    	<tr>
+            <td><input name="pid2_4" id="pid2_4" value="" size="12" placeholder="PID" type="text">
+                <input name="userid2_4" id="userid2_4" value="" type="hidden">
+            </td>
+            <td></td>
+            <td></td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_4"></label>
+                 <br><br><br><br><br>
+            </td>
+            <td>
+                <br>
+            </td>
+            <td> Direct Delivery </td>
+            <td style="text-align: center;"> $0  </td>
+            <td style="text-align: center;"><input name="approve_" id="new_" disabled="" type="checkbox"><label for="approve_"></label></td></tr>
+    
+    </tbody>
+</table><br>
+</form>
+
+</div>
+		    </div>	
+		    <!--<div id="popupMSG">
+		    <h4 class="blue2">Attention Faculty Computer Refresh Program Participants:</h4>
+			You must log in to see information, including summer programs. After closing this message, click the VT Login Link at the top-right of this page.
+			</div>-->
+			<!--Message body goes here. HTML supported-->
+			  
+	        <div id="footer">
+                
+    
+        NLI    
+    
+
+    
+    
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+
+
+            </div>
+            
+    <!--<div class="footer_box">
+    </div>
+    <div id="footer_contacts"> 
+	    
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">GENERAL INQUIRIES</h4>
+	            NLI<br />
+	            1220 Torgersen Hall<br />
+	            http://nli.tlos.vt.edu<br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">REPORT TECHNICAL ISSUES</h4>
+	            NLI Support Team<br />
+	            <br />
+	            <br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	     
+    </div>-->
+    
+        
+    <div id="footer_copyright">
+    
+    	
+        	NLI is a division of Virginia Tech's Division of Technology-enhanced Learning and Online Strategies (TLOS)
+    	
+	<br>
+	
+		Copyright 2013
+    
+    	<div id="footer_division">
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+    	</div>
+    </div>
+
+            <!--<div class="footer_box"></div>-->
+	    </div>              
+    
+
+
+
+</body></html>

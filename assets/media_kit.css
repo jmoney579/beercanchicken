@@ -1,0 +1,159 @@
+@CHARSET "US-ASCII";
+
+/**********************************************************************
+*   Jacques Walker Portfolio Site                                     *
+*   Designed and Developed by Jacques Walker                          *
+*   Copyright 2013                                                    *
+***********************************************************************/
+
+/* Media Queries
+---------------------------------------------------- */
+
+@media (max-width: 670px){
+	#bgvid{	
+		display:none;
+	}
+	.main_home{
+		background-position: center !important;
+		background-attachment: fixed !important;
+		background:url("../assets/images/cloudscape2.png") no-repeat scroll right top #0C420C;
+	}
+	nav{
+		width: 100%;
+	}
+	.soc_mainnav{
+		display: none;
+	}
+}
+@media (max-width: 608px) {
+	.main_home, .main_resume, .main_portfolio, .main_about, .main_contact{
+		background-image: none !important;
+		}
+	#videobg{
+		display: none;
+		}
+	.cbox{
+		margin-right: 4px !important;
+		}	
+	.pbox{
+		width: 137px !important;
+		}
+	.pbox .last{
+		width: 295px !important;
+		}
+	.last{
+		margin: 0 auto;
+		width: 301px !important;
+		min-height: 112px !important;
+		}
+	.last .img {
+		float: left;
+		}
+	.last h3{
+		float:right;
+		width: 148px;
+		margin-top: 0px !important;
+		display: block;
+		}
+	.last #ID{
+		float: right;
+		width: 150px;
+		}
+	.left_bar{
+		width: 318px !important;
+		}
+	content aside .cbox{
+		width: 137px;
+		padding: 8px !important;
+		min-height: 184px;
+		font-size: 10px;
+		margin: 0 5px 5px 0;
+		}
+	content aside .cbox img{
+		padding-left: 0 !important;
+		width: 137px !important;
+		}
+	content aside .cbox .last img{
+		float: left;
+		}
+	content .page_body{
+		max-width: 362px !important;
+		}
+ 	#nav_home a{
+		background: url("images/home.png") no-repeat center center;
+ 		width: 40px;
+ 		font-size: 0px !important;
+ 		}
+ 	#nav_home a:hover{
+ 		background: url("images/home_hover.png") no-repeat center center #000 !important;
+ 		}
+ 	#nav_contact a{
+		background: url("images/contact.png") no-repeat center center;
+ 		width: 55px;
+ 		font-size: 0px !important;
+ 		}
+ 	#nav_contact a:hover{
+ 		background: url("images/contact_hover.png") no-repeat center center #000 !important;
+ 		}
+
+ 	#nav_res a{
+		background: url("images/resume.png") no-repeat center center;
+ 		width: 50px;
+ 		font-size: 0px !important;
+ 		}
+ 	#nav_res a:hover{
+ 		background: url("images/resume_hover.png") no-repeat center center #000!important;
+ 		}
+ 		
+ 	#nav_port a{
+		background: url("images/portfolio.png") no-repeat center center;
+ 		width: 82px;
+ 		font-size: 0px !important;
+ 		}
+ 	#nav_port a:hover{
+ 		background: url("images/portfolio_hover.png") no-repeat center center #000 !important;
+ 		}
+ 	#nav_port ul li a{
+ 		font-size: 10px !important;
+ 		}
+	#nav_port ul li a:hover{
+		background: #006699 !important;
+		}
+	#nav_blog a{
+		background: url("images/social_media/blog2.png") no-repeat center center;
+		font-size: 0px !important;
+		width: 48px;
+		}
+	#nav_blog a:hover{
+		background: url("images/social_media/blog2.png") no-repeat center center #000 !important;
+		}
+	.main_nav{
+		min-width: 369px !important;
+		border-bottom: none !important;
+		}
+	.soc_mainnav{
+		margin-left: 351px !important;
+		/* no margin-left, border-bottom
+		margin-top: 45px
+		width: 375px;
+		*/
+		}
+	.resume{
+		width: 96% !important;
+		}
+	#nav ul ul li{
+		width: 87px !important;
+		}
+	#recaptcha_area{
+		width: 300px !important;
+	}
+	
+}
+/*@media (max-width:915px){
+	#files{
+		height: 704px !important;
+	}
+	#files2{
+		height: 506px !important;
+	}
+)*/

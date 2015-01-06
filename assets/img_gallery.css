@@ -1,0 +1,30 @@
+.gallery {
+    margin: 0 auto;
+    position: relative;
+    width: 98%;
+    padding:10px;
+}
+.gallery a {
+    float: left;
+    height: 100%;
+    position: relative;
+    width: 25%;
+}
+#comp{
+    margin: 0 5px 11px;
+    /*width: 19%;*/
+	}
+.gallery a img {
+    cursor: pointer;
+    display: block;
+    height: auto;
+    position: relative;
+    width: 93%;
+    z-index: 1;
+    border: 2px solid #FFF;
+    padding: 0;
+    margin-bottom: 5px;
+}
+#wide{
+	width: auto;
+	}

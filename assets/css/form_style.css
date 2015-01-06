@@ -1,0 +1,62 @@
+@CHARSET "US-ASCII";
+
+/********************************************************************************
+*   Jacques Walker Portfolio Site                                               *
+*   Designed and Developed by Jacques Walker                                    *
+*   Plugins Utilized: fullPage.js, Readmore.js, CodyHouse back-to-top, Lightbox *
+*   Contact: jacques [at] jacqueswalker.com                                     *
+*   Copyright 2015                                                              *
+********************************************************************************/
+
+input[type="text"], input[type="email"], textarea{
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px #DDDDDD inset;
+	height: 22px;
+	width: 79%;
+	padding: 3px;
+	font-size: 13px;
+	}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+	border-color: #129FEA;
+}
+input:focus:invalid:focus{
+	border-color: #E9322D;
+}
+textarea{
+	width: 97%;
+	height: 200px;
+	font-size: 14px;
+	}
+button[type="submit"]{
+	height: 30px;
+	width: 64px;
+	border: 2px solid #CCC;
+	background-color: #000;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 15px;
+	}
+button[type="submit"]:hover{
+	box-shadow: 0 0 5px #FFF;
+	transition: all 0.4s ease 0s;
+	}
+button[type="submit"]:active{
+	background-color: #2C9F08;
+	transition: none;
+	}
+.contact_form{
+	width:100%;
+	max-width:600px;
+	margin-left: 35px;
+}
+
+.captcha {
+    float: right;
+}
+.captcha input[type="text"]{
+	border-radius: 3px;
+	box-shadow: none;
+	height: 17px;
+	}
+

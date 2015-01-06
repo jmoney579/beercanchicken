@@ -1,0 +1,23 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#rotator
+{
+	cursor: pointer;
+	overflow: hidden;
+	margin: 0px;
+	position: relative;
+	width: 714px;
+	height: 320px;
+}
+
+#rotator img
+{
+	border: 0;
+	cursor: auto;
+	width: 714px;
+	/*height: 300px;*/
+}

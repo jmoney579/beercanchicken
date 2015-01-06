@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, max-width=1.0, user-scalable=yes">
+        
+        <title>NLI Enrollment System</title>
+       <link href="nli_icon.png" type="image/png" rel="icon">
+         
+        	 
+             
+        
+        
+         <!--[if IE]>
+         	<link rel="stylesheet" href="/static//css/ie.css?" />
+         <![endif]-->
+        
+        <script src="jquery-2.0.3.min.js"></script>
+        <script src="jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="jquery.tablesorter-update.js"></script>
+        <script src="tablesorter.js"></script> 
+        <script src="home_popup.js"></script>
+         
+
+        <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+		<script>
+		$(function() {
+		$( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
+		});
+		</script>
+		<script language="Javascript">
+		function hideA()
+		{
+		
+		    document.getElementById("A").style.visibility="hidden";
+		    document.getElementById("B").style.visibility="visible";    
+		
+		}
+		
+		function hideB()
+		{
+		    document.getElementById("B").style.visibility="hidden";
+		    document.getElementById("A").style.visibility="visible";
+		
+		}
+		</script>
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput(num)
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce'+num).innerHTML+='<br/><input type="text" id="'+boxName+'+num" value="" "  /><br/>';
+		     countBox += 1;
+		}
+		</script>
+
+        
+    <script src="attendance_ajax.js"></script>
+
+
+    
+<link rel="stylesheet" type="text/css" href="default_012.css" media="all">
+</head>
+<body>
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+	    
+	    
+         <div id="VTDivision">
+    
+
+    
+        NLI is a division of Virginia Tech's Division of Technology-enhanced Learning and Online Strategies (TLOS)
+    
+<div id="Logingreeting">
+    
+        <a indepth="true" href="login.html">Guest Login</a> | <a indepth="true" href="default_006.html">VT Login</a>
+    
+</div></div>
+        <div id="everything" class="everything">
+	        <div id="header">
+	            <h1>
+    
+        
+           <a href="http://nli.tlos.vt.edu/"> <img src="nli_logo.jpg"> </a>
+        
+    
+    
+        NLI
+    
+</h1>    
+	        </div>
+	        <div id="subheader">
+                <h3>My Schedule </h3><div class="reg_hash"></div>    
+            </div>  	
+            <div id="search">
+            </div>
+            	
+		    <div id="main">
+		    
+        <div id="navbar">
+            <ul>
+            <li class="navbaritem">
+            <a indepth="true" href="default_010.html">Home</a>
+            </li>
+            <li class="navbaritem">
+            <a indepth="true" href="default_004.html">
+                Current Offerings
+            </a>
+            </li>
+    
+                <li class="navbaritem">
+            <a indepth="true" target="_top" class="help" href="default_005.html">
+            </a>
+            </li>
+            </ul>
+        </div>
+
+	
+			    <div id="content-all">
+			        
+    
+
+			        <div id="widecontent">
+    
+    
+        <h2>Meeting Attendance</h2>
+        <br>
+        <div class="att_table">
+        <h4>Attendance Sheet Legend</h4>
+        
+        <table style="width: 350px;" id="nostripe">
+        	<tbody><tr><th>Absent</th><th>Attended</th><th>Participant Type</th>
+        	</tr><tr>
+				<td><div class="legend" style="background-color: rgb(9, 9, 9);"></div></td><td><div class="legend" style="background-color: rgb(44, 159, 8);"></div></td><td>Face-to-Face</td>
+			</tr>
+			<tr>
+				<td><div class="legend" style="background-color: rgb(9, 9, 9); border: 4px solid rgb(51, 126, 203);"></div></td><td><div class="legend" style="background-color: rgb(51, 126, 203);"></div></td><td>Online</td>
+			</tr>
+			<tr>
+				<td><div class="legend" style="background-color: rgb(9, 9, 9); border: 4px solid rgb(64, 64, 64);"></div></td><td><div class="legend" style="background-color: rgb(221, 170, 68);"></div></td><td>Waitlisted</td>
+			</tr>
+		</tbody></table><br>
+		</div>
+            
+            <div class="error"><p>There are no past attendance sheets for you to view and no open attendance sheets. <br><br>
+            Please note that attendance sheets for a meeting are only opened the day of the meeting.</p></div>
+        
+    
+</div>
+		    </div>	
+		    <!--<div id="popupMSG">
+		    <h4 class="blue2">Attention Faculty Computer Refresh Program Participants:</h4>
+			You must log in to see information, including summer programs. After closing this message, click the VT Login Link at the top-right of this page.
+			</div>-->
+			<!--Message body goes here. HTML supported-->
+			  
+	        <div id="footer">
+                
+    
+        NLI    
+    
+
+    
+    
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+
+
+            </div>
+            
+    <div class="footer_box">
+    </div>
+    <div id="footer_contacts"> 
+	    
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">GENERAL INQUIRIES</h4>
+	            NLI<br>
+	            1220 Torgersen Hall<br>
+	            <a href="http://nli.tlos.vt.edu/">http://nli.tlos.vt.edu</a><br>
+	            <br>
+	            <br>
+	            nli@vt.edu<br>
+	            </div>
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">REPORT TECHNICAL ISSUES</h4>
+	            NLI Support Team<br>
+	            <br>
+	            <a indepth="true" href="default_012.html"></a><br>
+	            <br>
+	            <br>
+	            nli@vt.edu<br>
+	            </div>
+	        
+	     
+    </div>
+    
+        
+    <div id="footer_copyright">Copyright 2013</div>
+    
+
+            <!--<div class="footer_box"></div>-->
+	    </div>              
+    
+
+</div>
+
+</body></html>

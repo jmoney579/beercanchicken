@@ -1,0 +1,597 @@
+body{
+	margin: 0;
+}
+h1{
+	color: #33FF66;
+	margin:5px 0 5px;
+}
+h2{
+	color: #6699CC;
+	margin:5px 0 5px;
+}
+h3{
+	color: #CCCC33;
+	margin:5px 0 5px;
+}
+h4{
+	color: #FF9900;
+	margin:5px 0 5px;
+}
+h5{
+	color: #9966cc;
+	margin:5px 0 5px;
+}
+.main_home {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:355px;
+	background:url("../assets/images/dmy_background.jpg") no-repeat scroll center top #000000;
+	min-height: 935px;
+	overflow: auto;
+}
+.main_resume {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:355px;
+	background:url("../assets/images/bai_background.jpg") no-repeat scroll center top #000000;
+	min-height: 935px;
+	border-top: 10px solid #FFF;
+	overflow: auto;
+}
+.main_portfolio {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:355px;
+	background:url("../assets/images/dmy_background.jpg") no-repeat scroll center top #000000;
+	min-height: 935px;
+	border-top: 10px solid #FFF;
+	overflow: auto;
+}
+.main_about {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:355px;
+	background:url("../assets/images/bai_background.jpg") no-repeat scroll center top #000000;
+	min-height: 935px;
+	border-top: 10px solid #FFF;
+	overflow: auto;
+}
+.main_contact {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	padding: 0 5px 11px;
+	max-width: 100%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	position: relative;
+	min-width:355px;
+	background:url("../assets/images/bai_background.jpg") no-repeat scroll center top #000000;
+	min-height: 935px;
+	border-top: 10px solid #FFF;
+	overflow:auto;
+}
+.main_nav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-transform: uppercase;
+	color: #FFF;
+	background-attachment: fixed;
+	background-image: url("../assets/images/nav_back.png");
+	background-repeat: repeat-x;
+	background-position: right top;
+	float: right;
+	height: 31px;
+	list-style-type: none;
+	position:fixed;
+	min-width: 355px;
+}
+.nav {
+   clear:both;
+   float:left;
+   margin:0;
+   padding:0;
+   font-family:Verdana, Geneva, sans-serif; /* Menu font */
+   font-size:90%; /* Menu text size */
+   z-index:1000; /* This makes the dropdown menus appear above the page content below */
+   position:relative;
+   background-image: url("../assets/images/nav_back.png");
+}
+
+/* Top menu items */
+.nav ul {
+   margin:0;
+   padding:0;
+   list-style:none;
+   float:right;
+   position:relative;
+   right:50%;
+}
+.nav ul li {
+   margin:0 0 0 1px;
+   padding:0;
+   float:left;
+   position:relative;
+   left:50%;
+}
+.nav ul li a {
+   display:block;
+   margin:0;
+   padding: 7px 7px 10px;
+   font-size:1em;
+   line-height:1em;
+ /*  background:#ddd;*/
+   text-decoration:none;
+   color:#FFF;
+   font-weight:bold;
+}
+.nav ul li.active a {
+   color:#fff;
+   background:#000;
+}
+.nav ul li a:hover {
+   background:#000; /* Top menu items background colour */
+   color:#fff;
+   opacity: 1;
+   transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+ 	-moz-transition: all .3s ease-in-out;
+ 	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;  
+}
+.nav ul li:hover a,
+.nav ul li.hover a { /* This line is required for IE 6 and below */
+  /* background:#36f;*/ /* Top menu items background colour */
+   color:#fff;
+/*   border-bottom:1px solid #03f;*/
+}
+
+/* Submenu items */
+.nav ul ul {
+   /*display:none;  Sub menus are hiden by default */
+   opacity: 0;
+   position:absolute;
+   top:31px;
+   left:0;
+   right:auto; /*resets the right:50% on the parent ul */
+   width:10em; /* width of the drop-down menus */
+}
+.nav ul ul li {
+   left:auto;  /*resets the left:50% on the parent li */
+   margin:0; /* Reset the 1px margin from the top menu */
+   clear:left;
+   width:100%;
+}
+.nav ul ul li a,
+.nav ul li.active li a,
+.nav ul li:hover ul li a,
+.nav ul li.hover ul li a { /* This line is required for IE 6 and below */
+   font-size:.8em;
+   font-weight:normal; /* resets the bold set for the top level menu items */
+   background:#000;
+   color:#FFF;
+   opacity: 0.8;
+   line-height:1.4em; /* overwrite line-height value from top menu */
+}
+.nav ul li:hover ul.last li a {
+	padding:2px 0 0 7px;
+}
+.nav ul ul li a:hover,
+.nav ul li.active ul li a:hover,
+.nav ul li:hover ul li a:hover,
+.nav ul li.hover ul li a:hover { /* This line is required for IE 6 and below */
+   background:#006699; /* Sub menu items background colour */
+   color:#fff;
+}
+
+/* Flip the last submenu so it stays within the page */
+.nav ul ul.last {
+   left:auto; /* reset left:0; value */
+   right:0; /* Set right value instead */
+   width: 48px;
+}
+
+/* Make the sub menus appear on hover */
+.nav ul li:hover ul,
+.nav ul li.hover ul { /* This line is required for IE 6 and below */ 
+	opacity: 1;
+	transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+ 	-moz-transition: all .5s ease-in-out;
+ 	-ms-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;  
+}
+
+.site_name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 52px;
+	color: #FFF;
+	float: right;
+	width: 100%;
+	margin-top: 46px;
+	margin-right: 10%;
+	margin-bottom: 14%;
+	margin-left: 0px;
+	text-align: right;
+	text-shadow: 2px 2px #006699;
+}
+.page_title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 38px;
+	text-transform: uppercase;
+	color: #FFF;
+	clear: both;
+	float: right;
+	width: 21%;
+	text-align: right;
+	background: url(../assets/images/title_back.png) repeat right top;
+	padding: 0 5px 0 6px;
+	margin: 18px 8% -22px 0;
+	z-index: 10000;
+	text-align:center;
+	box-shadow: 4px 6px 1px #FFF;
+}
+#hp .page_content {
+	min-width: 20%;
+	width: 80%;
+	margin: 0 auto;
+}
+.page_content {
+	min-width: 20%
+	width: 68%;
+	margin: 0 auto;
+}
+
+
+#hp .page_body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background-attachment: scroll;
+	background-image: url(../assets/images/page_back.png);
+	background-repeat: repeat;
+	background-position: right top;
+	padding: 15px 5px 5px;
+	float: right;
+	max-width: 90%;
+	min-height: 562px;
+	-webkit-box-shadow: 0px 0px 3px #333;
+	-moz-box-shadow: 0px 0px 3px #333;
+	-ms-box-shadow: 0px 0px 3px #333;
+	-o-box-shadow: 0px 0px 3px #333;
+	box-shadow: 0px 0px 3px #333;
+}
+.page_body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FFF;
+	background-attachment: scroll;
+	background-image: url(../assets/images/page_back.png);
+	background-repeat: repeat;
+	background-position: right top;
+	padding: 11px 5px 5px;
+	float: right;
+	max-width: 90%;
+	min-height: 758px;
+}
+.cbox {
+	border:3px solid #c9c9c9;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-ms-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;
+	box-shadow: 0px 0px 5px #333;
+	font-family: Arial, Helvetica, sans-serif;
+	background-attachment: scroll;
+	background-image: url(../assets/images/page_back.png);
+	background-repeat: repeat;
+	background-position: center center;
+	float: left;
+	width: 199px;
+	margin-top: 0px;
+	margin-right: 15px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	min-height: 189px;
+	clear: both;
+}
+#hp .cbox {
+	width: 199px;
+	min-height: 140px;
+}
+.cbox a {
+	text-decoration: none;
+	color: #FFF;
+}
+.cbox a:hover{
+	color: #CCC;
+	transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+ 	-moz-transition: all .3s ease-in-out;
+ 	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}	
+.cbox h1 {
+	margin: 4px 0 5px 0;
+	font-size: 16px;
+	background-color: #006699;
+	text-align: left;
+	padding: 0 3px;
+	color: #FFF;
+}
+#hp .cbox h1{
+	text-align: right;
+	color: #FFF;
+}
+.cbox h2 {
+	margin: 4px 0 5px 0;
+	font-size: 16px;
+	background-color: #650606;
+	text-align:  left;
+	padding: 0 3px;
+	color: #FFF;
+}	
+#hp .cbox h2{
+	text-align: right;
+	color: #FFF;
+}
+.cbox h3 {
+	margin: 4px 0 5px 0;
+	font-size: 16px;
+	background-color: #0c420c;
+	text-align:  left;
+	padding: 0 3px;
+	color: #FFF;
+}	
+#hp .cbox h3{
+	text-align: right;
+}
+.cbox img{
+	text-align: center;
+	padding-left: 6px;
+	color: #FFF;
+}
+.cbox p{
+	margin: 0;
+}
+.left_bar {
+	/*float: left;*/
+	width: 89%;
+	margin: 15px 0px 0 12px;
+}
+#showcase{
+	margin-left: -38px;
+}
+/* Content Gallery CSS */
+ul#gallery {
+    list-style-type: none;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+ul#gallery li {
+    background-color: #000000;
+	border:9px solid #c9c9c9;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-ms-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;
+	box-shadow: 0px 0px 5px #333;
+    color: #FFFFFF;
+    float: left;
+    font-family: "Kaufmann";
+    font-size: 17px;
+    height: 400px;
+    list-style: none outside none;
+    margin: -150px -147px -140px;
+    opacity: 0.9;
+    overflow: hidden;
+    padding: 30px 15px 15px;
+    text-align: left;
+    transform: scale(0.4);
+    transition: all 0.4s ease 0s;
+    width: 455px;
+    word-wrap: break-word;
+}
+ul#gallery li b {
+    font-size: 17px;
+}
+ul#gallery li p {
+    font-size: 17px;
+    margin: 15px;
+}
+ul#gallery li:hover {
+    transform: scale(1);
+    z-index: 10000;
+}
+
+ul#gallery li h1 {
+	background-color: #006699;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li h2 {
+  	background-color: #650606;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li h3{
+	background-color: #0c420c;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li h4{
+	background-color: #815836;
+	color: #FFF;
+	text-align: left;
+	padding: 5px 0 0 3px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: -6px;
+    text-align: left;
+}
+ul#gallery li:hover#mega{
+	transform: scale(1.4);
+}
+ul#gallery li#mega h3{
+	font-size: 20px;
+}
+ul#gallery li a {
+    color: blue;
+    float: right;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+ul#gallery img {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 0 auto 10px;
+    text-align: left;
+	display: block;
+}
+ul#gallery li:hover img {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    height: auto;
+    text-align: left;
+    width: auto;
+}
+/* Coding for fade in of objects */
+.fadeIn {
+	/* Styling Stuff */
+	border:3px solid #c9c9c9;
+	/*margin:15px;*/
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-ms-box-shadow: 0px 0px 5px #333;
+	-o-box-shadow: 0px 0px 5px #333;
+	box-shadow: 0px 0px 5px #333;
+ 
+	/* CSS needed for animation
+	---------------------------------------------------- */
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	-o-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+#hp .fadeIn{
+	/*margin: 0px 2px 5px 0;*/
+	border:none;
+	-webkit-box-shadow: 0px 0px 3px #333;
+	-moz-box-shadow: 0px 0px 3px #333;
+	-ms-box-shadow: 0px 0px 3px #333;
+	-o-box-shadow: 0px 0px 3px #333;
+	box-shadow: 0px 0px 3px #333;
+}
+#hp .main_content .fadeIn .fadeIn-3s{
+	margin: 0 auto;
+}
+/* Animation Times - Time for image to fade in
+---------------------------------------------------- */
+.fadeIn-1s {
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	-o-animation-duration:1s;
+	animation-duration:1s;
+}
+.fadeIn-2s {
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	-o-animation-duration:2s;
+	animation-duration:2s;
+}
+.fadeIn-3s {
+	-webkit-animation-duration:3s;
+	-moz-animation-duration:3s;
+	-o-animation-duration:3s;
+	animation-duration:3s;
+}
+.fadeIn-4s {
+	-webkit-animation-duration:4s;
+	-moz-animation-duration:4s;
+	-o-animation-duration:4s;
+	animation-duration:4s;
+}
+/* Animation Delay - Time for image to be delayed
+---------------------------------------------------- */
+.fadeIn-Delay-1s {
+	-webkit-animation-delay:1s;
+	-moz-animation-delay:1s;
+	-o-animation-delay:1s;
+	animation-delay:1s;
+}
+ 
+.fadeIn-Delay-2s {
+	-webkit-animation-delay:2s;
+	-moz-animation-delay:2s;
+	-o-animation-delay:2s;
+	animation-delay:2s;
+}
+.fadeIn-Delay-3s {
+	-webkit-animation-delay:3s;
+	-moz-animation-delay:3s;
+	-o-animation-delay:3s;
+	animation-delay:3s;
+} 
+/* Key Frames
+---------------------------------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

@@ -1,0 +1,28 @@
+/* ::::: http://www.incommon.org/bodycss0001.css ::::: */
+
+body { background: url('@22@22') repeat scroll 0% 0% rgb(242, 242, 242); margin-top: 0px; padding-top: 0px; }
+body, font, td, p, a { font: 8pt verdana; color: rgb(0, 0, 0); }
+ul li { margin: 0.8em 10% 0.8em 0px; }
+input, textarea, select { background-color: rgb(255, 255, 255); border: 2px solid rgb(209, 209, 209); color: rgb(103, 103, 103); font: 10pt verdana; }
+table.background { background: url('maincontent_table_bg.png') repeat-y scroll 0% 0% transparent; padding: 0px 25px; }
+#footer { position: absolute; left: 0px; width: 100%; z-index: 1; overflow: auto; background: url('footernavigation_bg.png') repeat scroll 0% 0% rgb(23, 132, 179); }
+#buttons { position: relative; left: auto; top: 42px; width: 985px; z-index: 1; overflow: auto; }
+#internet2 { position: absolute; left: 0px; height: 75px; width: 100%; z-index: 1; overflow: auto; text-align: right; background: url('@22@22') repeat scroll 0% 0% rgb(242, 242, 242); }
+#bottom { position: absolute; left: 0px; height: 40px; width: 100%; z-index: 1; overflow: auto; text-align: right; background: url('@22@22') repeat scroll 0% 0% rgb(37, 37, 37); }
+h1 { color: rgb(85, 85, 85); font-size: 24px; font-weight: bold; line-height: 28px; text-align: left; text-decoration: none ! important; }
+h2 { color: rgb(85, 85, 85); font-size: 18px; font-weight: bold; line-height: 22px; text-align: left; text-decoration: none ! important; }
+p.tpnav { color: rgb(48, 91, 124); font-size: 14px; text-align: right; text-decoration: none ! important; }
+.tpnav a { color: rgb(48, 91, 124); font-size: 14px; font-weight: bold; text-align: right; text-decoration: none ! important; }
+.tpnav a:hover { color: rgb(75, 84, 92) ! important; font-weight: bold; text-decoration: none ! important; }
+p.main { color: rgb(85, 85, 85); font-size: 15px; font-weight: bold; line-height: 20px; text-align: left; text-decoration: none ! important; }
+p.mainsub { color: rgb(51, 51, 51); font-size: 11px; line-height: 13px; text-align: left; text-decoration: none ! important; }
+p.mainsubright { color: rgb(51, 51, 51); font-size: 11px; line-height: 13px; text-align: right; text-decoration: none ! important; }
+li.mainsub { color: rgb(51, 51, 51); font-size: 11px; text-align: left; text-decoration: none ! important; }
+.mainsub a { color: rgb(23, 132, 179); font-size: 11px; font-weight: bold; text-align: left; text-decoration: none ! important; }
+.mainsub a:hover { font-weight: bold; text-decoration: none ! important; }
+.mainsubright a { color: rgb(23, 132, 179); font-size: 11px; font-weight: bold; text-align: left; text-decoration: none ! important; }
+.mainsubright a:hover { font-weight: bold; text-decoration: none ! important; }
+p.footnav { color: rgb(255, 255, 255); font-size: 13px; font-weight: bold; text-align: left; text-decoration: none ! important; }
+.footnav a { color: rgb(255, 255, 255); font-size: 11px; text-align: left; text-decoration: none ! important; }
+.footnav a:hover { color: rgb(75, 84, 92) ! important; text-decoration: none ! important; }
+p.nettwo { color: rgb(255, 255, 255); font-size: 10px; margin-top: 15px; text-align: right; text-decoration: none ! important; }

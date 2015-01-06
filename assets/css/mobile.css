@@ -1,0 +1,159 @@
+@CHARSET "US-ASCII";
+
+/********************************************************************************
+*   Jacques Walker Portfolio Site                                               *
+*   Designed and Developed by Jacques Walker                                    *
+*   Plugins Utilized: fullPage.js, Readmore.js, CodyHouse back-to-top, Lightbox *
+*   Contact: jacques [at] jacqueswalker.com                                     *
+*   Copyright 2015                                                              *
+********************************************************************************/
+
+@media (min-width: 1890px){
+#everything {
+	font-size: 17px;
+	}
+nav{
+	font-size: 15px;
+	}
+#hd{
+	display: block;
+	}
+}
+@media (min-width: 1600px){
+#everything{
+	font-size: 16px;
+	}	
+nav{
+	font-size: 14px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@media (max-width: 850px){
+	.fp-slide {
+    float: none;
+}
+.fp-controlArrow, .fp-slidesNav{
+	display: none;
+}
+.norm_nav{
+	display: none;
+	}
+.mobile_nav{
+	display: block;
+	}
+section{
+	border-bottom: 1px solid #FFF;
+}
+}
+@media (max-width: 800px){
+.fp-tableCell {
+   /* padding: 15px 65px 0 173px;*/
+    padding: 15px 65px 0 25%;
+}
+}
+@media only screen and (min-width: 768px) {
+.cd-top {
+    right: 20px;
+    bottom: 20px;
+}
+}
+@media (max-width: 700px) {
+.portfolio .content > section {
+   /* width: 83%;*/
+    width: 90%;
+}
+.portfolio p, .portfolio h2{
+	width: 85%;
+	}
+nav ul{
+	top: 42%;
+}
+.content{
+	padding: 10px 0 0;
+	margin: 0;
+	}
+article img{
+    height: 35px;
+    width: 35px;
+	}
+article figure img{
+	height: auto;
+	width: 134px;
+	}
+}
+@media (max-width: 608px){
+nav{
+	float: none;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	background-image: none;
+	background-color: #090909;
+}
+nav ul{
+	top: 0;
+	transform: none;
+	padding-left: 7px;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	margin-right: 5px;
+}
+#logo{
+	display: none;
+	}
+.blog_link{
+	display: none;
+}
+.mobile_nav{
+	display: inline;
+	}
+#soc_media {
+	right: 0;
+	margin-bottom: 2px;
+	margin-right: 9px;
+}
+#soc_media img{
+	width: 31px;
+}
+#section0{
+	margin-left: 5px;
+}
+.slim{
+	max-width: none;
+}
+.contact_form{
+	margin-left: 0px;
+	margin-bottom: 70px;
+}
+.readmore-js-section h2 {
+    font-size: 20px;
+}
+.fp-tableCell{
+	padding: 15px 65px 0 3%;
+	}
+.portfolio .content > section {
+    width: 75%;
+}
+.portfolio p{
+	width: 80%;
+	}
+.gallery img{
+	display: block;
+	}	s
+textarea{
+	width: 93%;
+}
+button[type="submit"]{
+	margin-right: 8px;
+}
+}

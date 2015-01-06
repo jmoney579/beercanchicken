@@ -1,0 +1,36 @@
+/* ::::: https://auth.vt.edu/themes/standard/cas.css ::::: */
+
+body { background-color: rgb(157, 152, 121); line-height: 1.2; }
+html > body { line-height: normal; }
+html, body { font-family: "Lucida Grande","Verdana",sans-serif; font-size: 0.9em; margin: 0px; padding: 0px; }
+h1, h2, h3, h4, h5, h6 { margin: 0px; padding: 0.3em 0px 0.2em; border: 0px none; color: rgb(102, 0, 0); font-family: "Lucida Grande","Verdana",sans-serif; font-weight: bold; }
+h2 { font-size: 1.4em; }
+div, p, ul, ol, li, dl, dt, dd, blockquote { margin: 0px; padding: 0px; border: 0px none; }
+p, ul, ol, dl { padding: 0.5em 0px; }
+p, li, dt, dd { line-height: 1.3em; }
+fieldset { background-color: rgb(237, 234, 218); border: 1px solid rgb(219, 216, 188); padding: 28px 16px; }
+fieldset.short, fieldset.compact, #login-error { width: 74%; margin: 0px auto; }
+fieldset.short h2, fieldset.short h3, fieldset.compact h2, fieldset.compact h3 { padding: 0px 0px 0.8em; }
+fieldset div.field { margin-bottom: 10px; clear: both; }
+label, div.label { display: block; float: left; padding: 0.2em 0px 0px; width: 7.5em; text-align: right; font-weight: bold; }
+div.checkboxes, div.radios, div.buttons { margin-left: 7.5em; }
+input, textarea, select, button, a.button { font-family: "Lucida Grande","Verdana",sans-serif; padding: 0px; margin: 0px 6px; font-size: 1.1em; height: 1.6em; }
+input[type="text"], input[type="password"], textarea, select { width: 20em; border: 1px solid rgb(153, 153, 153); }
+input[type="text"], input[type="password"], select { line-height: 1.6em; }
+input[type="text"], input[type="password"], textarea { padding: 0px 3px; }
+button, a.button, input[type="submit"], input[type="cancel"] { font-weight: bold; height: 1.7em; padding: 2px 12px 3px; text-align: center; text-decoration: none; color: white; background-color: rgb(121, 148, 108); background-image: url('green-fade-bg.png'); background-repeat: repeat-x; background-position: left bottom; border-width: 1px; border-style: solid; border-color: rgb(130, 179, 108) rgb(48, 66, 40) rgb(48, 66, 40) rgb(130, 179, 108); border-radius: 3px; }
+button:hover, a.button:hover { color: rgb(255, 255, 148); background-color: rgb(129, 158, 115); background-image: url('green-fade-highlight-bg.png'); }
+#page { margin: 0px auto; padding: 0px; border-right: 5px solid rgb(255, 255, 255); border-width: 0px 5px 5px; border-style: none solid solid; border-color: -moz-use-text-color rgb(255, 255, 255) rgb(255, 255, 255); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; width: 758px; background-color: rgb(255, 255, 255); }
+#header { margin: 0px; padding: 0px; height: 77px; background-color: rgb(255, 255, 255); }
+#title { color: rgb(102, 0, 0); font-family: "Lucida Grande","Verdana",sans-serif; font-weight: bold; font-size: 1.6em; margin: 0px 0px 1em; padding: 0px; }
+#links { padding: 3px 0px 5px 20%; margin: 3px auto; border-left: 7px solid rgb(77, 117, 143); background-color: rgb(69, 86, 128); background-image: url('blue-fade-bg.png'); background-repeat: repeat-x; background-position: left bottom; font-family: "Lucida Grande","Verdana",sans-serif; font-weight: bold; }
+#links .link { float: left; margin: 0px 30px; padding-top: 3px; }
+#links a { color: rgb(255, 255, 255); text-decoration: none; }
+#links a:hover { color: rgb(255, 255, 148); }
+#content { padding: 30px 60px 60px; background-color: rgb(245, 245, 235); background-image: url('tan-fade-bg.png'); background-repeat: repeat-x; border-left: 7px solid rgb(237, 234, 218); }
+#footer { padding: 1.8em 0px; font-size: 0.8em; color: rgb(51, 51, 51); }
+#footer a { color: rgb(51, 51, 51); }
+#footer p { text-align: center; padding: 0px; margin: 0px; }
+#help { background-image: url('help-icon.png'); background-repeat: no-repeat; background-position: 0px 0.25em; height: 20px; }
+#help a { padding-left: 20px; }
+.clear { clear: both; }

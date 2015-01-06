@@ -1,0 +1,30 @@
+html body{
+	background-image: linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -o-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -moz-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -webkit-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -ms-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #7993C3),
+	color-stop(0.59, #FFFFFF)
+);
+}
+html body #vt_html_body{
+	background-image: linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -o-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -moz-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -webkit-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+background-image: -ms-linear-gradient(bottom, #7993C3 0%, #FFFFFF 59%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, #7993C3),
+	color-stop(0.59, #FFFFFF)
+);
+}

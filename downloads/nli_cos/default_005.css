@@ -1,0 +1,221 @@
+/* ::::: https://nli.tlos.vt.edu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.0.1 ::::: */
+
+/* ::::: https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css?ver=3.9.2 ::::: */
+
+input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 0px none; padding: 0px; }
+/* ::::: https://nli.tlos.vt.edu/wp-content/themes/grido/themify/css/themify.framework.css?ver=1.8.9 ::::: */
+
+.shortcode.loops-wrapper.grid4 .post:nth-of-type(4n+1), .shortcode.loops-wrapper.grid3 .post:nth-of-type(3n+1), .shortcode.loops-wrapper.grid2 .post:nth-of-type(2n+1), .shortcode.loops-wrapper.grid2-thumb .post:nth-of-type(2n+1) { margin-left: 0px; clear: left; }
+.social-widget .widget { display: inline-block; margin: 0px 2px 0px 0px; }
+/* ::::: https://nli.tlos.vt.edu/wp-content/themes/grido/themify/themify-builder/css/themify-builder-style.css?ver=1.8.9 ::::: */
+
+.col4-1, .col4-2, .col4-3, .col3-1, .col3-2, .col2-1, .themify_builder_row, .themify_builder .module, .slide_builder_module_panel, .themify_builder_module_panel, .themify_builder_module, .themify_builder_input .minicolors-swatch, .themify_builder_input .minicolors-picker, .themify_builder_input .minicolors-grid .minicolors-picker SPAN, .themify_builder_admin .thumb_preview .themify_builder_icon.delete, .themify_builder_layout_lists .layout_action_dropdown li a { box-sizing: border-box; }
+.col4-1, .col4-2, .col4-3, .col3-1, .col3-2, .col2-1 { margin-left: 3.2%; float: left; }
+.col3-1 { width: 31.2%; }
+.col.first, .col4-1.first, .col4-2.first, .col4-3.first, .col3-1.first, .col3-2.first, .col2-1.first { margin-left: 0px; clear: left; }
+.ui.nav:after, .ui.tab .tab-nav:after, .ui.window .bar:after, .ui.module-callout:after, .row_inner:after, .ui:after, .module:after, .tab-nav:after, .clearfix:after { content: ""; display: table; clear: both; }
+.ui.nav.vertical.separate ul li:not(:first-child) a:before, .ui.tab.vertical .tab-nav li:not(:first-child) a:before, .ui.module-tab.panel.rounded .tab-content, .ui.module-tab.vertical li:last-child a:before { border-top-left-radius: 0px; }
+.ui.nav.vertical.separate ul li:not(:first-child) a:before, .ui.tab.vertical .tab-nav li:not(:first-child) a:before, .ui.nav.fullwidth.rounded li:last-child a, .ui.nav.fullwidth.rounded li:last-child, .ui.nav.vertical.rounded li:last-child, .ui.module-tab.panel.rounded .tab-content, .ui.module-tab.vertical li:first-child a:before, .ui.module-tab.vertical li:last-child a:before { border-top-right-radius: 0px; }
+.module.gallery-columns-9 .gallery-item:nth-of-type(9n), .module.gallery-columns-8 .gallery-item:nth-of-type(8n), .module.gallery-columns-7 .gallery-item:nth-of-type(7n), .module.gallery-columns-6 .gallery-item:nth-of-type(6n), .module.gallery-columns-5 .gallery-item:nth-of-type(5n), .module.gallery-columns-4 .gallery-item:nth-of-type(4n), .module.gallery-columns-3 .gallery-item:nth-of-type(3n), .module.gallery-columns-2 .gallery-item:nth-of-type(2n) { margin-right: 0px; }
+.module.loops-wrapper.grid4 .post:nth-of-type(4n+1), .module.loops-wrapper.grid3 .post:nth-of-type(3n+1), .module.loops-wrapper.grid2 .post:nth-of-type(2n+1), .module.loops-wrapper.grid2-thumb .post:nth-of-type(2n+1) { margin-left: 0px; clear: left; }
+.animation-on:not(.themify_builder_active) .grid4.fly-in .animated.post:nth-of-type(4n+1), .animation-on:not(.themify_builder_active) .grid3.fly-in .animated.post:nth-of-type(3n+1), .animation-on:not(.themify_builder_active) .grid2.fly-in .animated.post:nth-of-type(2n+1), .animation-on:not(.themify_builder_active) .grid2-thumb.fly-in .animated.post:nth-of-type(2n+1), .animation-on:not(.themify_builder_active) .list-post.fly-in .animated.post:nth-of-type(2n+1), .animation-on:not(.themify_builder_active) .list-thumb-image.fly-in .animated.post:nth-of-type(2n+1), .animation-on:not(.themify_builder_active) .fly-in .animated.tb-column.first, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-1.first, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-2.first, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-3.first, .animation-on:not(.themify_builder_active) .fly-in.animated.col3-1.first, .animation-on:not(.themify_builder_active) .fly-in.animated.col3-2.first, .animation-on:not(.themify_builder_active) .fly-in.animated.col2-1.first { animation-name: flyInLeft; }
+.animation-on:not(.themify_builder_active) .grid4.fly-in .animated.post:nth-of-type(4n+4), .animation-on:not(.themify_builder_active) .grid3.fly-in .animated.post:nth-of-type(3n+3), .animation-on:not(.themify_builder_active) .grid2.fly-in .animated.post:nth-of-type(2n+2), .animation-on:not(.themify_builder_active) .grid2-thumb.fly-in .animated.post:nth-of-type(2n+2), .animation-on:not(.themify_builder_active) .list-post.fly-in .animated.post:nth-of-type(2n+2), .animation-on:not(.themify_builder_active) .list-thumb-image.fly-in .animated.post:nth-of-type(2n+2), .animation-on:not(.themify_builder_active) .fly-in .animated.tb-column.last, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-1.last, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-2.last, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-3.last, .animation-on:not(.themify_builder_active) .fly-in.animated.col3-2.last, .animation-on:not(.themify_builder_active) .fly-in.animated.col3-1.last, .animation-on:not(.themify_builder_active) .fly-in.animated.col2-1.last { animation-name: flyInRight; }
+.animation-on:not(.themify_builder_active) .grid4.fly-in .animated.post:nth-of-type(4n+2), .animation-on:not(.themify_builder_active) .fly-in .animated.tb-column.second, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-1.second { animation-name: flyInLeftSecond; }
+.animation-on:not(.themify_builder_active) .grid4.fly-in .animated.post:nth-of-type(4n+3), .animation-on:not(.themify_builder_active) .fly-in .animated.tb-column.third, .animation-on:not(.themify_builder_active) .fly-in.animated.col4-1.third { animation-name: flyInRightSecond; }
+.animation-on:not(.themify_builder_active) .grid3.fly-in .animated.post:nth-of-type(3n+2), .animation-on:not(.themify_builder_active) .fly-in .animated.tb-column.middle, .animation-on:not(.themify_builder_active) .fly-in.animated.col3-1.second { animation-name: flyInBottom; }
+.animation-on:not(.themify_builder_active) .fade-in > .animated.post, .animation-on:not(.themify_builder_active) .fade-in .row_inner > .animated.tb-column, .animation-on:not(.themify_builder_active) .col4-1.animated.fade-in, .animation-on:not(.themify_builder_active) .col4-2.animated.fade-in, .animation-on:not(.themify_builder_active) .col4-3.animated.fade-in, .animation-on:not(.themify_builder_active) .col3-1.animated.fade-in, .animation-on:not(.themify_builder_active) .col3-2.animated.fade-in, .animation-on:not(.themify_builder_active) .col2-1.animated.fade-in { transition: opacity 0.5s ease-in 0s; opacity: 1 ! important; }
+.animation-on:not(.themify_builder_active) .slide-up > .post, .animation-on:not(.themify_builder_active) .slide-up .row_inner > .tb-column { transform: translateY(88px); }
+.animation-on:not(.themify_builder_active) .slide-up > .animated.post, .animation-on:not(.themify_builder_active) .slide-up .row_inner > .animated.tb-column { transform: translateY(0px); transition: transform 350ms cubic-bezier(0.34, 1.61, 0.7, 1) 0s; opacity: 1 ! important; }
+@media screen and (max-width: 680px) {
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 480px) {
+	.col4-1, .col4-2, .col2-1, .col4-3, .col3-1, .col3-2 { margin-left: 0px ! important; width: 100% ! important; max-width: 100% ! important; }
+	.post-content { overflow: visible ! important; }
+}
+/* ::::: https://nli.tlos.vt.edu/wp-content/themes/grido/themify/themify-builder/css/animate.min.css?ver=1.8.9 ::::: */
+
+/* ::::: https://nli.tlos.vt.edu/wp-content/themes/grido/style.css?ver=1.4.7 ::::: */
+
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset, figure { margin: 0px; padding: 0px; }
+img, fieldset { border: 0px none; }
+img { max-width: 100%; height: auto; box-sizing: border-box; }
+@media �screen {
+	img { width: auto; }
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+html {  }
+body { font: 0.75em/150% "Lucida Sans Unicode","Lucida Grande",sans-serif; background: url('body-bg.png') repeat scroll 0% 0% rgb(218, 222, 224); word-wrap: break-word; color: rgba(0, 0, 0, 0.6); }
+a { text-decoration: none; outline: medium none; color: rgb(177, 102, 66); }
+a:hover { text-decoration: underline; }
+p { margin: 0px 0px 1.2em; padding: 0px; }
+ul, ol { margin: 1em 0px 1.4em 24px; padding: 0px; line-height: 140%; }
+li { margin: 0px 0px 0.5em; padding: 0px; }
+h1, h2, h3, h4, h5, h6 { line-height: 1.4em; margin: 20px 0px 0.4em; font-family: Oswald,"Lucida Sans Unicode","Lucida Grande",sans-serif; font-weight: normal; text-transform: uppercase; color: rgb(0, 0, 0); text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1); }
+h1 { font-size: 2.4em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.6em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.2em; }
+input, textarea, select, input[type="search"], button { font-size: 100%; font-family: inherit; }
+textarea, input[type="text"], input[type="password"], input[type="search"], input[type="email"], input[type="url"] { background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(221, 221, 221); padding: 5px 10px; border-radius: 5px; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset; }
+input[type="text"], input[type="search"], input[type="email"], input[type="url"] { width: 240px; max-width: 90%; }
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="email"]:focus, input[type="url"]:focus { outline: medium none; border-color: rgb(78, 198, 246); box-shadow: 0px 0px 10px rgba(78, 198, 246, 0.3); }
+#pagewrap, .pagewidth, #headerwrap, #header, #main-nav, #body, #layout, #content, .post, .author-box, .post-nav, .pagenav, #sidebar, .widget, #footerwrap, #footer { box-sizing: border-box; }
+.pagewidth { width: 978px; margin: 0px auto; }
+#body { margin: 0px auto; max-width: 100%; padding-bottom: 40px; }
+#content { margin: 20px 0px 60px; width: 676px; float: left; }
+#sidebar { width: 240px; float: right; margin: 20px 0px 60px; }
+.col4-1, .col4-2, .col4-3, .col3-1, .col3-2, .col2-1 { margin-left: 3.2%; float: left; }
+.col3-1 { width: 31.2%; }
+.col.first, .col4-1.first, .col4-2.first, .col4-3.first, .col3-1.first, .col3-2.first, .col2-1.first { margin-left: 0px; clear: left; }
+#header { position: relative; height: 170px; z-index: 100; }
+#site-logo { font: 36px/100% Oswald,"Lucida Sans Unicode","Lucida Grande",sans-serif; text-transform: uppercase; position: absolute; top: 80px; margin: 0px; }
+#site-logo a { color: rgb(0, 0, 0); text-decoration: none; }
+#site-logo a:hover { text-decoration: none; }
+#nav-bar { width: 100%; height: 45px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-bottom: 1px solid rgb(193, 193, 193); position: absolute; top: 0px; left: 0px; box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07); }
+.social-widget { float: right; position: absolute; top: 10px; right: 0px; z-index: 100; }
+.social-widget a { text-decoration: none; }
+.social-widget a:hover { text-decoration: none; }
+.social-widget .widget { display: inline-block; margin: 0px; }
+.social-widget .widget div { display: inline; }
+.social-widget .rss { display: inline; }
+.social-widget .rss a { background: url('rss_001.png') no-repeat scroll left center transparent; padding: 2px 0px 4px 30px; display: inline-block; }
+#header #searchform { position: absolute; right: 0px; top: 100px; width: 160px; }
+#header #searchform #s { width: 90px; color: rgb(165, 160, 153); background-image: url('search.png'); background-repeat: no-repeat; background-position: 8px center; padding: 3px 5px 3px 28px; float: right; border-radius: 11px; transition: width 0.7s ease 0s; }
+#header #searchform #s:focus { width: 140px; color: rgb(51, 51, 51); }
+#main-nav { margin: 0px; padding: 0px; position: absolute; top: 14px; left: 0px; z-index: 100; }
+#main-nav li { margin: 0px; padding: 0px; list-style: none outside none; float: left; position: relative; }
+#main-nav a { color: rgb(112, 118, 121); display: block; padding: 5px 15px; margin: 0px 0px 0px 5px; text-decoration: none; }
+#main-nav a:hover, #main-nav li:hover > a { color: rgb(0, 0, 0); }
+#main-nav ul a, #main-nav .current_page_item ul a, #main-nav ul .current_page_item a, #main-nav .current-menu-item ul a, #main-nav ul .current-menu-item a { color: rgb(102, 102, 102); font-weight: normal; padding: 7px 0px 7px 15px; margin: 0px; width: 180px; background: none repeat scroll 0% 0% transparent; border: medium none; text-shadow: none; border-radius: 0px; box-shadow: none; }
+#main-nav ul a:hover, #main-nav .current_page_item ul a:hover, #main-nav ul .current_page_item a:hover, #main-nav .current-menu-item ul a:hover, #main-nav ul .current-menu-item a:hover { background: none repeat scroll 0% 0% rgb(243, 243, 243); color: black; }
+#main-nav ul { margin: 0px; padding: 5px 0px; list-style: none outside none; position: absolute; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); z-index: 100; display: none; border-radius: 5px; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); }
+#main-nav ul li { background: none repeat scroll 0% 0% transparent; padding: 0px; margin: 0px; float: none; }
+#main-nav li:hover > ul { display: block; }
+.post-content { min-width: 120px; }
+.loops-wrapper.grid4 .post:nth-of-type(4n+1), .loops-wrapper.grid3 .post:nth-of-type(3n+1), .loops-wrapper.grid2 .post:nth-of-type(2n+1), .loops-wrapper.grid2-thumb .post:nth-of-type(2n+1) { margin-left: 0px; clear: left; }
+.widget { margin: 0px 0px 30px; word-wrap: break-word; }
+.widgettitle { margin: 0px 0px 10px; padding: 0px; font-size: 150%; }
+.widget ul { margin: 0px; padding: 0px; }
+.widget li { margin: 0px; padding: 6px 0px; list-style: none outside none; clear: both; border-top: 1px solid rgb(221, 221, 221); }
+.shortcode .flickr_badge_image:nth-of-type(4n) { margin-right: 0px; }
+#footerwrap { background: none repeat scroll 0% 0% rgb(213, 216, 218); border-top: 1px solid rgb(186, 189, 191); }
+#footer { clear: both; padding: 20px 0px 40px; }
+#footer .widget li { border: medium none; }
+#footer-logo { font: 32px/100% Oswald,Arial,Helvetica,sans-serif; text-transform: uppercase; clear: both; margin: 5px 0px 15px; text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1); }
+#footer-logo a { color: rgb(0, 0, 0); text-decoration: none; }
+#footer-logo a:hover { text-decoration: none; }
+.back-top { float: left; margin-right: 15px; }
+.back-top a { background: url('arrow-up.png') no-repeat scroll center center rgb(135, 146, 151); display: block; width: 30px; height: 30px; text-indent: -900em; border-radius: 10em; }
+.back-top a:hover { background-color: rgb(0, 0, 0); }
+.footer-text { font-size: 85%; }
+img.alignleft, img.aligncenter, img.alignright, img.alignnone { margin-bottom: 15px; }
+.alignleft { float: left; margin-right: 30px; }
+img.alignleft, img.aligncenter, img.alignright, img.alignnone, .wp-caption img, .widget .feature-posts-list .post-img, .widget .flickr_badge_image img, .shortcode .flickr_badge_image img, .commentlist .avatar, .recent-comments-list .avatar, #body .gallery img, .attachment img, .image-wrap img, .slide-image img, .module .slide-image img, .module .post-image img { padding: 2px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-bottom-color: rgb(221, 221, 221); box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); }
+#body .gallery-columns-9 .gallery-item:nth-of-type(9n), #body .gallery-columns-8 .gallery-item:nth-of-type(8n), #body .gallery-columns-7 .gallery-item:nth-of-type(7n), #body .gallery-columns-6 .gallery-item:nth-of-type(6n), #body .gallery-columns-5 .gallery-item:nth-of-type(5n), #body .gallery-columns-4 .gallery-item:nth-of-type(4n), #body .gallery-columns-3 .gallery-item:nth-of-type(3n), #body .gallery-columns-2 .gallery-item:nth-of-type(2n) { margin-right: 0px; }
+.clearfix:after, .widget li:after, #body:after, #footer:after, footer:after, .pagenav:after, #main-nav:after, .menu:after, .gallery:after, #content:after { visibility: hidden; display: block; font-size: 0px; content: " "; clear: both; height: 0px; }
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content { display: inline-block; }
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content { display: block; }
+/* ::::: https://nli.tlos.vt.edu/wp-content/themes/grido/media-queries.css?ver=3.9.2 ::::: */
+
+@media screen and (max-width: 980px) {
+	.pagewidth { max-width: 94%; }
+	#content { margin: 7% 0px 5%; }
+	.sidebar1 #content { max-width: 67.8%; }
+	#sidebar { margin: 7% 0px 5%; max-width: 26.2%; }
+	.col4-1, .col4-2, .col4-3, .col3-1, .col3-2, .col2-1 { margin-left: 2%; }
+	.col3-1 { max-width: 31%; }
+}
+@media screen and (max-width: 760px) {
+	.sidebar1 #content { width: 100%; max-width: 100%; float: none; clear: both; }
+	#sidebar { width: 100%; max-width: 100%; float: none; clear: both; }
+	#header .social-widget, #site-logo, #site-description, #main-nav { position: static ! important; float: none; clear: both; }
+	#header { height: auto ! important; }
+	#header .social-widget { padding: 5px 0px 0px; }
+	#header #searchform { position: absolute; top: 10px; left: inherit; right: 0px; width: 150px; }
+	#header #searchform #s { float: right; width: 50px; }
+	#header #searchform input#s:focus { width: 150px; }
+	#site-logo { margin: 15px 100px 10px 0px; }
+	#site-logo a { font-size: 30px; }
+	#nav-bar { display: none; }
+	#main-nav { height: auto; margin: 10px 0px; }
+	#main-nav a { padding: 4px 9px; }
+}
+@media screen and (max-width: 680px) {
+	.post-content, .module-post .post-content { min-width: 0px ! important; }
+}
+@media screen and (max-width: 480px) {
+	html {  }
+	.col4-1, .col4-2, .col2-1, .col4-3, .col3-1, .col3-2 { margin-left: 0px ! important; width: 100% ! important; max-width: 100% ! important; }
+	#site-logo { font-size: 42px; text-align: left; padding: 0px 90px 0px 0px; width: auto; margin: 10px 0px; }
+	.social-widget { position: static ! important; margin: 10px 0px; float: none; padding: 0px; }
+	.mobile-button { position: relative; width: 32px; height: 30px; margin-bottom: 3px; margin-right: 3px; display: block; float: right; cursor: pointer; }
+	.mobile-button:after { border: 1px solid rgb(122, 122, 122); padding: 1px; content: ""; width: 100%; height: 100%; position: absolute; top: -1px; left: -1px; z-index: -1; background-color: rgb(195, 195, 195); background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.35) 0%, rgba(0, 0, 0, 0.1) 100%); box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4) inset, 0px 1px rgba(255, 255, 255, 0.5) inset, 0px 1px 2px rgba(0, 0, 0, 0.2); border-radius: 5px; }
+	#main-nav-wrap { position: absolute; top: 10px; right: 0px; z-index: 1000; }
+	#menu-icon { background: url('menu-icon.png') no-repeat scroll center center transparent; }
+	#main-nav { clear: both; position: static ! important; width: 160px; z-index: 1000; padding: 10px 5px; background: none repeat scroll 0% 0% rgb(255, 255, 255) ! important; border: 1px solid rgb(153, 153, 153) ! important; display: none; box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2); border-radius: 5px; }
+	#main-nav li { clear: both; float: none; margin: 5px 0px 5px 10px ! important; padding: 0px ! important; border: medium none ! important; box-shadow: none ! important; }
+	#main-nav a, #main-nav ul a { font: inherit ! important; text-transform: inherit ! important; background: none repeat scroll 0% 0% transparent ! important; width: auto ! important; display: inline ! important; padding: 0px ! important; color: rgb(102, 102, 102) ! important; border: medium none ! important; text-shadow: none ! important; box-shadow: none ! important; }
+	#main-nav a:hover, #main-nav ul a:hover { background: none repeat scroll 0% 0% transparent ! important; color: rgb(0, 0, 0) ! important; }
+	#main-nav ul { position: static; display: block; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border: medium none; border-radius: 0px; box-shadow: none; }
+	#searchform-wrap { position: absolute; top: 10px; right: 40px; z-index: 1000; }
+	#search-icon { background: url('search-icon.png') no-repeat scroll center center transparent; }
+	#header #searchform { clear: both; width: auto; position: static; overflow: hidden; background: none repeat scroll 0% 0% rgb(255, 255, 255); border: 1px solid rgb(153, 153, 153); padding: 5px; display: none; border-radius: 5px; box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3); }
+	#header #searchform #s { background: none repeat scroll 0% 0% rgb(221, 221, 221) ! important; color: rgb(68, 68, 68) ! important; padding-left: 8px; }
+	#footer-logo { position: static; }
+}
+@media screen and (min-width: 481px) {
+	#main-nav, #headerwrap #searchform { display: block ! important; }
+}
+/* ::::: https://fonts.googleapis.com/css?family=Oswald&subset=latin%2Clatin-ext&ver=3.9.2 ::::: */
+
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Oswald Regular"), local("Oswald-Regular"), url('qs_6ldoyjcitupc9judwt-vvdin1pk8aktelpez5c0a.woff') format("woff");
+}
+/* ::::: https://nli.tlos.vt.edu/wp-content/themes/grido/themify/css/lightbox.css?ver=3.9.2 ::::: */
+
+button::-moz-focus-inner { padding: 0px; border: 0px none; }
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+}
+@media all and (max-width: 900px) {
+}
+/* ::::: https://nli.tlos.vt.edu/wp-content/themes/grido/themify/fontawesome/css/font-awesome.min.css?ver=1.8.9 ::::: */
+
+@font-face {
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: normal;
+	src: url('fontawesome-webfont.eot') format("embedded-opentype"), url('fontawesome-webfont.woff') format("woff"), url('fontawesome-webfont.ttf') format("truetype"), url('fontawesome-webfont.svg') format("svg");
+}
+/* ::::: https://nli.tlos.vt.edu/wp-content/plugins/zotpress/css/zotpress.shortcode.css?ver=3.9.2 ::::: */
+
+a { color: rgb(255, 102, 0); }
+#header { font-size: 14px; }
+#header a { color: rgb(255, 255, 255); }
+#header a:hover { color: rgb(255, 255, 255); }
+#site-logo img { width: 800px; }
+#site-logo a { width: 800px; }
+#main-nav a:hover { background-color: rgb(102, 0, 0); color: rgb(0, 0, 0); }
+#main-nav ul { background-color: rgb(102, 0, 0); }
+#main-nav ul a, #main-nav .current_page_item ul a, #main-nav ul .current_page_item a, #main-nav .current-menu-item ul a, #main-nav ul .current-menu-item a { background-color: rgb(102, 0, 0); color: rgb(255, 102, 0); }
+#main-nav ul a:hover, #main-nav .current_page_item ul a:hover, #main-nav ul .current_page_item a:hover, #main-nav .current-menu-item ul a:hover, #main-nav ul .current-menu-item a:hover { background-color: rgb(102, 0, 0); }
+p { font-size: 13.4px; text-align: justify; }
+.widget_rss ul li { font-size: 10.5px; padding-bottom: 1px; }
+.widget_rss h4 { letter-spacing: 2px; margin-bottom: 4px; font-size: 94%; }
+.widgettitle { font-size: 90%; }
+#sidebar .widget { padding-top: 10px; }
+#content { margin: 0px; }
+.widget { margin: 0px; }
+.post-content { margin-top: 40px; }
+#header { height: 135px; }
+#site-logo { top: 55px; }
+#nav-bar { border-bottom: 2px solid maroon; background-color: rgb(102, 0, 0); }
+#sidebar { float: right; margin: 30px 0px 0px; width: 285px; }
+.social-widget .rss { display: none; }
+#main-nav a:hover, #main-nav li:hover > a { color: rgb(255, 255, 255); }
+#allh1, h2, h3, h4, h5, h6 { text-transform: inherit; }

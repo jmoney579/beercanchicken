@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <!-- InstanceBegin template="/Templates/General_Page.dwt" codeOutsideHTMLIsLocked="false" -->
+  <head>
+    <link href="../assets/images/favicon.png" type="image/png" rel="icon" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Registration Complete | Purchasing | EGEMS Info</title>
+    <!-- InstanceEndEditable -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/egems_stylesheet_main.css" />
+    <link type="text/css" href="../assets/css/slideshow1.css" rel="stylesheet" />
+    <link media="screen" type="text/css" href="../assets/lightbox/css/lightbox.css"
+      rel="stylesheet" />
+    <script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/lightbox/js/prototype.js" type="text/javascript"></script>
+    <script src="../assets/lightbox/js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+    <script src="../assets/lightbox/js/lightbox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.inactive_page').hover(function() {
+        $(this).addClass('active_page');
+        }, function() {
+        $(this).removeClass('active_page');
+        });
+       });
+      </script>
+    <script src="../assets/js/xfade2.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31191960-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="suite_logo"><a href="../home.html"><img width="188" height="56"
+            alt="Eclipse Software Products"
+            src="../assets/images/eclipse_logo_small.png" /></a></div>
+      <div class="page_content">
+        <div class="header_bar">Information Preservation for Geological
+          Collections and Research</div>
+        <div class="Header_image">
+          <div class="product_logo"><img width="320" height="72" alt="EGEMS Logo"
+              src="../assets/images/egems_logo_small.png" />
+            <p>Electronic Geological Management System</p>
+          </div>
+        </div>
+        <div id="navigation">
+          <ul style="border-left: none; border-right: none;" class="dropdown dropdown-horizontal">
+            <li style="background-image:none;"><a href="../index.html">Home</a></li>
+            <li><a href="../product_info/index.html" class="dir">Product Info</a>
+              <ul>
+                <li><a style="margin-bottom: 2px;" href="../product_info/institutions/index.html">For
+                    Institutions</a>
+                  <hr /> </li>
+                <li><a href="../product_info/private/index.html">For Private
+                    Collectors</a> </li>
+                <hr />
+                <li><a href="../product_info/student/index.html" style="margin-bottom: -8px;">For
+                    Students</a></li>
+              </ul>
+            </li>
+            <li><a href="../support/index.html" class="dir">Support</a>
+              <ul>
+		<li><a href="../support/networking/index.html">Data Sharing</a></li>
+                <hr />
+                <li><a href="../support/faq/index.html">FAQ</a></li>
+                <hr />
+                <li><a href="../support/requirements/index.html">Software
+                    Requirements</a></li>
+              </ul>
+            </li>
+            <li id="active"><a href="index.html">Purchasing</a></li>
+            <li><a href="../aboutus/index.html">About Us</a></li>
+            <li><a href="../contact/index.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="left_content">
+          <!-- InstanceBeginEditable name="Main_Content" -->
+          <?php
+		  include('../assets/php/combined-form-handler.php');
+		  ?>
+          <!-- InstanceEndEditable --> </div>
+        <div class="right_bar"><!-- InstanceBeginEditable name="Right_Bar" -->
+           <h3><br />
+            Problems with our registration form?</h3>
+          <p>Please let us know by contacting us via our <a href="../contact/index.html">contact
+              submission form</a> or you can contact us directly via <a href="mailto:customersupport@eclipseservices.biz">email</a>.</p>
+              <p></p>
+                       <p>If you are having problems submitting your payment please contact <a
+              href="https://www.paypal.com/cgi-bin/helpscr?cmd=_help&amp;t=escalateTab"
+              target="_blank">paypal
+              support.</a><br />
+            <br />
+          </p>
+          <h3></h3>
+          <!-- InstanceEndEditable --></div>
+      </div>
+      <div class="footer_text">
+        <p>© 2012 Eclipse Services</p>
+        <p>Designed by <a href="http://jacqueswalker.com">Jacques Walker</a></p>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+  <!-- InstanceEnd -->
+</html>

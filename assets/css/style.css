@@ -1,0 +1,343 @@
+@CHARSET "US-ASCII";
+
+/********************************************************************************
+*   Jacques Walker Portfolio Site                                               *
+*   Designed and Developed by Jacques Walker                                    *
+*   Plugins Utilized: fullPage.js, Readmore.js, CodyHouse back-to-top, Lightbox *
+*   Contact: jacques [at] jacqueswalker.com                                     *
+*   Copyright 2015                                                              *
+********************************************************************************/
+
+/*Imports*/
+@import url("form_style.css");
+@font-face {
+font-family: 'Eras Light ITC';
+font-style: normal;
+font-weight: normal;
+src: local('Eras Light ITC'), url('../fonts/ERASLGHT.woff') format('woff');
+}
+
+body { 
+	margin: 0; 
+	color: #FFF;
+}
+#everything{
+	font-size: 14px;
+	margin: 0;
+	line-height: 18px;
+}
+p{
+	margin-top: 0;
+	width: 96%;
+}
+a{
+	color: #FFD700;
+	text-decoration: none;
+}
+a:hover{
+	color: #CCC;
+}
+h1, h2, h3, h4, h5, h6{;
+	margin-bottom: 4px;
+	color: #FFF;
+}
+h2 {
+    font-size: 26px;
+    font-weight: normal;
+}
+h4.second {
+	padding-top: 13px;
+	}
+header{
+	font-size: 35px;
+ 	margin: 10px 0 0;
+    	padding: 10px 10px 0 0;
+    	/*position: relative;
+   	top: 50%;
+	display: block;
+    	float: left;
+    	height: 100%;*/
+}
+li{
+	list-style: circle outside none;
+	}
+.tiny_header{
+	font-size: 12px;
+	display: block;
+	padding-top: 2px;
+	}
+.jacques{
+	float: none;
+}
+.content {
+    	display: block;
+    	margin: 0 0 0 13px;
+    	padding: 10px 0 0 10px;
+    	position: relative;
+	max-width: 960px;
+	min-height: 400px;
+}
+.slim.content{
+	top: 0;
+}
+nav{
+    	background: url('../img/menubar2.jpg') repeat-y scroll top center #2c2d2f;
+    	color: #000000;
+    	display: block;
+   	float: left;
+    	height: 100%;
+    	position: fixed;
+    	width: 147px;
+    	z-index: 100;
+	box-shadow: 0 0 4px #000000;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+}
+nav ul{
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
+nav ul li{
+	list-style-type: none;
+}
+nav ul li a{
+	color: #FFF;
+	text-decoration: none;
+	line-height: 20px;
+}
+#logo {
+    display: block;
+    margin-left: 31px;
+    position: fixed;
+}
+.mobile_nav{
+	display: none;
+	}
+.active_nav{
+	color: #CCC;
+	}
+#soc_media{
+	margin: 18px 18px 18px 34px;
+	position: fixed;
+	bottom: 0;
+	}
+#soc_media img{
+	width: 40px;
+}
+#soc_media img:hover{
+	box-shadow: 0px 0px 7px  #ccc;
+}
+#hd {
+    top: 6px;
+    color: #EDCF41;
+    font-family: 'Eras Light ITC';
+    font-size: 12px;
+    font-weight: 600;
+    position: fixed;
+    right: 8px;
+    width: 57px;
+    z-index: 100;
+	display: none;
+}
+#hd img{
+	float: right;
+   	width: 42px;
+}
+main{
+	display: block;
+	float: left;
+	width: 100%;
+	font-family:'Eras Light ITC';
+	background: url('../img/stoney_overlay.png') center center no-repeat #564f7b;
+	background-size: cover;
+}
+.home {
+	/*background-cover: #104352;
+	background: url('../img/stoney_overlay.png') center center no-repeat;
+	background-color: #364f71;*/
+	background-size: cover;
+}
+video{
+	display: block;
+	}
+video#bgvid { 
+	position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
+	background: url(/assets/images/cloudscape2.png) no-repeat;
+	background-size: cover;
+}
+.slim{
+	max-width: 570px;
+}
+#intro{
+	margin-top: -95px;
+}
+.resume{
+	/*background: url('../img/stoney_overlay.png') center center no-repeat #564f7b;*/
+	background-size: cover;
+}
+.portfolio {
+	/*background-cover: #104352;
+	background: url('../img/stoney_overlay.png') center center no-repeat #364f71;*/
+	background-size: cover;
+	padding-bottom: 25px;
+}
+.contact {
+	/*background-cover: #104352;
+	background: url('../img/stoney_overlay.png') center center no-repeat #564f7b;*/
+	background-size: cover;
+}
+article {
+    clear: both;
+}
+article a{
+	font-size: 16px;
+	}
+article img {
+    float: left;
+    height: 63px;
+    margin-top: 16px;
+    padding: 0 10px 5px 0;
+    width: 63px;
+}
+article h3{
+	margin-top: 10px;
+	font-size: 21px;
+}
+article h4{
+	font-size: 17px;
+	margin-tp: 5px;
+	}
+figure{
+	float: left;
+	width: 138px;
+	margin: 0 13px 3px 0;
+	height: 140px;
+}
+figure img{
+	width: 134px;
+	height: auto;
+}
+figcaption{
+	width: 141px;
+	text-align: center;
+}
+iframe{
+	max-width: 560px;
+	width: 97%;
+	}
+.nowrap{
+	clear:both;
+	}
+h3.nowrap{
+	padding-top: 5px;
+	}
+/*---fullPage js overides--*/
+.fp-tableCell{
+    padding: 0 65px 0 200px;
+    height: auto !important;
+    padding: 15px 65px 0 200px;
+	min-height: 700px;
+}
+}
+.fp-controlArrow{
+	margin-top: -30px;
+	}
+.fp-controlArrow.fp-prev{
+	left: 155px;
+	height: 85px;
+    	width: 46px;
+	border: none;
+	background: url('../img/prev_arrow.png') center center no-repeat transparent;
+	position: fixed;
+}
+.fp-controlArrow.fp-next{
+	height: 85px;
+    width: 46px;
+	border: none;
+	background: url('../img/next_arrow.png') center center no-repeat transparent;
+	margin-top: -33px;
+	position: fixed;
+}
+.fp-slidesNav {
+	margin-left: 0 !important;
+	display: none;
+}
+.fp-slidesNav ul li a.active span {
+	background-color: #FFF;
+}
+.fp-slidesNav ul li a span{
+	border-radius: 0;
+}
+#section0{
+	height: auto !important;
+}
+/*---Lightshow Overides---*/
+.gallery{
+	display: block;
+	clear: both;
+	float: none;
+	}
+.gallery img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px #000;
+    height: 100%;
+    margin: 3px;
+    padding: 0;
+    width: 230px;
+}
+/*---ReadMore Overides---*/
+.readmore-js-section h4 {
+    margin-top: 6px;
+}
+a.readmore-js-toggle{
+	font-size: 17px;
+	}
+/*---Back to Top---*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(../img/cd-top-arrow.svg) no-repeat center 50% #006699;
+  /*background-color: rgba(232, 98, 86, 0.8);*/
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: .8;
+  z-index: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}

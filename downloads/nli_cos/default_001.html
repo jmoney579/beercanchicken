@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, max-width=1.0, user-scalable=yes">
+        
+        <title>NLI Enrollment System</title>
+       <link href="nli_icon.png" type="image/png" rel="icon">
+          
+        
+         <!--[if IE]>
+         	<link rel="stylesheet" href="/static//css/ie.css?" />
+         <![endif]-->
+        
+        <script src="jquery-2.0.3.min.js"></script>
+        <script src="jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="jquery.tablesorter-update.js"></script>
+        <script src="tablesorter.js"></script> 
+        <script src="home_popup.js"></script>
+         
+
+        <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+		<script>
+		$(function() {
+		$( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
+		});
+		</script>
+		<script language="Javascript">
+		function hideA()
+		{
+		
+		    document.getElementById("A").style.visibility="hidden";
+		    document.getElementById("B").style.visibility="visible";    
+		
+		}
+		
+		function hideB()
+		{
+		    document.getElementById("B").style.visibility="hidden";
+		    document.getElementById("A").style.visibility="visible";
+		
+		}
+		</script>
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput(num)
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce'+num).innerHTML+='<br/><input type="text" id="'+boxName+'+num" value="" "  /><br/>';
+		     countBox += 1;
+		}
+		</script>
+
+        
+        <script type="text/javascript">
+		function myFunction() {
+ 		$(function() {
+		$( "#dialog-confirm" ).dialog({
+		resizable: false,
+		height: 140,
+		width: 450,
+		modal: true,
+		buttons: {
+		"Confirm Selection": function() {
+			document.selectmachine.submit();
+			},
+		"Go back": function() {
+			$( this ).dialog( "close" );
+			}
+		}
+		});
+	});
+       $('form#selectmachine').submit(function(e){
+            e.preventDefault();
+ 
+            $("p#dialog-radio").html($("input#group1").val());
+            $('#dialog-confirm').dialog('open');
+        });
+    }
+
+</script>
+        
+
+    
+<link rel="stylesheet" type="text/css" href="default_001.css" media="all">
+</head>
+<body>
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+	         
+
+        <div id="navbar">
+         <div id="header">
+	        NLI  
+	    </div>
+            <ul>
+           
+    
+
+            
+        
+    		
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default.html">
+	            	Computer Selection
+	            </a>
+	            </li>
+	        	
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_001.html">
+	            	College Administrator
+	            </a>
+	            </li>
+	       		
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_002.html">
+	            	Department Administrator
+	            </a>
+	            </li>
+	        	
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_003.html">
+	            	Order Summary
+	            </a>
+	            </li>
+	        	
+			            
+
+       	
+    		<div id="guest_serv">
+    		    
+            	<li class="navbaritem">
+            	<a indepth="true" target="_top" class="help" href="default_005.html">Help</a>
+            	
+            	</li>
+            
+    			 <div id="login">       
+    		
+   			
+        			<p><span class="login_name">Hello admin</span> |</p>
+        		
+            		<a indepth="true" class="logout_link" href="#">Logout</a>
+        		
+    		
+			
+			</div>	
+			</div></ul>
+			</div>
+        
+ 
+
+
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+        <div id="everything" class="everything">
+        <div id="header_image">
+        	<div id="qoute">"Whatever you are, be a good one."<br>Abraham Lincoln</div>
+        </div> 	
+            <!--<div id="search"></div>-->		
+ 
+
+			    <div id="content-all">
+			        
+			        <div id="widecontent">
+    
+	    
+	    	<div id="opening">
+	    	<h2>NLI Computer Ordering System: College Allocations and Personnel</h2>
+	        <h3>Spaghetti College</h3>
+            
+	        <p>Welcome, College Administrator.  Your college's computer allocation for 2014 – 2015 is <span style="color: rgb(4, 50, 254); font-weight: bold; font-size: large;">12</span>.
+                Please use the forms below to distribute the allocations to departments and to enter department
+                administrative personnel.</p>
+
+	        
+			
+			</div>
+			<form action="#" name="admins" id="admins" method="post">
+			<div id="hardware_form">
+			<div role="tablist" class="hardware_acc .ui-accordian ui-accordion ui-widget ui-helper-reset" id="accordion">
+			<h3 tabindex="0" aria-selected="true" aria-controls="ui-accordion-accordion-panel-0" id="ui-accordion-accordion-header-0" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-header-active ui-state-active ui-corner-top ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span><span id="step">1</span> Department Allocations</h3>
+				<div aria-hidden="false" aria-expanded="true" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-0" id="ui-accordion-accordion-panel-0" style="display: block;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">
+                    <span class="guidanceText">Enter a number for each department, then click SAVE.<br>
+                    <em><strong>NOTE:</strong> The numbers entered must equal to or less than the total allocation for your college.</em></span>
+                <div id="form">
+                <table id="hardware">
+
+					                          
+		               <tbody><tr>
+                           <td>Tomato Sauce</td>
+                           <td><input name="dept_allot_Tomato Sauce" id="dept_allot_Tomato Sauce" size="2" value="5" type="text">
+                           </td>
+			                  
+		                   
+			                  
+		                   
+			                  
+		                   
+                       </tr>
+		         	                          
+		               <tr>
+                           <td>Pasta</td>
+                           <td><input name="dept_allot_Pasta" id="dept_allot_Pasta" size="2" value="5" type="text">
+                           </td>
+			                  
+		                   
+			                  
+		                   
+                       </tr>
+		         	                          
+		               <tr>
+                           <td>Garlic</td>
+                           <td><input name="dept_allot_Garlic" id="dept_allot_Garlic" size="2" value="2" type="text">
+                           </td>
+			                  
+		                   
+                       </tr>
+		         
+		        </tbody></table>
+		        You have currently used <span id="sum">0</span> of your total allotment of 12 machines
+		        <input name="savealloc" value="SAVE >>" type="submit">
+		        </div>
+                </div>
+			<h3 tabindex="-1" aria-selected="false" aria-controls="ui-accordion-accordion-panel-1" id="ui-accordion-accordion-header-1" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span><span id="step">2</span> Administrators</h3>
+			<div aria-hidden="true" aria-expanded="false" role="tabpanel" aria-labelledby="ui-accordion-accordion-header-1" id="ui-accordion-accordion-panel-1" style="display: none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+            <span class="guidanceText">Enter a PID for each type of contact for each department, then click <strong>SAVE</strong>.<br>
+            <ul>
+                <li><strong>Financial Administrator:</strong> The financial manager for the department.</li>
+                <li><strong>Technical Administrator:</strong> The primary IT support contact for the department.</li>
+                <li><strong>General Administrator:</strong> The adminstrative manager for the department.</li>
+                <li><strong>Read-only Administrators:</strong> A list (comma-separated) of other personnel who can have read-only access to the system.</li>
+            </ul>
+                <br>
+                <span class="required">* denotes a required fields</span>
+            </span>
+
+			
+	            <input name="csrfmiddlewaretoken" value="CkFh0AxBronxiOCycZE2rYhq9te4W2Ie" type="hidden">	  
+	            <div id="form">
+	            
+	                <br><table id="hardware">
+		               <tbody><tr><th colspan="2">Tomato Sauce</th> 
+		               </tr><tr><td><span class="required">*</span> Financial administrator (read-write):</td> <td><input name="financial_pid_Tomato Sauce" id="financial_pid_Tomato Sauce" placeholder="PID" required="" value="admin" type="text"></td></tr>
+		               <tr><td><span class="required">*</span> Technical administrator (read-write):</td> <td><input name="tech_pid_Tomato Sauce" id="tech_pid_Tomato Sauce" placeholder="PID" maxlength="8" required="" value="admin" type="text"></td></tr>
+		               <tr><td>General administrator (read-write):</td> <td><input name="admin_pid_Tomato Sauce" id="admin_pid_Tomato Sauce" placeholder="PID" maxlength="8" value="admin" type="text"></td></tr>
+
+
+		             	<tr><td>Read-only administrator:</td> <td><input name="read_Tomato Sauce" id="read_Tomato Sauce" placeholder="PID" maxlength="8" value="" type="text"></td></tr>
+		  
+
+	                </tbody></table>
+	            
+	                <br><table id="hardware">
+		               <tbody><tr><th colspan="2">Pasta</th> 
+		               </tr><tr><td><span class="required">*</span> Financial administrator (read-write):</td> <td><input name="financial_pid_Pasta" id="financial_pid_Pasta" placeholder="PID" required="" value="kensler" type="text"></td></tr>
+		               <tr><td><span class="required">*</span> Technical administrator (read-write):</td> <td><input name="tech_pid_Pasta" id="tech_pid_Pasta" placeholder="PID" maxlength="8" required="" value="kensler" type="text"></td></tr>
+		               <tr><td>General administrator (read-write):</td> <td><input name="admin_pid_Pasta" id="admin_pid_Pasta" placeholder="PID" maxlength="8" value="kensler" type="text"></td></tr>
+
+
+		             	<tr><td>Read-only administrator:</td> <td><input name="read_Pasta" id="read_Pasta" placeholder="PID" maxlength="8" value="" type="text"></td></tr>
+		  
+
+	                </tbody></table>
+	            
+	                <br><table id="hardware">
+		               <tbody><tr><th colspan="2">Garlic</th> 
+		               </tr><tr><td><span class="required">*</span> Financial administrator (read-write):</td> <td><input name="financial_pid_Garlic" id="financial_pid_Garlic" placeholder="PID" required="" value="buzz" type="text"></td></tr>
+		               <tr><td><span class="required">*</span> Technical administrator (read-write):</td> <td><input name="tech_pid_Garlic" id="tech_pid_Garlic" placeholder="PID" maxlength="8" required="" value="buzz" type="text"></td></tr>
+		               <tr><td>General administrator (read-write):</td> <td><input name="admin_pid_Garlic" id="admin_pid_Garlic" placeholder="PID" maxlength="8" value="buzz" type="text"></td></tr>
+
+
+		             	<tr><td>Read-only administrator:</td> <td><input name="read_Garlic" id="read_Garlic" placeholder="PID" maxlength="8" value="" type="text"></td></tr>
+		  
+
+	                </tbody></table>
+	            
+	            <input name="saveadmin" value="SAVE >>" type="submit">
+	            </div>
+	        
+	        </div>
+	        </div>
+	        </div></form>
+
+	        <br>
+	        <table class="tablesorter">
+	        	    <thead>
+		               <tr><th class="header">Department</th>
+                       <th class="header">Allocation</th>
+                       <th class="header">Financial<br>Administrator</th>
+                       <th class="header">Technical<br>Administrator</th>
+                       <th class="header">General<br>Administrator</th>
+                       <th class="header">General Administrators<br>(read-only)</th>
+		            </tr></thead>
+                    <tbody>
+	        
+		               <tr>
+                           <td class="collegeAdminTableFieldDept">Tomato Sauce</td>
+                           <td class="collegeAdminTableFieldAlloc">
+                            
+			                  
+				                 5
+			                  
+		                   
+			                  
+		                   
+			                  
+		                   
+                           </td>
+                           <td class="collegeAdminTableFieldFinance">
+		                   
+			                  
+				                 
+				                	 Kent, Clark (admin)
+				               	
+			                  
+		                   
+			                  
+		                   
+			                  
+		                   
+		                   </td>
+                           <td class="collegeAdminTableFieldTech">
+		                   
+			                  
+				                 
+				                	 Kent, Clark (admin)
+				               	
+			                  
+		                   
+			                  
+		                   
+			                  
+		                   
+		                   </td>
+                           <td class="collegeAdminTableFieldDept">
+		                   
+			                  
+			                  	
+				                	 Kent, Clark (admin)
+				               	
+                              
+		                   
+			                  
+		                   
+			                  
+		                   
+                           </td>
+                           <td class="collegeAdminTableFieldDept">
+                           
+                           </td>
+                       </tr>
+                
+		               <tr>
+                           <td class="collegeAdminTableFieldDept">Pasta</td>
+                           <td class="collegeAdminTableFieldAlloc">
+                            
+			                  
+		                   
+			                  
+				                 5
+			                  
+		                   
+			                  
+		                   
+                           </td>
+                           <td class="collegeAdminTableFieldFinance">
+		                   
+			                  
+		                   
+			                  
+				                 
+				                	 Kensler, Johnathan (kensler)
+				               	
+			                  
+		                   
+			                  
+		                   
+		                   </td>
+                           <td class="collegeAdminTableFieldTech">
+		                   
+			                  
+		                   
+			                  
+				                 
+				                	 Kensler, Johnathan (kensler)
+				               	
+			                  
+		                   
+			                  
+		                   
+		                   </td>
+                           <td class="collegeAdminTableFieldDept">
+		                   
+			                  
+		                   
+			                  
+			                  	
+				                	 Kensler, Johnathan (kensler)
+				               	
+                              
+		                   
+			                  
+		                   
+                           </td>
+                           <td class="collegeAdminTableFieldDept">
+                           
+                           </td>
+                       </tr>
+                
+		               <tr>
+                           <td class="collegeAdminTableFieldDept">Garlic</td>
+                           <td class="collegeAdminTableFieldAlloc">
+                            
+			                  
+		                   
+			                  
+		                   
+			                  
+				                 2
+			                  
+		                   
+                           </td>
+                           <td class="collegeAdminTableFieldFinance">
+		                   
+			                  
+		                   
+			                  
+		                   
+			                  
+				                 
+				                	 Aldren, Buzz (buzz)
+				               	
+			                  
+		                   
+		                   </td>
+                           <td class="collegeAdminTableFieldTech">
+		                   
+			                  
+		                   
+			                  
+		                   
+			                  
+				                 
+				                	 Aldren, Buzz (buzz)
+				               	
+			                  
+		                   
+		                   </td>
+                           <td class="collegeAdminTableFieldDept">
+		                   
+			                  
+		                   
+			                  
+		                   
+			                  
+			                  	
+				                	 Aldren, Buzz (buzz)
+				               	
+                              
+		                   
+                           </td>
+                           <td class="collegeAdminTableFieldDept">
+                           
+                           </td>
+                       </tr>
+                
+                     </tbody>
+				</table>
+        <p>&nbsp;</p>
+	    
+	
+<script>
+function calculateSum() {
+ 
+        var sum = 0;
+        //iterate through each textboxes and add the values
+        $.each([#dept_allot_Tomato Sauce,#dept_allot_Pasta,#dept_allot_Garlic], function() {
+ 
+            //add only if the value is number
+            if(!isNaN(this.value) && this.value.length!=0) {
+                sum += parseFloat(this.value);
+            }
+ 
+        });
+        //.toFixed() method will roundoff the final sum to 2 decimal places
+        $("#sum").html(sum.toFixed(0));
+    }
+</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('#dept_allot_Tomato Sauce').on('input',calculateSum());
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('#dept_allot_Pasta').on('input',calculateSum());
+	});
+	</script>
+
+	<script>
+	$(document).ready(function(){
+	    $('#dept_allot_Garlic').on('input',calculateSum());
+	});
+	</script>
+
+
+</div>
+		    </div>	
+		    <!--<div id="popupMSG">
+		    <h4 class="blue2">Attention Faculty Computer Refresh Program Participants:</h4>
+			You must log in to see information, including summer programs. After closing this message, click the VT Login Link at the top-right of this page.
+			</div>-->
+			<!--Message body goes here. HTML supported-->
+			  
+	        <div id="footer">
+                
+    
+        NLI    
+    
+
+    
+    
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+
+
+            </div>
+            
+    <!--<div class="footer_box">
+    </div>
+    <div id="footer_contacts"> 
+	    
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">GENERAL INQUIRIES</h4>
+	            NLI<br />
+	            1220 Torgersen Hall<br />
+	            http://nli.tlos.vt.edu<br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">REPORT TECHNICAL ISSUES</h4>
+	            NLI Support Team<br />
+	            <br />
+	            <br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	     
+    </div>-->
+    
+        
+    <div id="footer_copyright">
+    
+    	
+        	NLI is a division of Virginia Tech's Division of Technology-enhanced Learning and Online Strategies (TLOS)
+    	
+	<br>
+	
+		Copyright 2013
+    
+    	<div id="footer_division">
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+    	</div>
+    </div>
+
+            <!--<div class="footer_box"></div>-->
+	    </div>              
+    
+
+
+
+</body></html>

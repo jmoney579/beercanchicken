@@ -1,0 +1,68 @@
+<settings>
+  <General_Properties>
+    <width value="714"/>
+    <height value="268"/>
+    <orientation value="vertical"/>
+    <elements value="7"/>
+    <startItem value="2"/>
+    <movementSpeed value="20"/>
+    <randomImages value="false"/>
+    <assets value="images.xml"/>
+    <showAbout value="true"/>
+    <useLightbox value="false"/>
+    <navBar value="assets/left.png"/>
+    <playBtn value="assets/play.png"/>
+    <pauseBtn value="assets/pause.png"/>
+  </General_Properties>
+  <Image_Properties>
+    <barSize value="40"/>
+    <mouseBehavior value="hover"/>
+    <imageMethod value="quad"/>
+    <imageFunction value="easeout"/>
+    <effectDuration value="0.5"/>
+    <borderSize value="2"/>
+    <borderAlpha value="0.2"/>
+    <borderColor value="16711782"/>
+    <zoomPercentage value="0"/>
+    <kenBurns value="true"/>
+    <rollOverBehavior value="smooth"/>
+    <brightnessOver value="1"/>
+    <brightnessOut value="6"/>
+    <brightnessSpeed value="6"/>
+  </Image_Properties>
+  <Text_Properties>
+    <style value="assets/css/style.css"/>
+    <show value="true"/>
+    <embedFont value="true"/>
+    <width value="373"/>
+    <hPos value="left"/>
+    <vPos value="bottom"/>
+    <padding value="24"/>
+    <headColor value="13382502"/>
+    <bodyColor value="6710937"/>
+    <smallTextBColor value="0"/>
+    <cornerRadius value="12"/>
+    <textBackAlpha value="0.7"/>
+    <smallTextBAlpha value="0.8"/>
+    <textPadding value="2"/>
+  </Text_Properties>
+  <Play_Settings>
+    <showPlay value="true"/>
+    <autoPlay value="true"/>
+    <slideshowTime value="4"/>
+    <playPausePadding value="15"/>
+    <hPos value="right"/>
+    <vPos value="bottom"/>
+  </Play_Settings>
+  <Text_Animation>
+    <slideAnim value="true"/>
+    <appear value="bottom"/>
+    <alphaAnim value="true"/>
+    <blurAnim value="true"/>
+    <method value="Regular"/>
+    <function value="easeInOut"/>
+    <duration value="0.5"/>
+    <wait value="0"/>
+    <delay value="0.2"/>
+  </Text_Animation>
+</settings>

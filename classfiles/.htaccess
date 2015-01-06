@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^classfiles\.jacqueswalker\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.classfiles\.jacqueswalker\.com$
+RewriteRule ^/?$ "https\:\/\/drive\.google\.com\/folderview\?id\=0B39cGCSa38dZNnd5dDgwRlFCOU0\&usp\=sharing" [R=301,L]
+
