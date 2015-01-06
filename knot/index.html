@@ -18,6 +18,24 @@
         <!-- Custom styles for this template -->
     <link href="assets/css/carousel.css" rel="stylesheet">
     <link href="assets/css/mystyles.css" rel="stylesheet">
+    <!-- Extra JS Functions -->
+    <script src="assets/js/kkcountdown.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+                $(".kkcountdown-1").kkcountdown({
+                	dayText		: 'day ',
+                	daysText 	: 'days ',
+                    hoursText	: 'h ',
+                    minutesText	: 'm ',
+                    secondsText	: 's',
+                    displayZeroDays : true,
+                    callback	: cBack,
+                    rusNumbers  :   false
+                });
+
+            });
+            </script>
   </head>
  <!-- NAVBAR ================================================== -->
   <body>
@@ -65,9 +83,9 @@
     <div id="myCarousel" class="carousel" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
+                    <span data-time="1455476400" class="kkcountdown-1"></span>
               <h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>

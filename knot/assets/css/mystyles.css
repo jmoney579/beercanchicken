@@ -1,7 +1,11 @@
 @CHARSET "US-ASCII";
 
+/*@import "timerstyle.css";*/
+
 .navbar{
 	min-height: 37px;
+	margin: 0 auto;
+	width: 97%;
 	}		
 .navbar-inverse{
 	background-color: #FFF;
@@ -24,6 +28,22 @@
     background-color: transparent;
     color: #449c8a;
 }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #449c8a;
+}
 .photoreel{
 	margin-top: 10px;
+	}
+.carousel{
+	margin: 36px auto 0;
+	width: 97%;
+	border-bottom: 1px solid #000;
+	}
+.carousel .item{
+	background-color: transparent;
+	}
+.carousel-caption{
+	left: 45px;
+	right: 45px;
+	color: #000;
 	}
