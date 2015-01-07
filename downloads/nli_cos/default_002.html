@@ -285,11 +285,11 @@ $( "#accordion" ).accordion({ active: 3 });
 	<table id="hardware" border="0" width="50%">
 				<tbody><tr><td>Building:</td><td> <input name="dept_building" id="dept_building" size="32" maxlength="255" value="" placeholder="Bulding/Hall" type="text"></td></tr>
 				<tr><td>Room: </td><td><input name="dept_room" id="dept_room" value="" maxlength="10" size="8" placeholder="Room #" type="text"></td></tr>
-				<tr><td>Street:</td> <td><input name="street" id="street" size="32" value="None" maxlength="255" placeholder="Street Address 1" type="text"></td>
-				</tr><tr><td>Street #2:</td> <td><input name="street2" id="street2" value="None" maxlength="255" size="32" placeholder="Street Address 2" type="text"></td>
-				</tr><tr><td>City:</td> <td><input name="city" id="city" value="None" size="32" maxlength="255" placeholder="City" type="text"></td>
-				</tr><tr><td>State: </td>  <td><input name="state" id="state" value="None" maxlength="2" size="2" type="text"></td>
-				</tr><tr><td>Zip: </td> <td><input name="zip" id="zip" value="None" size="16" maxlength="5" placeholder="ZIP" type="text"></td>
+				<tr><td>Street:</td> <td><input name="street" id="street" size="32" value="" maxlength="255" placeholder="Street Address 1" type="text"></td>
+				</tr><tr><td>Street #2:</td> <td><input name="street2" id="street2" value="" maxlength="255" size="32" placeholder="Street Address 2" type="text"></td>
+				</tr><tr><td>City:</td> <td><input name="city" id="city" value="" size="32" maxlength="255" placeholder="City" type="text"></td>
+				</tr><tr><td>State: </td>  <td><input name="state" id="state" value="" maxlength="2" size="2" placeholder="ST" type="text"></td>
+				</tr><tr><td>Zip: </td> <td><input name="zip" id="zip" value="" size="5" max="99999" placeholder="ZIP" type="number"></td>
     </tr></tbody></table>
     <input value="Save" name="submit_address" id="submit_address" type="submit">
     </div>
@@ -299,7 +299,7 @@ $( "#accordion" ).accordion({ active: 3 });
 			<div id="form">
 			<table id="hardware">
 			<tbody><tr>
-                <td>Number of new hires: <input name="newhires" id="newhires" value="0" maxlength="4" size="3" type="text"></td>
+                <td>Number of new hires: <input style="width: 60px;" name="newhires" id="newhires" value="0" max="999" size="3" type="number"></td>
             </tr>
 			<tr><td>New hires are faculty positions that have not yet been filled, or are too new to have a PID.</td></tr>
 			</tbody></table>
@@ -332,7 +332,7 @@ $( "#accordion" ).accordion({ active: 3 });
 		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_0" id="customaddress_street2_0" value="" placeholder="Address Line 2" type="text"><br>
 		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_0" id="customaddress_city_0" value="" placeholder="City" type="text">
 		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_0" id="customaddress_state_0" value="" placeholder="State" type="text">
-		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_0" id="customaddress_zip_0" value="" placeholder="Zip Code" type="number">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_0" id="customaddress_zip_0" value="" max="99999" placeholder="Zip Code" type="number">
                
                 </div>
 		    	</div></td></tr>
@@ -354,7 +354,7 @@ $( "#accordion" ).accordion({ active: 3 });
 		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_1" id="customaddress_street2_1" value="" placeholder="Address Line 2" type="text"><br>
 		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_1" id="customaddress_city_1" value="" placeholder="City" type="text">
 		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_1" id="customaddress_state_1" value="" placeholder="State" type="text">
-		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_1" id="customaddress_zip_1" value="" placeholder="Zip Code" type="number">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_1" id="customaddress_zip_1" value="" max="99999" placeholder="Zip Code" type="number">
                
                 </div>
 		    	</div></td></tr>
@@ -376,7 +376,7 @@ $( "#accordion" ).accordion({ active: 3 });
 		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_2" id="customaddress_street2_2" value="" placeholder="Address Line 2" type="text"><br>
 		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_2" id="customaddress_city_2" value="" placeholder="City" type="text">
 		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_2" id="customaddress_state_2" value="" placeholder="State" type="text">
-		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_2" id="customaddress_zip_2" value="" placeholder="Zip Code" type="number">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_2" id="customaddress_zip_2" value="" max="99999" placeholder="Zip Code" type="number">
                
                 </div>
 		    	</div></td></tr>
@@ -398,7 +398,7 @@ $( "#accordion" ).accordion({ active: 3 });
 		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_3" id="customaddress_street2_3" value="" placeholder="Address Line 2" type="text"><br>
 		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_3" id="customaddress_city_3" value="" placeholder="City" type="text">
 		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_3" id="customaddress_state_3" value="" placeholder="State" type="text">
-		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_3" id="customaddress_zip_3" value="" placeholder="Zip Code" type="number">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_3" id="customaddress_zip_3" value="" max="99999" placeholder="Zip Code" type="number">
                
                 </div>
 		    	</div></td></tr>
@@ -420,7 +420,7 @@ $( "#accordion" ).accordion({ active: 3 });
 		    	<input style="vertical-align: middle;" size="63" name="customaddress_street2_4" id="customaddress_street2_4" value="" placeholder="Address Line 2" type="text"><br>
 		    	<input style="vertical-align: middle;" size="16" name="customaddress_city_4" id="customaddress_city_4" value="" placeholder="City" type="text">
 		    	State:<input style="vertical-align: middle;" size="4" name="customaddress_state_4" id="customaddress_state_4" value="" placeholder="State" type="text">
-		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_4" id="customaddress_zip_4" value="" placeholder="Zip Code" type="number">
+		    	Zip:<input style="vertical-align: middle;" size="8" name="customaddress_zip_4" id="customaddress_zip_4" value="" max="99999" placeholder="Zip Code" type="number">
                
                 </div>
 		    	</div></td></tr>
@@ -444,7 +444,7 @@ $( "#accordion" ).accordion({ active: 3 });
            <th class="header">PID</th>
            <th class="header">Last Name</th>
            <th class="header">First Name</th>
-           <th class="header" style="text-align: left;">Custom delivery address</th>
+           <th class="header" style="text-align: left;">Delivery Address</th>
            <th class="header">Selection</th>
            <th class="header">Delivery option</th>
            <th class="header">Upgrade Charge</th>
@@ -460,14 +460,14 @@ $( "#accordion" ).accordion({ active: 3 });
             <td>Clark</td>
             <td>Kent</td>
             <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_0"></label>
-                1200 Torgersen Hall<br><br><br><br><br>
+                1200 Torgersen Hall
             </td>
             <td>
                 Macbook Pro<br><a indepth="true" href="default2.html">Change</a> 
             </td>
             <td> Direct Delivery </td>
             <td style="text-align: center;"> $0  </td>
-            <td style="text-align: center;"><input name="approve_1" id="new_Macbook Pro" disabled="" type="checkbox"><label for="approve_1"></label></td></tr>
+            <td style="text-align: center;"><input name="approve_1" id="new_Macbook Pro" type="checkbox"><label for="new_Macbook Pro"></label></td></tr>
     
     	<tr>
             <td><input name="pid2_1" id="pid2_1" value="jawalker" size="12" placeholder="PID" type="text">
@@ -476,14 +476,14 @@ $( "#accordion" ).accordion({ active: 3 });
             <td>Jacques</td>
             <td>Walker</td>
             <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_1"></label>
-                 <br><br><br><br><br>
+                 Default Address
             </td>
             <td>
                 PC<br><a indepth="true" href="default2.html">Change</a> 
             </td>
             <td> Direct Delivery </td>
             <td style="text-align: center;"> $0  </td>
-            <td style="text-align: center;"><input name="approve_2" id="new_PC" disabled="" type="checkbox"><label for="approve_2"></label></td></tr>
+            <td style="text-align: center;"><input name="approve_2" id="new_PC" type="checkbox"><label for="new_PC"></label></td></tr>
     
     	<tr>
             <td><input name="pid2_2" id="pid2_2" value="" size="12" placeholder="PID" type="text">
@@ -491,9 +491,7 @@ $( "#accordion" ).accordion({ active: 3 });
             </td>
             <td></td>
             <td></td>
-            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_2"></label>
-                 <br><br><br><br><br>
-            </td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_2"></label></td>
             <td>
                 <br>
             </td>
@@ -507,9 +505,7 @@ $( "#accordion" ).accordion({ active: 3 });
             </td>
             <td></td>
             <td></td>
-            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_3"></label>
-                 <br><br><br><br><br>
-            </td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_3"></label></td>
             <td>
                 <br>
             </td>
@@ -523,9 +519,7 @@ $( "#accordion" ).accordion({ active: 3 });
             </td>
             <td></td>
             <td></td>
-            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_4"></label>
-                 <br><br><br><br><br>
-            </td>
+            <td style="text-align: left; vertical-align: middle;" nowrap=""><label for="custom_4"></label></td>
             <td>
                 <br>
             </td>
