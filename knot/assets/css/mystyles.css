@@ -1,6 +1,6 @@
 @CHARSET "US-ASCII";
 
-/*@import "timerstyle.css";*/
+@import "timerstyle.css";
 
 .navbar{
 	min-height: 37px;
@@ -46,4 +46,5 @@
 	left: 45px;
 	right: 45px;
 	color: #000;
+	top: 0;
 	}
