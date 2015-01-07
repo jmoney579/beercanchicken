@@ -1,6 +1,7 @@
 @CHARSET "US-ASCII";
 
 @import "timerstyle.css";
+@import "backtotop.css";
 
 .navbar{
 	min-height: 37px;
