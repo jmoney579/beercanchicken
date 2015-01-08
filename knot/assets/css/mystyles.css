@@ -32,9 +32,28 @@
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #449c8a;
 }
+.navbar-inverse .navbar-toggle{
+	border-color: #006699;
+}
+.navbar-toggle{
+	background-color: #006699;
+	opacity: 0.7;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: #CCC;
+	border-color: #CCC;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus{
+	color: #000;
+}
 .photoreel{
 	margin-top: 10px;
 	}
+.bride, .groom{
+	margin-top: 26px;
+	margin-bottom: 15px;
+	line-height: .8;
+}
 .carousel{
 	margin: 36px auto 0;
 	width: 97%;
