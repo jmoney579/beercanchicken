@@ -7,7 +7,8 @@
 <meta name="description" content="A web portfolio of work created by Jacques Walker">
 <meta name="author" content="Jacques p. Walker">
 <link href="assets/images/favicon.png" type="image/png" rel="icon" />
-<link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />
+<!--<link href="assets/lightbox/css/lightbox.css" rel="stylesheet" />-->
+<link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/js2/jquery.fullPage.css" type="text/css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
@@ -15,7 +16,7 @@
 <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script type="text/javascript" src="assets/lightbox/js/lightbox-2.6.min.js"></script>
+<!--<script type="text/javascript" src="assets/lightbox/js/lightbox-2.6.min.js"></script>-->
 <script src="assets/js2/jquery.fullPage.js"></script>
 <script src="assets/js2/nav_active.js"></script>
 <!-- Google Analytics-->
@@ -427,11 +428,6 @@
 					<a href="downloads/cms/Ensemble_Navigation_Handout.pdf">Navigation in the Ensemble CMS</a><br/>
 					<a href="downloads/cms/Ensemble_Local_Assets_Handout.pdf">Local Assets in the Ensemble CMS</a><br/><br/>
 </article>
-      <!--Function for ReadMore-->
-  		<script src="assets/js2/readmore.js"></script>
-  		<script>
-    		$( window ).load(function() {$('article').readmore({maxHeight: 98, heightMargin: 16});});
-  		</script>
 <!--End Portfolio Section-->
     </section>
   </div>
@@ -486,8 +482,19 @@
 <!--End Contact Section-->
 
 </div>
+<!-- All of the scripts -->
 <a href="#" class="cd-top">Top</a>
-<script src="assets/js2/backtotop.js"></script> <!-- Gem jQuery -->
+<script src="assets/js2/backtotop.js"></script>
+<script src="assets/js2/readmore.js"></script>
+  <script>
+    $( window ).load(function() {$('article').readmore({maxHeight: 98, heightMargin: 16});});
+  </script>
+  <script>
+    Galleria.loadTheme('assets/themes/classic/galleria.classic.min.js');
+    Galleria.run('.gallery');
+  </script>
+ <script src="assets/bootstrap.js/bootstrap.min.js"></script>
+ <script src="assets/js2/galleria-1.4.min.js"></script>
 </main>
 </div>
 </body>
