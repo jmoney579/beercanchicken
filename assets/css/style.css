@@ -36,6 +36,7 @@ a{
 }
 a:hover{
 	color: #CCC;
+	text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6{;
 	margin-bottom: 4px;
@@ -58,7 +59,7 @@ header{
     	float: left;
     	height: 100%;*/
 }
-li{
+.resume li{
 	list-style: circle outside none;
 	}
 .tiny_header{
@@ -72,15 +73,15 @@ li{
 .content {
     	display: block;
     	margin: 0 0 0 13px;
-    	padding: 10px 0 0 10px;
+    	padding: 10px 50px 0 10px;
     	position: relative;
-	max-width: 960px;
+	max-width: 1024px;
 	min-height: 400px;
 }
 .slim.content{
 	top: 0;
 }
-nav{
+/*nav{
     	background: url('../img/menubar2.jpg') repeat-y scroll top center #2c2d2f;
     	color: #000000;
     	display: block;
@@ -111,6 +112,10 @@ nav ul li a{
     display: block;
     margin-left: 31px;
     position: fixed;
+    width: 30px;
+}*/
+#logo img{
+   	width: 45px;
 }
 .mobile_nav{
 	display: none;
@@ -119,9 +124,7 @@ nav ul li a{
 	color: #CCC;
 	}
 #soc_media{
-	margin: 18px 18px 18px 34px;
-	position: fixed;
-	bottom: 0;
+	margin-top: 5px;
 	}
 #soc_media img{
 	width: 40px;
@@ -152,6 +155,7 @@ main{
 	font-family:'Eras Light ITC';
 	background: url('../img/stoney_overlay.png') center center no-repeat #564f7b;
 	background-size: cover;
+	margin-top: 40px;
 }
 .home {
 	/*background-cover: #104352;
@@ -174,15 +178,18 @@ video#bgvid {
 	background: url(/assets/images/cloudscape2.png) no-repeat;
 	background-size: cover;
 }
-.slim{
-	max-width: 570px;
-}
+/*.slim{
+	max-width: 1024px;
+}*/
 #intro{
 	margin-top: -95px;
 }
 .resume{
 	/*background: url('../img/stoney_overlay.png') center center no-repeat #564f7b;*/
 	background-size: cover;
+}
+. resume section{
+	padding-right: 40px;
 }
 .portfolio {
 	/*background-cover: #104352;
@@ -244,7 +251,7 @@ h3.nowrap{
 .fp-tableCell{
     padding: 0 65px 0 200px;
     height: auto !important;
-    padding: 15px 65px 0 200px;
+    padding: 15px 65px 0 123px;
 	min-height: 700px;
 }
 }
@@ -252,7 +259,7 @@ h3.nowrap{
 	margin-top: -30px;
 	}
 .fp-controlArrow.fp-prev{
-	left: 155px;
+	left: 40px;
 	height: 85px;
     	width: 46px;
 	border: none;
@@ -261,11 +268,12 @@ h3.nowrap{
 }
 .fp-controlArrow.fp-next{
 	height: 85px;
-    width: 46px;
+    	width: 46px;
 	border: none;
 	background: url('../img/next_arrow.png') center center no-repeat transparent;
 	margin-top: -33px;
 	position: fixed;
+	right: 40px;
 }
 .fp-slidesNav {
 	margin-left: 0 !important;
@@ -301,6 +309,49 @@ h3.nowrap{
 a.readmore-js-toggle{
 	font-size: 17px;
 	}
+/*--Bootstrap Overides--*/
+/*.navbar{
+	height: 51px;
+}*/
+.navbar-nav > li > a{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.navbar-inverse{
+	border-color: transparent;
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: #ffd700;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+	background-color: #222;
+}
+hr{
+	margin-bottom: 2px;
+	margin-top: 4px;
+}
+.dropdown-menu{
+	background-color: #222;
+	padding: 0;
+}
+.dropdown-menu i{
+	padding-right: 10px;
+}
+.dropdown-menu > li > a{
+	font-family: "Eras Light ITC";
+	font-variant: small-caps;
+	font-size: 19px;
+	color: #CCC;
+	padding: 5px 20px;
+}
+.dropdown-menu > li.normnav {
+    display: inline-block;
+    float:left;
+}
+.open > ul {
+    display: inline-flex !important;
+}
+
 /*---Back to Top---*/
 .cd-top {
   display: inline-block;
