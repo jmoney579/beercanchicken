@@ -52,12 +52,8 @@ h4.second {
 header{
 	font-size: 35px;
  	margin: 10px 0 0;
-    	padding: 10px 10px 0 0;
-    	/*position: relative;
-   	top: 50%;
-	display: block;
-    	float: left;
-    	height: 100%;*/
+    padding: 10px 10px 0 0;
+
 }
 .resume li{
 	list-style: circle outside none;
@@ -71,49 +67,16 @@ header{
 	float: none;
 }
 .content {
-    	display: block;
-    	margin: 0 0 0 13px;
-    	padding: 10px 50px 0 10px;
-    	position: relative;
+    display: block;
+    margin: 0 0 0 13px;
+    padding: 10px 50px 0 10px;
+    position: relative;
 	max-width: 1024px;
 	min-height: 400px;
 }
 .slim.content{
 	top: 0;
 }
-/*nav{
-    	background: url('../img/menubar2.jpg') repeat-y scroll top center #2c2d2f;
-    	color: #000000;
-    	display: block;
-   	float: left;
-    	height: 100%;
-    	position: fixed;
-    	width: 147px;
-    	z-index: 100;
-	box-shadow: 0 0 4px #000000;
-	font-size: 13px;
-	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
-}
-nav ul{
-	position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);
-}
-nav ul li{
-	list-style-type: none;
-}
-nav ul li a{
-	color: #FFF;
-	text-decoration: none;
-	line-height: 20px;
-}
-#logo {
-    display: block;
-    margin-left: 31px;
-    position: fixed;
-    width: 30px;
-}*/
 #logo img{
    	width: 45px;
 }
@@ -133,7 +96,7 @@ nav ul li a{
 	box-shadow: 0px 0px 7px  #ccc;
 }
 #hd {
-    top: 6px;
+    bottom: 6px;
     color: #EDCF41;
     font-family: 'Eras Light ITC';
     font-size: 12px;
@@ -187,9 +150,6 @@ video#bgvid {
 .resume{
 	/*background: url('../img/stoney_overlay.png') center center no-repeat #564f7b;*/
 	background-size: cover;
-}
-. resume section{
-	padding-right: 40px;
 }
 .portfolio {
 	/*background-cover: #104352;
@@ -310,9 +270,6 @@ a.readmore-js-toggle{
 	font-size: 17px;
 	}
 /*--Bootstrap Overides--*/
-/*.navbar{
-	height: 51px;
-}*/
 .navbar-nav > li > a{
 	padding-top: 4px;
 	padding-bottom: 4px;
