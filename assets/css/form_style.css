@@ -28,7 +28,7 @@ textarea{
 	height: 200px;
 	font-size: 14px;
 	}
-button[type="submit"]{
+.send, button[type="submit"]{
 	height: 30px;
 	width: 64px;
 	border: 2px solid #CCC;
@@ -36,15 +36,16 @@ button[type="submit"]{
 	color: #fff;
 	border-radius: 5px;
 	font-size: 15px;
+	margin-top: 5px;
 	}
-button[type="submit"]:hover{
+.send:hover, button[type="submit"]:hover{
 	box-shadow: 0 0 5px #FFF;
 	transition: all 0.4s ease 0s;
 	}
-button[type="submit"]:active{
+.send:active, button[type="submit"]:active{
 	background-color: #2C9F08;
 	transition: none;
-	}
+	}*/
 .contact_form{
 	width:100%;
 	max-width:600px;
