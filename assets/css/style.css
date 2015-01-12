@@ -133,7 +133,7 @@ nav ul li a{
 	box-shadow: 0px 0px 7px  #ccc;
 }
 #hd {
-    top: 6px;
+    bottom: 5px;
     color: #EDCF41;
     font-family: 'Eras Light ITC';
     font-size: 12px;
