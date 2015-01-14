@@ -2,21 +2,30 @@
 
 @import "timerstyle.css";
 @import "backtotop.css";
-
+body{
+	background: url('../img/home_bkgd.png') bottom center no-repeat transparent;
+	background-size: contain;
+}
+footer{
+	padding: 20px 0 0;
+}
+footer a{
+	color: #ffd700;
+}
 .navbar{
 	min-height: 37px;
 	margin: 0 auto;
 	width: 97%;
 	}		
 .navbar-inverse{
-	background-color: #FFF;
+	background-color: transparent;
 	}
 .navbar-nav > li > a {
-    padding-bottom: 8px;
-    padding-top: 8px;
+    	padding-bottom: 8px;
+    	padding-top: 8px;
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: #000;
+    	color: #000;
 }
 .navbar-brand{
 	height: 36px;
@@ -26,11 +35,11 @@
 	color: #449c8a;
 	}
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: transparent;
-    color: #449c8a;
+    	background-color: transparent;
+    	color: #449c8a;
 }
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #449c8a;
+    	background-color: #449c8a;
 }
 .navbar-inverse .navbar-toggle{
 	border-color: #006699;
@@ -46,6 +55,13 @@
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus{
 	color: #000;
 }
+.navbar-fixed-top{
+	position: absolute;
+}
+.navbar-wrapper{
+	z-index: 200;
+	margin-top: 0px;
+}
 .photoreel{
 	margin-top: 10px;
 	}
@@ -54,10 +70,30 @@
 	margin-bottom: 15px;
 	line-height: .8;
 }
+.bride_title, .groom_title{
+	background-color: pink;
+	border: 1px soild pink;
+	border-radius: 15px;
+	display: block;
+	float: left;
+	margin-right: -8px;
+	margin-top: 8px;
+	padding-bottom: 2px;
+	padding-left: 9px;
+	width: 36px;
+	color: #FFF;
+}
+.groom_title{
+	background-color: #6ea5ea;
+	border: 1px solid #6ea5ea;
+}
+	
 .carousel{
-	margin: 36px auto 0;
+	margin: -4px auto 0;
 	width: 97%;
 	border-bottom: 1px solid #000;
+	background: url('../img/heart.png') right top no-repeat transparent;
+	z-index: 100;
 	}
 .carousel .item{
 	background-color: transparent;
@@ -67,4 +103,22 @@
 	right: 45px;
 	color: #000;
 	top: 0;
+	padding-top: 50px;
 	}
+.gallery{
+	display: block;
+	clear: both;
+	float: none;
+	}
+.gallery img {
+    	border: 1px solid #fff;
+    	box-shadow: 0 0 2px #000;
+    	height: 100%;
+    	margin: 3px;
+    	padding: 0;
+    	width: 230px;
+}
+.cd-top{
+	height: 50px;
+	width: 50px;
+}
