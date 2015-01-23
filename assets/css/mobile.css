@@ -47,7 +47,7 @@ nav{
 	}
 
 @media (max-width: 850px){
-	.fp-slide {
+.fp-slide {
     float: none;
 }
 .fp-controlArrow, .fp-slidesNav{
@@ -62,6 +62,9 @@ nav{
 section{
 	border-bottom: 1px solid #FFF;
 }
+.pull-left{
+	display: block;
+	}
 }
 @media (max-width: 800px){
 .fp-tableCell {
