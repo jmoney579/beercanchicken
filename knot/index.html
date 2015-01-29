@@ -87,25 +87,52 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <div class="container">
-            <div class="carousel-caption">
-                <div class="big-countdown">
-                    <div>
-                        <span data-time="1455476400" class="kkcountdown-1"></span>
-                    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+		  	<div class="advert">
+            <div class="big-countdown">
+                <div>
+                    <span data-time="1455476400" class="kkcountdown-1"></span>
+                </div>
                 </div>
               <h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
-          </div>
-        </div>
-      </div>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item carol1 active">
+    </div>
+
+    <div class="item carol2">
+    </div>
+
+    <div class="item carol3">
+    </div>
+
+    <div class="item carol4">
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 
 
+	<div class="col-lg-12 rsvp">
+	<p>September 6th, 2015, 12:30pm @ TBD<br/>
+	<a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+	</div>
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -114,9 +141,6 @@
 
       <!-- Two columns of text below the carousel -->
       <div class="row">
-	<div class="col-lg-12 photoreel">
-	Photoreel goes here
-	</div>
 	<hr/>
         <div class="col-sm-6">
           <h2 class="text-left featurette-heading bride">
@@ -182,14 +206,13 @@
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-left">&copy; 2014 <a href="http://jacqueswalker.com">Jacques Walker</a></p>
-      </footer>
 	<a href="#" class="cd-top">Top</a>
 	<script src="../assets/js2/backtotop.js"></script>
     </div><!-- /.container -->
-
-
+    <footer>
+    	<p class="pull-right">&copy; 2014</p>
+    </footer>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
