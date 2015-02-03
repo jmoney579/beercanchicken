@@ -24,14 +24,15 @@ footer p{
 	width: 97%;
 	}		
 .navbar-inverse{
-	background-color: #FFF;
+	background: url('../img/nav_back.png') repeat-x center center transparent;
+	border-color: #FFF;
 	}
 .navbar-nav > li > a {
     	padding-bottom: 8px;
     	padding-top: 8px;
 }
 .navbar-inverse .navbar-nav > li > a {
-    	color: #000;
+    	color: #FFF;
 }
 .navbar-brand{
 	height: 36px;
@@ -52,14 +53,13 @@ footer p{
 }
 .navbar-toggle{
 	background-color: #006699;
-	opacity: 0.7;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
 	background-color: #CCC;
 	border-color: #CCC;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus{
-	color: #000;
+	color: #FFF;
 }
 .navbar-fixed-top{
 	position: absolute;
@@ -69,10 +69,12 @@ footer p{
 	margin-top: 0px;
 }
 .rsvp{
-	margin-top: 10px;
-	background-color: #e2c264;
+	margin-top: -103px;
+	background:url('../img/advert_back.png') repeat-x center center transparent;
 	text-align: center;
 	padding: 10px 0;
+	border-top: 2px solid #FFF;
+	color: #FFF;
 	}
 .rsvp .btn{
 	margin-top: 8px;
@@ -106,23 +108,26 @@ footer p{
 	border-bottom: 1px solid #000;
 	z-index: 100;
 	max-width: 2000px;
+	height: 800px;
 	}
 .carol1{
-	;
-	background: url('../img/present.jpg') left 40px repeat-x transparent;
+	background: url('../img/present.jpg') center center repeat-x transparent;
 	}
 .carol2{
-	background: url('../img/flame.jpg') right 40px repeat-x transparent;
+	background: url('../img/flame.jpg') center center repeat-x transparent;
 	}
 .carol3{
-	background: url('../img/wedding_rings.jpg') right 40px no-repeat transparent;
+	background: url('../img/wedding_rings.jpg') right center no-repeat transparent;
 	}
 .carol4{
-	background: url('../img/carol1.png') left top repeat-x transparent
+	background: url('../img/carol1.png') left center repeat-x transparent
+	}
+.carol1, .carol2, .carol3, .carol4{
+	background-size: cover;
 	}
 .carousel .item{
 	background-color: transparent;
-	height: 539px;
+	height: 800px;
 	}
 .carousel-caption{
 	left: 45px;
@@ -132,8 +137,11 @@ footer p{
 	padding-top: 50px;
 	}
 .carousel-control{
-	height: 497px;
+	height: 759px;
 	top: 41px;
+	}
+.carousel-indicators{
+	bottom: 99px;
 	}
 .advert{
 	margin: 5% 16% 0;
@@ -189,9 +197,7 @@ footer p{
 	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
 		font-size: 27px;
 		}
-	.carol1, .carol2{
-		background-position: center 40px;
-}
+
 @media (max-width: 964px){
 	.big-countdown > div > span{
 		font-size: 72px;
@@ -211,6 +217,16 @@ footer p{
 	.advert{
 		margin-top: 7%;
 		}
+	.navbar-inverse{
+		background-color: #000;
+		background-image: none;
+		}
+	.carol1, .carol2, .carol4{
+		background-position: center 40px;
+		}
+	 .carol3{
+	 	background-position: right 40px;
+	 	}
 }
 @media (max-width: 600px){
 	.carousel .item{
@@ -223,5 +239,8 @@ footer p{
 		}
 	.navbar-collapse.collapse.col{
 		background-color: #FFF;
+		}
+	.carousel-indicators{
+		bottom: 386px;
 		}
 }
