@@ -69,7 +69,7 @@ footer p{
 	margin-top: 0px;
 }
 .rsvp{
-	margin-top: -103px;
+	margin-top: -108px;
 	background:url('../img/rsvp_bkgd.png') repeat-x center center transparent;
 	text-align: center;
 	padding: 10px 0;
@@ -79,6 +79,9 @@ footer p{
 .rsvp .btn{
 	margin-top: 8px;
 	}
+.rsvp p{
+	font-size: 19px;
+}
 .bride, .groom{
 	margin-top: 26px;
 	margin-bottom: 15px;
@@ -150,6 +153,15 @@ footer p{
 	}
 .advert h1, .advert p{
 	color: white;
+	text-shadow: 1px 1px #000;
+	}
+.advert h1{
+	font-size: 66px;
+	text-align: center;
+	}
+.advert p{
+	font-size: 33px;
+	text-align: justify;
 	}
 .big-countdown{
 	width: 100%;
@@ -182,28 +194,43 @@ footer p{
 	height: 50px;
 	width: 50px;
 }
-@media (max-width: 1268px){
+@media (max-width: 1289px){
 	.big-countdown > div > span{
 		font-size: 100px;
 		}
 	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
-		font-size: 29px;
+		font-size: 30px;
 		}
 }
-@media (max-width: 1057px){
+@media (max-width: 1073px){
 	.big-countdown > div > span{
 		font-size: 90px;
 		}
 	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
 		font-size: 27px;
 		}
-
-@media (max-width: 964px){
+	.advert h1{
+		font-size: 56px;
+		}
+	.advert p{
+		font-size: 27px;
+		}
+}
+@media (max-width: 969px){
+	.big-countdown{
+		margin: 0 auto;
+	}
 	.big-countdown > div > span{
 		font-size: 72px;
 		}
 	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
 		font-size: 23px;
+		}
+	.advert h1{
+		font-size: 60px;
+		}
+	.advert p{
+		font-size: 25px;
 		}
 	.big-countdown{
 		width: 523px;
@@ -227,10 +254,19 @@ footer p{
 	 .carol3{
 	 	background-position: right 40px;
 	 	}
+	.advert h1{
+		font-size: 55px;
+		}
+	.advert p{
+		font-size: 20px;
+		}
 }
 @media (max-width: 600px){
+	.big-countdown{
+		width: 301px;
+		}
 	.carousel .item{
-		height: 492px;
+		height: 565px;
 		margin-top: 14px;
 		}
 	.carousel-control{
@@ -242,6 +278,15 @@ footer p{
 		}
 	.carousel-indicators{
 		bottom: 386px;
+		}
+	.advert h1{
+		font-size: 40px;
+		}
+	.advert p{
+		font-size: 15px;
+		}
+	.carousel-indicators{
+		display: none;
 		}
 }
 @media (max-width: 400px){
@@ -256,9 +301,10 @@ footer p{
 		margin-right: 12%;
 		}
 	.carousel .item{
-		height: 525px;
+		height: 555px;
 		}
-	.carousel-indicators{
-		display: none;
-		}
+	.rsvp p{
+		font-size: 17px;
+	}
+
 }
