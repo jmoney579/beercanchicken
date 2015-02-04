@@ -22,6 +22,7 @@ footer p{
 	min-height: 37px;
 	margin: 0 auto;
 	width: 97%;
+	max-width: 2000px;
 	}		
 .navbar-inverse{
 	background: url('../img/nav_back.png') repeat-x center center transparent;
@@ -123,7 +124,7 @@ footer p{
 	background: url('../img/wedding_rings.jpg') right center no-repeat transparent;
 	}
 .carol4{
-	background: url('../img/carol1.png') left center repeat-x transparent
+	background: url('../img/foot.jpg') center center no-repeat transparent
 	}
 .carol1, .carol2, .carol3, .carol4{
 	background-size: cover;
