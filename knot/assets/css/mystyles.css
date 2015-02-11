@@ -3,7 +3,12 @@
 @import "timerstyle.css";
 @import "backtotop.css";
 body{
-	background-size: contain;
+	background:url('../img/page_bkgd.jpg') top center no-repeat transparent;
+	padding: 0;
+	background-size: cover;
+}
+.no_back{
+	background-image: none;
 }
 footer{
 	padding: 20px 0 0;
@@ -70,18 +75,20 @@ footer p{
 	margin-top: 0px;
 }
 .rsvp{
-	margin-top: -108px;
-	background:url('../img/rsvp_bkgd.png') repeat-x center center transparent;
+	margin-top: -106px;
+	background:url('../img/rsvp_bkgd2.png') repeat-x center center transparent;
 	text-align: center;
-	padding: 10px 0;
+	padding: 0;
 	border-top: 2px solid #FFF;
 	color: #FFF;
+	height: 108px;
 	}
 .rsvp .btn{
-	margin-top: 8px;
+	margin-top: 12px;
 	}
 .rsvp p{
 	font-size: 19px;
+	padding-top: 15px;
 }
 .bride, .groom{
 	margin-top: 26px;
@@ -191,6 +198,27 @@ footer p{
     	padding: 0;
     	width: 230px;
 }
+/*--Interior Page Mods--*/
+.wrapper{
+
+}
+.wrapper .container{
+    	margin: 0 78px;
+    	padding: 0 30px;
+}
+.wrapper .featurette-divider {
+    margin: 80px 0 0;
+}
+.wrapper .page{
+	background: url('../img/content_bkgd.png') repeat-y right center #fff;
+}
+.wrapper .footer{
+	padding: 0;
+}
+.wrapper footer p{
+	padding-right: 15px;
+}
+/*-----End Mods-----*/
 .cd-top{
 	height: 50px;
 	width: 50px;
@@ -216,6 +244,15 @@ footer p{
 	.advert p{
 		font-size: 27px;
 		}
+}
+@media (max-width: 991px){
+	.wrapper .page{
+		background-image: none;
+		padding-top: 60px;
+	}
+	.wrapper footer p{
+		color: #000;
+	}
 }
 @media (max-width: 969px){
 	.big-countdown{
