@@ -25,8 +25,8 @@ footer p{
 	}
 .navbar{
 	min-height: 37px;
-	margin: 0 auto;
-	width: 97%;
+	margin: -1px auto 0;
+	width: 100%;
 	max-width: 2000px;
 	}		
 .navbar-inverse{
@@ -115,7 +115,7 @@ footer p{
 	
 .carousel{
 	margin: -4px auto 0;
-	width: 97%;
+	width: 100%;
 	border-bottom: 1px solid #000;
 	z-index: 100;
 	max-width: 2000px;
@@ -212,11 +212,21 @@ footer p{
 .wrapper .page{
 	background: url('../img/content_bkgd.png') repeat-y right center #fff;
 }
-.wrapper .footer{
+.wrapper footer{
 	padding: 0;
+	background-image: none;
+	height: 220px;
 }
 .wrapper footer p{
 	padding-right: 15px;
+	color: #000;
+	padding-top: 175px;
+}
+.wrapper .navbar{
+	width: 100%;
+}
+.navbar>.container{
+	margin: 0;
 }
 /*-----End Mods-----*/
 .cd-top{
