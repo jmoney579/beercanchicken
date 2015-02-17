@@ -49,7 +49,7 @@ footer p{
 	}
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     	background-color: transparent;
-    	color: #449c8a;
+    	color: #449c8a !important;
 }
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     	background-color: #449c8a;
@@ -227,6 +227,9 @@ footer p{
 }
 .navbar>.container{
 	margin: 0;
+}
+.nav.navbar-nav.blacktext a{
+	color: #000;
 }
 /*-----End Mods-----*/
 .cd-top{
