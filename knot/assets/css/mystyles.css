@@ -1,0 +1,361 @@
+@CHARSET "US-ASCII";
+
+@import "timerstyle.css";
+@import "backtotop.css";
+body{
+	background:url('../img/page_bkgd.jpg') top center no-repeat transparent;
+	padding: 0;
+	background-size: cover;
+}
+.no_back{
+	background-image: none;
+}
+footer{
+	padding: 20px 0 0;
+	background: url('../img/home_bkgd2.png') bottom center no-repeat transparent;
+	width: 100%;
+	height: 362px;
+	opacity: .7;
+}
+footer a{
+	color: #ffd700;
+}
+footer p{
+	padding: 318px 5px 0;
+	}
+.navbar{
+	min-height: 37px;
+	margin: -1px auto 0;
+	width: 100%;
+	max-width: 2000px;
+	}		
+.navbar-inverse{
+	background: url('../img/nav_back.png') repeat-x center center transparent;
+	border-color: #FFF;
+	}
+.navbar-nav > li > a {
+    	padding-bottom: 8px;
+    	padding-top: 8px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    	color: #FFF;
+}
+.navbar-brand{
+	height: 36px;
+	line-height: 7px;
+	}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+	color: #449c8a;
+	}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    	background-color: transparent;
+    	color: #449c8a !important;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    	background-color: #449c8a;
+}
+.navbar-inverse .navbar-toggle{
+	border-color: #006699;
+}
+.navbar-toggle{
+	background-color: #006699;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
+	background-color: #CCC;
+	border-color: #CCC;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus{
+	color: #FFF;
+}
+.navbar-fixed-top{
+	position: absolute;
+}
+.navbar-wrapper{
+	z-index: 200;
+	margin-top: 0px;
+}
+.rsvp{
+	margin-top: -106px;
+	background:url('../img/rsvp_bkgd2.png') repeat-x center center transparent;
+	text-align: center;
+	padding: 0;
+	border-top: 2px solid #FFF;
+	color: #FFF;
+	height: 108px;
+	}
+.rsvp .btn{
+	margin-top: 12px;
+	}
+.rsvp p{
+	font-size: 19px;
+	padding-top: 15px;
+}
+.bride, .groom{
+	margin-top: 26px;
+	margin-bottom: 15px;
+	line-height: .8;
+}
+.bride_title, .groom_title{
+	background-color: pink;
+	border: 1px soild pink;
+	border-radius: 15px;
+	display: block;
+	float: left;
+	margin-right: -8px;
+	margin-top: 8px;
+	padding-bottom: 2px;
+	padding-left: 9px;
+	width: 36px;
+	color: #FFF;
+}
+.groom_title{
+	background-color: #6ea5ea;
+	border: 1px solid #6ea5ea;
+}
+	
+.carousel{
+	margin: -4px auto 0;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	z-index: 100;
+	max-width: 2000px;
+	height: 800px;
+	}
+.carol1{
+	background: url('../img/present.jpg') center center repeat-x transparent;
+	}
+.carol2{
+	background: url('../img/flame.jpg') center center repeat-x transparent;
+	}
+.carol3{
+	background: url('../img/wedding_rings.jpg') right center no-repeat transparent;
+	}
+.carol4{
+	background: url('../img/foot.jpg') center center no-repeat transparent
+	}
+.carol1, .carol2, .carol3, .carol4{
+	background-size: cover;
+	}
+.carousel .item{
+	background-color: transparent;
+	height: 800px;
+	}
+.carousel-caption{
+	left: 45px;
+	right: 45px;
+	color: #000;
+	top: 0;
+	padding-top: 50px;
+	}
+.carousel-control{
+	height: 759px;
+	top: 41px;
+	}
+.carousel-indicators{
+	bottom: 99px;
+	}
+.advert{
+	margin: 5% 16% 0;
+	position: absolute;
+	z-index: 1;
+	}
+.advert h1, .advert p{
+	color: white;
+	text-shadow: 1px 1px #000;
+	}
+.advert h1{
+	font-size: 66px;
+	text-align: center;
+	}
+.advert p{
+	font-size: 33px;
+	text-align: justify;
+	}
+.big-countdown{
+	width: 100%;
+	}
+.big-countdown > div > span{
+	font-size: 120px;
+	color: #FFF;
+	text-shadow: none;
+	}
+.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+	color: #FFF;
+	font-size: 36px;
+	margin-right: 8px;
+	text-transform: uppercase;
+	}
+.gallery{
+	display: block;
+	clear: both;
+	float: none;
+	}
+.gallery img {
+    	border: 1px solid #fff;
+    	box-shadow: 0 0 2px #000;
+    	height: 100%;
+    	margin: 3px;
+    	padding: 0;
+    	width: 230px;
+}
+/*--Interior Page Mods--*/
+.wrapper{
+
+}
+.wrapper .container{
+    	margin: 0 78px;
+    	padding: 0 30px;
+}
+.wrapper .featurette-divider {
+    margin: 80px 0 0;
+}
+.wrapper .page{
+	background: url('../img/content_bkgd.png') repeat-y right center #fff;
+}
+.wrapper footer{
+	padding: 0;
+	background-image: none;
+	height: 220px;
+}
+.wrapper footer p{
+	padding-right: 15px;
+	color: #000;
+	padding-top: 175px;
+}
+.wrapper .navbar{
+	width: 100%;
+}
+.navbar>.container{
+	margin: 0;
+}
+/*.nav.navbar-nav.blacktext a{
+	color: #000;
+}*/
+/*-----End Mods-----*/
+.cd-top{
+	height: 50px;
+	width: 50px;
+}
+@media (max-width: 1289px){
+	.big-countdown > div > span{
+		font-size: 100px;
+		}
+	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+		font-size: 30px;
+		}
+}
+@media (max-width: 1073px){
+	.big-countdown > div > span{
+		font-size: 90px;
+		}
+	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+		font-size: 27px;
+		}
+	.advert h1{
+		font-size: 56px;
+		}
+	.advert p{
+		font-size: 27px;
+		}
+}
+@media (max-width: 991px){
+	.wrapper .page{
+		background-image: none;
+		padding-top: 60px;
+	}
+	.wrapper footer p{
+		color: #000;
+	}
+}
+@media (max-width: 969px){
+	.big-countdown{
+		margin: 0 auto;
+	}
+	.big-countdown > div > span{
+		font-size: 72px;
+		}
+	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+		font-size: 23px;
+		}
+	.advert h1{
+		font-size: 60px;
+		}
+	.advert p{
+		font-size: 25px;
+		}
+	.big-countdown{
+		width: 523px;
+		}
+}
+@media (max-width: 767px){
+	.big-countdown{
+		margin: 0 auto;
+		width: 408px;
+		}
+	.advert{
+		margin-top: 7%;
+		}
+	.navbar-inverse{
+		background-color: #000;
+		background-image: none;
+		}
+	.carol1, .carol2, .carol4{
+		background-position: center 40px;
+		}
+	 .carol3{
+	 	background-position: right 40px;
+	 	}
+	.advert h1{
+		font-size: 55px;
+		}
+	.advert p{
+		font-size: 20px;
+		}
+}
+@media (max-width: 600px){
+	.big-countdown{
+		width: 301px;
+		}
+	.carousel .item{
+		height: 565px;
+		margin-top: 14px;
+		}
+	.carousel-control{
+		height: 453px;
+		top: 54px;
+		}
+	.navbar-collapse.collapse.col{
+		background-color: #FFF;
+		}
+	.carousel-indicators{
+		bottom: 386px;
+		}
+	.advert h1{
+		font-size: 40px;
+		}
+	.advert p{
+		font-size: 15px;
+		}
+	.carousel-indicators{
+		display: none;
+		}
+}
+@media (max-width: 400px){
+	.big-countdown > div > span{
+		font-size: 50px;
+		}
+	.big-countdown{
+		margin: 30px auto 0;
+		width: 250px;
+		}
+	.advert{
+		margin-right: 12%;
+		}
+	.carousel .item{
+		height: 555px;
+		}
+	.rsvp p{
+		font-size: 17px;
+	}
+
+}
