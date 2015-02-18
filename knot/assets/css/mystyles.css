@@ -228,6 +228,15 @@ footer p{
 .navbar>.container{
 	margin: 0;
 }
+.wrapper .featurette iframe{
+	min-width: 300px;
+	}
+.dropdown-toggle.open {
+    color: #000 !important;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
+	background-color: #999;
+	}
 /*.nav.navbar-nav.blacktext a{
 	color: #000;
 }*/
@@ -339,6 +348,9 @@ footer p{
 	.carousel-indicators{
 		display: none;
 		}
+	.wrapper .container {
+    	margin: 0 15px;
+    	}
 }
 @media (max-width: 400px){
 	.big-countdown > div > span{
@@ -356,6 +368,6 @@ footer p{
 		}
 	.rsvp p{
 		font-size: 17px;
-	}
+		}
 
 }
