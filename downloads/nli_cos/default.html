@@ -82,7 +82,14 @@
         });
     }
 
-</script>
+	</script>
+	<script type="text/javascript">
+	jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+	</script>
 <link rel="stylesheet" type="text/css" href="jquery-ui-1.10.3.custom.css" media="all">
 <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" media="all">
 <link rel="stylesheet" type="text/css" href="default.css" media="all">
@@ -96,6 +103,53 @@
          	<div id="header">
 	        	NLI  
 	    	</div>
+            <ul class="regular-nav">
+	            <li class="navbaritem">
+			    <a indepth="true" href="default.html">
+			    	Computer Selection
+			    </a>
+	            </li>
+	            <li class="navbaritem">
+			    <a indepth="true" href="default_001.html">
+			    	College Administrator
+			    </a>
+	            </li>
+	            <li class="navbaritem">
+			    <a indepth="true" href="default_002.html">
+			    	Department Administrator
+			    </a>
+	            </li>
+	            <li class="navbaritem">
+			    <a indepth="true" href="default_003.html">
+			    	Order Summary
+			    </a>
+	            </li>
+    		<div id="guest_serv">
+    		    
+            	<li class="navbaritem">
+            		<a indepth="true" target="_top" class="help" href="default_005.html">Help</a>
+
+            	</li>
+            
+    			 <div id="login">       
+    		
+   			
+        			<p><span class="login_name">Hello admin</span> |</p>
+        		
+            		<a indepth="true" class="logout_link" href="#">Logout</a>
+
+			</div>	
+			</div>
+			</ul>
+		<div class="mobile-nav">
+     		<div class="menu-btn" id="menu-btn">
+			<div></div>
+			<span></span>
+			<span></span>
+			<span></span>
+     	</div>
+ <span class="nav-text">menu</span>
+     	<div class="responsive-menu">
             <ul>
 	            <li class="navbaritem">
 			    <a indepth="true" href="default.html">
@@ -132,9 +186,11 @@
             		<a indepth="true" class="logout_link" href="#">Logout</a>
 
 			</div>	
-			</div></ul>
 			</div>
-        
+			</ul>
+     	</div>
+		</div>
+			</div>
  
 
 
@@ -198,7 +254,7 @@
 		              	</tr>
 		            
 		            	<tr>
-		            	   <td><img alt="MAC with BAM" src="dsc08928_1.jpg"> </td><td><h4>Macbook Pro with BAM</h4>Same as 2015-MPD but with a monitor</td>
+		            	   <td><img alt="MAC with Monitor" src="dsc08928_1.jpg"> </td><td><h4>Macbook Pro with BAM</h4>Same as 2015-MPD but with a monitor</td>
 		              	   <td><input id="group3" name="group1" value="3" onclick="myFunction()" type="radio"><label for="group3"></label><br><span class="upgrade">Upgrade Charge: $1100</span></td>
 		              	</tr>
 		            
@@ -210,7 +266,7 @@
 		        </tbody></table>
 		    </div>
 		    <div class="filter">
-				<table style="width: 477px ! important; text-align: center;">
+				<table style="text-align: center;">
 						<tbody><tr><th>Computer Type</th>
 		                	<td><input id="PC" ame="PC" value="PC" onclick="document.getElementById('PConly').value='1';document.getElementById('Maconly').value='0';document.getElementById('Tabletonly').value='0'; document.forms['selectmachine'].submit();" type="checkbox"><label for="PC"></label><p>PC</p></td>
 		                	<td><input id="Mac" name="Mac" value="Mac" onclick="document.getElementById('Maconly').value='1';document.getElementById('PConly').value='0';document.getElementById('Tabletonly').value='0'; document.forms['selectmachine'].submit();" type="checkbox"><label for="Mac"></label><p>Mac</p></td>
