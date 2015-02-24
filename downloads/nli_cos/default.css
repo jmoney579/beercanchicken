@@ -52,7 +52,7 @@ input[disabled]:not([type]) { cursor: not-allowed; background-color: rgb(234, 23
 input:focus:invalid, textarea:focus:invalid, select:focus:invalid { color: rgb(185, 74, 72); border-color: rgb(238, 95, 91); }
 input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus { border-color: rgb(233, 50, 45); }
 input[type="file"]:focus:invalid:focus, input[type="radio"]:focus:invalid:focus, input[type="checkbox"]:focus:invalid:focus { outline-color: rgb(233, 50, 45); }
-select { border: 1px solid rgb(204, 204, 204); background-color: white; width: 100%; max-width: 500px;}
+select { border: 1px solid rgb(204, 204, 204); background-color: white; width: 88%; max-width: 500px;}
 label { margin: 0.5em 0px 0.2em; }
 .pure-form-stacked input:not([type]) { display: block; margin: 0.25em 0px; }
 @media only screen and (max-width: 480px) {
@@ -254,3 +254,7 @@ span.nav-text {
 	#qoute{
 		display: none;
 		}
+	.upgrade{
+		font-size: 13px !important;
+		}
+}
