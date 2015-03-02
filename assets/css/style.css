@@ -308,6 +308,10 @@ hr{
 .open > ul {
     display: inline-flex !important;
 }
+/*---Font Awesome Overides---*/
+.nav .fa-border{
+	border: 1px solid #eee;
+}
 
 /*---Back to Top---*/
 .cd-top {

@@ -112,7 +112,9 @@ footer p{
 	background-color: #6ea5ea;
 	border: 1px solid #6ea5ea;
 }
-	
+.slim_title{
+	margin-top: 0;
+	}	
 .carousel{
 	margin: -4px auto 0;
 	width: 100%;
