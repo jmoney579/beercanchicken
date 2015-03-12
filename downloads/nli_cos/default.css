@@ -13,6 +13,7 @@
 #navbar ul li a:hover { color: rgb(204, 204, 204); }
 #navbar ul li:last-of-type:hover { background-image: none; }
 #navbar ul li:last-of-type a:hover { background: none repeat scroll 0% 0% transparent; }
+.mobile-nav{ display: none;}
 #guest_serv { float: right; }
 #login { display: block; float: left; color: rgb(255, 255, 255); padding: 15px 20px 0px 12px; }
 #login a { color: rgb(255, 252, 94); float: right; width: 66px; }
@@ -26,18 +27,18 @@ input[type="checkbox"], input[type="radio"] { display: none; }
 input[type="checkbox"] + label, input[type="radio"] + label { display: inline-block; width: 28px; height: 28px; background-color: rgb(143, 143, 143); cursor: pointer; }
 input[type="checkbox"]:checked + label, input[type="radio"]:checked + label { background: url('checkedbox.png') no-repeat scroll center center transparent; }
 input[type="checkbox"]:disabled + label, input[type="radio"]:disabled + label { background-color: rgb(215, 215, 215); cursor: not-allowed; }
-.compselect { width: 725px ! important; border: 1px solid rgb(0, 0, 0); }
+.compselect {border: 1px solid rgb(0, 0, 0); }
 .compselect h4 { font-size: 18px; margin-bottom: 0px; }
 .compselect td { font-size: 14px ! important; border-bottom: 1px solid rgb(204, 204, 204) ! important; }
 .compselect input[type="radio"] + label { width: 102px; height: 52px; border: 2px solid rgb(255, 255, 255); border-radius: 9px; background: url('select_button.png') no-repeat scroll center center transparent; }
 .compselect input[type="radio"]:checked + label { background: url('selected_button.png') no-repeat scroll center center transparent; }
 .filter { left: 0px; margin-left: 10px; position: fixed; top: 56px; }
 .filter p { float: right; padding: 0px 9px 0px 2px; }
-.filter table tr td { padding: 0px; border-right: 1px solid rgb(204, 204, 204); }
+.filter table tr td { padding: 0 0 0 5px; border-right: 1px solid rgb(204, 204, 204); }
 .filter table th { height: 36px; }
 .filter input[type="checkbox"] + label { height: 24px; width: 24px; }
-.comppicker { width: 965px; display: block; }
-.machinepicker { width: 700px; display: block; float: left; }
+.comppicker {display: block; }
+.machinepicker {display: block; float: left; }
 .upgrade { font-weight: bold; color: rgb(0, 102, 153); display: block; width: 170px; }
 #step { border: 3px solid rgb(0, 102, 153); border-radius: 9px; padding: 5px 5px 1px; }
 /* ::::: http://127.0.0.1:8000/static//css/pure_forms.css ::::: */
@@ -51,7 +52,7 @@ input[disabled]:not([type]) { cursor: not-allowed; background-color: rgb(234, 23
 input:focus:invalid, textarea:focus:invalid, select:focus:invalid { color: rgb(185, 74, 72); border-color: rgb(238, 95, 91); }
 input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus { border-color: rgb(233, 50, 45); }
 input[type="file"]:focus:invalid:focus, input[type="radio"]:focus:invalid:focus, input[type="checkbox"]:focus:invalid:focus { outline-color: rgb(233, 50, 45); }
-select { border: 1px solid rgb(204, 204, 204); background-color: white; }
+select { border: 1px solid rgb(204, 204, 204); background-color: white; width: 88%; max-width: 500px;}
 label { margin: 0.5em 0px 0.2em; }
 .pure-form-stacked input:not([type]) { display: block; margin: 0.25em 0px; }
 @media only screen and (max-width: 480px) {
@@ -72,7 +73,7 @@ td { padding: 8px; border: medium none; font-size: 90%; }
 .transcript_coursesattendedtable tr:nth-child(2n), .transcript_coursesleadingtable tr:nth-child(2n) { background: none repeat scroll 0% 0% rgb(231, 228, 188); }
 .transcript_coursesattended td:first-child, .transcript_coursesleading td:first-child, .myschedule_coursesenrolledtable td:first-child, .myschedule_coursescoordinatingtable td:nth-child(3), .myschedule_coursesleadingtable td:nth-child(3) { width: 135px; }
 .transcript_coursesattended td:nth-child(3), .transcript_coursesleading td:nth-child(3) { width: 53px; }
-#hardware { box-shadow: none; font-family: "Arimo",sans-serif ! important; border-left: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0); width: 500px; }
+#hardware { box-shadow: none; font-family: "Arimo",sans-serif ! important; border-left: 1px solid rgb(0, 0, 0); border-bottom: 1px solid rgb(0, 0, 0);}
 #hardware tr { background-color: transparent; border: medium none; }
 #hardware td { color: rgb(0, 0, 0); font-size: 17px; border: medium none; }
 #hardware th { background-color: transparent; font-size: 22px; color: rgb(0, 102, 153); border: medium none; }
@@ -84,7 +85,7 @@ html { background: none repeat scroll 0% 0% rgb(253, 247, 234); }
 body { margin: 0px; }
 h2 { margin: 0px; }
 h4 { margin: 0px 0px 3px; }
-#everything { min-width: 1140px; }
+#everything { min-width: 300px; }
 a { color: rgb(0, 153, 151); text-decoration: none; }
 a:hover { color: rgb(174, 174, 174); }
 #everything { width: 99%; text-align: left; position: relative; max-width: 1600px; margin: 0px auto; border-width: 1px; border-color: black; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; color: rgb(0, 0, 0); font-size: 14px; padding-top: 54px; }
@@ -92,7 +93,7 @@ a:hover { color: rgb(174, 174, 174); }
 #header_image { background: url('l_torg6.jpg') no-repeat scroll center center / cover  transparent; height: 210px; width: 100%; display: block; clear: both; }
 #qoute { font-size: 30px; color: rgb(255, 255, 255); font-weight: bold; padding: 45px 35px 0px 70px; text-align: right; width: 510px; }
 #content-all { float: left; margin: 10px 0px 50px; min-height: 515px; width: 99%; color: rgb(0, 0, 0); padding: 5px 5px 5px 7px; display: inline-flex; }
-#selectmachine img { width: 206px; border: 1px solid rgb(143, 143, 143); }
+#selectmachine img { max-width: 206px; border: 1px solid rgb(143, 143, 143); width: 100%; min-width: 50px; }
 #content, #widecontent { margin: 5px 0px 0px; min-height: 635px; color: rgb(0, 0, 0); padding: 5px 5px 5px 7px; display: block; overflow: auto; float: none; }
 #widecontent { width: 98%; }
 #content h1, #content h2, #widecontent h1, #widecontent h2 { margin: 0px 0px 0px -7px; padding: 0px 0px 3px 7px; }
@@ -122,6 +123,14 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
     }
 .ui-icon{
     }
+.ui-widget .ui-widget{
+	font-size: 16px;
+	}
+.ui-dialog{
+	width: 100% !important;
+	max-width: 450px;
+	min-width: 342px;
+	}
 .ui-dialog .ui-dialog-titlebar-close{
     display: none;
     }
@@ -139,3 +148,113 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 .guidanceText, .guidanceText ul, .guidanceText ul li{
     font-size: 14px;
     }
+.menu-btn{
+	padding: 18px 10px 10px;
+	cursor: pointer;
+	}
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+ 
+.menu-btn span {
+	display: block;
+	width: 20px;
+	height: 3px;
+	margin: 4px 0;
+	background: #FFF;
+	z-index: 99;
+}
+span.nav-text {
+    background-color: transparent;
+    color: #fff;
+    display: block;
+    float: left;
+    left: 143px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 22px;
+}
+.responsive-menu{
+	display: none;
+}
+ 
+.expand {
+	display: block !important; 
+}
+/*---Media Queries---*/
+@media (max-width: 1000px){
+	#navbar ul li a{
+		padding: 16px 7px 0;
+	}
+}
+@media (max-width: 925px){
+	#navbar ul li a, #login{
+		font-size: 13px;
+	}
+}
+@media (max-width: 861px){
+	#navbar ul li{
+		float: none;
+		clear: both;
+	}
+	#guest_serv{
+		float: none;
+	}
+	#header{
+		padding: 3px 0 0 4px;
+	}
+	.regular-nav{
+		display: none;
+	}
+	.mobile-nav{
+		display: block;
+		float: left;
+		margin-left: 8px;
+	}
+
+	#navbar ul li a{
+		padding-top: 3px;
+		padding-left: 20px
+	}
+	.help{
+		height: 9px;
+	}
+	#navbar ul li{
+		float: none;
+		clear: both;
+	}
+	#login {
+    		padding: 3px 20px 3px 25px;
+	}
+	#guest_serv{
+		float: none;
+	}
+}
+@media (max-width: 750px){
+	#footer_division img{
+		display: none;
+	}
+}
+@media (max-width: 605px){
+	#qoute{
+		font-size: 25px;
+		float: right;
+	}
+}
+@media (max-width: 464px){
+	#qoute{
+		display: none;
+		}
+	.upgrade{
+		font-size: 13px !important;
+		}
+}
