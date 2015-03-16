@@ -1,0 +1,10 @@
+@CHARSET "US-ASCII";
+
+.big-pic{
+	display: block;
+	height: 92vh;
+	background-color: #006699;
+	}
+.navbar-bottom{
+	border-radius: 0px;
+	}
