@@ -2,9 +2,21 @@
 
 .big-pic{
 	display: block;
-	height: 92vh;
+	height: 89vh;
 	background-color: #006699;
 	}
+.navbar{
+	height: 11vh;
+}
 .navbar-bottom{
 	border-radius: 0px;
 	}
+.navbar-nav > li > a {
+    	padding-bottom: 15px;
+    	padding-top: 4vh;
+  	text-transform: uppercase;
+}
+.navbar-brand{
+	height: 70px;
+	padding-top: 1.5vh;
+}
