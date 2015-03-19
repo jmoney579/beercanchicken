@@ -5,9 +5,9 @@
 	height: 89vh;
 	background-color: #006699;
 	}
-.navbar{
+/*.navbar{
 	height: 11vh;
-}
+}*/
 .navbar-bottom{
 	border-radius: 0px;
 	}
@@ -19,4 +19,21 @@
 .navbar-brand{
 	height: 70px;
 	padding-top: 1.5vh;
+}
+.crew{
+	background-color: #2b0733;
+	color: #CCC;
+}
+.homie{
+	min-height: 100px;
+	background-color: #2b0733;
+	margin: 14px 0;
+}
+.homie h3{
+	text-transform: uppercase;
+	color: #ededed;
+}
+.rule{
+	border-right: 1px solid #500c5f;
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;*/
 }
