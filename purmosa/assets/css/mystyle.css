@@ -1,8 +1,19 @@
 @CHARSET "US-ASCII";
 
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body{
+	font-family: "Raleway",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+p{
+	line-height: 23px;
+}
+
 .big-pic{
 	display: block;
-	height: 89vh;
+	height: 88vh;
 	background-color: #006699;
 	}
 /*.navbar{
@@ -13,7 +24,7 @@
 	}
 .navbar-nav > li > a {
     	padding-bottom: 15px;
-    	padding-top: 4vh;
+    	padding-top: 5vh;
   	text-transform: uppercase;
 }
 .navbar-brand{
@@ -23,6 +34,10 @@
 .crew{
 	background-color: #2b0733;
 	color: #CCC;
+	font-size: 14px;
+}
+.crew p{
+	line-height: 20px;;
 }
 .homie{
 	min-height: 100px;
@@ -37,9 +52,38 @@
 	border-right: 1px solid #500c5f;
 	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;*/
 }
+.rule2{
+	border-right: 1px solid #0a0a0a;
+}
 .no-top{
-	margin-top: 0;
+	margin-top: -2px;
 }
 div.col-md-4>img.img-responsive{
 	padding-bottom: 5px;
+}
+.subheader{
+	min-height: 400px;
+	background: url("#") no-repeat center center #78998e;
+	background-size: cover;
+	border-top: 3px solid #CCC;
+	border-bottom: 3px solid #CCC;
+	box-shadow: 0 1px 0 #CCC;
+	color: #FFF;
+	margin-top:10px;
+}
+.subheader h2{
+	font-size: 40px;
+}
+footer{
+	border-top: 2px solid #CCC;
+	min-height: 235px;
+	background-color: #080808;
+	padding-top: 10px;
+	color: #999;
+}
+footer .col-md-4{
+	min-height: 210px;
+}
+footer p{
+	font-size: 13px;
 }
