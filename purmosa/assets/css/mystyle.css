@@ -27,7 +27,7 @@
 .homie{
 	min-height: 100px;
 	background-color: #2b0733;
-	margin: 14px 0;
+	margin: 24px 0;
 }
 .homie h3{
 	text-transform: uppercase;
@@ -36,4 +36,10 @@
 .rule{
 	border-right: 1px solid #500c5f;
 	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;*/
+}
+.no-top{
+	margin-top: 0;
+}
+div.col-md-4>img.img-responsive{
+	padding-bottom: 5px;
 }
