@@ -23,8 +23,8 @@ p{
 	border-radius: 0px;
 	}
 .navbar-nav > li > a {
-    	padding-bottom: 15px;
-    	padding-top: 5vh;
+    padding-bottom: 32px;
+    padding-top: 5vh;
   	text-transform: uppercase;
 }
 .navbar-brand{
