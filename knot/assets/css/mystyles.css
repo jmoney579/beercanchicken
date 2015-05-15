@@ -249,13 +249,13 @@ footer p{
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
 	background-color: #999;
 	}
-.slimtop{
-	margin-top: 56px;
-}
 .xsmall{
 	font-size: 46%;
 	display: block;
     	margin-top: 13px;
+}
+.slimtop{
+	margin-top: 56px;
 }
 /*---Back to Top---*/
 .cd-top {
@@ -351,6 +351,9 @@ footer p{
 	.wrapper footer p{
 		color: #000;
 	}
+	.slimtop{
+		margin-top: 0px;
+	}	
 }
 @media (max-width: 969px){
 	.big-countdown{
