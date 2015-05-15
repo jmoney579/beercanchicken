@@ -249,6 +249,14 @@ footer p{
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
 	background-color: #999;
 	}
+.slimtop{
+	margin-top: 56px;
+}
+.xsmall{
+	font-size: 46%;
+	display: block;
+    	margin-top: 13px;
+}
 /*---Back to Top---*/
 .cd-top {
   display: inline-block;
