@@ -307,8 +307,16 @@ footer p{
 .right_curve{
 	margin-top: 3px
 	}
+.right_curve2{
+	margin-top: -78px;
+	margin-left: -184px;
+	}
 .left_curve{
 	margin-left: 33px;
+    margin-top: -84px;
+	}
+.left_curve2{
+	margin-left: 117px;
     margin-top: -84px;
 	}
 .secondrow{
@@ -319,8 +327,15 @@ footer p{
     margin-left: 156px;
     margin-top: -85px;
 	}
+.fourthrow{
+	margin-top: -90px;
+	margin-left: 245px;
+	}
 .norightpad{
 	padding-right: 0px;
+	}
+.end{
+	padding-top:50px !important;
 	}
 /*.nav.navbar-nav.blacktext a{
 	color: #000;
