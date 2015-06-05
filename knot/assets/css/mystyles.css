@@ -307,9 +307,17 @@ footer p{
 .right_curve{
 	margin-top: 3px
 	}
+.left_curve{
+	margin-left: 33px;
+    margin-top: -84px;
+	}
 .secondrow{
-	margin-right: 156px;
+	margin-right: 200px;
     margin-top: -90px;
+	}
+.thirdrow{
+    margin-left: 156px;
+    margin-top: -85px;
 	}
 .norightpad{
 	padding-right: 0px;
