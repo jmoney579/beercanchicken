@@ -297,6 +297,23 @@ footer p{
   background-color: #e86256;
   opacity: 1;
 }
+/* ---- Gallery Mods --- */
+.col-sm-3.map, .right_curve {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
+    width: auto;
+}
+.right_curve{
+	margin-top: 3px
+	}
+.secondrow{
+	margin-right: 156px;
+    margin-top: -90px;
+	}
+.norightpad{
+	padding-right: 0px;
+	}
 /*.nav.navbar-nav.blacktext a{
 	color: #000;
 }*/
