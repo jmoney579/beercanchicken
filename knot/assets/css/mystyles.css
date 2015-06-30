@@ -84,11 +84,16 @@ footer p{
 	height: 108px;
 	}
 .rsvp .btn{
-	margin-top: 12px;
+	margin-top: 9px;
+	background-color: #000;
+	border: 1px solid #CCC; 
 	}
 .rsvp p{
 	font-size: 19px;
 	padding-top: 15px;
+}
+.rsvp img{
+	display: inline;
 }
 .bride, .groom{
 	margin-top: 26px;
@@ -121,7 +126,8 @@ footer p{
 	border-bottom: 1px solid #000;
 	z-index: 100;
 	max-width: 2000px;
-	height: 800px;
+	height: 100vh;
+	min-height: 570px;
 	}
 .carol1{
 	background: url('../img/present.jpg') center center repeat-x transparent;
@@ -140,7 +146,8 @@ footer p{
 	}
 .carousel .item{
 	background-color: transparent;
-	height: 800px;
+	height: 100vh;
+	min-height: 570px;
 	}
 .carousel-caption{
 	left: 45px;
@@ -150,14 +157,16 @@ footer p{
 	padding-top: 50px;
 	}
 .carousel-control{
-	height: 759px;
+	height: 79vh;
 	top: 41px;
 	}
 .carousel-indicators{
 	bottom: 99px;
 	}
 .advert{
-	margin: 5% 16% 0;
+	/*margin: 5% 16% 0;*/
+	top: 5%;
+	left: 21%;
 	position: absolute;
 	z-index: 1;
 	}
@@ -171,7 +180,8 @@ footer p{
 	}
 .advert p{
 	font-size: 33px;
-	text-align: justify;
+	text-align: center;
+	line-height: 5px;
 	}
 .big-countdown{
 	width: 100%;
@@ -239,6 +249,94 @@ footer p{
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
 	background-color: #999;
 	}
+.xsmall{
+	font-size: 46%;
+	display: block;
+    	margin-top: 13px;
+}
+.slimtop{
+	margin-top: 56px;
+}
+/*---Back to Top---*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(../../../assets/img/cd-top-arrow.svg) no-repeat center 50% #006699;
+  /*background-color: rgba(232, 98, 86, 0.8);*/
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: .8;
+  z-index: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+/* ---- Gallery Mods --- */
+.col-sm-3.map, .right_curve {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
+    width: auto;
+}
+.right_curve{
+	margin-top: 3px
+	}
+.right_curve2{
+	margin-top: -78px;
+	margin-left: -184px;
+	}
+.left_curve{
+	margin-left: 33px;
+    margin-top: -84px;
+	}
+.left_curve2{
+	margin-left: 117px;
+    margin-top: -84px;
+	}
+.secondrow{
+	margin-right: 200px;
+    margin-top: -90px;
+	}
+.thirdrow{
+    margin-left: 156px;
+    margin-top: -85px;
+	}
+.fourthrow{
+	margin-top: -90px;
+	margin-left: 245px;
+	}
+.norightpad{
+	padding-right: 0px;
+	}
+.end{
+	padding-top:50px !important;
+	}
 /*.nav.navbar-nav.blacktext a{
 	color: #000;
 }*/
@@ -247,6 +345,22 @@ footer p{
 	height: 50px;
 	width: 50px;
 }
+/*----Height based media queries---*/
+@media (max-height: 1200px){
+	/*.big-countdown > div > span{
+		font-size: 90px;
+		}*/
+	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+		font-size: 27px;
+		}
+	.advert h1{
+		font-size: 56px;
+		}
+	.advert p{
+		font-size: 27px;
+		}
+}
+/*----Width based media queries---*/
 @media (max-width: 1289px){
 	.big-countdown > div > span{
 		font-size: 100px;
@@ -277,13 +391,16 @@ footer p{
 	.wrapper footer p{
 		color: #000;
 	}
+	.slimtop{
+		margin-top: 0px;
+	}	
 }
 @media (max-width: 969px){
 	.big-countdown{
 		margin: 0 auto;
 	}
 	.big-countdown > div > span{
-		font-size: 72px;
+		font-size: 67px;
 		}
 	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
 		font-size: 23px;
@@ -295,7 +412,7 @@ footer p{
 		font-size: 25px;
 		}
 	.big-countdown{
-		width: 523px;
+		width: 455px;
 		}
 }
 @media (max-width: 767px){
@@ -304,7 +421,7 @@ footer p{
 		width: 408px;
 		}
 	.advert{
-		margin-top: 7%;
+		top: 7%;
 		}
 	.navbar-inverse{
 		background-color: #000;
@@ -317,7 +434,7 @@ footer p{
 	 	background-position: right 40px;
 	 	}
 	.advert h1{
-		font-size: 55px;
+		font-size: 52px;
 		}
 	.advert p{
 		font-size: 20px;
@@ -354,7 +471,21 @@ footer p{
     	margin: 0 15px;
     	}
 }
-@media (max-width: 400px){
+@media (max-width: 485px){
+	.advert {
+		left: 13%;
+	}
+}
+@media (max-width: 468px){
+	.rsvp p{
+		padding-top: 20px;
+		font-size: 15px;
+	}
+	.rsvp .btn{
+		margin-top: 7px;
+	}
+}
+@media (max-width: 401px){
 	.big-countdown > div > span{
 		font-size: 50px;
 		}
@@ -362,14 +493,17 @@ footer p{
 		margin: 30px auto 0;
 		width: 250px;
 		}
-	.advert{
+	/*.advert{
 		margin-right: 12%;
-		}
+		margin-left: 12%;
+		}*/
 	.carousel .item{
 		height: 555px;
 		}
+	.rsvp{
+		height: 162px;
+	}
 	.rsvp p{
-		font-size: 17px;
-		}
-
+		padding-top: 26px;
+	}
 }

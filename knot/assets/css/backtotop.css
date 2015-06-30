@@ -13,7 +13,7 @@
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: url(../../../assets/img/cd-top-arrow.svg) no-repeat center 50% #006699;
+  background: url(../img/cd-top-arrow.svg) no-repeat center 50% #006699;
   /*background-color: rgba(232, 98, 86, 0.8);*/
   visibility: hidden;
   opacity: 0;
