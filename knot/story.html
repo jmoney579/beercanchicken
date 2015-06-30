@@ -11,41 +11,18 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]--><!-- Custom styles for this template -->
 
-    
-    
-    
-        
-    <link href="assets/css/carousel.css" rel="stylesheet">
+    <link href="assets/css/ekko-lightbox.css" rel="stylesheet"><!--Bootstrap Lightbox CSS -->
+	<link href="assets/css/dark.css"><!-- Bootstrap Lightbox Dark Theme -->
+	    <link href="assets/css/carousel.css" rel="stylesheet">
     <link href="assets/css/mystyles.css" rel="stylesheet"><!-- Extra JS Functions -->
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="assets/js/kkcountdown.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="assets/yoxview/yoxview-init.js"></script>
-    <script type="text/javascript">
-            $(document).ready(function(){
-
-                $(".kkcountdown-1").kkcountdown({
-                	dayText		: 'day ',
-                	daysText 	: 'days ',
-                    hoursText	: 'h ',
-                    minutesText	: 'm ',
-                    secondsText	: 's',
-                    displayZeroDays : true,
-                    callback	: cBack,
-                    rusNumbers  :   false
-                });
-
-            });
-
-            function cBack(){
-            	console.log('THE END - Function callback!');
-            }
-        </script>
 	<script>
 	 $(document).ready(function(){
 	$(".yoxview").yoxview();
 	});
-	</script><!-- NAVBAR ================================================== --></head>
+	</script><!-- NAVBAR ================================================== -->
+	</head>
 
   
   <body>
@@ -93,15 +70,37 @@
     <div class="container page">
       <div class="row featurette">
         <div class="col-md-8">
-          <h2 class="featurette-heading text-left">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec
-ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
-porta felis euismod semper. Praesent commodo cursus magna, vel
-scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.<br>This is a place for her to place text, <a href="http://google.com" target="_blank">links</a> and images.</p></div>
+          <h2 class="featurette-heading text-left slimtop">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Have you always wondered what brought us together?  Follow the trail to see what brought us to this day.</p></div>
       </div>
 
-      <hr class="featurette-divider col-md-8">
-
+	<div class="col-md-8 norightpad">
+		<div class="col-sm-3 map"><img style="margin-right: 31px;"src="img/start.png" alt="Start Here icon"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 1" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 2" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 3" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+	</div>
+		<div class="col-sm-2 right_curve"><img src="img/right_curve2.png" alt="dashed line curved down"></div>
+	<div class="col-md-8 secondrow pull-right">
+		<div class="col-sm-3 map"><img src="img/dash.png" alt="picture of dash mark"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 2" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 2" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 3" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+	</div>
+		<div class="col-sm-2 left_curve"><img src="img/left_curve.png" alt="dashed line curved down"></div>
+	<div class="col-md-8 thirdrow norightpad">
+		<div class="col-sm-3 map"><img src="img/dash.png" alt="picture of dash mark"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 1" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 2" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 3" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+	</div>
+		<div class="col-sm-2 right_curve2"><img src="img/right_curve2.png" alt="dashed line curved down"></div>
+	<div class="col-md-8 fourthrow norightpad">
+		<div class="col-sm-3 map"><img src="img/dash.png" alt="picture of dash mark"><img src="img/dash.png" alt="picture of dash mark"><img src="img/dash.png" alt="picture of dash mark"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 2" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+		<div class="col-sm-3 map"><a href="http://placehold.it/500x500" data-toggle="lightbox" data-gallery="our_story" data-title="Image 3" data-footer="Photo Text"><img src="http://placehold.it/130x130" alt="137px Placeholder"></a><img src="img/dash.png" alt="picture of dash mark"></div>
+	</div>
+		<div class="col-sm-2 left_curve2"><img src="img/left_curve.png" alt="dashed line curved down"></div>
+	<div class="col-md-8 fourthrow no rightpad">
+		<div class="col-sm-3 map end"><img src="img/dash.png" alt="picture of dash mark"><img src="img/dash.png" alt="picture of dash mark"><img src="img/dash.png" alt="picture of dash mark"><img src="img/dash.png" alt="picture of dash mark">WILL ALWAYS BE</div>
+	</div>
       <div class="row featurette">
         <!--<div class="col-md-5">
           <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -113,21 +112,6 @@ ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
 porta felis euismod semper. Praesent commodo cursus magna, vel
 scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
-      </div>
-
-      <hr class="featurette-divider col-md-8">
-
-      <div class="row featurette">
-        <div class="col-md-8">
-          <h2 class="featurette-heading text-left">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec
-ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula
-porta felis euismod semper. Praesent commodo cursus magna, vel
-scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <!--<div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>-->
       </div>
 
       <!-- /END THE FEATURETTES -->
@@ -152,4 +136,19 @@ scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     <script src="assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Bootstrap Lightbox JS -->
+	<script src="assets/js/ekko-lightbox.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function ($) {
+
+				// delegate calls to data-toggle="lightbox"
+				$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+					event.preventDefault();
+					return $(this).ekkoLightbox({
+						always_show_close: true
+					});
+				});
+
+			});
+		</script>
   </body></html>

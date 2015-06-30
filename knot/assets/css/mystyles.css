@@ -297,6 +297,46 @@ footer p{
   background-color: #e86256;
   opacity: 1;
 }
+/* ---- Gallery Mods --- */
+.col-sm-3.map, .right_curve {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 5px;
+    width: auto;
+}
+.right_curve{
+	margin-top: 3px
+	}
+.right_curve2{
+	margin-top: -78px;
+	margin-left: -184px;
+	}
+.left_curve{
+	margin-left: 33px;
+    margin-top: -84px;
+	}
+.left_curve2{
+	margin-left: 117px;
+    margin-top: -84px;
+	}
+.secondrow{
+	margin-right: 200px;
+    margin-top: -90px;
+	}
+.thirdrow{
+    margin-left: 156px;
+    margin-top: -85px;
+	}
+.fourthrow{
+	margin-top: -90px;
+	margin-left: 245px;
+	}
+.norightpad{
+	padding-right: 0px;
+	}
+.end{
+	padding-top:50px !important;
+	}
 /*.nav.navbar-nav.blacktext a{
 	color: #000;
 }*/
