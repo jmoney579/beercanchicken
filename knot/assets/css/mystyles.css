@@ -95,6 +95,13 @@ footer p{
 .rsvp img{
 	display: inline;
 }
+.rsvp_tag{
+	font-size: 85%;
+  	background-color: #999;
+  	width: 100%;
+  	display: block;
+  	margin-top: -4px;
+}
 .bride, .groom{
 	margin-top: 26px;
 	margin-bottom: 15px;
