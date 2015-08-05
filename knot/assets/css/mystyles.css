@@ -75,7 +75,7 @@ footer p{
 	margin-top: 0px;
 }
 .rsvp{
-	margin-top: -106px;
+	margin-top: -122px;
 	background:url('../img/rsvp_bkgd2.png') repeat-x center center transparent;
 	text-align: center;
 	padding: 0;
@@ -168,7 +168,7 @@ footer p{
 	top: 41px;
 	}
 .carousel-indicators{
-	bottom: 99px;
+	bottom: 112px;
 	}
 .advert{
 	/*margin: 5% 16% 0;*/
@@ -250,9 +250,9 @@ footer p{
 .wrapper .featurette iframe{
 	min-width: 300px;
 	}
-.dropdown-toggle.open {
+/*.dropdown-toggle.open {
     color: #000 !important;
-}
+}*/
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{
 	background-color: #999;
 	}
@@ -446,6 +446,9 @@ footer p{
 	.advert p{
 		font-size: 20px;
 		}
+	/*.dropdown-toggle.open {
+  		color: #FFF !important;
+		}*/
 }
 @media (max-width: 600px){
 	.big-countdown{
