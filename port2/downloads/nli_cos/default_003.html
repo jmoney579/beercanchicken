@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, max-width=1.0, user-scalable=yes">
+        
+        <title>NLI Enrollment System</title>
+       <link href="nli_icon.png" type="image/png" rel="icon">
+          
+        
+         <!--[if IE]>
+         	<link rel="stylesheet" href="/static//css/ie.css?" />
+         <![endif]-->
+        
+        <script src="jquery-2.0.3.min.js"></script>
+        <script src="jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="jquery.tablesorter-update.js"></script>
+        <script src="tablesorter.js"></script> 
+        <script src="home_popup.js"></script>
+         
+
+        <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+		<script>
+		$(function() {
+		$( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
+		});
+		</script>
+		<script language="Javascript">
+		function hideA()
+		{
+		
+		    document.getElementById("A").style.visibility="hidden";
+		    document.getElementById("B").style.visibility="visible";    
+		
+		}
+		
+		function hideB()
+		{
+		    document.getElementById("B").style.visibility="hidden";
+		    document.getElementById("A").style.visibility="visible";
+		
+		}
+		</script>
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput(num)
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce'+num).innerHTML+='<br/><input type="text" id="'+boxName+'+num" value="" "  /><br/>';
+		     countBox += 1;
+		}
+		</script>
+
+        
+        <script type="text/javascript">
+		function myFunction() {
+ 		$(function() {
+		$( "#dialog-confirm" ).dialog({
+		resizable: false,
+		height: 140,
+		width: 450,
+		modal: true,
+		buttons: {
+		"Confirm Selection": function() {
+			document.selectmachine.submit();
+			},
+		"Go back": function() {
+			$( this ).dialog( "close" );
+			}
+		}
+		});
+	});
+       $('form#selectmachine').submit(function(e){
+            e.preventDefault();
+ 
+            $("p#dialog-radio").html($("input#group1").val());
+            $('#dialog-confirm').dialog('open');
+        });
+    }
+
+</script>
+        
+
+    
+<link rel="stylesheet" type="text/css" href="default_003.css" media="all">
+</head>
+<body>
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+	         
+
+        <div id="navbar">
+         <div id="header">
+	        NLI  
+	    </div>
+            <ul>
+           
+    
+
+            
+        
+    		
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default.html">
+	            	Computer Selection
+	            </a>
+	            </li>
+	        	
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_001.html">
+	            	College Administrator
+	            </a>
+	            </li>
+	       		
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_002.html">
+	            	Department Administrator
+	            </a>
+	            </li>
+	        	
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_003.html">
+	            	Order Summary
+	            </a>
+	            </li>
+	        	
+			            
+
+       	
+    		<div id="guest_serv">
+    		    
+            	<li class="navbaritem">
+            	<a indepth="true" target="_top" class="help" href="default_005.html">Help</a>
+            	
+            	</li>
+            
+    			 <div id="login">       
+    		
+   			
+        			<p><span class="login_name">Hello admin</span> |</p>
+        		
+            		<a indepth="true" class="logout_link" href="#">Logout</a>
+        		
+    		
+			
+			</div>	
+			</div></ul>
+			</div>
+        
+ 
+
+
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+        <div id="everything" class="everything">
+        <div id="header_image">
+        	<div id="qoute">"Whatever you are, be a good one."<br>Abraham Lincoln</div>
+        </div> 	
+            <!--<div id="search"></div>-->		
+ 
+
+			    <div id="content-all">
+			        
+			        <div id="widecontent">
+    
+	    
+	    	<h2>NLI Computer Ordering System: Order Summary</h2>
+            <h3>Tomato Sauce</h3>
+	        <!--You are currently the administrator for Tomato Sauce. Your department has been alloted 5 machines this year. Here you can review the selections made by your users, as well as see the final upgrade cost owed by the department.--><br>
+	
+	        <input name="csrfmiddlewaretoken" value="CkFh0AxBronxiOCycZE2rYhq9te4W2Ie" type="hidden">
+	
+	        <table class="tablesorter" border="1">
+	            <thead>
+	                <tr>
+                        <th class="header">Name (PID)</th>
+                        <th class="header">Selection</th>
+                        <th class="header" width="10%">Upgrade Cost</th>
+                    </tr>
+	            </thead>
+	            <tbody>
+	                
+	       	            <tr>
+                            <td>Kent, Clark (admin)</td>
+                            <td>Macbook Pro </td>
+                            <td align="right">
+                            
+                            1100
+                            
+                            </td>
+                        </tr>
+	       	        
+	       	            <tr>
+                            <td>Walker, Jacques (jawalker)</td>
+                            <td>PC </td>
+                            <td align="right">
+                            
+                            120
+                            
+                            </td>
+                        </tr>
+	       	        
+	       	        	<tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2" align="right"><strong>Total Upgrade Cost: $1220</strong></td>
+                        </tr>
+	            </tbody>
+	       </table>
+	    
+	
+</div>
+		    </div>	
+		    <!--<div id="popupMSG">
+		    <h4 class="blue2">Attention Faculty Computer Refresh Program Participants:</h4>
+			You must log in to see information, including summer programs. After closing this message, click the VT Login Link at the top-right of this page.
+			</div>-->
+			<!--Message body goes here. HTML supported-->
+			  
+	        <div id="footer">
+                
+    
+        NLI    
+    
+
+    
+    
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+
+
+            </div>
+            
+    <!--<div class="footer_box">
+    </div>
+    <div id="footer_contacts"> 
+	    
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">GENERAL INQUIRIES</h4>
+	            NLI<br />
+	            1220 Torgersen Hall<br />
+	            http://nli.tlos.vt.edu<br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">REPORT TECHNICAL ISSUES</h4>
+	            NLI Support Team<br />
+	            <br />
+	            <br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	     
+    </div>-->
+    
+        
+    <div id="footer_copyright">
+    
+    	
+        	NLI is a division of Virginia Tech's Division of Technology-enhanced Learning and Online Strategies (TLOS)
+    	
+	<br>
+	
+		Copyright 2013
+    
+    	<div id="footer_division">
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+    	</div>
+    </div>
+
+            <!--<div class="footer_box"></div>-->
+	    </div>              
+    
+
+
+
+</body></html>

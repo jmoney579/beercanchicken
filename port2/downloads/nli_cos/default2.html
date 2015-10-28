@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, max-width=1.0, user-scalable=yes">
+        
+        <title>NLI Enrollment System</title>
+       <link href="nli_icon.png" type="image/png" rel="icon">
+          
+        
+         <!--[if IE]>
+         	<link rel="stylesheet" href="/static//css/ie.css?" />
+         <![endif]-->
+        
+        <script src="jquery-2.0.3.min.js"></script>
+        <script src="jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="jquery.tablesorter-update.js"></script>
+        <script src="tablesorter.js"></script> 
+        <script src="home_popup.js"></script>
+        <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+		<script>
+		$(function() {
+		$( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
+		});
+		</script>
+		<script language="Javascript">
+		function hideA()
+		{
+		
+		    document.getElementById("A").style.visibility="hidden";
+		    document.getElementById("B").style.visibility="visible";    
+		
+		}
+		
+		function hideB()
+		{
+		    document.getElementById("B").style.visibility="hidden";
+		    document.getElementById("A").style.visibility="visible";
+		
+		}
+		</script>
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput(num)
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce'+num).innerHTML+='<br/><input type="text" id="'+boxName+'+num" value="" "  /><br/>';
+		     countBox += 1;
+		}
+		</script>
+
+        
+        <script type="text/javascript">
+		function myFunction() {
+ 		$(function() {
+		$( "#dialog-confirm" ).dialog({
+		resizable: false,
+		height: 140,
+		width: 450,
+		modal: true,
+		buttons: {
+		"Confirm Selection": function() {
+			document.selectmachine.submit();
+			},
+		"Go back": function() {
+			$( this ).dialog( "close" );
+			}
+		}
+		});
+	});
+       $('form#selectmachine').submit(function(e){
+            e.preventDefault();
+ 
+            $("p#dialog-radio").html($("input#group1").val());
+            $('#dialog-confirm').dialog('open');
+        });
+    }
+
+</script>
+        
+
+    
+<link rel="stylesheet" type="text/css" href="default.css" media="all">
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.10.3.custom.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" media="all">
+
+</head>
+<body>
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+	         
+
+        <div id="navbar">
+         <div id="header">
+	        NLI  
+	    </div>
+            <ul>
+           
+    
+
+            
+        
+    		
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default.html">
+	            	Computer Selection
+	            </a>
+	            </li>
+	        	
+            	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_001.html">
+	            	College Administrator
+	            </a>
+	            </li>
+	       		
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_002.html">
+	            	Department Administrator
+	            </a>
+	            </li>
+	        	
+	        	
+	            <li class="navbaritem">
+	            <a indepth="true" href="default_003.html">
+	            	Order Summary
+	            </a>
+	            </li>
+	        	
+			            
+
+       	
+    		<div id="guest_serv">
+    		    
+            	<li class="navbaritem">
+            	<a indepth="true" target="_top" class="help" href="default_005.html">Help</a>
+            	
+            	</li>
+            
+    			 <div id="login">       
+    		
+   			
+        			<p><span class="login_name">Hello admin</span> |</p>
+        		
+            		<a indepth="true" class="logout_link" href="#">Logout</a>
+        		
+    		
+			
+			</div>	
+			</div></ul>
+			</div>
+        
+ 
+
+
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+        <div id="everything" class="everything">
+        <div id="header_image">
+        	<div id="qoute">"Whatever you are, be a good one."<br>Abraham Lincoln</div>
+        </div> 	
+            <!--<div id="search"></div>-->		
+ 
+
+			    <div id="content-all">
+			        
+			        <div id="widecontent">
+    
+	    
+	        	<form id="selectmachine" name="selectmachine" method="post">
+	
+	        
+		        <input name="csrfmiddlewaretoken" value="CkFh0AxBronxiOCycZE2rYhq9te4W2Ie" type="hidden">
+		        
+		        <input name="PConly" id="PConly" value="0" type="hidden">
+		        <input name="Maconly" id="Maconly" value="0" type="hidden">
+		        <input name="Tabletonly" id="Tabletonly" value="0" type="hidden">
+		        <input name="pid" id="pid" value="" type="hidden">
+
+		        <h2>NLI Computer Ordering System: Computer Selection</h2>
+		        
+		        Return to <a indepth="true" href="default_002.html">Department Administration</a> <br><br>
+				
+		        <strong>This participant has not selected a computer.</strong>
+		        
+		        <p>To override their selection, please use the form below.</p>
+					
+				
+		<div class="comppicker">
+		    <div class="machinepicker">
+		            <table class="compselect" id="hardware" border="1">
+		            	<thead>
+		            		<tr><th colspan="2"><span id="step">1</span> Delivery Option</th></tr>
+		            	</thead>
+		            		<tbody><tr><td><label for="delivery"><h4>Selection: </h4></label></td><td><select required="" name="delivery"><option value="Option 1">Option 1: NLI will deliver the computer upon arrival.</option><option value="Option 2">Option 2: NLI will install packaged software and then deliver.</option></select></td></tr>
+		            </tbody></table>		
+		            			
+		            <table class="compselect" id="hardware" border="1">
+		                <thead>
+		                    <tr><th colspan="3"><span id="step">2</span> Computer Offerings</th></tr>
+		                </thead>
+		            <tbody>
+		    
+		            
+		            	<tr>
+		            	   <td><img alt="MAC" src="dsc08928.jpg"> </td><td><h4>Macbook Pro</h4>25Ghz i10 Processor
+128GB Ram
+1PB SSD Harddrive</td>
+		              	   <td><input id="group1" name="group1" value="1" onclick="myFunction()" type="radio"><label for="group1"></label><br><span class="upgrade">Upgrade Charge: $1100</span></td>
+		              	</tr>
+		            
+		            	<tr>
+		            	   <td><img alt="PC" src="0088411613419_color_indigo-blue_sw_500x500_2.jpg"> </td><td><h4>PC</h4>5Ghz Intel Centrino
+25GB Ram
+5TB Harddrive</td>
+		              	   <td><input id="group2" name="group1" value="2" onclick="myFunction()" type="radio"><label for="group2"></label><br><span class="upgrade">Upgrade Charge: None</span></td>
+		              	</tr>
+		            
+		            	<tr>
+		            	   <td><img alt="MAC with BAM" src="dsc08928_1.jpg"> </td><td><h4>Macbook Pro with BAM</h4>Same as 2015-MPD but with a monitor</td>
+		              	   <td><input id="group3" name="group1" value="3" onclick="myFunction()" type="radio"><label for="group3"></label><br><span class="upgrade">Upgrade Charge: $1100</span></td>
+		              	</tr>
+		            
+		            	<tr>
+		            	   <td><img alt="PC with Monitor" src="0088411613419_color_indigo-blue_sw_500x500_3.jpg"> </td><td><h4>PC with Monitor</h4>Same as 2015-PC but with a tiny monitor</td>
+		              	   <td><input id="group4" name="group1" value="4" onclick="myFunction()" type="radio"><label for="group4"></label><br><span class="upgrade">Upgrade Charge: $120</span></td>
+		              	</tr>
+		            	            
+		        </tbody></table>
+		    </div>
+		    <div class="filter">
+				<table style="width: 477px ! important; text-align: center;">
+						<tbody><tr><th>Computer Type</th>
+		                	<td><input id="PC" ame="PC" value="PC" onclick="document.getElementById('PConly').value='1';document.getElementById('Maconly').value='0';document.getElementById('Tabletonly').value='0'; document.forms['selectmachine'].submit();" type="checkbox"><label for="PC"></label><p>PC</p></td>
+		                	<td><input id="Mac" name="Mac" value="Mac" onclick="document.getElementById('Maconly').value='1';document.getElementById('PConly').value='0';document.getElementById('Tabletonly').value='0'; document.forms['selectmachine'].submit();" type="checkbox"><label for="Mac"></label><p>Mac</p></td>
+		                	<td><input id="Tablet" name="Tablet" value="Tablet" onclick="document.getElementById('Tabletonly').value='1';document.getElementById('PConly').value='0';document.getElementById('Maconly').value='0'; document.forms['selectmachine'].submit();" type="checkbox"><label for="Tablet"></label><p>Tablet</p></td>
+		        			<td><input id="All" name="All" value="Clear" onclick="document.getElementById('PConly').value='0';document.getElementById('Maconly').value='0';document.getElementById('Tabletonly').value='0';document.forms['selectmachine'].submit()" type="reset"><label for="All"></label></td>
+		        			</tr>
+		        </tbody></table>
+		        <div style="display: none;" id="dialog-confirm" title="Confirm Selection?">
+				<p id="dialog-radio"><span class="ui-icon ui-icon-alert" style="float: left; margin: 3px 7px 64px 0px;"></span>Your computer has been selected but not confirmed. Please confirm your selection using the button below.</p>
+				</div>
+		    </div>
+		</div>
+	        </form>
+	    
+	
+</div>
+		    </div>	
+		    <!--<div id="popupMSG">
+		    <h4 class="blue2">Attention Faculty Computer Refresh Program Participants:</h4>
+			You must log in to see information, including summer programs. After closing this message, click the VT Login Link at the top-right of this page.
+			</div>-->
+			<!--Message body goes here. HTML supported-->
+			  
+	        <div id="footer">
+                
+    
+        NLI    
+    
+
+    
+    
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+
+
+            </div>
+            
+    <!--<div class="footer_box">
+    </div>
+    <div id="footer_contacts"> 
+	    
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">GENERAL INQUIRIES</h4>
+	            NLI<br />
+	            1220 Torgersen Hall<br />
+	            http://nli.tlos.vt.edu<br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">REPORT TECHNICAL ISSUES</h4>
+	            NLI Support Team<br />
+	            <br />
+	            <br />
+	            <br />
+	            <br />
+	            nli@vt.edu <br />
+	            </div>
+	        
+	     
+    </div>-->
+    
+        
+    <div id="footer_copyright">
+    
+    	
+        	NLI is a division of Virginia Tech's Division of Technology-enhanced Learning and Online Strategies (TLOS)
+    	
+	<br>
+	
+		Copyright 2013
+    
+    	<div id="footer_division">
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+    	</div>
+    </div>
+
+            <!--<div class="footer_box"></div>-->
+	    </div>              
+    
+
+
+
+</body></html>

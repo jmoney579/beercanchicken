@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, max-width=1.0, user-scalable=yes">
+        
+        <title>NLI Enrollment System</title>
+       <link href="nli_icon.png" type="image/png" rel="icon">
+         
+        	 
+             
+        
+        
+         <!--[if IE]>
+         	<link rel="stylesheet" href="/static//css/ie.css?" />
+         <![endif]-->
+        
+        <script src="jquery-2.0.3.min.js"></script>
+        <script src="jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="jquery.tablesorter-update.js"></script>
+        <script src="tablesorter.js"></script> 
+        <script src="home_popup.js"></script>
+         
+
+        <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+		<script>
+		$(function() {
+		$( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
+		});
+		</script>
+		<script language="Javascript">
+		function hideA()
+		{
+		
+		    document.getElementById("A").style.visibility="hidden";
+		    document.getElementById("B").style.visibility="visible";    
+		
+		}
+		
+		function hideB()
+		{
+		    document.getElementById("B").style.visibility="hidden";
+		    document.getElementById("A").style.visibility="visible";
+		
+		}
+		</script>
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput(num)
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce'+num).innerHTML+='<br/><input type="text" id="'+boxName+'+num" value="" "  /><br/>';
+		     countBox += 1;
+		}
+		</script>
+
+        
+        <script type="text/javascript">
+		function myFunction() {
+ 		$(function() {
+		$( "#dialog-confirm" ).dialog({
+		resizable: false,
+		height: 140,
+		width: 450,
+		modal: true,
+		buttons: {
+		"Confirm Selection": function() {
+			document.selectmachine.submit();
+			},
+		"Go back": function() {
+			$( this ).dialog( "close" );
+			}
+		}
+		});
+	});
+       $('form#selectmachine').submit(function(e){
+            e.preventDefault();
+ 
+            $("p#dialog-radio").html($("input#group1").val());
+            $('#dialog-confirm').dialog('open');
+        });
+    }
+
+</script>
+        
+
+    
+<link rel="stylesheet" type="text/css" href="logout.css" media="all">
+</head>
+<body>
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+	    
+	    
+         <div id="VTDivision">
+    
+
+    
+        NLI is a division of Virginia Tech's Division of Technology-enhanced Learning and Online Strategies (TLOS)
+    
+<div id="Logingreeting">
+    
+        <a indepth="true" href="login.html">Guest Login</a> | <a indepth="true" href="default_006.html">VT Login</a>
+    
+</div></div>
+        <div id="everything" class="everything">
+	        <div id="header">
+	            <h1>
+    
+        
+           <a href="http://nli.tlos.vt.edu/"> <img src="nli_logo.jpg"> </a>
+        
+    
+    
+        NLI
+    
+</h1>    
+	        </div>
+	        <div id="subheader">
+                <h3>Registration System</h3><div class="reg_hash"></div>    
+            </div>  	
+            <div id="search">
+            </div>
+            	
+		    <div id="main">
+		    
+        <div id="navbar">
+            <ul>
+            <li class="navbaritem">
+            <a indepth="true" href="default_010.html">Home</a>
+            </li>
+            <li class="navbaritem">
+            <a indepth="true" href="default_004.html">
+                Current Offerings
+            </a>
+            </li>
+    
+                <li class="navbaritem">
+            <a indepth="true" target="_top" class="help" href="default_005.html">
+            </a>
+            </li>
+            </ul>
+        </div>
+
+	
+			    <div id="content-all">
+			        
+			            <div id="navpanel">
+			                
+			                    
+
+				                
+		            			            
+			                			        
+			            </div>
+			        
+			        <div id="widecontent">
+    <h2>You are now logged out.</h2>
+    <p>Click <a indepth="true" href="login.html">here</a> to login.</p>
+    
+
+</div>
+		    </div>	
+		    <!--<div id="popupMSG">
+		    <h4 class="blue2">Attention Faculty Computer Refresh Program Participants:</h4>
+			You must log in to see information, including summer programs. After closing this message, click the VT Login Link at the top-right of this page.
+			</div>-->
+			<!--Message body goes here. HTML supported-->
+			  
+	        <div id="footer">
+                
+    
+        NLI    
+    
+
+    
+    
+    
+        
+            
+                <img src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+
+
+            </div>
+            
+    <div class="footer_box">
+    </div>
+    <div id="footer_contacts"> 
+	    
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">GENERAL INQUIRIES</h4>
+	            NLI<br>
+	            1220 Torgersen Hall<br>
+	            <a href="http://nli.tlos.vt.edu/">http://nli.tlos.vt.edu</a><br>
+	            <br>
+	            <br>
+	            nli@vt.edu<br>
+	            </div>
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">REPORT TECHNICAL ISSUES</h4>
+	            NLI Support Team<br>
+	            <br>
+	            <a indepth="true" href="logout.html"></a><br>
+	            <br>
+	            <br>
+	            nli@vt.edu<br>
+	            </div>
+	        
+	     
+    </div>
+    
+        
+    <div id="footer_copyright">Copyright 2013</div>
+    
+
+            <!--<div class="footer_box"></div>-->
+	    </div>              
+    
+
+</div>
+
+</body></html>

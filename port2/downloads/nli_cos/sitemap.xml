@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../sitemap.xsl" type="text/xsl" media="all"?>
+<site>
+<page file="index.html" text="NLI Enrollment System" title="NLI Enrollment System">
+<page file="default.html" text="               Computer Selection              " title="NLI Enrollment System">
+<page file="1.html" text=" More Details" title="NLI Enrollment System"/>
+<page file="2.html" text=" More Details" title="NLI Enrollment System"/>
+<page file="3.html" text=" More Details" title="NLI Enrollment System"/>
+<page file="4.html" text=" More Details" title="NLI Enrollment System"/>
+</page>
+<page file="default_001.html" text="               College Administrator              " title="NLI Enrollment System"/>
+<page file="default_002.html" text="               Department Administrator              " title="NLI Enrollment System">
+<page file="default_007.html" text="View NLI participant credit summary" title="NLI Enrollment System"/>
+<page file="default_008.html" text="Change" title="NLI Enrollment System"/>
+<page file="default_009.html" text="Change" title="NLI Enrollment System"/>
+</page>
+<page file="default_003.html" text="               Order Summary              " title="NLI Enrollment System"/>
+<page file="default_004.html" text="                 Return to Course Selection              " title="NLI Enrollment System">
+<page file="default_010.html" text="Home" title="NLI Enrollment System"/>
+<page file="default_011.html" text="Sections I'm Leading" title="NLI Enrollment System"/>
+<page file="default_012.html" text="Record Attendance" title="NLI Enrollment System"/>
+</page>
+<page file="default_005.html" text="Help" title="NLI Registration System Help"/>
+<page file="logout.html" text="Logout" title="NLI Enrollment System">
+<page file="login.html" text="Guest Login" title="NLI Enrollment System"/>
+</page>
+<page file="default_006.html" text="LOG IN" title="Virginia Tech Central Authentication Service">
+<page file="help.html" text="Help" title="CAS Help Topics">
+<page file="single_sign_on.html" text="single sign-on" title="Single sign-on - Wikipedia, the free encyclopedia"/>
+<page file="iforgot.html" text="Forgot password" title="Virginia Tech Central Authentication Service"/>
+<page file="default_013.html" text="InCommon Assurance Program" title="InCommon Assurance Program"/>
+</page>
+<page file="legalcode.html" text="BY-NC-SA" title="Creative Commons Legal Code">
+<page file="default_014.html" text="Creative Commons" title="Creative Commons"/>
+</page>
+</page>
+</page>
+</site>

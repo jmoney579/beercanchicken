@@ -1,0 +1,611 @@
+@charset "UTF-8";
+/* CSS Document */
+/* *********************************************************** 
+
+Date Created: January 24, 2012
+Created by: Jacques Walker
+Contact: jacquesw [at] vt.edu
+Copyright: All Rights Reserved 2012
+License: Not for use by non-ECLIPSE LLC except by permission only
+Note: Created expressly for use by ECLIPSE LLC
+
+*********************************************************** */
+
+/*--------Redefined HTML Tags---------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #000;
+	margin-top: 0px;
+	text-align: center;
+}
+img{
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	padding: 3px;
+}
+table {
+    border: 1px solid #FFF;
+    padding: 4px;
+}
+tr {
+    background-color: #CCC;
+    color: #000;
+}
+td {
+    padding: 4px;
+}
+th{
+	background-color: #999;
+	font-style: italic;
+	text-align:left;
+	padding: 2px;
+	font-weight: bold;
+}
+.suite_logo img, .Header_image img, .product_logo img{
+	border: none;
+	box-shadow: none;
+}
+a, a:visited, a:active {
+	color: #feca20;
+	text-decoration:none;
+}
+a:hover{
+	border-bottom: 1px dotted #feca20;
+}
+.suite_logo a img{
+	text-decoration:none;
+	border-bottom: none;
+}
+.suite_logo a:hover{
+	border-bottom: none;
+}
+h1{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 21pt;
+	color: #FFF;
+	background-image:url(../images/h1_shading.png);
+	background-repeat: repeat-y;
+	font-style: italic;
+	padding: 5px 0 0 5px;
+	margin-bottom: 6px;
+	height: 24px;
+}
+.stretched_background{
+	width: 897px;
+	background-image:url(../images/h1_shading_fullwidth.png);
+	background-repeat:repeat-y;
+}
+h2{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 19pt;
+	color: #006699;
+	background-image:url(../images/h2_shading.png);
+	background-repeat: repeat-y;
+	font-style: italic;
+	padding: 2px 0 0 3px;
+	margin-bottom: 6px;
+	height: 25px;
+}
+
+h3{
+	color: #3399CC;
+	padding-bottom: 10px;
+}
+.white{
+	color: #FFF;
+}
+.blue{
+	color: #3399CC;
+}
+
+h3{
+}
+
+h4{
+}
+
+h5{
+}
+/*---------Div classes------------------------*/
+.wrapper{
+	width:980px;
+	margin: 0 auto 0 auto;
+}
+.page_content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	color: #FFF;
+	text-align: left;
+	clear: both;
+	height: auto;
+	width: 960px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	background-color: #000;
+	list-style-position: outside;
+	list-style-image: url(../images/bullet_l1.png);
+	overflow: hidden;
+	position: relative;
+	min-height: 800px;
+	z-index: 1;
+}
+.header_bar {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 17pt;
+	color: #FFF;
+	float: left;
+	height: auto;
+	width: 752px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFF;
+	position: relative;
+	margin: 6px 0 2px 3px;
+	letter-spacing: 0.5px;
+}
+.hp .header_bar {
+	background-color: #858585;
+	background-image:url(../images/header_bar.jpg);
+	background-repeat: repeat-y;
+	color: #000;
+	font-style:italic;
+	border-bottom: none;
+	width: 766px;
+	margin: 17px 0 0px 0px;
+	padding-left: 2px;
+	padding-top: 3px;
+	height: 31px;
+	
+}
+.suite_logo {
+	background-color: #cecece;
+	background-image: url(../images/suite_background.jpg);
+	background-repeat: repeat-y;
+	text-align: center;
+	vertical-align: middle;
+	float: right;
+	height: auto;
+	width: 209px;
+	border: 1px solid #fff;
+	position: absolute;
+	z-index: 2;
+	margin: 3px 0 0 778px;
+	padding: 3px 0 3px 0;
+}
+.Header_image {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 24pt;
+	background-color: #000;
+	background-image: url(../images/gem_header_small.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	clear: both;
+	height: 180px;
+	width: 936px;
+	position: relative;
+	text-align: right;
+	margin: 0 0 3px 0px;
+}
+.hp .Header_image{
+	background-image:url(../images/gem_header.jpg);
+	width: 956px;
+	height: 359px;
+}
+.product_logo {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18.3px;
+	color: #FFF;
+	float: right;
+	height: auto;
+	width: 336px;
+	overflow: auto;
+	position: relative;
+	z-index: 1;
+	margin: 57px 37px 0 0;
+	/*margin: 50px 15px 0 0;*/
+}
+.hp .product_logo {
+	width: 560px;
+	font-size: 31.5px;
+	margin: 70px 45px 0 0;
+}
+.product_logo img {
+	border-bottom: 1px solid #FFF;
+	padding: 0 0 5px 0;
+}
+.product_logo hr{
+	margin: 2px 0 4px 0;
+}
+.product_logo p {
+	padding: 2px 0 0 0;
+	margin: 0;
+}
+#navigation {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16pt;
+	width: 910px;
+/*	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;*/
+	position: relative;
+	margin: 0 0 8px 0px;
+	padding: 0 7px 28px 85px;
+	border-bottom: 1px solid #FFF;
+}
+.hp #navigation {
+	margin: -65px 0 8px 0px;
+	background-color: #000;
+	width: 917px;
+	padding: 0 7px 29px 85px;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+}	
+#navigation ul  {
+	/*margin: 0 0 0 -9px;*/
+	list-style-type: none; /* Needed to eliminate list item marker */
+	text-align: center; /* Centers navigation bar */
+	border-bottom: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #FFF;
+	/*width: 112%;*/
+	padding: 0 8px;
+}
+.hp #navigation ul {
+	border-bottom: none;
+	padding: 1px 8px 0;
+}
+#navigation ul li {
+display: inline; /* Needed to create horizontal effect */
+padding-left:25px;
+padding-right:20px;
+background-image:url(../images/nav_bullet.jpg);
+background-position:left;
+background-repeat:no-repeat;
+}
+#navigation ul li a {
+text-decoration: none; /* The setting of "none" allows the link to not be underlined. This is up to user preference. */
+padding: 0px; /* Gives the link space inside it's individual block. */
+/*color: #fff;*/
+}
+#navigation ul li ul li a{
+	margin-bottom: -10px;
+}
+#navigation ul li:hover {
+background-color: #06568e;
+color: #ffcc33;
+}
+#navigation ul li a:hover {
+	color: #ffcc43;
+	border-bottom: none;
+	
+}
+#navigation ul li ul li{
+	background-image: none;
+}
+#navigation ul li ul li:hover{
+	background-color: transparent;
+}
+#navigation ul li ul li hr{
+	width: 80%;
+	margin: 10px 0 -7px 13px;
+	height: 1px;
+	background-color: #FFF;
+	color: #FFF;
+}
+#nosep {
+	border-left: none;
+	border-right: none;
+}
+#active{
+	background-color: #06568E;
+}
+#active_link {
+	color: #FECA20;
+}
+ul.dropdown li {
+    color: #FFFFFF;
+    line-height: normal;
+    padding: 7px 0;
+	line-height: 13px;
+}
+ul.dropdown li.hover, ul.dropdown li:hover {
+}
+ul.dropdown a:link, ul.dropdown a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul.dropdown a:hover {
+    color: #76B900;
+    text-decoration: none;
+}
+ul.dropdown a:active {
+    color: #FFFFFF;
+}
+ul.dropdown ul {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 19px;
+    opacity: 0.9;
+    text-transform: none;
+    width: 184px;
+}
+ul.dropdown ul li {
+    background-color: transparent;
+    color: #000000;
+    filter: none;
+	line-height: 1.0em;
+}
+ul.dropdown ul li.hover, ul.dropdown ul li:hover {
+    background-color: transparent;
+}
+ul.dropdown ul a:link, ul.dropdown ul a:visited {
+    color: #FFFFFF;
+}
+ul.dropdown ul a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul.dropdown ul a:active {
+    color: #FFFFFF;
+}
+ul.dropdown .dir {
+    background-image: none;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    padding-right: 12px;
+}
+ul.dropdown, ul.dropdown li, ul.dropdown ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+ul.dropdown {
+    float: left;
+    position: relative;
+    z-index: 597;
+}
+ul.dropdown li {
+    float: left;
+    line-height: 1.3em;
+    vertical-align: middle;
+}
+ul.dropdown li.hover, ul.dropdown li:hover {
+    cursor: default;
+    position: relative;
+    z-index: 599;
+}
+ul.dropdown ul {
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    /*width: 100%;*/
+    z-index: 598;
+	margin-left: -97px;
+}
+ul.dropdown ul li {
+    float: none;
+}
+ul.dropdown ul ul {
+    left: 99%;
+    top: 1px;
+}
+ul.dropdown li:hover > ul {
+    visibility: visible;
+}
+ul.dropdown li a {
+    display: block;
+    padding: 6px 0px 3px 0px;
+}
+ul.dropdown li {
+    padding: 0;
+}
+ul.dropdown li.dir {
+    padding: 7px 20px 7px 14px;
+}
+ul.dropdown ul li.dir {
+    padding-right: 15px;
+}
+ul.dropdown li {
+}
+ul.dropdown ul a {
+    padding: 4px 5px 4px 14px;
+    /*width: 172px;*/
+}
+ul.dropdown ul a:hover {
+    background-color: #06568E;
+}
+ul.dropdown a.open {
+    background-color: #2E2E2E;
+    color: #76B900;
+}
+ul.dropdown ul a.open {
+    background-color: #104352;
+    color: #FFFFFF;
+}
+ul.dropdown li:hover > a.dir {
+    background-color: #06568e;
+    color: #FFFFFF;
+	/*width: 180px;*/
+}
+ul.dropdown ul li:hover > a.dir {
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+}
+#dropdown{
+	z-index: 90;
+}
+.footer {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10pt;
+	color: #FFF;
+	background-color: #000;
+	clear: both;
+	height: 40px;
+	width: 100%;
+	margin-top: -72px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 35px 0 0;
+	overflow: auto;
+	z-index: -2;
+	border-top: 5px solid #FFF;
+}
+.footer_text {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10pt;
+	color: #FFF;
+	clear: both;
+	height: auto;
+	width: 100%;
+	padding-top: 6px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 25px;
+	position: relative;
+	z-index: 1;
+	text-align: left;
+}
+.left_content {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #FFF;
+	text-align: left;
+	float: left;
+	height: auto;
+	width: 677px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+	overflow: auto;
+	position: relative;
+	padding: 0px 13px 3px 21px;
+	margin: 2px;
+}
+.left_content ul{
+	list-style-position: outside;
+	list-style-image: url(../images/bullet_l1.png);
+	padding-left: 25px;
+	margin: 3px;
+}
+.hp .left_content{
+	margin: 24px 2px 2px 2px;
+	width: 491px;
+}
+#no_right_bar{
+	width: 902px;
+	border-right: none;
+}
+.right_bar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #FFF;
+	text-align: left;
+	float: left;
+	height: auto;
+	width: 202px;
+	list-style-image: url(../images/bullet_l1.png);
+	overflow: auto;
+	position: relative;
+	padding-top: 2px;
+	padding-right: 0;
+	padding-bottom: 3px;
+	padding-left: 10px;
+}
+.hp .right_bar {
+	margin-top: 24px;
+	width: 410px;
+}
+.img_right{
+	float: right;
+	margin: 3px 0px 20px 20px;
+	background-color: #FFF;
+	position: relative;
+	padding: 4px;
+	text-align: center;
+}
+.img_left{
+	float: left;
+	margin: 3px 20px 20px 0;
+	background-color: #FFF;
+	position: relative;
+	padding: 4px;
+	text-align: center;
+}
+.img_center{
+	display: block;
+	float: none;
+	margin: 3px 20px 20px 0;
+	position: relative;
+	min-width: 150px;
+	text-align: center;
+}
+.img_center img{
+	clear:both;
+	margin: auto;
+	border-width: 2px;
+} 
+.img_center div.caption{
+	    position:absolute;
+        bottombottom:0px; 
+        left:0px;  
+        width:100%;    
+        font-family: 'tahoma', "Times New Roman", Times, Serif;  
+        font-size:13px;  
+        color:#FFF;
+		padding-bottom: 6px;
+		background-color: transparent;  
+}
+/*.img_right, .img_left, .img_center a:hover{
+	border-bottom: none;
+}*/
+#transparent{
+	background-color:transparent;
+	border: none;
+}
+.caption{  
+        position:absolute;
+        bottombottom:0px; 
+        left:0px;  
+        width:100%;   
+        background-color:#FFF;  
+        font-family: 'tahoma', "Times New Roman", Times, Serif;  
+        font-size:13px;  
+        color:#000;  
+    }  
+.caption p{  
+        padding:0 2px 2px 4px;    
+    }
+/*.rotater {
+	margin: 0px 22px 5px;
+	clear: both;
+	float: none;
+	height: 125px;
+	width: auto;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	position: relative;
+}*/

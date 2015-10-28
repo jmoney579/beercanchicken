@@ -1,0 +1,159 @@
+@CHARSET "US-ASCII";
+
+/**************************************************************************
+*   Webmaster Assignment for Massey Cancer Center                         * *                                        				  *
+*   Designed by Jacques Walker                                            *
+*   Copyright 2014                                                        *
+***************************************************************************/
+
+
+@import url(http://fonts.googleapis.com/css?family=Orbitron|Alegreya+Sans+SC:400,700);
+@import url("media_kit.css");
+
+body{
+	background-color: #b7b7b7;
+	font-family: 'Times New Roman', 'Times', serif;
+	margin: 0;
+	}
+.wrapper{
+	width: 100%;
+	min-width: 391px;
+	}
+header{
+	background: url("../vcubrand.gif") top left  no-repeat #f8b700;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	}
+header h1{
+	background-color: #000;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 31px;
+	margin: 56px 0 0;
+	padding: 8px 0 5px 32px;
+	width: 98%;
+	}
+header h1 a{
+	text-decoration: none;
+	color: #fff;
+	}
+nav{
+	display: block;
+	}
+nav ul{
+	margin: 0;
+	}
+nav ul li{
+	display: inline;
+	}
+nav ul li a{
+	color: #FFF;
+	padding: 0 15px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	}
+nav ul li a:hover{
+	background-color: #000;
+	}
+article{
+	width: 100%;
+	max-width: 1280px;
+	box-shadow: 0px 3px 5px #000;
+	background-color: #FFF;
+	margin: 129px auto 0 auto;
+	padding: 0px 5px;
+	position: relative;
+	overflow: auto;
+	}
+article h1{
+    	font-family: 'Alegreya Sans SC',sans-serif;
+    	font-size: 28px;
+    	margin: 2px 0;
+    	padding: 0;
+	color: #006699;
+}
+article a, article a:visited{
+	color: #388fd2;
+	text-decoration: none;
+}
+article a:hover, article a:active{
+	color: #5151bd;
+}
+article footer{
+	text-align: left;
+	line-height: 6px;
+}
+figure{
+	background-color: #f8b700;
+	padding: 5px;
+	margin: 8px;
+	float: left;
+	}
+figcaption{
+	color: #FFF;
+	}
+figure img{
+	width: 100%;
+	}
+aside{
+	height: 160px;
+	margin: 16px 16px 16px 26px;
+	background: url("../massey_trans_logo_wt.png") top right no-repeat transparent;
+	background-size: 22%;
+	}
+aside nav ul{
+	margin-left: -44px;
+}
+aside nav ul li a{
+	display: inline-block;
+    	height: 95px;
+    	padding: 59px 0 0 24px !important;
+    	width: 143px;
+	font-size: 24px !important;
+	margin: 0 0 0 -32px;
+	text-align: center;
+}
+aside nav ul li{
+    display: inline-flex;
+	display: -ms-flexbox;
+    height: 150px;
+    padding: 0 0 0 24px;
+    width: 143px;
+	margin-top: 6px;
+	float: left;
+}
+aside nav ul li:nth-child(1){
+	background: url("../mcc_mission.png") center center no-repeat transparent;
+}
+aside nav ul li:nth-child(2){
+	background: url("../mcc_leadership.png") center center no-repeat transparent;
+}
+aside nav ul li:nth-child(3){
+	background: url("../mcc_community.png") center center no-repeat transparent;
+}
+aside nav ul li:nth-child(4){
+	background: url("../mcc_employment.png") center center no-repeat transparent;
+}
+aside nav ul li:nth-child(5){
+	background: url("../mcc_facts.png") center center no-repeat transparent;
+}
+aside nav ul li a:hover{
+	background-color: transparent;
+	color: #f8b700;
+}
+	
+footer{
+	font-family: 'Georgia', 'Helvetica', sans-serif;
+	font-size: 12px;
+	padding-left: 32px;
+	clear: both;
+	padding-top: 1px;
+	}	
+footer a{
+	text-decoration: none;
+}
+footer a:hover{
+	color: #FFF;
+}
+

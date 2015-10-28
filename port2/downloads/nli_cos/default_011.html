@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, max-width=1.0, user-scalable=yes">
+        
+        <title>NLI Enrollment System</title>
+       <link href="nli_icon.png" type="image/png" rel="icon">
+         
+        	 
+             
+        
+        
+         <!--[if IE]>
+         	<link rel="stylesheet" href="/static//css/ie.css?" />
+         <![endif]-->
+        
+        <script src="jquery-2.0.3.min.js"></script>
+        <script src="jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="jquery.tablesorter-update.js"></script>
+        <script src="tablesorter.js"></script> 
+        <script src="home_popup.js"></script>
+         
+
+        <script>
+		$(function() {
+		$( "#datepicker" ).datepicker();
+		});
+		</script>
+		<script>
+		$(function() {
+		$( "#accordion" ).accordion({heightStyle: "content", collapsible: true});
+		});
+		</script>
+		<script language="Javascript">
+		function hideA()
+		{
+		
+		    document.getElementById("A").style.visibility="hidden";
+		    document.getElementById("B").style.visibility="visible";    
+		
+		}
+		
+		function hideB()
+		{
+		    document.getElementById("B").style.visibility="hidden";
+		    document.getElementById("A").style.visibility="visible";
+		
+		}
+		</script>
+		<script>
+		var countBox =1;
+		var boxName = 0;
+		function addInput(num)
+		{
+		     var boxName="textBox"+countBox; 
+		document.getElementById('responce'+num).innerHTML+='<br/><input type="text" id="'+boxName+'+num" value="" "  /><br/>';
+		     countBox += 1;
+		}
+		</script>
+
+        
+    <script src="enrollment_ajax.js"></script>
+    <script src="form_controls.js"></script>
+
+
+    
+<link rel="stylesheet" type="text/css" href="default_011.css" media="all">
+</head>
+<body>
+        <!--<a id="vt_home" href="http://www.vt.edu/" title="Virginia Tech Home Page"></a>-->
+	    
+	    
+         <div id="VTDivision">
+    
+
+    
+        NLI is a division of Virginia Tech's Division of Technology-enhanced Learning and Online Strategies (TLOS)
+    
+<div id="Logingreeting">
+    
+        <a indepth="true" href="login.html">Guest Login</a> | <a indepth="true" href="default_006.html">VT Login</a>
+    
+</div></div>
+        <div id="everything" class="everything">
+	        <div id="header">
+	            <h1>
+    
+        
+           <a href="http://nli.tlos.vt.edu/"> <img src="nli_logo.jpg"> </a>
+        
+    
+    
+        NLI
+    
+</h1>    
+	        </div>
+	        <div id="subheader">
+                <h3>Enrollment System </h3><div class="reg_hash"></div>    
+            </div>  	
+            <div id="search">
+            </div>
+            	
+		    <div id="main">
+		    
+        <div id="navbar">
+            <ul>
+            <li class="navbaritem">
+            <a indepth="true" href="default_010.html">Home</a>
+            </li>
+            <li class="navbaritem" id="active">
+            <a indepth="true" href="default_004.html" id="active">
+                Current Offerings
+            </a>
+            </li>
+    
+                <li class="navbaritem">
+            <a indepth="true" target="_top" class="help" href="default_005.html">
+            </a>
+            </li>
+            </ul>
+        </div>
+
+	
+			    <div id="content-all">
+			        
+			            <div id="navpanel">
+			                
+			                    
+		                            <div id="uppernavpanel">
+		                            	
+		                           			<ul>
+											
+											</ul>
+    									
+	
+                                        
+    <ul>
+    <div class="student_navpanel">
+	    <li><a indepth="true" href="default_010.html">All Themes</a></li>    
+	    <li><a indepth="true" href="default_004.html">All Courses</a></li>
+	    
+    </div>
+    
+</ul>
+
+				                    </div>
+				                
+				                
+                                    <div id="lowernavpanel">
+                                        
+    	
+	    <h3>Filter by:</h3>
+	    <hr>
+			<form action="http://127.0.0.1:8000/registration/teaching/" method="post" id="course-filter-form"><input name="csrfmiddlewaretoken" value="CkFh0AxBronxiOCycZE2rYhq9te4W2Ie" type="hidden">
+			<input name="form_term" value="None" id="form_term" type="hidden">
+            
+               
+               
+                  
+                  <input class="displayform_display" id="id_display" name="display" type="hidden">
+                  
+               
+            
+               
+               
+                  
+                  <input class="displayform_showpast" id="id_showpast" name="showpast" type="hidden">
+                  
+               
+            
+               
+               
+                  
+                  <input class="displayform_selfonly" id="id_selfonly" name="selfonly" type="hidden">
+                  
+               
+            
+               
+               <p>
+                  
+                  <input id="id_online" name="online" type="checkbox">
+                  <label for="id_online">Online</label>
+               </p>
+            
+               
+               <p>
+                  <label for="id_coursename">Event Title:</label>
+                  <input value="" class="displayform_coursename" id="id_coursename" maxlength="100" name="coursename" type="text">
+                  
+               </p>
+            
+               
+               <p>
+                  <label for="id_theme">Theme:</label>
+                  <select class="displayform_theme" id="id_theme" name="theme">
+<option value="" selected="selected">---------</option>
+<option value="5">Computational Thinking</option>
+<option value="2">Engaging Learners</option>
+<option value="7">Programming and Software</option>
+<option value="8">Research and Discovery</option>
+<option value="6">Scholar</option>
+<option value="4">Technology and Security</option>
+<option value="1">Visual Media &amp; Web Development</option>
+</select>
+                  
+               </p>
+            
+               
+               
+                  
+                  <input class="displayform_tag" id="id_tag" name="tag" type="hidden">
+                  
+               
+            
+               
+               <p>
+                  <label for="id_instructor">Led By</label>
+                  <select class="displayform_instructor" id="id_instructor" name="instructor">
+<option value="" selected="selected">---------</option>
+<option value="4">Aldren, Buzz</option>
+<option value="1">Kensler, Johnathan</option>
+<option value="2">Kent, Clark</option>
+<option value="5">Squarepants, Spongebob</option>
+<option value="3">Walker, Jacques</option>
+</select>
+                  
+               </p>
+            
+               <p>Date Range:</p>
+               <p>
+                  <label for="id_start_date_limit">From:</label>
+                  <input value="" class="datepicker hasDatepicker" id="id_start_date_limit" name="start_date_limit" type="text">
+                  
+               </p>
+            
+               
+               <p>
+                  <label for="id_end_date_limit">To:</label>
+                  <input value="" class="datepicker hasDatepicker" id="id_end_date_limit" name="end_date_limit" type="text">
+                  
+               </p>
+            
+
+            <input value="Clear All" id="course-filter-form-reset" type="reset"><br>
+			<input value="Submit" type="submit">
+			
+			</form>
+    
+
+                                    </div>
+                                		            			            
+			                			        
+			            </div>
+			        
+			        <div id="content">
+    
+      
+	    <h1>Events I'm Teaching</h1>
+	      
+	    
+	        
+		        <h4>Sorry, there are no current offerings that match your criteria.</h4>
+		        
+	    
+    
+</div>
+		    </div>	
+		    <!--<div id="popupMSG">
+		    <h4 class="blue2">Attention Faculty Computer Refresh Program Participants:</h4>
+			You must log in to see information, including summer programs. After closing this message, click the VT Login Link at the top-right of this page.
+			</div>-->
+			<!--Message body goes here. HTML supported-->
+			  
+	        <div id="footer">
+                
+    
+        NLI    
+    
+
+    
+    
+    
+        
+            
+                <img alt="Virginia Tech Logo" src="vt_logo_3_maroon_shield.png">
+            
+        
+    
+
+
+            </div>
+            
+    <div class="footer_box">
+    </div>
+    <div id="footer_contacts"> 
+	    
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">GENERAL INQUIRIES</h4>
+	            NLI<br>
+	            1220 Torgersen Hall<br>
+	            <a href="http://nli.tlos.vt.edu/">http://nli.tlos.vt.edu</a><br>
+	            <br>
+	            <br>
+	            nli@vt.edu<br>
+	            </div>
+	        
+	            <div id="contact_info" class="footer_box">
+                <h4 id="title">REPORT TECHNICAL ISSUES</h4>
+	            NLI Support Team<br>
+	            <br>
+	            <a indepth="true" href="default_011.html"></a><br>
+	            <br>
+	            <br>
+	            nli@vt.edu<br>
+	            </div>
+	        
+	     
+    </div>
+    
+        
+    <div id="footer_copyright">Copyright 2013</div>
+    
+
+            <!--<div class="footer_box"></div>-->
+	    </div>              
+    
+
+</div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+</body></html>
