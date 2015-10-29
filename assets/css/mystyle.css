@@ -12,7 +12,7 @@ p{
 }
 /*--Jquery Classes--*/
 .stomped{
-	padding-top: 519px;
+	padding-top: 660px;
 }
 .snaptotop{
 	position: fixed;
@@ -194,13 +194,15 @@ input[type="submit"].pure-button.pure-button-primary {
 	list-style-type: none;
 }
 .subnav ul li {
-  	margin: 0 29px;
+  	margin: 0 4%;
   	display: inline;
   	text-transform: uppercase;
 }
-.subnav ul li a{
-	color: #5b5b5b;
-	text-decoration: none;
+.subnav ul li a {
+    color: #5b5b5b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
 }
 .subnav ul li a:hover{
 	color: #CCCCCC;
@@ -209,8 +211,42 @@ input[type="submit"].pure-button.pure-button-primary {
   	margin: 0 13%;
 }
 .col-md-7.qoute p{
-	font-size: 15px;
+	font-size: 20px;
+	margin: 10px;
 }
 .col-md-7.socialmedia {
   margin: 5px 0 0 7%;
 }	
+a.facebook{
+	background: url('../img/facebook_icon.png') no-repeat center center transparent;
+	font-size: 0px;
+	height: 50px;
+	width: 60px;
+	display: block;
+	float: left;
+	}
+a.linkedin{
+	background: url('../img/linkedin_icon.png') no-repeat center center transparent;
+	font-size: 0px;
+	height: 50px;
+	width: 60px;
+	display: block;
+	float: left;
+	}
+a.blog{
+	background: url('../img/blog_icon.png') no-repeat center center transparent;
+	font-size: 0px;
+	height: 50px;
+	width: 60px;
+	display: block;
+	float: left;
+	}
+a.facebook:hover, a.linkedin:hover, a.blog:hover{
+	background-image: none;
+	font-size: 12px;
+	padding-top: 18px;
+	}
+.col-md-7.socialmedia a{
+	color: #FFF;
+	text-decoration: none;
+	}
