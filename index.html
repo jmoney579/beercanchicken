@@ -18,8 +18,10 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <!-- Custom CSS -->
-    <link href="assets/css/mystyle.css" rel="stylesheet">
     <link href="assets/css/backtotop.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link href="assets/css/mystyle.css" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,12 +32,14 @@
    <script>
    $(document).ready(function(){
 	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 245;
+	   var navHeight = $( window ).height() - 180;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('.sticky').addClass('snaptotop');
+				 $('.top_content').addClass('stomped');
 			 }
 			 else {
 				 $('.sticky').removeClass('snaptotop');
+				 $('.top_content').removeClass('stomped');
 			 }
 		});
 	});
@@ -88,13 +92,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">Nav Link</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">Nav Link</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Nav Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Nav Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Nav Link</a>
                     </li>
                 </ul>
             </div>
@@ -104,7 +114,7 @@
 	</div>
     <!-- Page Content -->
    <content>
-    <div class="container-fluid">
+    <div class="container-fluid top_content">
         <div class="row">
             <div class="col-md-9 col-sm-12">
                 <h1>The Big Picture</h1>
@@ -151,7 +161,8 @@
     </div>
 <div class="container-fluid subheader">
 	<div class="col-lg-8 col-md-8 col-sm-12">
-		<h2>Who said micro meant that it had to be small...</h2>
+		<h2>Innovation is the calling card of the future...</h2>
+		<h2 class="smaller">- Anna Eschoo</h2>
 	</div>
 </div>
     <!-- /.container -->
@@ -169,13 +180,31 @@
 </content>
 <footer class="container-fluid">
 		<div class="col-md-4 rule2">
-		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ut rutrum urna.</p>
+			 <h4 class="contact_title">Email <strong>Me</strong></h4>
+			 <form class="pure-form pure-form-stacked contactfooter" action="#" name="Email ME">
+				<input size="40" placeholder="Name" name="Name"
+				type="text"><br>
+			      	<input size="40" placeholder="Email" name="email" type="text"><br>
+			      	<textarea cols="40" placeholder="Comment" rows="4" name="Comment"></textarea><br>
+			      	<input class="pull-right pure-button pure-button-primary" value="Submit" name="Submit" type="submit"><br>
+			  </form>
 		</div>
-		<div class="col-md-4 rule2">
-		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ut rutrum urna.</p>
-		</div>
-		<div class="col-md-4">
-		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed ut rutrum urna.</p>
+		<div class="col-sm-8">
+			<div class="subnav">
+				<ul>
+					<li><a href="#">Link Title</a></li>
+					<li><a href="#">Link Title</a></li>
+					<li><a href="#">Link Title</a></li>
+					<li><a href="#">Link Title</a></li>
+					<li><a href="#">Link Title</a></li>
+				</ul>
+			</div>
+			<div class="col-md-7 qoute">
+				<p>Qoute goes here</p>
+			</div>
+			<div class="col-md-7 socialmedia">
+				<p>Social Media Icons</p>
+			</div>
 		</div>
 	</div>
 </footer>

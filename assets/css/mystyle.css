@@ -10,11 +10,16 @@ body{
 p{
 	line-height: 23px;
 }
+/*--Jquery Classes--*/
+.stomped{
+	padding-top: 519px;
+}
 .snaptotop{
 	position: fixed;
 	width: 100%;
 	z-index: 1;
 	}
+/*--End Jquery Classes--*/
 .big-pic{
 	display: block;
 	height: 563px;
@@ -55,18 +60,20 @@ p{
 	float: right;
 	padding-right: 15px;
 	}
- img.dropdown_nav {
+img.dropdown_nav {
     width: 56px;
     margin: 16px 22px 0 0;
 }
-.snaptotop .big-pic{
-	height: 145px;
-	}
+.snaptotop .big-pic {
+    background-size: auto auto;
+    height: 157px;
+}
 .snaptotop .site_title{
 	top: 9px;
 	}
 .snaptotop .tagline{
 	top: 0px;
+	padding-bottom: 47px;
 	/*display: none;*/
 	}
 .navbar{
@@ -76,9 +83,14 @@ p{
 	border-radius: 0px;
 	}
 .navbar-nav > li > a {
-    padding-bottom: 32px;
-    padding-top: 5vh;
-  	text-transform: uppercase;
+	padding-bottom: 19px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	width: 179px;
+	text-align: center;
+}
+.navbar-nav li a:hover{
+	background-color: #006699 !important;
 }
 .navbar-brand{
 	height: 70px;
@@ -128,7 +140,7 @@ div.col-md-4>img.img-responsive{
 	padding-bottom: 5px;
 }
 .subheader{
-	min-height: 400px;
+	min-height: 232px;
 	background: url("#") no-repeat center center #007236;
 	background-size: cover;
 	border-top: 3px solid #CCC;
@@ -138,7 +150,10 @@ div.col-md-4>img.img-responsive{
 	margin-top:10px;
 }
 .subheader h2{
-	font-size: 40px;
+	font-size: 46px;
+}
+.subheader h2.smaller{
+	font-size: 36px;
 }
 footer{
 	border-top: 2px solid #CCC;
@@ -153,3 +168,51 @@ footer .col-md-4{
 footer p{
 	font-size: 13px;
 }
+h4.contact_title {
+  	margin-bottom: 14px;
+  	text-transform: uppercase;
+  	font-size: 15px;
+	margin-left: 29px;
+	color: #FFF;
+}
+form.pure-form.pure-form-stacked.contactfooter {
+  	margin-left: 29px;
+	width: 315px;
+}
+.pure-form input[type=text]{
+	margin: -6px 0;
+}
+input[type="submit"].pure-button.pure-button-primary {
+  	margin: -8px 0 13px 0;
+	background-color: #007236;
+}
+.pure-form textarea{
+	margin: -6px 0;
+}
+.subnav {
+  	margin-top: 7px;
+}
+.subnav ul{
+	list-style-type: none;
+}
+.subnav ul li {
+  	margin: 0 29px;
+  	display: inline;
+  	text-transform: uppercase;
+}
+.subnav ul li a{
+	color: #5b5b5b;
+	text-decoration: none;
+}
+.subnav ul li a:hover{
+	color: #CCCCCC;
+}
+.col-md-7.qoute {
+  	margin: 0 13%;
+}
+.col-md-7.qoute p{
+	font-size: 15px;
+}
+.col-md-7.socialmedia {
+  margin: 5px 0 0 7%;
+}	
