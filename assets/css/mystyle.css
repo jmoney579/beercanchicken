@@ -177,17 +177,15 @@ h4.contact_title {
 }
 form.pure-form.pure-form-stacked.contactfooter {
   	margin-left: 29px;
-	width: 315px;
+	width: 320px;
 }
-.pure-form input[type=text]{
+.pure-form input[type=text], .pure-form textarea{
 	margin: -6px 0;
+	width: 320px;
 }
 input[type="submit"].pure-button.pure-button-primary {
   	margin: -8px 0 13px 0;
 	background-color: #007236;
-}
-.pure-form textarea{
-	margin: -6px 0;
 }
 .subnav {
   	margin-top: 7px;
