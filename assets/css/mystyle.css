@@ -51,12 +51,13 @@ p{
 	transform: rotate(-180deg);
 	}
 .site_title {
-    background: url('../img/site_title_back.png') repeat center center transparent;
-    height: 67px;
-    border-top: 2px solid #FFF;
-    TOP: 427px;
-    position: relative;
-    width: 100%;
+    	background: url('../img/site_title_back.png') repeat center center transparent;
+    	height: 67px;
+    	border-top: 2px solid #FFF;
+    	top: 427px;
+    	position: relative;
+    	width: 100%;
+	cursor: pointer;
 	}
 .dropdown_nav{
 	display: block;
@@ -64,12 +65,13 @@ p{
 	padding-right: 15px;
 	}
 img.dropdown_nav {
-    width: 56px;
-    margin: 16px 22px 0 0;
+    	width: 56px;
+    	margin: 16px 22px 0 0;
+   	cursor: pointer;
 }
 .snaptotop .big-pic {
-    background-size: auto auto;
-    height: 157px;
+    	background-size: auto auto;
+    	height: 157px;
 }
 .snaptotop .site_title{
 	top: 9px;
@@ -109,7 +111,7 @@ img.dropdown_nav {
 .navbar-brand>img {
     display: block;
     float: left;
-    margin: -6px 20px 0 10px;
+    margin: -4px 20px 0 10px;
 }
 .navbar-brand h1 {
     float: left;
@@ -135,6 +137,19 @@ img.dropdown_nav {
 	text-transform: uppercase;
 	color: #ededed;
 }
+.homie h2{
+	margin-top: 0;
+	text-align: center;
+}
+.homie .col-xs-3{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.homie .portfolio_item a{
+	width: 220px;
+	height: 220px;
+}
+
 .rule{
 	border-right: 1px solid #500c5f;
 	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;*/
@@ -170,6 +185,7 @@ footer{
 	background-color: #080808;
 	padding-top: 10px;
 	color: #999;
+	margin-top: 30px;
 }
 footer .col-md-4{
 	min-height: 210px;
@@ -266,6 +282,70 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 	color: #FFF;
 	text-decoration: none;
 	}
+/*Porfolio Grid Styling */
+.portfolio{
+	/*margin: 10px auto;*/
+	padding: 10px;
+	width: 80%;
+	clear: both;
+	}
+.portfolio_item{
+	float: left;
+	margin: 6px;
+	padding: 3px;
+	background-color: #FFF;
+	border: 1px solid #CCC;
+}
+.portfolio_item a{
+	width: 220px;
+	height: 220px;
+	display: block;
+	color: #FFF;
+	opacity: 0.9;
+	padding: 82px 5px;
+	text-align: center;
+	font-size: 20px;
+}
+.portfolio_item a:hover{
+	opacity: 1;
+	text-decoration: none;
+	transition: 1s;
+}
+.egems{
+	background: url('../img/tiles/egems.jpg') center center no-repeat transparent;
+}
+.fdi{
+	background: url('../img/tiles/fdi.jpg') center center no-repeat transparent;
+}
+.ins_design{
+	background: url('../img/tiles/ins_design.jpg') center center no-repeat transparent;
+}
+.isa{
+	background: url('../img/tiles/isa.jpg') center center no-repeat transparent;
+}
+.lt{
+	background: url('../img/tiles/lt.jpg') center center no-repeat transparent;
+}
+.massey{
+	background: url('../img/tiles/massey.jpg') center center no-repeat transparent;
+}
+.nli{
+	background: url('../img/tiles/nli.jpg') center center no-repeat transparent;
+}
+.port{
+	background: url('../img/tiles/port.jpg') center center no-repeat transparent;
+}
+.vdss{
+	background: url('../img/tiles/vdss.jpg') center center no-repeat transparent;
+}
+.ons{
+	background: url('../img/tiles/vdss_ons1.jpg') center center no-repeat transparent;
+}
+.vdss_spark{
+	background: url('../img/tiles/vdss_spark.jpg') center center no-repeat transparent;
+}
+/*end grid*/
+
 @media (max-width: 767px){
 	.navbar-nav li:hover {
     background: #006699;
