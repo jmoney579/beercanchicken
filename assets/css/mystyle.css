@@ -204,6 +204,54 @@ h4.contact_title {
 	border-right: 1px solid #000;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
 	}
+.rule_left{
+	border-left: 1px solid #ccc;
+    margin-top: 63px;
+	}
+.rule_left h1{
+	margin-bottom: 6px;
+	}
+.rule_left h4{
+	margin-bottom: 0px;
+	}
+.page_nav{
+	margin: -11px 0 10px 0;
+	float: left;
+	width: 100%;
+	}
+.page_nav ul{
+	list-style-type: none;
+	}
+.page_nav ul li{
+	display: inline;
+	}
+.page_nav ul li a{
+	display: block;
+	width: 135px;
+	height: 135px;
+	background-color: #0286b8;
+	color: #FFF;
+	font-size: 15px;
+	padding: 53px 19px;
+	float: left;
+	margin: 0px 5px 5px 0;
+	}
+.page_nav ul li a:hover{
+	text-decoration: none;
+	opacity: .8;
+	}
+.page_nav ul li:nth-child(2) a{
+	background-color: #8f0101;
+	}
+.page_nav ul li:nth-child(3) a{
+	background-color: #01a236;
+	}
+.page_nav ul li:nth-child(4) a{
+	background-color: #8401b4;
+	}
+.page_nav ul li:nth-child(5) a{
+	background-color: #b45e01;
+	}
 form.pure-form.pure-form-stacked.contactfooter {
   	margin-left: 29px;
 	width: 320px;
@@ -282,6 +330,17 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 	color: #FFF;
 	text-decoration: none;
 	}
+/*-- Lightbox --*/
+.comp img {
+    width: 245px;
+    margin: 5px 0;
+    border-top: 1px solid #CCC;
+    padding-top: 9px;
+}
+.sshot img{
+    width: 245px;
+    margin: 7px 2px;
+	}
 /*Porfolio Grid Styling */
 .portfolio{
 	/*margin: 10px auto;*/
@@ -343,6 +402,9 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 }
 .vdss_spark{
 	background: url('../img/tiles/vdss_spark.jpg') center center no-repeat transparent;
+}
+.pa{
+	background: url('../img/tiles/pa.jpg') center center no-repeat transparent;
 }
 /*end grid*/
 
