@@ -215,7 +215,7 @@ h4.contact_title {
 	margin-bottom: 0px;
 	}
 .page_nav{
-	margin: -11px 0 10px 0;
+	margin: -11px 0 10px -41px;
 	float: left;
 	width: 100%;
 	}
@@ -225,20 +225,23 @@ h4.contact_title {
 .page_nav ul li{
 	display: inline;
 	}
-.page_nav ul li a{
+.page_nav ul li a {
 	display: block;
 	width: 135px;
-	height: 135px;
+	height: 61px;
 	background-color: #0286b8;
 	color: #FFF;
 	font-size: 15px;
-	padding: 53px 19px;
+	padding: 21px 19px;
 	float: left;
-	margin: 0px 5px 5px 0;
-	}
+	margin: 0px 5px 25px 0px;
+}
 .page_nav ul li a:hover{
 	text-decoration: none;
 	opacity: .8;
+	}
+.page_nav ul li a:active{
+	text-decoration: none;
 	}
 .page_nav ul li:nth-child(2) a{
 	background-color: #8f0101;
@@ -337,6 +340,10 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
     border-top: 1px solid #CCC;
     padding-top: 9px;
 }
+.small_img{
+	width: 203px !important;
+	border: none !important;
+}
 .sshot img{
     width: 245px;
     margin: 7px 2px;
@@ -379,7 +386,7 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 .ins_design{
 	background: url('../img/tiles/ins_design.jpg') center center no-repeat transparent;
 }
-.isa{
+.wedding{
 	background: url('../img/tiles/isa.jpg') center center no-repeat transparent;
 }
 .lt{
