@@ -209,10 +209,11 @@ h4.contact_title {
     margin-top: 63px;
 	}
 .rule_left h1{
-	margin-bottom: 6px;
+	margin-bottom: 0px;
 	}
 .rule_left h4{
 	margin-bottom: 0px;
+	margin-top: 25px;
 	}
 .page_nav{
 	margin: -11px 0 10px -41px;
@@ -227,12 +228,21 @@ h4.contact_title {
 	}
 .page_nav ul li a {
 	display: block;
+<<<<<<< Updated upstream
 	width: 135px;
 	height: 61px;
 	background-color: #0286b8;
 	color: #FFF;
 	font-size: 15px;
 	padding: 21px 19px;
+=======
+	width: 159px;
+	height: 135px;
+	background-color: #0286b8;
+	color: #FFF;
+	font-size: 15px;
+	padding: 45px 19px;
+>>>>>>> Stashed changes
 	float: left;
 	margin: 0px 5px 25px 0px;
 }
@@ -336,7 +346,7 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 	}
 /*-- Lightbox --*/
 .comp img {
-    width: 245px;
+    width: 170px;
     margin: 5px 0;
     border-top: 1px solid #CCC;
     padding-top: 9px;
