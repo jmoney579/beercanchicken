@@ -126,7 +126,9 @@ img.dropdown_nav {
     margin: 8px 0 0 0;
 	color: #FFF;
 }
-
+.row{
+	min-height: 400px;
+	}
 .crew{
 	background-color: #2b0733;
 	color: #CCC;
@@ -220,6 +222,7 @@ h4.contact_title {
 	}
 .rule_left h4{
 	margin-bottom: 0px;
+	/*margin-bottom: -15px;*/
 	margin-top: 25px;
 	}
 .page_nav{
@@ -272,6 +275,24 @@ h4.contact_title {
 .resume{
     border-right: 3px solid #660000;
     border-bottom: 75px solid #660000;
+	}
+figure{
+	float: left;
+	margin: 5px 5px 0 5px;
+	border: 1px solid #CCC;
+	padding: 5px;
+	}
+figure img{
+	margin: 0 auto;
+	}
+figcaption{
+	width: 183px;
+	}
+.figholder{
+	clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 21px;
 	}
 form.pure-form.pure-form-stacked.contactfooter {
   	margin-left: 29px;
