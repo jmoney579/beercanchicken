@@ -197,12 +197,23 @@ footer p{
 	font-size: 120px;
 	color: #FFF;
 	text-shadow: none;
+	margin-right: 5px;
 	}
-.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+.timecontainer{
+	float: left;
+	}
+.big-countdown .timeRefYears, .big-countdown .timeRefDays, .big-countdown .timeRefHours, .big-countdown .timeRefMinutes, .big-countdown .timeRefSeconds{
 	color: #FFF;
 	font-size: 36px;
-	margin-right: 8px;
+	margin-right: 5px;
 	text-transform: uppercase;
+	text-shadow: 1px 1px #000;
+	}
+#years,  #days, #hours,  #minutes, #seconds{
+	margin-left: 13px;
+	font-size: 120px;
+	color: #FFF;
+	text-shadow: 1px 1px #000;
 	}
 .gallery{
 	display: block;
@@ -354,10 +365,7 @@ footer p{
 }
 /*----Height based media queries---*/
 @media (max-height: 1200px){
-	/*.big-countdown > div > span{
-		font-size: 90px;
-		}*/
-	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+	.big-countdown .timeRefYears, .big-countdown .timeRefDays, .big-countdown .timeRefHours, .big-countdown .timeRefMinutes, .big-countdown .timeRefSeconds{
 		font-size: 27px;
 		}
 	.advert h1{
@@ -369,18 +377,23 @@ footer p{
 }
 /*----Width based media queries---*/
 @media (max-width: 1289px){
-	.big-countdown > div > span{
+	#years,  #days, #hours,  #minutes, #seconds{
 		font-size: 100px;
 		}
-	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+	.big-countdown .timeRefYears, .big-countdown .timeRefDays, .big-countdown .timeRefHours, .big-countdown .timeRefMinutes, .big-countdown .timeRefSeconds{
 		font-size: 30px;
 		}
 }
-@media (max-width: 1073px){
-	.big-countdown > div > span{
-		font-size: 90px;
+@media (max-width: 1200px){
+	#years,  #days, #hours,  #minutes, #seconds{
+		font-size: 70px;
 		}
-	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+	}
+@media (max-width: 1073px){
+	#years,  #days, #hours,  #minutes, #seconds{
+		font-size: 60px;
+		}
+	.big-countdown .timeRefYears, .big-countdown .timeRefDays, .big-countdown .timeRefHours, .big-countdown .timeRefMinutes, .big-countdown .timeRefSeconds{
 		font-size: 27px;
 		}
 	.advert h1{
@@ -406,10 +419,10 @@ footer p{
 	.big-countdown{
 		margin: 0 auto;
 	}
-	.big-countdown > div > span{
-		font-size: 67px;
+	#years,  #days, #hours,  #minutes, #seconds{
+		font-size: 67px !important;
 		}
-	.big-countdown .kkc-days-text, .big-countdown .kkc-hours-text, .big-countdown .kkc-min-text, .big-countdown .kkc-sec-text{
+	.big-countdown .timeRefYears, .big-countdown .timeRefDays, .big-countdown .timeRefHours, .big-countdown .timeRefMinutes, .big-countdown .timeRefSeconds{
 		font-size: 23px;
 		}
 	.advert h1{
@@ -418,14 +431,14 @@ footer p{
 	.advert p{
 		font-size: 25px;
 		}
-	.big-countdown{
+	/* .big-countdown{
 		width: 455px;
-		}
+		} */
 }
 @media (max-width: 767px){
 	.big-countdown{
 		margin: 0 auto;
-		width: 408px;
+		/* width: 408px; */
 		}
 	.advert{
 		top: 7%;
@@ -452,7 +465,7 @@ footer p{
 }
 @media (max-width: 600px){
 	.big-countdown{
-		width: 301px;
+		/* width: 301px; */
 		}
 	.carousel .item{
 		height: 565px;
@@ -496,12 +509,12 @@ footer p{
 	}
 }
 @media (max-width: 401px){
-	.big-countdown > div > span{
-		font-size: 50px;
+	#years,  #days, #hours,  #minutes, #seconds{
+		font-size: 50px !important;
 		}
 	.big-countdown{
 		margin: 30px auto 0;
-		width: 250px;
+		/* width: 250px; */
 		}
 	/*.advert{
 		margin-right: 12%;
