@@ -99,8 +99,9 @@ img.dropdown_nav {
 .navbar-nav > li {
     width: 20%;
 }
-.navbar-nav li a:hover{
+.navbar-nav li a:hover, .active{
 	background-color: #006699 !important;
+	color: #FFF !important;
 }
 .navbar-brand{
 	height: 70px;
@@ -228,21 +229,18 @@ h4.contact_title {
 	}
 .page_nav ul li a {
 	display: block;
-<<<<<<< Updated upstream
 	width: 135px;
 	height: 61px;
 	background-color: #0286b8;
 	color: #FFF;
 	font-size: 15px;
 	padding: 21px 19px;
-=======
 	width: 159px;
 	height: 135px;
 	background-color: #0286b8;
 	color: #FFF;
 	font-size: 15px;
 	padding: 45px 19px;
->>>>>>> Stashed changes
 	float: left;
 	margin: 0px 5px 25px 0px;
 }
@@ -271,6 +269,10 @@ form.pure-form.pure-form-stacked.contactfooter {
 }
 .pure-form input[type=text], .pure-form textarea{
 	margin: -6px 0;
+	width: 320px;
+}
+.contactform{
+	margin: .25em 0 !important;
 	width: 320px;
 }
 input[type="submit"].pure-button.pure-button-primary {
