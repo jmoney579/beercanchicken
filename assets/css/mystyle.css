@@ -67,6 +67,8 @@ p{
 	}
 .site_title h1{	
 	color: #FFF;
+    float: left;
+	margin: 15px 0px 0px;
 	}
 .dropdown_nav{
 	display: block;
@@ -381,6 +383,9 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 	text-decoration: none;
 	}
 /*-- Lightbox --*/
+.gallery img {
+    margin-top: 10px !important;
+}
 .comp img {
     width: 170px;
     margin: 5px 0;
@@ -395,6 +400,19 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
     width: 245px;
     margin: 7px 2px;
 	}
+.gallery figcaption {
+    font-size: 10px;
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    /* padding-bottom: 10px; */
+    /* display: block; */
+}
+a.block_left {
+    display: block;
+    float: left;
+	margin-right: 10px;
+}
 /*Porfolio Grid Styling */
 .portfolio{
 	/*margin: 10px auto;*/
@@ -460,6 +478,9 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 .pa{
 	background: url('../img/tiles/pa.jpg') center center no-repeat transparent;
 }
+.care{
+	background: url('../img/tiles/care.jpg') center center no-repeat transparent;
+	}
 /*end grid*/
 
 @media (max-width: 767px){
