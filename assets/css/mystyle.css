@@ -537,6 +537,10 @@ a.block_left {
 @media (max-width: 520px){
 	.socialmedia{
 		margin-top: 16px;
-	{
+	}
 }
-	
+@media (max-width: 512px){
+	.site_title h1{
+		display: none;
+	}
+}
