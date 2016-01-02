@@ -132,15 +132,16 @@ img.dropdown_nav {
 	color: #FFF;
 }
 .row{
-	min-height: 400px;
+	min-height: 240px;
 	}
 .crew{
 	background-color: #2b0733;
 	color: #CCC;
 	font-size: 14px;
+	margin-top: 30px;
 }
 .crew p{
-	line-height: 20px;;
+	line-height: 20px;
 }
 .homie{
 	min-height: 100px;
