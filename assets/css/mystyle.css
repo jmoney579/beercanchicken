@@ -132,7 +132,7 @@ img.dropdown_nav {
 	color: #FFF;
 }
 .row{
-	min-height: 240px;
+	min-height: 300px;
 	}
 .crew{
 	background-color: #2b0733;
@@ -224,6 +224,9 @@ h4.contact_title {
 	border-right: 1px solid #000;
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
 	}
+.rule_right{
+	border-right: 1px solid #CCC;
+	}
 .rule_left{
 	border-left: 1px solid #ccc;
     margin-top: 63px;
@@ -236,6 +239,9 @@ h4.contact_title {
     margin-bottom: -15px;
     margin-top: 17px;
     clear: both;
+}
+.pull_up{
+	margin-top: -100px;
 }
 .in_dev {
     font-size: 21px;
