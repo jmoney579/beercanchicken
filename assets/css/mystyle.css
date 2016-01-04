@@ -31,8 +31,8 @@ p{
 /*--End Jquery Classes--*/
 .big-pic{
 	display: block;
-	height: 563px;
-	background: url('../img/header_back.jpg') no-repeat center center transparent;
+	height: 500px;
+	background: url('../img/header_back5.jpg') no-repeat center center transparent;
 	background-size: cover;
 	}
 /*.navbar{
@@ -41,7 +41,7 @@ p{
 .tagline {
     width: 100%;
     position: relative;
-    top: 405px;
+    top: 350px;
     text-transform: uppercase;
     font-size: 24px;
     padding: 0 21px 35px 0;
@@ -60,7 +60,7 @@ p{
     	background: url('../img/site_title_back.png') repeat center center transparent;
     	height: 67px;
     	border-top: 2px solid #FFF;
-    	top: 427px;
+    	top: 364px;
     	position: relative;
     	width: 100%;
 	cursor: pointer;
@@ -379,7 +379,8 @@ input[type="submit"].pure-button.pure-button-primary {
 	margin: 14px 30px 14px 24px;
 }
 .socialmedia {
-  margin: 5px 0 0 10%;
+  	margin: 5px 0 0 10%;
+	clear: both;
 }	
 a.facebook{
 	background: url('../img/facebook_icon.png') no-repeat center center transparent;
