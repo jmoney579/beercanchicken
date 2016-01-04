@@ -20,6 +20,12 @@ p{
 .stomped{
 	padding-top: 541px;
 }
+.stomped2{
+	background-image: none !important;
+	}
+.stomped2:hover{
+	cursor: pointer;
+	}
 .inside_stomped{
 	padding-top: 160px;
 	}
@@ -32,12 +38,30 @@ p{
 .big-pic{
 	display: block;
 	height: 500px;
-	background: url('../img/header_back5.jpg') no-repeat center center transparent;
+	background: url('../img/header_back.jpg') no-repeat center center transparent;
 	background-size: cover;
 	}
 /*.navbar{
 	height: 11vh;
 }*/
+.super_title{
+	position: absolute;
+	text-align: right;
+	top: 80px;
+    background: url('../img/site_title_back.png') repeat center center transparent;	
+	color: #FFF;
+	font-family: "Raleway",Helvetica,Arial,sans-serif;
+	z-index: 100; position: fixed;
+	}
+.super_title h1{
+	font-size: 52px;
+	margin: 15px 0;
+	text-transform: uppercase;
+	}
+.super_title h1 small, .site_title h1 small{
+	color: #FFF;
+	font-size: 75%;
+	}
 .tagline {
     width: 100%;
     position: relative;
@@ -57,22 +81,25 @@ p{
 	transform: rotate(-180deg);
 	}
 .site_title {
-    	background: url('../img/site_title_back.png') repeat center center transparent;
-    	height: 67px;
-    	border-top: 2px solid #FFF;
-    	top: 364px;
-    	position: relative;
-    	width: 100%;
+    background: url('../img/site_title_back.png') repeat center center transparent;
+    height: 67px;
+    border-top: 2px solid #FFF;
+    top: 364px;
+    position: relative;
+    width: 100%;
 	cursor: pointer;
 	}
 .site_title h1{	
 	color: #FFF;
-    float: left;
-	margin: 15px 0px 0px;
+    float: right;
+	margin: 4px 0px 5px 0px;
+	font-size: 52px;
+	text-transform: uppercase;
+	padding-right: 18px;
 	}
 .dropdown_nav{
 	display: block;
-	float: right;
+	float: left;
 	padding-right: 15px;
 	}
 img.dropdown_nav {
@@ -542,13 +569,40 @@ a.block_left {
 	}
 	
 }
+@media (max-width: 705px){
+	.site_title h1, .super_title h1{
+		font-size: 46px;
+		margin-top: 17px;
+		}
+		.site_title h1{
+		margin-top: 10px;
+		}
+}
+@media (max-width: 664px){
+	.site_title h1, .super_title h1{
+		font-size: 35px;
+		margin-top: 26px;
+	}
+	.site_title h1{
+		margin-top: 13px;
+		}
+	}
+@media (max-width: 563px){
+	.navbar-brand{
+		display: none;
+	}
+	img.dropdown_nav{
+		margin-left: 12px;
+		}
+	}
 @media (max-width: 520px){
 	.socialmedia{
 		margin-top: 16px;
 	}
 }
-@media (max-width: 512px){
+@media (max-width: 420px){
 	.site_title h1{
-		display: none;
+		font-size: 31px;
+		margin-top: 15px;
 	}
-}
+} 

@@ -36,10 +36,12 @@
 			 if ($(window).scrollTop() > navHeight) {
 				 $('.sticky').addClass('snaptotop');
 				 $('.top_content').addClass('stomped');
+				 $('.super_title').addClass('stomped2');				 
 			 }
 			 else {
 				 $('.sticky').removeClass('snaptotop');
 				 $('.top_content').removeClass('stomped');
+				 $('.super_title').removeClass('stomped2');
 			 }
 		});
 	});
@@ -54,6 +56,7 @@
 <div class="sticky">
     <div class=big-pic>
 		<!--<img src="assets/img/header_back.jpg" alt="Site Header"/>-->
+		<div class="super_title col-xs-12"><h1>J<small>acques</small> P. W<small>alker</small></h1></div>
 		<div class="tagline">
 			<div class="topline">
 			Pave Your
@@ -63,7 +66,7 @@
 			</div>
 		</div>
 		<div class="site_title">
-			<a class="navbar-brand" href="../index.html"><img src="assets/img/port2_trans.png" alt="Jacques Logo"/></a><h1>Jacques P. Walker</h1>
+			<a class="navbar-brand" href="../index.html"><img src="assets/img/port2_trans.png" alt="Jacques Logo"/></a><!--<h1>Online Portfolio</h1>-->
 			<img class="dropdown_nav" src="assets/img/menu.png" alt="dropdown menu button"/>
 		</div>
 	</div>
