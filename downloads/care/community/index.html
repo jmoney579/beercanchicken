@@ -7,21 +7,21 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-	<link href="assets/img/favicon.png" type="image/png" rel="icon" />
+	<link href="../assets/img/favicon.png" type="image/png" rel="icon" />
 
-    <title>ChildCareVA</title>
+    <title>ChildCareVA - Community</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css//ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../assets/css//ie10-viewport-bug-workaround.css" rel="stylesheet">
 	<!-- Pure CSS -->
 	<link href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" rel="stylesheet">
 	
     <!-- Custom styles for this template -->
-    <link href="assets/css/jumbotron-narrow.css" rel="stylesheet">
-    <link href="assets/css/mystyle.css" rel="stylesheet">
+    <link href="../assets/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../assets/css/mystyle.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,22 +33,49 @@
 	
   </head>
 
-  <body>
+  <body class="internal">
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand"><img src="../images/ccva_logo_small.png" alt="Childcare Logo"/></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../parents/index.html">Parents</a></li>
+            <li><a href="../providers/index.html">Providers</a></li>
+			<li class="active"><a href="index.html">Community</a></li>
+			<li class="dropdown pull-right quicklinks">
+                <a aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="#">Quick Links<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+			  <!-- <li><a href="#trending">Trending Now</a></li> -->
+			  <li><a href="#ccv">Child Care in Virginia</a></li>
+				<!-- <li><a href="#cc_business">How Child Care Supports  Business/Community</a></li>
+				<li><a href="#fact_sheet">Virginia Fact Sheets</a></li>
+				<li><a href="#partnerships">Partnerships,  Collaboration &amp; Program Improvement</a></li>
+				<li><a href="#publications">Publications and Reports</a></li>
+				<li><a href="#research">Research &amp;  Statistics</a></li>
+				<li><a href="ccdbg">CCDBG State Plan</a></li> -->
+				<li><a href="#complaint">File a Complaint</a></li>
+                </ul>
+             </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
   <div class="main_content">
-	<div class="jumbo_tag col-sm-12">
-     <div class="jumbotron col_sm_12">
-		<img class="care_logo img-responsive center" src="images/ccva_logo.png" alt="Care Campaign Logo"/>
+     <div class="jumbotron parent_header col_sm_12">
+	 <div class="row">
+		<div class="col-md-6"><img class="img-responsive center" src="../images/community_header.png" alt="community_icon"/></div><div class="col-md-6 col-sm-12 col-xs-12 community_title pull-left">Community</div>
+	</div>	
      </div>
-	 <div class="col-md-12">
-	 <div class="tagline">
-		<h2>Smart Beginnings Never End</h2>
-	 </div>
-	 </div>
-	</div>
     <div class="container">
-		 <div class="subtagline col_sm_12">
-		<p>Educating parents, providers and communities on the importance, benefits and standards of safe, quality child care.</p>
-	</div>
       <!--<div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
@@ -59,169 +86,116 @@
         </nav>
         <h3 class="text-muted">Project name</h3>
       </div>-->
-      <div class="row marketing">
-        <div class="col-sm-4 parents">
-		<a href="parents/index.html"><img class="img-responsive" src="images/parents2.png" alt="icon of family with parents typed beneath"/></a>
-	       <ul>
-			  <li><a href="parents/index.html#quality">Why Quality Matters</a></li>
-			  <!--<li><a href="parents/index.html#benefits">Benefits  of Licensed Child Care</a></li>-->
-              <li><a href="parents/index.html#childcare">Child Care &amp; Early Learning Options</a></li> 
-			  <li><a href="parents/index.html#finding">Finding Quality Child Care</a></li> 
-   			  <li><a href="parents/index.html#growth">Child Growth &amp; Development</a></li>
-			  <li><a href="parents/index.html#health">Health &amp; Safety</a></li>                                      
-			  <li><a href="parents/index.html#intervention">Early Intervention &amp; Special Needs</a></li>
-   			  <li><a href="parents/index.html#resources">Resources</a></li>           
-			  <!--<li><a href="parents/index.html#paying">Paying for Child Care</a></li>
-			  <li><a href="parents/index.html#assistance">Other Assistance</a></li>-->	
-		  </ul>
-        </div>
-
-        <div class="col-sm-4 providers">
- 		<a href="providers/index.html"><img class="img-responsive" src="images/providers2.png" alt="icon of teacher and students with providers typed beneath"/></a>     
-	       <ul>
-			  <!-- <li><a href="providers/index.html#cc_business">Child Care as&nbsp; Business/Profession</a></li>
-			  <li><a href="providers/index.html#requirements">New Provider Requirements</a></li> -->
-			  <li><a href="providers/index.html#licensed">Become a Licensed Provider</a></li> 
-			  <li><a href="providers/index.html#vaquality">Virginia Quality</a></li>
-			  <li><a href="providers/index.html#subsidy">Become a Subsidy Provider</a></li>
-			  <li><a href="providers/index.html#training">Training &amp;  Professional Development</a></li>
-			  <li><a href="providers/index.html#impact">IMPACT Registry</a></li>
-			  <li><a href="providers/index.html#health">Health &amp; Safety</a></li>
-			  <li><a href="providers/index.html#emergency">Emergency Preparedness</a></li>
-			  <li><a href="providers/index.html#resources">Resources</a></li>
-		  </ul>
-        </div>
-		
-		<div class="col-sm-4 community">
-		<a href="community/index.html"><img class="img-responsive" src="images/community.png" alt="icon of large group with community typed beneath"/></a>
-	       <ul>
-			  <!-- <li><a href="community/index.html#trending">Trending Now</a></li> -->
-			  <li><a href="community/index.html#ccv">Child Care in Virginia</a></li>
-				<!-- <li><a href="community/index.html#cc_business">How Child Care Supports  Business/Community</a></li>
-				<li><a href="community/index.html#fact_sheet">Virginia Fact Sheets</a></li>
-				<li><a href="community/index.html#partnerships">Partnerships,  Collaboration &amp; Program Improvement</a></li>
-				<li><a href="community/index.html#publications">Publications and Reports</a></li>
-				<li><a href="community/index.html#research">Research &amp;  Statistics</a></li>
-				<li><a href="community/index.html#ccdbg">CCDBG State Plan</a></li> -->
-				<li><a href="community/index.html#complaint">File a Complaint</a></li>
-				<!-- <li><a href="community/index.html#resources">Resources</a></li> -->
-		  </ul>
+      <div class="row">
+        <div class="col-sm-12 community">
+			<!-- <h2 id="trending">Trending Now</h2> -->
+			<h2 id="ccv">Child Care in Virginia</h2>
+			<p>A child day care program in Virginia refers to a  regularly operating service arrangement for children where, during the absence  of a parent or guardian, a person or organization has agreed to assume  responsibility for the supervision, protection and well-being of a child under  the age of 13 for less than a 24-hour period. </p>
+          <h4>Child care options  in Virginia</h4>
+          <ol>
+                <li>There  are two types of child-day programs in Virginia: non-residential care  (center-based) and residential care (family-based). Categories of care include: </li>
+          <ul>
+            <li>Licensed</li>
+            <li>Unlicensed (but regulated)</li>
+            <li>Approved</li>
+            <li>Unlicensed and Unregistered</li>
+          </ul>
+            <li>Not all child day care programs in Virginia are required to be  licensed. Be sure to ask your provider if they are licensed by the Virginia  Department of Social Services. Licensed programs are required to display their  license certificate. Look for this license certificate to be visibly displayed  near the entrance. <a href="http://www.dss.virginia.gov/facility/search/cc.cgi">Search  for child day care</a>. </li>
+          </ol>
+          <!-- <h2 id="cc_business">How Child Care Supports  Business/Community</h2>
+		  				<hr class="cc_diamond"/>
+          <h2 id="fact_sheet">Virginia Fact Sheets</h2>
+		  				<hr class="cc_diamond"/>
+          <h2 id="partnerships">Partnerships,  Collaboration &amp; Program Improvement</h2>
+		  				<hr class="cc_diamond"/>
+          <h2 id="publications">Publications and Reports</h2>
+		  				<hr class="cc_diamond"/>
+          <h2 id="research">Research &amp;  Statistics</h2>
+		  				<hr class="cc_diamond"/>
+          <h2 id="ccdbg">CCDBG State Plan</h2> -->
+		  				<hr class="cc_diamond"/>
+          <h2 id="complaint">File a Complaint </h2>
+          <p>If you believe a  facility or individual providing care has violated applicable child care  standards regulations or you suspect abuse or neglect of children in care, you may report those  concerns to the VDSS.<br>
+If you suspect that  a facility or individual is providing care illegally (the person should have a  license but doesn&rsquo;t), you may report those concerns as well.  The Department of Social Services has the  responsibility to investigate these complaints. <br>
+<strong>The  purpose of reporting a complaint is not just to protect a specific child, but  rather to protect all the children in care at that facility.</strong> You do not have to know which specific  standards have been violated; you can provide a description of the situation and  the licensing inspector will determine which, if any, standards or laws have been violated.<br>
+<strong>Child Care Standards</strong><br>
+<a href="http://www.dss.virginia.gov/files/division/licensing/cdc/intro_page/code_regulations/regulations/standards.pdf">Licensed Child Day Centers</a>                          <br>
+<a href="http://www.dss.virginia.gov/files/division/licensing/fdh/intro_page/code_regulations/regulations/final_fdh_manual_071713.pdf">Licensed Family Day Homes</a> <br>
+<a href="http://www.dss.virginia.gov/files/division/licensing/recdc/intro_page/applicants/guidance_procedures/information_for_religiously_exempt_child_day_centers.pdf">Religious Exempt Child Day Centers</a>         <br>
+<a href="http://www.dss.virginia.gov/files/division/licensing/fds/intro_page/code_regulations/regulations/final_fds_reg_071713.pdf">Family Day Care Systems</a> <br>
+<a href="http://www.dss.virginia.gov/files/division/licensing/vrfdh/intro_page/code_regulations/regulations/vr_regulation.pdf">Voluntary Registration of Family Day Homes</a></p>
+          <p>Complaints may be anonymously submitted in written format or orally.  <br>
+            <br>
+          If you are willing to provide your name and contact information, the  licensing inspector will be able to contact you for additional information, if  necessary, and to provide information about the results of the complaint  investigation after it is complete.</p>
+<div>
+          <div>
+            <p>Before filing a complaint, think on the questions listed below and be  prepared to provide as much specific information as possible, especially if you  are filing anonymously, as the inspector will not be able to ask you any  follow-up questions.</p>
+            <ul>
+              <li><strong>What</strong> happened? </li>
+              <li><strong>Who</strong> was involved? Who may have witnessed what  happened?</li>
+              <li><strong>When</strong> did it happen? Did it happen more than once? How  long did it take?</li>
+              <li><strong>Where</strong> did it happen? </li>
+              <li><strong>Why</strong> did it happen? </li>
+            </ul>
+            <h4>How to file a complaint</h4>
+            <p>There are multiple ways you can file a complaint. You can call, submit  an online complaint or mail a complaint. </p>
+            <ul>
+              <li>Call Licensing&rsquo;s statewide toll-free number: 1-800-543-7545 (or, in the  Richmond area only, 804-692-2394);</li>
+              <li>Contact the appropriate <a href="https://www.dss.virginia.gov/contact_us/dolp_district.pdf">regional  licensing office</a> directly by phone, fax, or letter;</li>
+              <li>Submit a written complaint via the <a href="https://www.dss.virginia.gov/about/email_licensing_complaint.cgi">online  complaint form</a>; </li>
+              <li>Contact by phone the licensing inspector assigned to  the facility or home. The inspector&rsquo;s name and phone number is listed for each  child care program on the <a href="http://www.dss.virginia.gov/facility/search/cc.cgi">Search  for Child Day Care</a> website; or </li>
+              <li>For complaints regarding possible child abuse or  neglect, call the Child Abuse/Neglect Hotline toll free number: 1-800-552-7096  (or, in the Richmond area, 804-786-8536)</li>
+            </ul>
+            <!-- <h2 id="resources">Resources</h2> -->
+          </div>
+          </div>
         </div>
       </div>
-	<div class="row checklist">
-		<h2>5 must-have checklist items</h2>
-		<h4>When choosing the very best care for you child, we recommend you use these checklists to inform your decision</h4>
-	</div>
-	<div class="col-sm-7 c_icons">
-		<div class="col-sm-2 interview pull-left"><a href="#"><img src="images/interview.png" alt="Sample Interview Questions icon"/>Sample Interview Questions</a></div>
-		<div class="col-sm-2 safety pull-left"><a href="#"><img src="images/safety.png" alt="Safety Checklist icon"/>Safety Checklist</a></div>
-		<div class="col-sm-2 qualit pull-left"><a href="#"><img src="images/quality.png" alt="Quality Care Checklist icon"/>Quality Care Checklist</a></div>
-		<div class="col-sm-2 emergency pull-left"><a href="#"><img src="images/emergency.png" alt="Emergency Preparedness Checklist icon"/>Emergency Preparedness Checklist</a></div>
-		<div class="col-sm-2 accessibility pull-left"><a href="#"><img src="images/accessibility.png" alt="Special Needs Checklist icon"/>Special Needs Checklist</a></div>
-	</div>
-	<div class="col-sm-7 licensed">
-		<div class="col-sm-8 poster_text">
-		<h4>Is your provider licensed?</h4>
-		<p>To find out if your child care provider is licensed search for their facility name here.</p>
-		</div>
-	</div>
-	<div class="row provider">
-		<div class="col-md-7 provider">
-		<div class="col-sm-4">
-		<h4>How do I become a provider?</h4>
-		<p>There are a few steps you need to take in order to become a licensed child care provider. Click here to find out all of the details.</p>
-		</div>
-		<div class="col-md-3">
-			<img src="images/child_blocks.png" alt="Woman and child playing with building blocks"/>
-		</div>
-		</div>
-	</div>
-	</div>
-	<div class="row org">
-		<div class="col-md-7">
-				<div class="col-sm-2"><a href="http://eclkc.ohs.acf.hhs.gov/hslc/tta-system/ohs-tta/centers.html"><img src="images/ecnc.jpg" alt="Early Childhood National Centers"/></a></div>
-				<div class="col-sm-2"><a href="https://www.aap.org/en-us/Pages/Default.aspx"><img src="images/aap.jpg" alt="American Academy of Pediatrics"/></a></div>
-				<div class="col-sm-2"><a href="http://www.fns.usda.gov/cacfp/child-and-adult-care-food-program"><img src="images/cacfp.jpg" alt="Child & Adult Care Food Program"/></a></div>
-				<div class="col-sm-2"><a href="https://www.irs.gov/Credits-&-Deductions/Individuals/Child-and-Dependent-Care-Credit"><img src="images/tax_credit.jpg" alt="Child Care Tax Credit"/></a></div>	
-		</div>
-		<div class="col-md-7">
-				<div class="col-sm-2"><a href="http://www.dmbe.virginia.gov/"><img src="images/sbsd.jpg" alt="Department of Small Business and Supplier Diversity"/></a></div>
-				<div class="col-sm-2"><a href="http://www.211virginia.org/consite/"><img src="images/211.jpg" alt="Virginia 211"/></a></div>
-				<div class="col-sm-2"><a href="http://www.cpsc.gov/"><img src="images/cpsc.jpg" alt="Consumer Product Safety Commision"/></a></div>
-				<div class="col-sm-2 all_orgs"><a href="http://www.dss.virginia.gov">See all organizations and programs</a></div>			
-		</div>
-	</div>
-	<div class="container">
-		<div class="row calendar">
-			<div class="col-md-9">
-				<div class="col-md-5">
-					<span class="day">6</span><span class="month"> November</span><br/>
-					<p class="title">Child Care and Development Fund Plan</p>
-					<p>The Virginia Department of Social Services is seeking comments on the draft Child Care and Development Fund (CCDF) Plan for FY2016 - FFY 2018. 
-					The draft plan is available online at <a href="http://www.dss.virginia.gov/about/state_plans/cc.cgi">http://www.dss.virginia.gov/about/state_plans/cc.cgi</a>
-					for review and comment from Oct. 1 until Nov. 6.</p>
-				</div>
-				<div class="col-md-5">
-					<img src="images/calendar.jpg" alt="Calendar of events"/>
-				</div>
-				<div class="col-md-5">
-					<img src="images/family_class.png" alt="Student raising his hands and teacher answering"/>
-				</div>
-				<div class="col-md-5">
-					<span class="day">6</span><span class="month"> November</span><br/>
-					<p class="title">Child Care and Development Fund Plan</p>
-					<p>The Virginia Department of Social Services is seeking comments on the draft Child Care and Development Fund (CCDF) Plan for FY2016 - FFY 2018. 
-					The draft plan is available online at <a href="http://www.dss.virginia.gov/about/state_plans/cc.cgi">http://www.dss.virginia.gov/about/state_plans/cc.cgi</a>
-					for review and comment from Oct. 1 until Nov. 6.</p>
-				</div>
-			</div>
-		</div>
 	</div>
       <footer class="footer">
 	  <div class="col-md-7 ppc_footer">
 	  <div class="col-sm-4 pull-left parents_footer">
 	  <h4>Parents</h4>
 	       <ul>
-			  <li><a href="parents/index.html#quality">Why Quality Matters</a></li>
-			  <!--<li><a href="parents/index.html#benefits">Benefits  of Licensed Child Care</a></li>-->
-              <li><a href="parents/index.html#childcare">Child Care &amp; Early Learning Options</a></li> 
-			  <li><a href="parents/index.html#finding">Finding Quality Child Care</a></li> 
-   			  <li><a href="parents/index.html#growth">Child Growth &amp; Development</a></li>
-			  <li><a href="parents/index.html#health">Health &amp; Safety</a></li>                                      
-			  <li><a href="parents/index.html#intervention">Early Intervention &amp; Special Needs</a></li>
-   			  <li><a href="parents/index.html#resources">Resources</a></li>           
-			  <!--<li><a href="parents/index.html#paying">Paying for Child Care</a></li>
-			  <li><a href="parents/index.html#assistance">Other Assistance</a></li>-->	
+			  <li><a href="../parents/index.html#quality">Why Quality Matters</a></li>
+			  <!--<li><a href="../parents/index.html#benefits">Benefits  of Licensed Child Care</a></li>-->
+              <li><a href="../parents/index.html#childcare">Child Care &amp; Early Learning Options</a></li> 
+			  <li><a href="../parents/index.html#finding">Finding Quality Child Care</a></li> 
+   			  <li><a href="../parents/index.html#growth">Child Growth &amp; Development</a></li>
+			  <li><a href="../parents/index.html#health">Health &amp; Safety</a></li>                                      
+			  <li><a href="../parents/index.html#intervention">Early Intervention &amp; Special Needs</a></li>
+   			  <li><a href="../parents/index.html#resources">Resources</a></li>           
+			  <!--<li><a href="../parents/index.html#paying">Paying for Child Care</a></li>
+			  <li><a href="../parents/index.html#assistance">Other Assistance</a></li>-->		   
 		  </ul>
 	  </div>
 	  	  <div class="col-sm-4 pull-left providers_footer">
 	  <h4>Providers</h4>
 	       <ul>
-			  <!-- <li><a href="providers/index.html#cc_business">Child Care as&nbsp; Business/Profession</a></li>
-			  <li><a href="providers/index.html#requirements">New Provider Requirements</a></li> -->
-			  <li><a href="providers/index.html#licensed">Become a Licensed Provider</a></li> 
-			  <li><a href="providers/index.html#vaquality">Virginia Quality</a></li>
-			  <li><a href="providers/index.html#subsidy">Become a Subsidy Provider</a></li>
-			  <li><a href="providers/index.html#training">Training &amp;  Professional Development</a></li>
-			  <li><a href="providers/index.html#impact">IMPACT Registry</a></li>
-			  <li><a href="providers/index.html#health">Health &amp; Safety</a></li>
-			  <li><a href="providers/index.html#emergency">Emergency Preparedness</a></li>
-			  <li><a href="providers/index.html#resources">Resources</a></li>
+			  <!-- <li><a href="../providers/index.html#cc_business">Child Care as&nbsp; Business/Profession</a></li>
+			  <li><a href="../providers/index.html#requirements">New Provider Requirements</a></li> -->
+			  <li><a href="../providers/index.html#licensed">Become a Licensed Provider</a></li> 
+			  <li><a href="../providers/index.html#vaquality">Virginia Quality</a></li>
+			  <li><a href="../providers/index.html#subsidy">Become a Subsidy Provider</a></li>
+			  <li><a href="../providers/index.html#training">Training &amp;  Professional Development</a></li>
+			  <li><a href="../providers/index.html#impact">IMPACT Registry</a></li>
+			  <li><a href="../providers/index.html#health">Health &amp; Safety</a></li>
+			  <li><a href="../providers/index.html#emergency">Emergency Preparedness</a></li>
+			  <li><a href="../providers/index.html#resources">Resources</a></li>
 		  </ul>
 	  </div>
 	  	  <div class="col-sm-4 pull-left community_footer">
 	  <h4>Community</h4>
 	       <ul>
-			  <!-- <li><a href="community/index.html#trending">Trending Now</a></li> -->
-			  <li><a href="community/index.html#ccv">Child Care in Virginia</a></li>
-				<!-- <li><a href="community/index.html#cc_business">How Child Care Supports  Business/Community</a></li>
-				<li><a href="community/index.html#fact_sheet">Virginia Fact Sheets</a></li>
-				<li><a href="community/index.html#partnerships">Partnerships,  Collaboration &amp; Program Improvement</a></li>
-				<li><a href="community/index.html#publications">Publications and Reports</a></li>
-				<li><a href="community/index.html#research">Research &amp;  Statistics</a></li>
-				<li><a href="community/index.html#ccdbg">CCDBG State Plan</a></li> -->
-				<li><a href="community/index.html#complaint">File a Complaint</a></li>
-				<!-- <li><a href="community/index.html#resources">Resources</a></li> -->
+			  <!-- <li><a href="#trending">Trending Now</a></li> -->
+			  <li><a href="#ccv">Child Care in Virginia</a></li>
+				<!-- <li><a href="#cc_business">How Child Care Supports  Business/Community</a></li>
+				<li><a href="#fact_sheet">Virginia Fact Sheets</a></li>
+				<li><a href="#partnerships">Partnerships,  Collaboration &amp; Program Improvement</a></li>
+				<li><a href="#publications">Publications and Reports</a></li>
+				<li><a href="#research">Research &amp;  Statistics</a></li>
+				<li><a href="ccdbg">CCDBG State Plan</a></li> -->
+				<li><a href="#complaint">File a Complaint</a></li>
 		  </ul>
 	  </div>
 	  </div>
@@ -388,7 +362,7 @@
           <noscript>
           &lt;/a&gt;
           </noscript>
-          </td>
+		</td>
 		<td><span class="nested">
 		  <input type="checkbox" value="1" name="search_require_client_code-2102">
           <noscript>
@@ -414,8 +388,8 @@
           <span onClick="openWindow('/nosearch/division/license/tooltips_display.cgi?rm=Read;id=32');">Religious Exempt Child Day Center</span></td>
 		<td><span class="nested">
 		  <input type="checkbox" value="1" name="search_require_client_code-2201">
-          <span onClick="openWindow('/nosearch/division/license/tooltips_display.cgi?rm=Read;id=49');">Voluntary Registered Day Homes</span>
-		</span></td>
+          <span onClick="openWindow('/nosearch/division/license/tooltips_display.cgi?rm=Read;id=49');">Voluntary Registered Day Homes</span></span>
+		</td>
 		<td>
 		  <input type="checkbox" value="1" name="search_require_client_code-2104">
 			<span onclick="openWindow('/nosearch/division/license/tooltips_display.cgi?rm=Read;id=12');">Certified Pre-School</span><noscript>&lt;/a&gt;</noscript></td>
@@ -442,9 +416,9 @@
 
     </div> <!-- /container -->
 	<a class="cd-top" href="#">Top</a>
-	<script type="text/javascript" src="assets/js/back_to_top.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/back_to_top.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
