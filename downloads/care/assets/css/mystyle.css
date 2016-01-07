@@ -118,6 +118,7 @@ body.internal{
 	font-size: 51px;
 	/* font-size: 74px; */
 	font-weight: bold;
+	margin-left: 68px;
 	}
 .subtagline {
     background: transparent url("../img/callout.png") repeat-y scroll center center;
@@ -456,6 +457,9 @@ hr.cc_diamond{
 	}
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color: #FFF;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: none;
 }
 .navbar-default .navbar-nav > li:nth-of-type(2) > a{
 	color: #44cacb;
