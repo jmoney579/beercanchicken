@@ -55,8 +55,8 @@ body.internal{
 .parent_billboard {
     background: transparent url("../img/parent_billboard.png") no-repeat scroll left center / 572px 332px;
     clear: both;
-    height: 440px;
-    margin-top: -57px !important;
+    height: 410px;
+    margin-top: -116px !important;
 }
 .provider_billboard {
     background: transparent url("../img/provider_billboard.png") no-repeat scroll center 40px;
@@ -84,7 +84,7 @@ body.internal{
 	}
 .billboard_text {
     background-color: #5abb4a;
-    bottom: -277px;
+    bottom: -262px;
     color: #fff;
     font-size: 20px;
     min-height: 109px;
@@ -97,6 +97,13 @@ body.internal{
 .sub_parent p{
 	font-weight: bold;
 	}
+.sub_parent a {
+    color: #44cacb;
+}
+.sub_parent a:hover {
+    text-decoration: none;
+    color: #23527c;
+}
 
 .row{
 	margin-left: 0px;
@@ -448,6 +455,10 @@ hr.cc_diamond{
 	width: 443px;
 	margin: -5px auto;
 	}
+.child_point {
+    background: url('../img/child_pointing.png') no-repeat center bottom transparent;
+    height: 215px;
+}
 /* Bootstrap Overides */
 .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover{
 	color: #c1c0c0;
