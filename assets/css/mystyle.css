@@ -4,7 +4,7 @@
 *   Designed and Developed by Jacques Walker                                    *
 *   Utilized: Bootstrap, Pure CSS, Lightbox                                     *
 *   Contact: jacques [at] jacqueswalker.com                                     *
-*   Copyright 2015                                                              *
+*   Copyright 2016                                                              *
 ********************************************************************************/
 
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -437,6 +437,7 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover{
 	background-image: none;
 	font-size: 12px;
 	padding-top: 18px;
+	text-align: center;
 	}
 .socialmedia a{
 	color: #FFF;
