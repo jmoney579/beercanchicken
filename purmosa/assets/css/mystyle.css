@@ -15,10 +15,26 @@ p{
 	display: block;
 	height: 88vh;
 	background-color: #006699;
+	background: url('../img/header_1.jpg') no-repeat center center transparent;
+	background-size: cover;
 	}
-/*.navbar{
-	height: 11vh;
-}*/
+.welcome {
+    color: #FFF;
+    top: 20%;
+    left: 5%;
+}
+.welcome h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 48px;
+    margin-bottom: 0px;
+}
+.welcome p{
+	font-size: 17px;
+	}
+.navbar{
+	min-height: 91px;
+}
 .navbar-bottom{
 	border-radius: 0px;
 	}
@@ -27,34 +43,54 @@ p{
     padding-top: 5vh;
   	text-transform: uppercase;
 }
+.navbar-toggle{
+	margin-top: 27px;
+	}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: none;
+}
 .navbar-brand{
 	height: 70px;
-	padding-top: 1.5vh;
+	padding-top: 2.3vh;
 }
-.crew{
-	background-color: #2b0733;
-	color: #CCC;
-	font-size: 14px;
+.crew {
+    background: url('../img/crew_logo.png') no-repeat center center #2b0733;
+    color: #CCC;
+    font-size: 14px;
+    min-height: 426px;
+    border-top: 7px solid #CCC;
+    border-bottom: 7px solid #CCC;
 }
 .crew p{
-	line-height: 20px;;
+	line-height: 21px;
+	font-size: 16px;
 }
 .homie{
 	min-height: 100px;
-	background-color: #2b0733;
-	margin: 24px 0;
+	/* background-color: #2b0733; */
+	margin: 127px 0 103px 0;
 }
 .homie h3{
 	text-transform: uppercase;
 	color: #ededed;
+	font-size: 30px;
 }
 .rule{
-	border-right: 1px solid #500c5f;
+	border-right: 1px solid #FFF;
 	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;*/
 }
 .rule2{
 	border-right: 1px solid #0a0a0a;
 }
+.row{
+	min-height: 370px;
+	}
+.qoute{
+	margin-top: 20px;
+	}
+.pagecontent{
+	min-height: 600px;
+	}
 .no-top{
 	margin-top: -2px;
 }
@@ -63,15 +99,27 @@ div.col-md-4>img.img-responsive{
 }
 .subheader{
 	min-height: 400px;
-	background: url("#") no-repeat center center #78998e;
+	background: url("../img/qoute_bkgd.jpg") no-repeat center center transparent;
 	background-size: cover;
-	border-top: 3px solid #CCC;
-	border-bottom: 3px solid #CCC;
+	border-top: 7px solid #CCC;
+	border-bottom: 7px solid #CCC;
 	box-shadow: 0 1px 0 #CCC;
 	color: #FFF;
 	margin-top:10px;
 }
 .subheader h2{
+	font-size: 40px;
+}
+.pageheader{
+	min-height: 400px;
+	background: url("../img/about_bkgd.jpg") no-repeat center top transparent;
+	background-size: cover;
+	border-bottom: 7px solid #CCC;
+	box-shadow: 0 1px 0 #CCC;
+	color: #FFF;
+	margin-top:91px;
+}
+.pageheader h2{
 	font-size: 40px;
 }
 footer{
