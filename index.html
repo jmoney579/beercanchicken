@@ -32,7 +32,7 @@
    <script>
    $(document).ready(function(){
 	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 310;
+	   var navHeight = $( window ).height() - 380;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('.sticky').addClass('snaptotop');
 				 $('.top_content').addClass('stomped');
@@ -105,7 +105,8 @@
             <div class="col-sm-11">
                 <h1>Welcome to <strong>My Portfolio</strong></h1>
                 <p>This site is not only a showcase of the work that I've done in the past, but also my little test bed of what can be done. In order to keep the web fresh, you have to use the most up to date technology. CSS3 and HTML5 are the new hot trends in web development; this site is built with those as the foundation. This notion of using the most recent and up-to-date technology is something that I take to heart. If you have a project that needs revamping or created from scratch, you can be assured that it will be created as a work that will stand the test of time.</p>
-            </div>
+				<p>Also, if you're curious about how I got something working on this site, feel free to checkout the source code on my <a href="https://github.com/jmoney579/beercanchicken/tree/port3.0">GitHub</a>.
+			</div>
         </div>
         <!-- /.row -->
     </div>
@@ -157,7 +158,7 @@
 <footer class="container-fluid">
 		<div class="col-md-4 rule2">
 			 <h4 class="contact_title">Email <strong>Me</strong></h4>
-			 <form class="pure-form pure-form-stacked contactfooter" action="assets/php/contact-form-handler.php" name="Email ME">
+			 <form class="pure-form pure-form-stacked contactfooter" method="POST" action="assets/php/contact-form-handler.php" name="Email ME">
 				<input size="40" placeholder="Name" name="name"
 				type="text"><br>
 			      	<input size="40" placeholder="Email" name="email" type="text"><br>

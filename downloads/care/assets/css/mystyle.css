@@ -55,8 +55,8 @@ body.internal{
 .parent_billboard {
     background: transparent url("../img/parent_billboard.png") no-repeat scroll left center / 572px 332px;
     clear: both;
-    height: 440px;
-    margin-top: -57px !important;
+    height: 410px;
+    margin-top: -116px !important;
 }
 .provider_billboard {
     background: transparent url("../img/provider_billboard.png") no-repeat scroll center 40px;
@@ -84,7 +84,7 @@ body.internal{
 	}
 .billboard_text {
     background-color: #5abb4a;
-    bottom: -277px;
+    bottom: -262px;
     color: #fff;
     font-size: 20px;
     min-height: 109px;
@@ -97,6 +97,13 @@ body.internal{
 .sub_parent p{
 	font-weight: bold;
 	}
+.sub_parent a {
+    color: #44cacb;
+}
+.sub_parent a:hover {
+    text-decoration: none;
+    color: #23527c;
+}
 
 .row{
 	margin-left: 0px;
@@ -118,6 +125,7 @@ body.internal{
 	font-size: 51px;
 	/* font-size: 74px; */
 	font-weight: bold;
+	margin-left: 68px;
 	}
 .subtagline {
     background: transparent url("../img/callout.png") repeat-y scroll center center;
@@ -433,7 +441,7 @@ footer {
 	height: 122px;
 	}
 .provider_icon{
-	height: 129px;
+	height: 136px;
 	}
 hr.cc_diamond{
 	background-image: url('../img/cc_diamond.jpg'), url('../img/hr_line.png');
@@ -447,6 +455,10 @@ hr.cc_diamond{
 	width: 443px;
 	margin: -5px auto;
 	}
+.child_point {
+    background: url('../img/child_pointing.png') no-repeat center bottom transparent;
+    height: 215px;
+}
 /* Bootstrap Overides */
 .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav li a:hover{
 	color: #c1c0c0;
@@ -456,6 +468,9 @@ hr.cc_diamond{
 	}
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color: #FFF;
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: none;
 }
 .navbar-default .navbar-nav > li:nth-of-type(2) > a{
 	color: #44cacb;
