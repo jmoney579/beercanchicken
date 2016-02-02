@@ -433,7 +433,15 @@ a.blog{
 	display: block;
 	float: right;
 	}
-a.facebook:hover, a.linkedin:hover, a.blog:hover{
+a.github{
+	background: url('../img/github_icon.png') no-repeat center center transparent;
+	font-size: 0px;
+	height: 50px;
+	width: 60px;
+	display: block;
+	float: right;
+	}
+a.facebook:hover, a.linkedin:hover, a.blog:hover, a.github:hover{
 	background-image: none;
 	font-size: 12px;
 	padding-top: 18px;
