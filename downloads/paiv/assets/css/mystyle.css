@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'texgyreheros';
+		src: url('../fonts/texgyreheros-regular-webfont.eot');
+		src: url('../fonts/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyreheros-regular-webfont.woff') format('woff'),
+         url('../fonts/texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('../fonts/texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+}
+
+body{
+    font-family: "texgyreheros","Helvetica Neue",Helvetica,Arial,sans-serif;
+	background: url('../img/body_back.png') no-repeat left top #a22f00;
+	/* background-size: cover;*/
+	height: 100vh;
+	color: #7b7b7b;
+	}
+.history{
+	background: url('../img/hist_back.jpg') no-repeat left top transparent;
+	}
+.training{
+	background: url('../img/train_back.jpg') no-repeat left center transparent;
+	}
+.contact{
+	background: url('../img/contact_back.jpg') no-repeat left center transparent;
+	}
+.bkgd_shift{
+	background-position: -523px center; */
+	}
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+		}
+h1{
+	margin-bottom: 20px;
+	color: #e89300;
+	}
+hr{
+	clear: both;
+	}
+#page-content-wrapper {
+    position: absolute;
+    padding: 15px;
+    height: 100vh;
+    background-color: #FFF;
+    margin-left: 95px;
+	overflow: auto;
+	width: auto;
+}
+/*.toggled #page-content-wrapper{
+	width: 100%;
+	}*/
+#sidebar-wrapper{
+	background: url('../img/nav_back.png') repeat center center transparent;
+	}
+.sidebar-nav{
+	top: 18px;
+	}
+.sidebar-nav li{
+	border-top: 1px solid #575757;
+	}
+.sidebar-nav li:first-of-type{
+	border-top: none;
+	}
+.sidebar-nav li:last-of-type{
+	border-bottom: 1px solid #575757;
+	}
+.sidebar-nav .sidebar-brand{
+	line-height: 19px;
+	height: 100px;
+	}
+.active{
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;
+    color: #fff;
+    text-decoration: none;
+}
+.brand-title {
+    font-size: 17px;
+    font-weight: lighter;
+    margin-top: 14px;
+    text-indent: 0;
+}
+.brand-title a{
+	color: #FFF !important;
+	}
+.brand-title img {
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-top: -6px;
+    width: 71px;
+	font-size: 18px;
+}
+#page-content-wrapper .brand-title {
+    clear: both;
+    float: none;
+    font-size: 31px;
+    margin-left: -12px;
+    margin-top: -5px;
+    max-width: 469px;
+    display: none;
+    color: #006699;
+    min-height: 95px;
+}
+#page-content-wrapper .brand-title a{
+	color: #000 !important;
+	}
+#page-content-wrapper .brand-title img{
+	margin-top: 0px;
+	max-width: 97px;
+	width: auto;
+	}
+#page-content-wrapper .row{
+	margin-bottom: 30px;
+	}
+#page-content-wrapper ul li {
+    background: transparent url("../img/bullet.png") no-repeat scroll 0 5px;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    position: relative;
+}
+
+.res_nav {
+    /*left: -95px;*/
+    position: absolute;
+	background: url('../img/res_nav_back.png') center center transparent;
+	width: 46px;
+	height: 100vh;
+	top: 0;
+}
+#menu-toggle{
+	border: none;
+	background: url('../img/menu.png') no-repeat center center transparent;
+	font-size: 0px;
+	height: 40px;
+	width: 40px;
+	background-size: 32px 36px;
+	vertical-align: initial;
+	margin-left: -12px;
+	margin-top: 37px;
+	}
+.tagline{
+	color: #e89300;
+	}
+.clearfix{
+	float:none;
+	clear:both;
+	}
+.copyright {
+    color: #FFF;
+    font-size: 9px;
+    /* background-color: #242424; */
+    text-align: center;
+    padding-top: 4px;
+	}
+.copyright a:hover{
+	text-decoration: none;
+	}
+footer {
+    clear: both;
+    display: block;
+    float: none !important;
+    background-color: #2f2f2f;
+    color: #FFF;
+    overflow: auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+	z-index: 9999;
+}
+@media (max-width: 768px){
+	body{
+		background-position: -523px center;
+		}
+	.bkgd_shift{
+		background-position: left center;
+		}
+	#page-content-wrapper .brand-title {
+		display: block;
+		}
+		}
+@media (max-width: 549px){
+		#page-content-wrapper .brand-title img{
+			margin-bottom: 50px;
+			}
+	}
+@media (max-width: 495px){
+		#page-content-wrapper .brand-title {
+			font-size: 28px;
+			}
+	}
+@media (max-width: 472px){
+		#page-content-wrapper .brand-title img{
+			float: none;
+			margin-bottom: 5px;
+			}
+	}

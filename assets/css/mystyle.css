@@ -462,7 +462,9 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover, a.github:hover{
     margin: 6px;
     overflow: hidden;
 }
-
+.gallery .no_cut{
+	overflow: initial;
+	}
 .comp img {
     width: 170px;
     margin: 5px 0;
@@ -529,7 +531,7 @@ a.block_left {
 	background: url('../img/tiles/ins_design.jpg') center center no-repeat transparent;
 }
 .wedding{
-	background: url('../img/tiles/isa.jpg') center center no-repeat transparent;
+	background: url('../img/tiles/knot.jpg') center center no-repeat transparent;
 }
 .lt{
 	background: url('../img/tiles/lt.jpg') center center no-repeat transparent;
@@ -557,6 +559,9 @@ a.block_left {
 }
 .care{
 	background: url('../img/tiles/care.jpg') center center no-repeat transparent;
+	}
+.paiv{
+	background: url('../img/tiles/paiv.jpg') center center no-repeat transparent;
 	}
 /*end grid*/
 
