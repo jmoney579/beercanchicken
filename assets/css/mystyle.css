@@ -108,7 +108,7 @@ img.dropdown_nav {
    	cursor: pointer;
 }
 .snaptotop .big-pic {
-    	background-size: auto auto;
+    	background-size: cover;
     	height: 157px;
 }
 .snaptotop .site_title{
