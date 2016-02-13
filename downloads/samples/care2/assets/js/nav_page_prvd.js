@@ -21,7 +21,7 @@ $(document).ready(function($){
 		}
 	var pageID = getUrlVars()["pageID"];
 	
-	if(pageID == 0 || pageID == null || pageID == undefined){
+	if(pageID == 0){
 		$(".section").css("display", "none");
 		$("#cc_business").fadeIn()
 	} else if (pageID == 1 ){
@@ -33,7 +33,7 @@ $(document).ready(function($){
 	}else if(pageID == 3){
 		$(".section").css("display", "none");
 		$("#vaquality").fadeIn();
-	}else if(pageID == 4){
+	}else if(pageID == 4 || pageID == null || pageID == undefined){
 		$(".section").css("display", "none");
 		$("#requirements").fadeIn();
 	}else if(pageID == 5){

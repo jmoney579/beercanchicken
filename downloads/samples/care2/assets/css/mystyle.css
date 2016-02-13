@@ -30,15 +30,16 @@ body.internal{
 .jumbo_tag{
 	background-color: #FFF;
 	z-index: 0;
-	height: 619px;
+	height: auto;
 	}
 .jumbotron{
 	background: url('../../images/header_image4.png') no-repeat center 0px transparent;
-	height: 630px;
+	height: 563px;
 	padding-top: 9px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	z-index: 1;
+	background-size: 1307px;
 	}
 .jumbotron h1 {
     color: #fff;
@@ -90,6 +91,12 @@ body.internal{
     font-weight: bold;
     margin-top: 5px;
 }
+.whatsnew_title {
+    color: #b33a8a;
+    font-size: 57px;
+    font-weight: bold;
+    margin-top: 85px;
+}
 .provider_text{
 	color: #f7b40e;
 	font-size: 31px;
@@ -115,6 +122,12 @@ body.internal{
 .sub_parent a{
 	color: #44cacb;
 	}
+.provide a{
+    color: #5abb4a;
+}
+.commun a{
+	color: #f7b40e;
+	}
 .sub_parent a:hover{	
 	color: #337ab7;
 	text-decoration: none;
@@ -123,12 +136,14 @@ body.internal{
 	margin-left: 0px;
 	margin-right: 0px;
 	}
+.tagholder{
+	margin-top: -116px;
+	}
 .tagline {
     background: #fff none repeat scroll 0 0;
     min-height: 77px;
     padding-top: 0;
     position: relative;
-    top: -108px;
     z-index: -1;
 }
 .tagline h2{
@@ -139,7 +154,7 @@ body.internal{
 	font-size: 51px;
 	/* font-size: 74px; */
 	font-weight: bold;
-	margin-left: 79px;
+	/*margin-left: 79px;*/
 	padding-top: 11px;
 	}
 .subtagline {
@@ -178,7 +193,14 @@ body.internal{
     padding: 8px 9px 5px 37px;
     position: relative;
 }
-.parents ul ul li, .providers ul ul li, .community ul ul li  {
+.whatsnew ul li {
+    background: transparent url("../img/purple_bullet.png") no-repeat scroll 7px 7px;
+    list-style-type: none;
+    margin: 0;
+    padding: 8px 9px 5px 37px;
+    position: relative;
+}
+.parents ul ul li, .providers ul ul li, .community ul ul li, .whatsnew ul ul li  {
     background: transparent url("../img/gray_bullet.png") no-repeat scroll 7px 9px;
     list-style-type: none;
     margin: 0;
@@ -193,14 +215,21 @@ body.internal{
     color: #f7b40e;
     font-size: 54px;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 .checklist h4 {
     color: #b33a8a;
-    font-size: 22px;
+    font-size: 27px;
     margin: 0 auto;
-    width: 256px;
+    width: 278px;
 }
+.checklist h4 a{
+	color: #b33a8a;
+	}
+.checklist h4 a:hover{
+	color: #999;
+	text-decoration: none;
+	}
 .c_icons {
     clear: both;
     display: block;
@@ -286,11 +315,11 @@ div:nth-of-type(6).blocks_item{
     color: #2472d2;
     float: none;
     height: 355px;
-    margin: 234px auto 0;
+    margin: -91px auto 0;
 }
 .child_point{
 	background: url('../img/child_pointing.png') no-repeat center bottom transparent;
-	height: 215px;
+	height: 227px;
 	}
 .child_point2{
 	z-index: 1;
@@ -312,7 +341,7 @@ div:nth-of-type(6).blocks_item{
     z-index: 0;
 }
 .licensed h4{
-	font-size: 20px;
+	font-size: 23px;
 	}
 .poster_text {
     float: right;
@@ -320,6 +349,7 @@ div:nth-of-type(6).blocks_item{
 }
 .poster_text p{
 	width: 308px;
+	font-size: 17px;
 	}
 .provider {
     color: #5abb4a;
@@ -327,9 +357,11 @@ div:nth-of-type(6).blocks_item{
     margin: 0 auto 16px;
 }
 .provider h4{
-	font-size: 20px;
+	font-size: 22px;
 	}
-	
+.provider p{
+	font-size: 17px;
+	}
 .org{
 	background-color: #5abb4a;
 	padding: 14px;
@@ -482,6 +514,9 @@ footer {
 .community h4{
 	color: #e2a305;
 	}
+.whatsnew h4{
+	color: #b33a8a;
+	}
 .col-sm-4.parents li, .col-sm-4.providers li, .col-sm-4.community li {
 	font-size: 19px;
 	padding: 3px 37px;
@@ -501,8 +536,8 @@ hr.cc_diamond{
 	height: 39px;
 	}
 .care_logo{
-	width: 443px;
-	margin: -5px auto;
+	width: 475px;
+	margin: 10px auto;
 	}
 .section {
     margin-bottom: 55px;
@@ -527,10 +562,13 @@ hr.cc_diamond{
 	color: #f7b40e;
 	}
 .navbar-default .navbar-nav > li:nth-of-type(5) > a{
+	color: #b33a8a;
+	}
+.navbar-default .navbar-nav > li:nth-of-type(6) > a{
 	color: #FFF;
 	background-color: #b33a8a;
 	}
-.navbar-default .navbar-nav > li.open:nth-of-type(5) > a, .navbar-default .navbar-nav > li:nth-of-type(5) > a:hover{
+.navbar-default .navbar-nav > li.open:nth-of-type(6) > a, .navbar-default .navbar-nav > li:nth-of-type(6) > a:hover{
 	color: #FFF;
 	background-color: #913070;
 	}{
@@ -547,7 +585,7 @@ hr.cc_diamond{
 }
 .navbar-brand > img {
     display: block;
-    margin-top: -12px;
+    margin-top: 0px;
     width: 147px;
 }
 .quicklinks{
@@ -592,16 +630,22 @@ hr.cc_diamond{
 		}
 	}
 @media (max-width: 991px){
-	.licensed{
+	/*.licensed{
 		margin-top: 370px
-	}
+	}*/
 	.poster_text p{
 		width: 255px;
 	}
 	.community_title{
 		padding-top: 0px;
 	}
+	.whatsnew_title{
+		margin-top: 5px;
+		text-align: center;
+	}
 }
+
+
 @media (max-width: 767px){
 	.org .col-md-7{
 		float: left;
