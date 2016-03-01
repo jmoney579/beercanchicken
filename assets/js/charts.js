@@ -10,22 +10,29 @@
 				var chart = new CanvasJS.Chart("chartContainer", {
 				 interactivityEnabled: false,
 				title:{
-					text:"Web Magic"				
+					text:"Web Magic",
+					fontFamily: "Raleway",
+					fontWeight: "lighter",
+					fontSize: 20					
 
 				},
 							animationEnabled: true,
 				axisX:{
 					interval: 1,
 					gridThickness: 0,
-					labelFontSize: 14,
+					labelFontSize: 12,
 					labelFontStyle: "normal",
 					labelFontWeight: "normal",
-					labelFontFamily: "Lucida Sans Unicode"
+					labelFontFamily: "Raleway",
+					tickThickness: 0
 
 				},
 				axisY2:{
-					interlacedColor: "rgba(1,77,101,.2)",
-					gridColor: "rgba(1,77,101,.1)",
+					interlacedColor: "#fff",
+					gridColor: "#fff",
+					valueFormatString: " ",
+					tickThickness: 0,
+					lineColor: "#fff"
 				},
 				data: [
 				{     
@@ -37,12 +44,12 @@
 					dataPoints: [
 					{y: 4, label: "PHP"  },	
 					{y: 4, label: "Django"  },
-					{y: 4, label: "Angular"  },					
-					{y: 5, label: "Wordpress"  },
-					{y: 5, label: "Evoq(DNN)"  },	
-					{y: 5, label: "Adobe Experience Manager"  },		
-					{y: 6, label: "Bootstrap"  },				
-					{y: 7, label: "Percussion CM System"  },					
+					{y: 4, label: "Angular"  },
+					{y: 5, label: "jQuery"  },					
+					/*{y: 5, label: "Wordpress"  },
+					{y: 5, label: "Evoq(DNN)"  },*/	
+					{y: 5, label: "Content Management*"  },		
+					{y: 6, label: "Bootstrap"  },								
 					{y: 8, label: "CSS 3"  },
 					{y: 8, label: "HTML 5"  },
 					]
@@ -55,22 +62,30 @@
 			var chart2 = new CanvasJS.Chart("chartContainer2", {
 				 interactivityEnabled: false,
 				title:{
-					text:"Software"				
+					text:"Software",
+					fontFamily: "Raleway",
+					fontWeight: "lighter",
+					fontSize: 20				
 
 				},
 							animationEnabled: true,
 				axisX:{
 					interval: 1,
 					gridThickness: 0,
-					labelFontSize: 14,
+					labelFontSize: 12,
 					labelFontStyle: "normal",
 					labelFontWeight: "normal",
-					labelFontFamily: "Lucida Sans Unicode"
+					labelFontFamily: "Raleway",
+					tickThickness: 0
 
 				},
+
 				axisY2:{
-					interlacedColor: "rgba(1,77,101,.2)",
-					gridColor: "rgba(1,77,101,.1)",
+					interlacedColor: "#fff",
+					gridColor: "#fff",
+					valueFormatString: " ",
+					tickThickness: 0,
+					lineColor: "#fff"
 				},
 				data: [
 				{     
@@ -95,22 +110,29 @@
 			var chart3 = new CanvasJS.Chart("chartContainer3", {
 				 interactivityEnabled: false,
 				title:{
-					text:"Others"				
+					text:"Others",
+					fontFamily: "Raleway",
+					fontWeight: "lighter",
+					fontSize: 20			
 
 				},
 							animationEnabled: true,
 				axisX:{
 					interval: 1,
 					gridThickness: 0,
-					labelFontSize: 14,
+					labelFontSize: 12,
 					labelFontStyle: "normal",
 					labelFontWeight: "normal",
-					labelFontFamily: "Lucida Sans Unicode"
+					labelFontFamily: "Raleway",
+					tickThickness: 0
 
 				},
 				axisY2:{
-					interlacedColor: "rgba(1,77,101,.2)",
-					gridColor: "rgba(1,77,101,.1)",
+					interlacedColor: "#fff",
+					gridColor: "#fff",
+					valueFormatString: " ",
+					tickThickness: 0,
+					lineColor: "#fff"
 				},
 				data: [
 				{     
@@ -120,13 +142,12 @@
 					axisYType: "secondary",
 					color: "#087a02",				
 					dataPoints: [	
-					{y: 4, label: "jQuery"  },				
-					{y: 6, label: "Bootstrap"  },	
-					{y: 3, label: "Adobe Illustrator"  },
-					{y: 6, label: "Instructional Design"  },
-					{y: 6, label: "Course Development"  },
-					{y: 8, label: "Microsoft Office"  },					
-					{y: 8, label: "Version Control"  },
+					{y: 6, label: "Camtasia Studio"  },
+					{y: 6, label: "Adobe Captivate"  },					
+					{y: 7, label: "Version Control"  },
+					{y: 9, label: "Microsoft Office"  },
+					{y: 8, label: "Instructional Design"  },
+					{y: 8, label: "Course Development"  },
 					]
 				}	
 				]
