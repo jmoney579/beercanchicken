@@ -8,7 +8,7 @@
 				if (pagePosition > windowHeight && counter == 0) {	
 				$(".skills").fadeOut();
 				var chart = new CanvasJS.Chart("chartContainer", {
-				 interactivityEnabled: false,
+				interactivityEnabled: false,
 				title:{
 					text:"Web Magic",
 					fontFamily: "Raleway",
@@ -16,7 +16,7 @@
 					fontSize: 20					
 
 				},
-							animationEnabled: true,
+				animationEnabled: true,
 				axisX:{
 					interval: 1,
 					gridThickness: 0,
@@ -60,7 +60,7 @@
 			chart.render();
 
 			var chart2 = new CanvasJS.Chart("chartContainer2", {
-				 interactivityEnabled: false,
+				interactivityEnabled: false,
 				title:{
 					text:"Software",
 					fontFamily: "Raleway",
@@ -68,7 +68,7 @@
 					fontSize: 20				
 
 				},
-							animationEnabled: true,
+				animationEnabled: true,
 				axisX:{
 					interval: 1,
 					gridThickness: 0,
@@ -108,7 +108,7 @@
 			chart2.render();
 
 			var chart3 = new CanvasJS.Chart("chartContainer3", {
-				 interactivityEnabled: false,
+				interactivityEnabled: false,
 				title:{
 					text:"Others",
 					fontFamily: "Raleway",
@@ -116,7 +116,7 @@
 					fontSize: 20			
 
 				},
-							animationEnabled: true,
+				animationEnabled: true,
 				axisX:{
 					interval: 1,
 					gridThickness: 0,
