@@ -451,6 +451,9 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover, a.github:hover{
 	color: #FFF;
 	text-decoration: none;
 	}
+.job_title{
+	color: #006699;
+	}
 /*-- Lightbox --*/
 .gallery img {
     margin-top: 10px !important;
