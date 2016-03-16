@@ -37,7 +37,7 @@ p{
 /*--End Jquery Classes--*/
 .big-pic{
 	display: block;
-	height: 500px;
+	height: 598px;
 	background: url('../img/header_back.jpg') no-repeat center center transparent;
 	background-size: cover;
 	}
@@ -65,7 +65,7 @@ p{
 .tagline {
     width: 100%;
     position: relative;
-    top: 350px;
+    top: 443px;
     text-transform: uppercase;
     font-size: 24px;
     padding: 0 21px 35px 0;
@@ -84,7 +84,7 @@ p{
     background: url('../img/site_title_back.png') repeat center center transparent;
     height: 67px;
     border-top: 2px solid #FFF;
-    top: 364px;
+    top: 462px;
     position: relative;
     width: 100%;
 	cursor: pointer;
@@ -159,7 +159,7 @@ img.dropdown_nav {
 	color: #FFF;
 }
 .row{
-	min-height: 300px;
+	min-height: 250px;
 	}
 .crew{
 	background-color: #2b0733;
@@ -173,7 +173,7 @@ img.dropdown_nav {
 .homie{
 	min-height: 100px;
 	background-color: #2b0733;
-	margin: 24px 0;
+	margin: 0 0 32px 0;
 }
 .homie h3{
 	text-transform: uppercase;
