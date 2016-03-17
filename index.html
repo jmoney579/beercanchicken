@@ -17,6 +17,8 @@
 	<!-- jQuery and UI -->
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<!-- Animate CSS -->
+	<link href="assets/css/animations.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="assets/css/backtotop.css" rel="stylesheet">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
@@ -46,6 +48,42 @@
 		});
 	});
 	</script>
+	<script>
+	$(window).scroll(function() {
+		$('.crew').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+</script>
+<script>
+	$(window).scroll(function() {
+		$('.subheader').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+500) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+</script>
+<script>
+	$(window).scroll(function() {
+		$('footer').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("slideUp");
+			}
+		});
+	});
+</script>
 <script src="assets/js/naveffect.js"></script>
 
 </head>
@@ -112,7 +150,7 @@
     </div>
     <!-- /.container -->
 <div class="container-fluid crew">
-		<div class="col-md-12 crew">
+		<div class="col-md-12">
 			<div class="col-sm-12 homie">
 				<h2>Current Projects</h2>
 				<div class="col-md-3">

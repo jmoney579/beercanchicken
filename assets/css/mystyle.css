@@ -162,10 +162,12 @@ img.dropdown_nav {
 	min-height: 250px;
 	}
 .crew{
+	visibility: hidden;
 	background-color: #2b0733;
 	color: #CCC;
 	font-size: 14px;
-	margin-top: 30px;
+	margin-top: 0px;
+    padding: 20px 0px;
 }
 .crew p{
 	line-height: 20px;
@@ -218,7 +220,9 @@ div.col-md-4>img.img-responsive{
 	border-bottom: 3px solid #CCC;
 	box-shadow: 0 1px 0 #CCC;
 	color: #FFF;
-	margin-top:10px;
+	margin-top:0px;
+	visibility: hidden;
+	padding: 20px 0;
 }
 .subheader h2{
 	font-size: 46px;
@@ -233,6 +237,7 @@ footer{
 	padding-top: 10px;
 	color: #999;
 	margin-top: 30px;
+	visibility: hidden;
 }
 footer .col-md-4{
 	min-height: 210px;
