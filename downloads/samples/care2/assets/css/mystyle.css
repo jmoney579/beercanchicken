@@ -324,7 +324,7 @@ div:nth-of-type(6).blocks_item{
     color: #2472d2;
     float: none;
     height: 355px;
-    margin: -91px auto 0;
+    margin: 0px auto 0;
 }
 .child_point{
 	background: url('../img/child_pointing.png') no-repeat center bottom transparent;

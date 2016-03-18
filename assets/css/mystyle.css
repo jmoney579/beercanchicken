@@ -47,7 +47,7 @@ p{
 .super_title{
 	position: absolute;
 	text-align: right;
-	top: 80px;
+	top: 68px;
     background: url('../img/site_title_back.png') repeat center center transparent;	
 	color: #FFF;
 	font-family: "Raleway",Helvetica,Arial,sans-serif;
@@ -109,14 +109,14 @@ img.dropdown_nav {
 }
 .snaptotop .big-pic {
     	background-size: cover;
-    	height: 157px;
+    	height: 144px;
 }
 .snaptotop .site_title{
 	top: 9px;
 	}
 .snaptotop .tagline{
-	top: 0px;
-	padding-bottom: 47px;
+	top: 5px;
+	padding-bottom: 35px;
 	/*display: none;*/
 	}
 .navbar{
@@ -237,7 +237,6 @@ footer{
 	padding-top: 10px;
 	color: #999;
 	margin-top: 30px;
-	visibility: hidden;
 }
 footer .col-md-4{
 	min-height: 210px;
@@ -245,6 +244,9 @@ footer .col-md-4{
 footer p{
 	font-size: 13px;
 }
+.hp_footer{
+	visibility: hidden;
+	}
 h4.contact_title {
   	margin-bottom: 14px;
   	text-transform: uppercase;
