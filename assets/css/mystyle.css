@@ -162,7 +162,6 @@ img.dropdown_nav {
 	min-height: 250px;
 	}
 .crew{
-	visibility: hidden;
 	background-color: #2b0733;
 	color: #CCC;
 	font-size: 14px;
@@ -221,7 +220,6 @@ div.col-md-4>img.img-responsive{
 	box-shadow: 0 1px 0 #CCC;
 	color: #FFF;
 	margin-top:0px;
-	visibility: hidden;
 	padding: 20px 0;
 }
 .subheader h2{
@@ -244,9 +242,6 @@ footer .col-md-4{
 footer p{
 	font-size: 13px;
 }
-.hp_footer{
-	visibility: hidden;
-	}
 h4.contact_title {
   	margin-bottom: 14px;
   	text-transform: uppercase;
@@ -500,8 +495,13 @@ a.facebook:hover, a.linkedin:hover, a.blog:hover, a.github:hover{
 a.block_left {
     display: block;
     float: left;
-	margin-right: 10px;
+    margin-right: 10px;
 }
+/*Visibility styling*/
+ .crew, .subheader, .hp_footer{
+	visibility: hidden;
+}
+/*End Visibility */
 /*Porfolio Grid Styling */
 .portfolio{
 	/*margin: 10px auto;*/
@@ -638,7 +638,7 @@ a.block_left {
 } 
 @media (max-width: 356px){
 	.site_title h1, .super_title h1 {
-	    	font-size: 27px;
+	    	font-size: 25px;
 		margin-top: 18px;
 	}
 	img.dropdown_nav {
@@ -649,7 +649,7 @@ a.block_left {
 }
 @media (max-width: 313px){
 	.site_title h1, .super_title h1 {
-	    	font-size: 25px;
+	    	font-size: 23px;
 		margin-top: 18px;
 	}
 	form.pure-form.pure-form-stacked.contactfooter, h4.contact_title {
