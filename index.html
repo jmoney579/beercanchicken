@@ -48,42 +48,7 @@
 		});
 	});
 	</script>
-	<script>
-	$(window).scroll(function() {
-		$('.crew').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
-				$(this).addClass("slideLeft");
-			}
-		});
-	});
-</script>
-<script>
-	$(window).scroll(function() {
-		$('.subheader').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
-				$(this).addClass("slideRight");
-			}
-		});
-	});
-</script>
-<script>
-	$(window).scroll(function() {
-		$('.hp_footer').each(function(){
-		var imagePos = $(this).offset().top;
-
-		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+600) {
-				$(this).addClass("slideUp");
-			}
-		});
-	});
-</script>
+<script src="assets/js/slide.js"></script>
 <script src="assets/js/naveffect.js"></script>
 
 </head>
