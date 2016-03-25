@@ -1,4 +1,4 @@
-	$(window).scroll(function() {
+/* 	$(window).scroll(function() {
 		$('.crew').each(function(){
 		var imagePos = $(this).offset().top;
 
@@ -7,7 +7,7 @@
 				$(this).addClass("slideLeft");
 			}
 		});
-	});
+	}); */
 
 	$(window).scroll(function() {
 		$('.subheader').each(function(){
