@@ -634,9 +634,17 @@ video.vid_header {
 	}
 	.down_arrow {
     		position: absolute;
-    		bottom: 170px;
+    		bottom: 135px;
 		color: #FFF;
 		display: block;
+	}
+	.stomped {
+    		padding-top: 718px;
+	}
+}
+@media (min-width: 1000px){
+	.stomped{
+		padding-top: 668px;
 	}
 }
 @media (max-width: 767px){
