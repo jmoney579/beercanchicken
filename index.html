@@ -33,8 +33,17 @@
     <![endif]-->
    <script>
    $(document).ready(function(){
+	   if ($( window ).width() > 900){
+		var scrollgap = 100;
+	   }else if ($( window ).width() > 600){
+		var scrollgap = 380;
+	   }else{
+		var scrollgap = 500;
+	   }
+	   console.log($( window ).width());
+	   console.log(scrollgap);
 	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 380;
+	   var navHeight = $( window ).height() - scrollgap;
 			 if ($(window).scrollTop() > navHeight) {
 				 $('.sticky').addClass('snaptotop');
 				 $('.top_content').addClass('stomped');
@@ -57,10 +66,11 @@
 
     <!-- Navigation -->	
 <div class="sticky">
-    <div class=big-pic>
+		<div class="super_title col-xs-12"><h1>J<small>acques</small> P. W<small>alker</small></h1></div>
 		<video class="vid_header" autoplay muted loop>
 			<source src="http://www.html5rocks.com/en/tutorials/video/basics/devstories.webm" type="video/webm"/>
 		</video>
+    <div class=big-pic>
 		<!--<img src="assets/img/header_back.jpg" alt="Site Header"/>-->
 		<div class="super_title col-xs-12"><h1>J<small>acques</small> P. W<small>alker</small></h1></div>
 		<div class="tagline">
@@ -70,6 +80,9 @@
 			<div class="bottomline">
 			Own Path
 			</div>
+		</div>
+		<div class="col-md-12 down_arrow text-center">
+			<p>Spinning Arrow</p>
 		</div>
 		<div class="site_title">
 			<a class="navbar-brand" href="../index.html"><img src="assets/img/port2_trans.png" alt="Jacques Logo"/></a><!--<h1>Online Portfolio</h1>-->
