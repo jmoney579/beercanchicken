@@ -39,7 +39,7 @@ p{
 .big-pic{
 	display: block;
 	height: 598px;
-	background: url('../img/header_back.jpg') no-repeat center center transparent;
+	background: url('../img/header_back5.jpg') no-repeat center center transparent;
 	background-size: cover;
 	overflow: hidden;
 	}
@@ -614,8 +614,9 @@ video.vid_header {
 }
 .snaptotop .big-pic{
 	top: 0;
-    	margin-top: 0;
-	background: url('../img/header_back.jpg') no-repeat center center transparent;
+    margin-top: 0;
+	background: url('../img/header_back6.jpg') no-repeat center center transparent;
+	background-size: cover;
 }
 .snaptotop .navbar{
 	margin-top: 0;
@@ -635,7 +636,7 @@ video.vid_header {
 	.down_arrow {
     		position: absolute;
     		bottom: 135px;
-		color: #FFF;
+		color: #333333;
 		display: block;
 	}
 	.stomped {
