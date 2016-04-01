@@ -1,3 +1,10 @@
+/***********************************************************************************
+*   Public Assistance Investigators of Virginia                                    *
+*   Designed and developed by Jacques Walker                                       *
+*   Utilized: bootstrap framework                                                  *
+*   Contact: jacques [at] jacqueswalker.com                                        *
+*   Copyright 2016                                                                *
+***********************************************************************************/
 @font-face {
     font-family: 'texgyreheros';
 		src: url('../fonts/texgyreheros-regular-webfont.eot');
@@ -97,6 +104,9 @@ hr{
 .sidebar-nav .sidebar-brand{
 	line-height: 19px;
 	height: 100px;
+	}
+.sidebar-nav li a{
+	color: #FFF;
 	}
 .active{
     background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0;

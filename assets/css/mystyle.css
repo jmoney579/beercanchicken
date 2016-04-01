@@ -693,6 +693,9 @@ video.vid_header {
 	}
 	img.dropdown_nav{
 		margin-left: 12px;
+	}
+	.super_title{
+		margin-top: -35px;
 		}
 	}
 @media (max-width: 520px){
@@ -711,6 +714,22 @@ video.vid_header {
 	.pure-form input[type="text"], .pure-form textarea, form.pure-form.pure-form-stacked.contactfooter  {
     		width: 240px;
 	}
+	.big-pic{
+			background: url('../img/header_back6.jpg') no-repeat center center transparent;
+			background-size: cover;
+	}
+	.super_title{
+		margin-top: -50px;
+	}
+	.tagline{
+		display: none;
+		}
+	.site_title{
+		top: 444px;
+		}
+	.snaptotop .site_title {
+		top: 77px;
+}
 } 
 @media (max-width: 356px){
 	.site_title h1, .super_title h1 {
