@@ -506,9 +506,9 @@ a.block_left {
 /*End Visibility */
 /*Porfolio Grid Styling */
 .portfolio{
-	/*margin: 10px auto;*/
+	margin: 0px auto;
 	padding: 10px;
-	width: 80%;
+	width: 90%;
 	clear: both;
 	}
 .portfolio_item{
