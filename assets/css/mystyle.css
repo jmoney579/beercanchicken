@@ -690,10 +690,10 @@ video.vid_header {
 	.pure-form input[type="text"], .pure-form textarea, form.pure-form.pure-form-stacked.contactfooter  {
     		width: 240px;
 	}
-	.big-pic{
+	/*.big-pic{
 			background: url('../img/header_back6.jpg') no-repeat center center transparent;
 			background-size: cover;
-	}
+	}*/
 	.super_title{
 		margin-top: -50px;
 	}
