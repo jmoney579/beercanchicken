@@ -703,9 +703,9 @@ video.vid_header {
 	.site_title{
 		top: 444px;
 		}
-	.snaptotop .site_title {
+	/*.snaptotop .site_title {
 		top: 77px;
-}
+	}*/
 } 
 @media (max-width: 356px){
 	.site_title h1, .super_title h1 {
@@ -721,7 +721,7 @@ video.vid_header {
 @media (max-width: 313px){
 	.site_title h1, .super_title h1 {
 	    	font-size: 23px;
-		margin-top: 18px;
+		margin-top: 7px;
 	}
 	form.pure-form.pure-form-stacked.contactfooter, h4.contact_title {
 		margin-left: 0px;
