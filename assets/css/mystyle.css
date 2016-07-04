@@ -605,7 +605,26 @@ video.vid_header {
 }
 
 /*End Styling */
+@media (min-width: 1000px){
+	.stomped{
+		padding-top: 668px;
+	}
+}
+@media (min-width: 1150px){
+	.tagline {
+    		top: 269px;
+	}
+	.down_arrow {
+    		position: absolute;
+    		bottom: 76px;
+		color: #333333;
+		display: block;
+	}
+}
 @media (min-width: 1300px){
+	.stomped {
+    		padding-top: 718px;
+	}
 	.tagline {
     		top: 200px;
 	}
@@ -615,15 +634,8 @@ video.vid_header {
 		color: #333333;
 		display: block;
 	}
-	.stomped {
-    		padding-top: 718px;
-	}
 }
-@media (min-width: 1000px){
-	.stomped{
-		padding-top: 668px;
-	}
-}
+
 @media (max-width: 767px){
 	.navbar-nav li:hover {
     		background: #006699;
