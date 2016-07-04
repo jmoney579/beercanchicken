@@ -671,7 +671,7 @@ video.vid_header {
 		margin-left: 12px;
 	}
 	.super_title{
-		margin-top: -35px;
+		/*margin-top: -35px;*/
 		}
 	}
 @media (max-width: 520px){
@@ -695,7 +695,7 @@ video.vid_header {
 			background-size: cover;
 	}*/
 	.super_title{
-		margin-top: -50px;
+		/*margin-top: -50px;*/
 	}
 	.tagline{
 		display: none;
