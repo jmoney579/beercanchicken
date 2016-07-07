@@ -28,7 +28,7 @@ p{
 	cursor: pointer;
 	}
 .inside_stomped{
-	padding-top: 160px;
+	padding-top: 63px;
 	}
 .snaptotop{
 	position: fixed;
@@ -152,7 +152,7 @@ img.dropdown_nav {
 .navbar-brand>img {
     display: block;
     float: left;
-    margin: -4px 20px 0 10px;
+    margin: -6px 20px 0 10px;
 }
 .navbar-brand h1 {
     float: left;

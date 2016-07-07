@@ -1,0 +1,451 @@
+@charset 'UTF-8';
+/***********************************************************************************
+*   Virginia Department of Social Services Annual Report                           *
+*   Designed by Jacques Walker  				                                   *
+*   Tableau Integration by Shibu Varughese                                         *
+*   Utilized:                                                                      *
+*   Contact: jacques [at] jacqueswalker.com                                        *
+*   Copyright 2016                                                                 *
+***********************************************************************************/
+
+/*@import url(http://fonts.googleapis.com/css?family=Muli:300);*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body{
+	margin: 0 auto;
+	background: url('../img/paper_fibers.png') repeat center center transparent;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+	max-width: 2285px;
+	color: #575757;
+	min-width: 628px;
+	}
+header{
+	background-color: #0081c2;
+	color: #FFF;
+	overflow: auto;
+	border-image: url('../img/color_stripe.jpg') 30 round;
+	-webkit-border-image: url('../img/color_stripe.jpg') 30 round;
+	}
+header img{
+	width: 100px;
+	float: left;
+	margin: 13px 11px 13px 15px;
+	}
+img.border_bottom{
+	width: 100%;
+	bottom: 0;
+	display: block;
+	height: 4px;
+	}
+header h2{
+	text-transform: uppercase;
+	font-family: "EucrosialUPC",serif,Verdana,serif !important;
+	font-weight: normal;
+	font-size: 32px;
+    margin: 21px 0 5px 0;
+	}
+header h3{
+	text-transform: uppercase;
+	background-color: #00263a;
+	border-top: 2px solid #b3d9ed;
+	border-bottom: 2px solid #b3d9ed;
+	font-size: 33px;
+    font-weight: normal;
+    margin: 3px;
+	}
+nav{
+	float: left;
+	background-color: transparent !important;
+	}
+nav ul.icon {
+    margin-left: -30px;
+    float: left;
+    display: block;
+    width: 51px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 2px solid #FFF;
+    border-right: 2px solid #FFF;
+}
+nav ul.icon li {
+    list-style-type: none;
+    font-family: Arial;
+    font-size: 30px;
+    width: 34px;
+    margin-left: 0px;
+    padding: 5px 5px 3px 4px;
+    margin: 5px 5px 7px 0px;
+    text-align: center;
+}
+nav ul.icon li:first-of-type {
+    list-style-type: none;
+    font-size: 0px;
+    background-color: transparent;
+    background: url('../img/back_arrow.png') no-repeat center center;
+    padding: 29px 7px 21px 7px;
+    border-radius: 0px;
+}
+nav .title {
+    float: left;
+    margin-left: 93px;
+    font-size: 20px !important;
+    margin-top: 0px;
+	opacity: .89;
+	position: absolute;
+	display: none;
+	z-index: 1;
+}
+nav .title li {
+    background-color: transparent !important;
+    font-size: 18px !important;
+    width: 411px !important;
+    margin: 1px 3px 20px 4px !important;
+    text-align: left !important;
+    padding-top: 5px !important;
+}
+nav .title li:hover {
+    background: #000 !important;
+    border-radius: 0px;
+}
+nav .title li a{
+	color: #FFF !important;
+	}
+nav .title li a:hover{
+	color: #CCC !important;
+	}
+nav .title ul.icon li:first-of-type{
+	background-image: none;
+    padding: 9px 5px 12px 5px;
+	}
+nav .title ul.icon li:nth-of-type(2) {
+    text-transform: uppercase;
+    font-size: 32px !important;
+    background: url('../img/header_back.png') center center repeat-x transparent;
+    font-weight: normal;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+    border-radius: 0px;
+    /* padding: 0px; */
+    margin: -9px 3px 12px 1px !important;
+    width: 407px !important;
+    padding-left: 12px;
+    padding-bottom: 5px;
+}
+content{
+	margin: 7px 15px;
+	padding: 0px 15px;
+	display: block;
+	min-height: 300px;
+	}
+content.interior{
+	margin-left: 63px;
+	}
+#commonBanner {
+    height: 33px;
+    margin: 0 auto;
+    max-width: 2285px;
+    background-image: none;
+    background-color: #000;
+}
+#commonBanner .virginiaLogo {
+	font-size: 0px;
+	background: rgba(0, 0, 0, 0) url("http://www.dss.virginia.gov/globalimage/facelift/dotgov_logo.png") no-repeat scroll center center;
+	height: 33px;
+}
+#commonBanner .alignLeft {
+    float: left;
+    margin-left: 20px;
+    padding-top: 8px;
+}
+#commonBanner #virginiaSearch {
+    float: right;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+.metro_holder{
+	margin: 0 auto;
+	width: 1142px;
+	overflow: auto;
+	}
+.metro {
+    width: 550px;
+    float: left;
+    margin-bottom: 30px;
+	margin-left: 20px;
+	/*overflow: auto;*/
+}
+.tile{
+	border: 1px solid #FFF;
+	text-transform: uppercase;
+	font-size: 19px;
+	width: 146px;
+	height: 188px;
+	color: #FFF;
+	float: left;
+	margin: 0px 2px 4px 1px;
+	opacity: 0.95;
+	}
+a:hover .tile{
+	opacity: 1;
+	}
+.tile img{
+	margin: 5px auto;
+	display: block;
+	}
+.tile .icon p{
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 9px;
+	font-family: Arial;
+	margin-left: 4px;
+	}
+.tile .icon, nav .icon li{
+	font-size: 60px;
+	font-weight: bold;
+	background-color: #FFF;
+	border-radius: 60px;
+	padding: 5px;
+	width: 87px;
+	margin: 20px auto;
+	}
+.tile p{
+	margin-left: 8px;
+	}
+.tall{
+	height: 382px;
+	}
+.tall .icon{
+	margin-top: 80px;
+	}
+.tall p{
+	text-align: center;
+	}
+.wide1{
+	width: 219px;
+	}
+.wide2{
+	width: 297px;
+	}
+.wide3{
+	width: 321px;
+	}
+.metro .home{
+	height: 382px;
+	width: 219px;
+	text-align: center;
+	font-size: 20px;
+	}
+.metro .home p{
+	margin-left: 0;
+	}
+.metro .home img{
+	margin-top: 66px;
+	}
+.green{
+	background-color: #007236;
+	}
+.orange, .orange ul{
+	background-color: #c74005;
+	}
+.orange .icon, .orange .icon a{
+	color: #c74005;
+	text-decoration: none;
+	}
+.red, .red ul{
+	background-color: #a00000;
+	}
+.red .icon, .red .icon a{
+	color: #a00000;
+	text-decoration: none;
+	}
+.purple, .purple ul{
+	background-color: #662d91;
+	}
+.purple .icon, .purple .icon a{
+	color: #662d91;
+	text-decoration: none;
+	}
+.gold, .gold ul{
+	background-color: #a5950b;
+	}
+.gold .icon, .gold .icon a{
+	color: #a5950b;
+	text-decoration: none;
+	}
+.pink, .pink ul{
+	background-color: #a50b5e;
+	}
+.pink .icon, .pink .icon a{
+	color: #a50b5e;
+	text-decoration: none;
+	}
+.teal, .teal ul{
+	background-color: #2d9091;
+	}
+.teal .icon, .teal .icon a{
+	color: #2d9091;
+	text-decoration: none;
+	}
+.dpurple, .dpurple ul{
+	background-color: #31245b;
+	}
+.dpurple .icon, .dpurple .icon a{
+	color: #31245b;
+	text-decoration: none;
+	}
+.blue, .blie ul{
+	background-color: #3734a0;
+	}
+.blue .icon, .blue .icon a{
+	color: #3734a0;
+	text-decoration: none;
+	}
+.title ul{
+	width: 425px !important;
+	color: #FFF !important;
+	padding-left: 0px;
+	margin-right: 8px;
+	padding-top: 10px;
+	}
+.orange .title ul{
+	background-color: #893714;
+	}	
+.row{
+	padding: 0 15px;
+	overflow: auto;
+	}
+
+.col_md_3 {
+    width: 28%;
+    margin: 5px 7px 5px 14px;
+    padding: 5px;
+    float: left;
+    border-right: 1px solid #ccc;
+    min-height: 150px;
+}
+.col_md_3:last-of-type{
+	border-right: none;
+	}
+.col_md_3 h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.interior h2 {
+    margin-top: 61px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: normal;
+    background: url('../img/header_back.png') center center repeat-x transparent;
+    color: #FFF;
+    padding: 5px 1px 5px 13px;
+    margin: 62px -30px 0 -15px;
+}
+footer {
+    min-height: 250px;
+    background-color: #353535;
+	padding-top: 1px;
+	clear: both;
+	overflow: auto;
+	}
+.vdss_map{
+	display:block;
+	float: left;
+	margin: 11px 11px 5px;
+	}
+.subnav {
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    margin-left: 262px;
+    margin-top: -4px;
+    position: relative;
+    right: 1px;
+    text-align: left;
+	}
+.subnav ul {
+    list-style-type: none;
+    margin-left: 0 !important;
+	margin-bottom: 6px;
+    padding: 0;
+}
+.subnav ul li {
+	margin: 0 25px;
+  	display: inline;
+}
+.subnav ul li a {
+    color: #b1b1b1;
+    text-decoration: none;
+    font-size: 14px;
+}
+.subnav ul li a:hover{
+	color: #CCCCCC;
+}
+footer .contact_us{
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    color: #b1b1b1;
+    float: left;
+    font-size: 17px;
+    margin: 72px 5px 5px;
+    padding: 9px 9px 0 0;
+    text-align: left;
+	}
+
+.cornersnug {
+    float: right;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 13px 19px 5px 0;
+    text-align: right;
+    width: 274px;
+	color: #FFF;
+}
+.cornersnug img{
+	float:left;
+	display: block;
+	}
+.cornersnug.pull-right > img {
+    width: 88px;
+}
+.cornersnug a{
+	color: #b1b1b1;
+	text-decoration: none;
+	}
+.cornersnug a:hover{	
+	color: #CCC;
+	}
+.cornersnug span#vdss_text {
+    color: #fff;
+    float: left;
+    font-size: 17px;
+    text-align: left;
+	margin-top: 5px;
+	margin-bottom: 17px;
+}
+.socialmedia{
+	margin-right: 17px;
+	}
+.socialmedia img{
+	opacity: 0.80;
+	float: right;
+	display: block;
+	margin: 5px;
+	}
+.socialmedia img:hover{
+	opacity: 1;
+	}
+@media (max-width: 1222px){
+	.metro{
+		float: none;
+		margin: 0 auto;
+		}
+	.metro_holder{
+		width: auto;
+		}
+	}
+@media (max-width: 834px){
+	.subnav{
+		display: none;
+		}
+}
