@@ -96,8 +96,8 @@
 					color: "#e88817",				
 					dataPoints: [		
 					{y: 3, label: "Adobe Illustrator"  },
-					{y: 4, label: "Adobe Premiere Pro"  },
-					{y: 5, label: "Adobe InDesign"  },				
+					{y: 5, label: "Adobe InDesign"  },
+					{y: 6, label: "Adobe Premiere Pro"  },					
 					{y: 8, label: "Adobe Dreamweaver"  },
 					{y: 8, label: "Adobe Photoshop"  },
 					]
