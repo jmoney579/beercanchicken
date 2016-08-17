@@ -116,8 +116,13 @@
 						</ul>
 					</div>-->
 
-		<p>VDSS Annual Report utilizing Tableau site content would go here.</p>
-		<p><a target="_blank" href="http://www.dss.virginia.gov/ons/">Sample Development Site</a></p>
+		<p>The VDSS annual report has typically been published as an electronic document with limited interactive abilities.  As with many electronic documents, updates and modifications are difficult and require a great deal of effort</p>
+		<p>Recently, the agency purchased a subscription to <a href="http://www.tableau.com/">Tableau</a>, a interactive business analysis and reporting tool.  The system is designed to be embedded into any website of the consumer's choice.
+			In this case, the agency requested a custom template for the software.  It was requested that the design mimic the current <a href="vdss.html">VDSS website</a>, but also have a presence distinct to it's own.<p>
+		<p>To accomplish this, I began with the color scheme and footer for the existing site.  The header was reduced in height to give great presence to the date and accommodate the vertical navigation on the interior pages.  A metro interface was created to navigate the user to the appropriate division.
+			Once there, the user can select between the chapters of the reports by hovering over the left navigation bar.  The navigation bar will expand and list the chapter titles and links which will display the requested data.</p>
+		<p>Each of the interior pages of the site are created using a single page design which displays the appropriate tableau chart dependent on the pageID variable in the URL.  Using JQuery, each chart is wrapped in a div which is given a unique ID that correlates to the pageID variables in the URL.  To explore this feature and the design of the site, please visit the development site linked below.</p>
+		<p><a target="_blank" href="../downloads/ann_report/index.html">Sample Development Site</a></p>
 			</div>
 			<div class="col-sm-4 rule_left">
 				<h1>Mockups</h1>
