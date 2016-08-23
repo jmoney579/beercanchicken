@@ -98,7 +98,7 @@ nav .title {
 nav .title li {
     background-color: transparent !important;
     font-size: 18px !important;
-    width: 525px !important;
+    width: 650px !important;
     margin: 1px 3px 20px 4px !important;
     text-align: left !important;
     padding-top: 5px !important;
@@ -126,7 +126,7 @@ nav .title ul.icon li:nth-of-type(2) {
     border-radius: 0px;
     /* padding: 0px; */
     margin: -9px 3px 12px 1px !important;
-    width: 520px !important;
+    width: 650px !important;
     padding-left: 12px;
     padding-bottom: 5px;
 }
@@ -301,7 +301,7 @@ a:hover .tile{
 	text-decoration: none;
 	}
 .title ul{
-	width: 538px !important;
+	width: 668px !important;
 	color: #FFF !important;
 	padding-left: 0px;
 	margin-right: 8px;

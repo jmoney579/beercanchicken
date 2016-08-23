@@ -28,3 +28,9 @@ $(document).ready(function($){
 		$('.divID_'+pageID).addClass('show');
 	}
 });
+$(document).ready(function($){
+	var view_h = $('content').height();
+	console.log(view_h);
+	$('nav ul.icon').css('height',view_h + 100);
+	$('.title .icon').css('height',view_h + 90);
+});
