@@ -621,6 +621,12 @@ video.vid_header {
 	width: 100%;
 	height: 100%;
 }
+.vid_holder{
+	width: 556px;
+	margin-right: 8px;
+	border: 1px solid #CCC;
+	margin-bottom: 12px;
+	}
 /*End Styling */
 @media (min-width: 1000px){
 	.stomped{
