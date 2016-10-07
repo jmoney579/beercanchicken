@@ -603,9 +603,11 @@ video.vid_header {
 .snaptotop .down_arrow{
 	display: none;
 }
+.center{
+	margin: 0 auto !important;
+	}
 .youtube_holder{
 	max-width: 700px;
-	margin: 0 auto;
 	}
 .youtube_embed {
 	position: relative;
@@ -622,10 +624,11 @@ video.vid_header {
 	height: 100%;
 }
 .vid_holder{
-	width: 556px;
+	max-width: 556px;
 	margin-right: 8px;
 	border: 1px solid #CCC;
 	margin-bottom: 12px;
+	padding: 5px;
 	}
 /*End Styling */
 @media (min-width: 1000px){
