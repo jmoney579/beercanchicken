@@ -251,10 +251,10 @@ h4.contact_title {
 	margin-left: 29px;
 	color: #FFF;
 }
-.rule2{
-	border-right: 1px solid #000;
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
-	}
+.rule2 {
+    border-right: 1px solid #000;
+    box-shadow: 0px -1px 2px 0px rgba(255, 255, 255, 0.1) inset;
+}
 .rule_right{
 	border-right: 1px solid #CCC;
 	}
@@ -591,7 +591,7 @@ video.vid_header {
 .snaptotop .big-pic{
 	top: 0;
     margin-top: 0;
-	background: url('../img/header_back6.jpg') no-repeat center center transparent;
+	background: url('../img/header_back7.jpg') no-repeat center center transparent;
 	background-size: cover;
 }
 .snaptotop .navbar{
