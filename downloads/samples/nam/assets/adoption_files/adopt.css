@@ -1,0 +1,4979 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    vertical-align: baseline;
+    border: none;
+}
+div.clear, div.hr, div.dots {
+    height: 1px;
+    overflow: hidden;
+    clear: both;
+}
+.push {
+    position: absolute;
+    left: -9001px;
+}
+div.col_1of3, div.col_2of3, div.col_3of3, div.col_ABof3, div.col_BCof3 {
+    float: left;
+}
+div.fullWidth {
+    width: 100%;
+}
+div.textRight {
+    text-align: right;
+}
+
+/* ========================= */
+/* ===== Global Styles ===== */
+/* ========================= */
+
+body {
+    font-family: Arial;
+    font-size: 100%;
+}  /* background: url(/_img/bg_body.png) repeat #f8f9f4; */
+div#wrapper {
+    width: 970px;
+    margin: 0 auto;
+}
+#unsupported-browser {
+	background-color:#fae692;
+	border:1px solid #c00;
+	display:none;
+	margin: 0 5px;
+}
+#unsupported-browser .ie8 {
+	background:url(/_img/ie8-notice.png) no-repeat 12px 22px;
+	margin-right:8px;
+	margin-left:8px;
+	margin-bottom:8px;
+	padding:16px;
+	font-size:12px;
+}
+#unsupported-browser .ie8 table {
+	width:100%;
+}
+#unsupported-browser h4 {
+	font-size:14px;
+    margin-top:-4px;
+    margin-bottom:2px;
+    margin-right:0px;
+    margin-left:0px;
+    padding-left:48px;
+    padding-top: 10px;
+}
+#unsupported-browser p { 
+	margin:0;
+	padding-left:48px;
+	padding-top: 20px;
+}
+#unsupported-browser .button { 
+	margin-left:8px;
+	padding-left:2em;
+	padding-right:2em;
+	padding-top:4px;
+	padding-bottom:4px;
+	display: inline-block;
+	line-height:normal;
+	border:1px solid #000000;
+	background-color:#ffffff;
+	color:#000000;
+}
+#unsupported-browser a.ignore { 
+	color:#c00;
+}
+#unsupported-browser a.button  { 
+	text-decoration:none;
+}
+div#cke_taRichContent {
+	margin: 10px 0;
+	/*height:800px;
+	width:100%;*/
+}
+div#header {
+    color: #60671f;
+    margin: 0 5px 15px;
+    position: relative;
+}  /* background: url(/_img/bg_header.png) repeat-x #FFFFFF; */
+
+div#header a {
+    color: #5a621e;
+    text-decoration: none;
+}
+div#header ul {
+    list-style: none;
+    height: 2em;
+}
+div#header ul li {
+    float: left;
+}
+div#header div.logo, div#header div.logo-print {
+    color: #FFFFFF;
+    padding: 34px 0 41px 28px;
+    height: 45px;
+}
+div#header div.logo {
+    display: block;
+}    
+div#header div.logo-print {
+    display: none;
+}
+div#header div.logoSmall {
+    color: #FFFFFF;
+    display: block;
+    padding: 24px 0 0px 28px;
+    height: 45px;
+}
+div#header div.primary-nav {
+    position: absolute;
+    top: 91px;
+    left: 0;
+}
+div#header div.secondary-nav {
+    position: absolute;
+    right: -5px;
+    top: 56px;
+    width: 586px;
+}
+div#header div.admin {
+    background-color: #568796;
+    padding-top: 2px;
+    height: 29px;
+    overflow: hidden;
+    border-bottom: 1px solid #568796;
+    position: relative;
+    font-size: 11px;
+}
+div#header div.admin div.status {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 0;
+    color: #d5d5d1;
+    font-weight: bold;
+    padding-right: 42px;
+    line-height: 15px;
+    text-align: right;
+}
+div#header div.admin div.status div.logout {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 18px;
+}
+
+div#header div.primary-nav a, div#header div.secondary-nav a, div#header div.admin a {
+    display: block;
+    text-indent: -9001px;
+    overflow: hidden;
+}  /* background-image: url(/_img/sprite_nav.png); */
+
+div#header div.primary-nav a {
+    height: 28px;
+}
+div#header div.secondary-nav a {
+    height: 20px;
+    width: 100px;
+}
+div#header div.admin a {
+    height: 30px;
+}
+
+div#header div.primary-nav li.services a {
+    width: 192px !important;
+    background-position: 0px 0px;
+}
+div#header div.primary-nav li.families a {
+    width: 192px !important;
+    background-position: -192px 0px;
+}
+div#header div.primary-nav li.workers a {
+    width: 191px !important;
+    background-position: -385px 0px;
+}
+div#header div.primary-nav li.conversation a {
+    width: 192px !important;
+    background-position: -576px 0px;
+}
+div#header div.primary-nav li.children a {
+    width: 192px !important;
+    background-position: -768px 0px;
+}
+div#header div.primary-nav li.services ul, div#header div.primary-nav li.families ul, div#header div.primary-nav li.workers ul, 
+div#header div.primary-nav li.conversation ul, div#header div.primary-nav li.children ul {
+    z-index: 100;
+}
+div#header div.primary-nav li.services ul li, div#header div.primary-nav li.families ul li, div#header div.primary-nav li.workers ul li, 
+div#header div.primary-nav li.conversation ul li, div#header div.primary-nav li.children ul li {
+    width: inherit;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-top: 1px solid #a1b030;
+}
+div#header div.primary-nav li.services ul li a, div#header div.primary-nav li.families ul li a, div#header div.primary-nav li.workers ul li a, 
+div#header div.primary-nav li.conversation ul li a, div#header div.primary-nav li.children ul li a {
+    text-indent: 0px;
+    text-align: center;
+    background: none;
+    background-color: #b2c335;
+    color: #5a621e;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+div#header div.primary-nav li.services ul li a:hover, div#header div.primary-nav li.families ul li a:hover, div#header div.primary-nav li.workers ul li a:hover, 
+div#header div.primary-nav li.conversation ul li a:hover, div#header div.primary-nav li.children ul li a:hover {
+    background-color: #cedf4f;
+    color: #5a621e;
+}
+div#header div.secondary-nav li.contact a {
+     background-position: -10px -90px;
+     width: 85px;
+}
+div#header div.secondary-nav li.news a {
+     background-position: -95px -90px;
+     width: 54px;
+}
+div#header div.secondary-nav li.media a {
+     background-position: -149px -90px;
+     width: 102px;
+}
+div#header div.secondary-nav li.about a {
+     background-position: -251px -90px;
+     width: 74px;
+}
+div#header div.secondary-nav li.espanol a {
+     background-position: -325px -90px;
+     width: 166px;
+}
+div#header div.secondary-nav li.nrcdr a {
+     background-position: -490px -90px;
+     height: 24px;
+     width: 105px;
+}
+
+div#header div.admin li.myhome a {
+    width: 88px;
+    background-position: -0px -150px;
+}
+div#header div.admin li.matches a {
+    width: 132px;
+    background-position: -88px -150px;
+}
+div#header div.admin li.favorites a {
+    width: 76px;
+    background-position: -220px -150px;
+}
+div#header div.admin li.myprofile a {
+    width: 82px;
+    background-position: -296px -150px;
+}
+div#header div.admin li.tutorials a {
+    width: 75px;
+    background-position: -378px -150px;
+}
+div#header div.admin li.childcases a {
+    width: 90px;
+    background-position: -453px -150px;
+}
+div#header div.admin li.familycases a {
+    width: 98px;
+    background-position: -543px -150px;
+}
+div#header div.admin li.myaccount a {
+    width: 90px;
+    background-position: -641px -150px;
+}
+div#header div.admin li.reports a {
+    width: 66px;
+    background-position: -731px -150px;
+}
+div#header div.admin li.edit a {
+    width: 92px;
+    background-position: -800px -150px;
+}
+
+div#header div.primary-nav li.services a:hover {
+    background-position: 0px -30px;
+}
+div#header div.primary-nav li.families a:hover {
+    background-position: -192px -30px;
+}
+div#header div.primary-nav li.workers a:hover {
+    background-position: -385px -30px;
+}
+div#header div.primary-nav li.conversation a:hover {
+    background-position: -576px -30px;
+}
+div#header div.primary-nav li.children a:hover {
+    background-position: -768px -30px;
+}
+
+div#header div.secondary-nav li.contact a:hover {
+     background-position: -10px -110px;
+}
+div#header div.secondary-nav li.news a:hover {
+     background-position: -95px -110px;
+}
+div#header div.secondary-nav li.media a:hover {
+     background-position: -149px -110px;
+}
+div#header div.secondary-nav li.about a:hover {
+     background-position: -251px -110px;
+}
+div#header div.secondary-nav li.espanol a:hover {
+     background-position: -325px -110px;
+}
+div#header div.secondary-nav li.nrcdr a:hover {
+     background-position: -598px -90px;
+}
+
+div#header div.admin li.myhome a:hover {
+    width: 88px;
+    background-position: -0px -180px;
+}
+div#header div.admin li.matches a:hover {
+    width: 132px;
+    background-position: -88px -180px;
+}
+div#header div.admin li.favorites a:hover {
+    width: 76px;
+    background-position: -220px -180px;
+}
+div#header div.admin li.myprofile a:hover {
+    width: 82px;
+    background-position: -296px -180px;
+}
+div#header div.admin li.tutorials a:hover {
+    width: 75px;
+    background-position: -378px -180px;
+}
+div#header div.admin li.childcases a:hover {
+    width: 90px;
+    background-position: -453px -180px;
+}
+div#header div.admin li.familycases a:hover {
+    width: 98px;
+    background-position: -543px -180px;
+}
+div#header div.admin li.myaccount a:hover {
+    width: 90px;
+    background-position: -641px -180px;
+}
+div#header div.admin li.reports a:hover {
+    width: 66px;
+    background-position: -731px -180px;
+}
+div#header div.admin li.edit a:hover {
+    width: 92px;
+    background-position: -800px -180px;
+}
+
+div#header div.primary-nav li.services a.on {
+    background-position: 0px -60px;
+}
+div#header div.primary-nav li.families a.on {
+    background-position: -192px -60px;
+}
+div#header div.primary-nav li.workers a.on {
+    background-position: -384px -60px;
+}
+div#header div.primary-nav li.conversation a.on {
+    background-position: -576px -60px;
+}
+div#header div.primary-nav li.children a.on {
+    background-position: -768px -60px;
+}
+
+div#header div.secondary-nav li.contact a.on {
+     background-position: -10px -130px;
+}
+div#header div.secondary-nav li.news a.on {
+     background-position: -95px -130px;
+}
+div#header div.secondary-nav li.media a.on {
+     background-position: -149px -130px;
+}
+div#header div.secondary-nav li.about a.on {
+     background-position: -251px -130px;
+}
+div#header div.secondary-nav li.espanol a.on {
+     background-position: -325px -130px;
+}
+div#header div.secondary-nav li.nrcdr a.on {
+     background-position: -706px -90px;
+}
+
+div#header div.admin li.myhome a.on {
+    width: 88px;
+    background-position: -0px -210px;
+}
+div#header div.admin li.matches a.on {
+    width: 132px;
+    background-position: -88px -210px;
+}
+div#header div.admin li.favorites a.on {
+    width: 76px;
+    background-position: -220px -210px;
+}
+div#header div.admin li.myprofile a.on {
+    width: 82px;
+    background-position: -296px -210px;
+}
+div#header div.admin li.tutorials a.on {
+    width: 75px;
+    background-position: -378px -210px;
+}
+div#header div.admin li.childcases a.on {
+    width: 90px;
+    background-position: -453px -210px;
+}
+div#header div.admin li.familycases a.on {
+    width: 98px;
+    background-position: -543px -210px;
+}
+div#header div.admin li.myaccount a.on {
+    width: 90px;
+    background-position: -641px -210px;
+}
+div#header div.admin li.reports a.on {
+    width: 66px;
+    background-position: -731px -210px;
+}
+div#header div.admin li.edit a.on {
+    width: 92px;
+    background-position: -800px -210px;
+}
+
+div#header div.utility-nav {
+    position: absolute;
+    height: 34px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+div#header div.utility-nav a {
+    font-family: Arial;
+    color: #5a621e;
+}
+div#header div.utility-nav a:hover {
+    color: #747f2b;
+}
+div#header div.utility-nav a.on {
+    color: #FFFFFF;
+}
+div#header div.utility-nav ul {
+    font-size: 11px;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    top: 9px;
+}
+div#header div.utility-nav ul li {
+    padding: 5px 10px;
+}
+div#header div.utility-nav ul li .icon.pulldown {
+    position: relative;
+    top: -1px;
+    margin-left: 4px;
+}
+div#header div.utility-nav div.form {
+    float: right;
+    padding: 0 10px;
+    position: relative;
+    width: 235px;
+    height: 40px;
+}
+div#header div.utility-nav label {
+    position: absolute;
+    left: -9001px;
+}
+/* div#header div.utility-nav input#main_search {
+    border: 0;
+    padding: 3px 4px 0;
+    margin: 0 9px 0 0;
+    width: 160px;
+    height: 16px;
+    line-height: 12px;
+    position: absolute;
+    top: 11px;
+    right: 54px;
+    color: #bbbbbb;
+}  background: url(/_img/sprite_global.png) -60px -40px; */
+div#header div.utility-nav input#main_search {border: 0;padding: 3px 7px 3px;margin: 0 9px 0 0;width: 160px;height: 17px;line-height: 12px;position: absolute;top: 10px;right: 54px;color: #bbbbbb;}
+
+div#header div.utility-nav input#main_search_submit {
+    /* width: 36px;
+    height: 34px; */
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+div#header div.utility-nav ul li.tfacebook {
+    text-indent: -9001px;
+    overflow: hidden;
+    padding: 3px 5px 7px 13px;
+}
+div#header div.utility-nav ul li.tfacebook a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-position: -370px -45px;
+}  /* background-image: url(/_img/sprite_global.png); */
+
+div#header div.utility-nav ul li.tfacebook a:hover {
+    background-position: -370px -70px;
+}
+div#header div.utility-nav ul li.ttwitter {
+    text-indent: -9001px;
+    overflow: hidden;
+    padding: 3px 5px 7px 5px;
+}
+div#header div.utility-nav ul li.ttwitter a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-position: -395px -45px;
+} /* background-image: url(/_img/sprite_global.png); */
+
+div#header div.utility-nav ul li.ttwitter a:hover {
+    background-position: -395px -70px;
+}
+div#header div.utility-nav ul li.tyoutube {
+    text-indent: -9001px;
+    overflow: hidden;
+    padding: 3px 0px 7px 5px;
+}
+div#header div.utility-nav ul li.tyoutube a {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background-position: -420px -45px;
+}  /* background-image: url(/_img/sprite_global.png); */
+
+div#header div.utility-nav ul li.tyoutube a:hover {
+    background-position: -420px -70px;
+}
+div#header div.utility-nav ul li.chat {
+    padding: 6px 5px 7px 10px;
+}
+
+div#header div.utility-nav ul li.chat a {
+    background: url("/_assets/images/AUSK/chat/chat-icon-mini.png") no-repeat scroll left center  transparent;
+    padding: 5px 0 5px 25px;
+    white-space: nowrap;
+}
+
+div#header div.utility-nav ul li.chat a:hover {
+    background: url("/_assets/images/AUSK/chat/chat-icon-mini-hover.png") no-repeat scroll left  center transparent;
+    padding: 5px 0 5px 25px;
+    white-space: nowrap;
+}
+div#header div.utility-nav ul li {
+    padding: 5px 8px;
+}
+
+div.super {
+    margin: 0 5px;
+    position: relative;
+    top: -15px;
+}
+div.super img {
+    display: block;
+}
+div#header.condensed {
+    padding: 0 5px 8px 5px;
+    margin: 0 0 15px;
+    color: #9fac3b;
+}  /* background: url(/_img/bg_header-con.png); */
+
+div#header.condensed div.logo {
+    background-color: #b2c335;
+    height: 50px;
+    padding: 9px 0 9px 28px;
+}
+div#header.condensed div.summary {
+    height: 178px;
+    padding: 5px 45px;
+    position: relative;
+}
+div#header.condensed div.summary div.photos {
+    float: left;
+    width: 140px;
+    height: 155px;
+    background-color: #f4f4ed;
+}
+div#header.condensed div.summary div.photos div.icon {
+    margin: 48px 45px 0;
+}
+div#header.condensed div.summary div.details {
+    float: left;
+    margin: 15px 0 0 18px;
+    width: 560px;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+div#header.condensed div.summary div.status {
+    float: left;
+    /*width: 70px;*/  /* Causing Child detail status to wrap */
+    margin-right: 15px
+}
+div#header.condensed div.summary div.percent {
+    float: left;
+}
+div#header.condensed div.summary div.percent div.bar {
+    margin-top: 3px; /* was: 3..fupx; - typo? */
+    /*margin-left:8px;*/
+    height: 8px;
+    background-color: #e9e9e2;
+    width: 180px;
+    border-top: 1px solid #f6f6f3;
+    border-bottom: 1px solid #f6f6f3;
+}
+div#header.condensed div.summary div.percent div.complete {
+    height: 8px;
+    background-color: #b2c335;
+    width: 180px;
+    border-top: 1px solid #dbe2a7;
+    border-bottom: 1px solid #dbe2a7;
+    margin: -1px 0;
+}
+div#header.condensed h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+div#header.condensed h4 {
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: normal;
+    color: #aa973f;
+}
+div#header.condensed p {
+    margin-bottom: 12px;
+}
+div#header.condensed div.dots {
+    height: 1px;
+    margin-bottom: 12px;
+}  /* background: url(/_img/dots.png) top repeat-x; */
+
+div#header.condensed div.summary div.buttons {
+    position: absolute;
+    top: 55px;
+    right: 50px;
+    width: 90px;
+}
+div#header.condensed div.summary div.buttons a {
+    display: block;
+    margin-bottom: 7px;
+}
+div#header.condensed div.summary div.buttons a img {
+    display: block;
+}
+div#footer {
+    font-family: arial;
+    font-size: 12px;
+    padding: 40px 0 80px 50px;
+    margin: 0 5px;
+    position: relative;
+    height: 375px; /* 420  */
+}
+div#footer h3 {
+    color: #333333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+div#footer p {
+    font-family: arial;
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 16px;
+    color: #7d7d7d;
+}
+div#footer a {
+    text-decoration: none;
+    color: #0066ff;
+}
+div#footer a:hover {
+    text-decoration: underline;
+}
+div#footer ul {
+    list-style: none;
+    width: 197px;
+    margin-right: 40px;
+    float: left;
+}
+div#footer ul li {
+    margin: 0 0 12px;
+}
+div#footer ul.last {
+    margin-right: -10px;
+}
+div#footer ul.last a.fbk {
+    width: 28px;
+    height: 28px;
+    background-position: -100px 0;
+    margin-right: 5px;
+}
+div#footer ul.last a.twr {
+    width: 28px;
+    height: 28px;
+    background-position: -130px 0;
+    margin-right: 5px;
+}
+div#footer ul.last a.rss {
+    width: 28px;
+    height: 28px;
+    background-position: -160px 0;
+    margin-right: 5px;
+}
+div#footer ul ul {
+    font-family: arial;
+    font-size: 10px;
+    margin-left: 8px;
+    width: auto;
+    float: none;
+}
+div#footer ul ul li {
+    margin: 4px 0 0;
+}
+div#footer ul a {
+    color: #333333;
+}
+div#footer ul ul a {
+    color: #7d7d7d;
+}
+
+div#footer div.copyright {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    width: 650px;
+}
+div#footer div.copyright div.icon.bird {
+    float: right;
+    margin: 35px 70px 0 20px;
+}
+div#footer div.copyright ul {
+    width: auto;
+    float: none;
+    height: 30px;
+    font-size: 12px;
+}
+div#footer div.copyright li {
+    float: left;
+    padding-right: .5em;
+}
+div#footer div.copyright li a {
+    padding-right: .3em;
+}
+div#content-top {
+    width: 970px;
+    height: 10px;
+    margin: 0 auto;
+}  /* background: url(/_img/content-top.png) top left no-repeat; */
+
+div#content-bottom {
+    width: 970px;
+    height: 20px;
+    margin: 0 auto;
+}  /* background: url(/_img/content-bottom.png) top left no-repeat; */
+
+/* --------------------------------- Beginning of div#content definitions ------------------------ */
+div#content {
+    font-size: 12px;
+    font-family: Arial;
+    color: #363636;
+    padding: 20px 45px 30px;
+    overflow: hidden;
+}  /*	background: #FFFFFF; */ /* background: url(/_img/content-mid.png) top left repeat-y; */
+
+div#content ul, div#content ol, div#dialog ul, div#dialog ol, div#dialog p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+div#content p {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+div#content .hidden {
+    display:none;
+}
+div#content ul, div#dialog ul {
+    list-style: none;
+}
+div#content ul li, div#dialog ul li {
+    padding: 0 0 6px 16px;
+}  /* background: url(/_img/bg_li.png) 6px 6px no-repeat; */
+
+div#content ul li li, div#dialog ul li li {
+    padding: 0 0 6px 11px;
+} /* background: url(/_img/bg_li_open.png) 1px 6px no-repeat; */
+
+div#content ol, div#dialog ol {
+    margin-left: 20px;
+}
+div#content ol li, div#dialog ol li {
+}
+.pad4Top { padding-top:4px; }
+.pad4Bot { padding-bottom:4px; }
+.mar4Top { margin-top:4px; }
+.mar4Bot { margin-bottom:4px; }
+
+blockquote p {
+	padding: 10px 15px;
+	font-size: 19px !important;
+	line-height: 26px !important;
+	margin: 23px 0px !important;
+	font-family: arial;
+	border-width: 2px 0px;
+	border-style: solid;
+	border-color: #b2c335;
+}	
+
+/* Back to Top href that automagically appears */
+div#wrapper a#back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #5a621e;
+    width: 70px;
+    height: 75px;
+    background-position: -140px 0;
+    font-size: 11px;
+    font-weight: bold;
+    display: none;
+} /*  background: url(/_img/abtt-sprite.png); */
+div#wrapper a#back-to-top>span {
+    position: relative;
+    top: 39px;
+    right: -23px;
+}
+div#wrapper a#back-to-top:hover {
+    color: #859222;
+}
+@media all and (min-width: 1080px) {
+    div#wrapper a#back-to-top { 
+        background-position: 0 0;
+    }
+    div#wrapper a#back-to-top:hover { 
+        background-position: -70px 0;
+    }
+}
+
+/* Special class for UL/OL Rich Content text lists */
+div#content .rcWrapper ul, div#content .rcWrapper ol {
+    list-style: none;
+    margin-bottom:4px;    
+}
+div#content .rcWrapper ul li {
+    padding: 0px 0 7px 26px;
+}  /* background: url(/_img/bg_li.png) 12px 6px no-repeat; */
+
+div#content .rcWrapper ul li li {
+    padding: 6px 0 0px 18px;
+    padding-bottom:0px;
+}  /* background: url(/_img/bg_li_open.png) 6px 12px no-repeat; */
+
+div#content .rcWrapper ol li {    
+    padding-top:6px;
+    padding-left:10px;
+    margin-left:-4px;
+    text-indent: -14px;
+}
+div#content .rcWrapper ol li li {
+    padding-top:6px;
+    padding-bottom:0px;
+    margin-left:-8px;    
+}        
+div#content a, div#dialog a {
+    color: #0066ff;
+    position: relative;
+}
+div#content a.top, div#dialog a.top, div#content a.expand, div#content a.expand {
+    color: #0066ff !important;
+}
+div#content a:visited,
+div#content div#central a:visited, 
+div#content div#main a:visited, 
+div#content div#callouts a:visited, 
+div#dialog a:visited,
+div#data a:visited {
+    color: #551A8B;
+}
+/*div#content div#central a:visited :not(h2), 
+div#content div#main a:visited :not(h2) {
+	color: #9fac3b;
+}*/
+div#content a:hover, div#dialog a:hover {
+    text-decoration: underline;
+}
+div#content a.more, div#dialog a.more {
+    position: relative;
+}
+div#content h1, div#dialog h1 {
+    font-family: arial;
+    font-size: 21px;
+    margin-bottom: 20px;
+    color: #9fac3b;
+    position: relative;
+    clear: both;
+}
+div#content div#central h1 {
+	margin-bottom: 8px;
+}
+div#content h1 span.icon, div#dialog h1 span.icon {
+    float: left;
+}
+div#content h1 span.note, div#content h2 span.note, div#dialog h1 span.note, div#dialog h2 span.note {
+    position: absolute;
+    right: 0;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: arial;
+}
+
+div#content h1 span.note, div#dialog h1 span.note {
+    top: 6px;
+}
+div#content h2 span.note, div#dialog h2 span.note {
+}
+div#content h2 span.note a.top, div#dialog h2 span.note a.top {
+    top: 4px;
+    margin-right: 17px;
+}
+div#content h1 span.note a.subscribe, div#dialog h1 span.note a.subscribe {
+    margin-right: 20px;
+}
+div#content h1 a .icon, div#dialog h1 a .icon {
+    float: none;
+    margin: 0 -10px 0 0;
+}
+div#content h2, div#dialog h2 {
+    position: relative;
+    font-family: arial;
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #9fac3b;
+    overflow: hidden;
+}
+div#content h2 a.titleLink, div#dialog h2 a.titleLink {
+    position: relative;
+    font-family: arial;
+    font-size: 18px;
+    margin-bottom: 14px;
+    color: #9fac3b !important;
+    text-decoration: none;
+}
+div#content h2 a.titleLink:hover, div#dialog h2 a.titleLink:hover {
+    text-decoration: underline;
+}
+div#content div#main h2 a.titleLink:visited, 
+div#dialog h2 a.titleLink:visited {
+    color: #9fac3b;
+}
+div#content h2 a.espanol, div#content h3 a.espanol, div#content h4 a.espanol, div#dialog h2 a.espanol, div#dialog h3 a.espanol, div#dialog h4 a.espanol {
+    display: inline-block;
+    text-decoration: none !important;
+}
+div#content h2 a.espanol div, div#content h3 a.espanol div, div#content h4 a.espanol div, div#dialog h2 a.espanol div, div#dialog h3 a.espanol div, div#dialog h4 a.espanol div {
+    display: inline-block;
+}
+div#content h3, div#dialog h3 {
+    font-family: arial;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #9fac3b;
+}
+div#content h1.darkBlue, div#dialog h1.darkBlue,
+div#content h2.darkBlue, div#dialog h2.darkBlue,
+div#content h3.darkBlue, div#dialog h3.darkBlue {
+    color: #426874;
+}
+div#content h3.darkBlue.margin2 {
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+div#content h4, div#dialog h4 {
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: #9fac3b;
+}
+div#content h3.red, 
+div#dialog h3.red,
+div#content h4.red, 
+div#dialog h4.red {
+    color: #EF4832;
+} 
+div#content h3.red a.titleLink,
+div#content h4.red a.titleLink,
+div#content div#central h3.red a.titleLink:visited,
+div#content div#central h4.red a.titleLink:visited {
+    color: #EF4832;
+    text-decoration: none;
+}
+div#content h3 a.titleLink,
+div#content h4 a.titleLink,
+div#content div#central h3 a.titleLink:visited,
+div#content div#central h4 a.titleLink:visited {
+    color: #9fac3b;
+    text-decoration: none;
+}
+div#content h3 a.titleLink:hover,
+div#content h4 a.titleLink:hover,
+div#content h3.red a.titleLink:hover,
+div#content h4.red a.titleLink:hover {
+    text-decoration: underline;
+}
+div#content h5, div#dialog h5 {
+    font-size: 10px;
+    font-weight: normal;
+    margin-bottom: 14px;
+    color: #aa973f;
+}
+div#content table, div#dialog table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 20px;
+}
+span.italic, p.italic {
+    font-style: italic;
+}
+div#content table th, div#content table td, div#dialog table th, div#dialog table td {
+    text-align: left;
+    padding: 6px 10px 8px 0;
+    font-size: 12px;
+    -webkit-text-size-adjust:none;
+}  /* background: url(/_img/dots.png) bottom repeat-x; */
+div#content table td.p35, div#dialog table td.p35 { /* used to control width of col 1 in 2 col table */
+    width: 35%;
+}
+div#content table th, div#dialog table th {
+    font-weight: normal;
+    color: #a18309;
+    font-size: 11px;
+}
+div#content table th.row, div#dialog table th.row {
+    font-weight: bold;
+    color: #363636;
+    font-size: 11px;
+    width: 170px;
+} 
+div#content div.hr, div#dialog div.hr {
+    height: 3px;
+    margin: 0 0 18px 0;
+    border-top: 1px solid #f3f3ed;
+    border-bottom: 1px solid #d7d7c4;
+}
+div#content div.dots, div#dialog div.dots {
+    height: 1px;
+    margin-bottom: 15px;
+}  /* background: url(/_img/dots.png) top repeat-x; */
+
+div#content div.dots.space, div#dialog div.dots.space {
+    margin: 30px 0;
+}
+div#content ul.tools, div#dialog ul.tools {
+    float: right;
+    font-weight: normal;
+}
+div#content ul.tools.sort li {
+	color: #AA973F;
+	padding: 0;
+}
+div#content ul.tools li, div#dialog ul.tools li {
+    display: inline-block;
+    padding: 0 0 0 20px;
+    background: none;
+}
+div#content ul.tools li.next, div#dialog ul.tools li.next {
+    margin-right: 18px;
+}
+div#content ul.tabs, div#dialog ul.tabs {
+    height: 25px;
+    border-bottom: 2px solid #FFFFFF;
+    background-color: #e5e2d6;
+}
+div#content ul.tabs li, div#dialog ul.tabs li {
+    display: block;
+    border-style: solid;
+    border-color: #e5e2d6;
+    border-width: 1px 1px 0;
+    padding: 4px 11px 4px;
+    float: left;
+    margin: 0;
+    font-size: 10px;
+}  /* background: url(/_img/vdots.png) right repeat-y; */
+
+div#content ul.tabs li.on, div#dialog ul.tabs li.on {
+    background-color: #FFFFFF;
+    background-image: none;
+}
+div#content div.summary {
+    margin-bottom: 20px;
+}
+div#content div.summary div.list {
+    width: 430px;
+    float: left;
+}
+div#content div.thumbnail div.list {
+    width: 480px;
+}
+div#content div.summary div.list table {
+    margin-bottom: 6px;
+}
+div#content div.summary div.photos {
+    float: right;
+}
+div#content div.photos {
+}
+div#content div.photos div.image {
+    padding: 8px;
+    background-color: #f4f4ed;
+}
+div#content div.photos ul {
+    margin: 0;
+    padding: 0;
+}
+div#content div.photos li {
+    margin: 0;
+    padding: 0;
+    background: 0;
+}
+div#content div.photos img {
+    display: block;
+}
+div#content a:hover.no-underline, div#dialog a:hover.no-underline, a:hover.no-underline, {
+	text-decoration: none !important;
+}
+div#content div.photos p.caption {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 8px;
+    /* background: #FFFFFF url(/_img/dots.png) bottom repeat-x; */
+}
+div#content div.photos ul.controls {
+    background: #FFFFFF;
+    display: block;
+    height: 30px;
+}
+div#content div.photos ul.controls li {
+    float: left;
+    display: block;
+    height: 10px;
+}
+div#content div.photos ul.controls li.back, div#content div.photos ul.controls li.next {
+    width: 30px;
+    float: left;
+    margin: 12px 0 8px;
+}
+div#content div.photos ul.controls li.back a, div#content div.photos ul.controls li.next a {
+    display: block;
+    width: 20px;
+    height: 10px;
+    overflow: hidden;
+    text-indent: -9001px;
+}  /* background-image: url(/_img/sprite_global.png); */
+
+div#content div.photos ul.controls li.back a {
+    float: left;
+    background-position: -310px 0;
+}
+div#content div.photos ul.controls li.next a {
+    float: right;
+    background-position: -310px -15px;
+}
+div#content div.photos ul.controls li.count {
+    width: 106px;
+    margin: 9px 0 11px;
+    text-align: center;
+}
+div#content div.photos ul.tabs {
+    color: #0066ff;
+    margin-top: -8px;
+    width: 100%;
+}
+div#content div.photos ul.tabs li {
+    padding: 4px 7px 4px;
+}
+div#header div.photos div.icon, div#content div.photos div.icon {
+    width: 50px;
+    height: 56px;
+    margin: 32px 36px;
+}
+div#header div.photos div.boy, div#content div.photos div.boy {
+    background-position: -60px -200px;
+}
+div#header div.photos div.girl, div#content div.photos div.girl {
+    background-position: 0 -200px;
+}
+div#header div.photos div.question, div#content div.photos div.question {
+    background-position: -120px -200px;
+}
+div#content div#famDisability p {
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+div#content div#famDisability p.margin0 {
+    margin-bottom: 0;
+}
+div#content div#tabs-wrapper div#famDisability ul {
+    list-style: disc;
+    margin: 5px 40px 5px 10px;
+}
+div#content div#tabs-wrapper div#famDisability ul li {
+    padding: 0 0 2px 0;
+    color: #b2c335;
+    font-weight: normal;
+    background: none;
+}
+div#content div#tabs-wrapper div#famDisability ul li span {
+    color: #000000;
+}
+/* summary alternate in search results */
+
+div#content div.results {
+}
+div#content div.results div.summary {
+}
+div#content div.results div.summary th.row {
+    width: 80px;
+}
+div#content div.results div.summary div.list {
+    float: right;
+    width: 480px;
+}
+div#content div.results div.summary div.photos {
+    float: left;
+    width: 142px;
+}
+div#content div.results div.summary div.photos ul.controls {
+    margin-bottom: 20px;
+}
+div#content div.results div.summary div.photos ul.controls li.count {
+    width: 82px;
+}
+div#content div.results div.summary ul.links {
+    color: #0066ff;
+    font-weight: bold;
+}
+div#content div.results div.summary ul.links a {
+    font-weight: normal;
+}
+
+
+/* =========================== */
+/* ===== Major Structure ===== */
+/* =========================== */
+
+div#content div#breadcrumb a {
+    height: 22px;
+    color: #0066ff !important;
+    margin: -8px 0 25px 0;
+}
+div#content div#breadcrumb {
+    height: 22px;
+    color: #aa973f;
+    margin: -8px 0 25px 10px;
+}
+div#content div#breadcrumb.controls {
+    width: 695px;
+    /* margin-bottom: 25px; moved to primary */
+}
+div#content div#breadcrumb.controls div.hr {
+    margin: 0 0 0 -10px;
+}
+div#content div#breadcrumb ul {
+    list-style: none;
+    height: 10px;
+    float: left;
+    font-size: 10px;
+    line-height: 1em;
+    margin-bottom: 11px;
+}
+div#content div#breadcrumb.controls ul {
+    /* margin-bottom: 11px; moved to primary */
+}
+div#content div#breadcrumb ul.tools {
+    float: right;
+    margin-right: 8px;
+    margin-top: -2px;
+}
+div#content div#breadcrumb li {
+    padding: 0 .5em 0 0;
+    float: left;
+    background: none;
+}
+div#content div#breadcrumb ul.tools li {
+    float: left;
+    padding-left: 15px;
+}
+div#content div#breadcrumb a {
+    padding-right: .5em;
+}
+div#content div#breadcrumb.fullWidth {
+    /* width: 910px; */
+    /* margin-bottom: 25px; moved to primary */
+}
+div#content div#breadcrumb.fullWidth div.hr {
+    margin: 0 0 0 -10px;
+}
+div#content div#breadcrumb.fullWidth ul {
+    /* margin-bottom: 11px; moved to primary */
+}
+
+div#content div#main {
+    float: left;
+    width: 570px;
+    padding: 0 10px;
+}
+div#content div#main div.hr, div#content div#main div.dots {
+    margin: 0 -10px 18px;
+}
+
+div#content div#callouts {
+    width: 270px;
+    float: right;
+}
+/*div#content div#callouts a img {
+    margin-bottom: 25px;
+}*/
+div#content div#callouts h3 {
+    margin-bottom: 8px;
+}
+div#content div#callouts div.panel {
+    width: 250px;
+}
+div#content div#callouts div.shadowbox {
+}
+div#content div#callouts div.shadowbox-simple {
+	background-color:#eceade;
+}
+div#content div#callouts div.shadowbox p, div#content div#callouts div.shadowbox div.dots {
+    margin-bottom: 10px;
+}
+div#content div#callouts div.shadowbox p.image {
+    margin: 0 0 10px;
+}
+div#content div#callouts div.shadowbox h3 {
+    margin-bottom: 14px;
+    padding-left: 4px;
+}
+div#content div#callouts div.featured {
+    font-size: 11px;
+    margin-bottom: 30px;
+}
+div#content div#callouts div.featured b {
+    color: #ef4832;
+    font-size: 12px;
+}
+div#content div#callouts div.featured p, div#content div#callouts div.featured div.dots {
+    margin-bottom: 10px;
+}
+div#content div#callouts div.featured p.name {
+    margin: 3px 0 7px;
+}
+div#content div#callouts div.featured div.shadowbox {
+    float: right;
+}
+div#content div#links {
+    float: left;
+    width: 180px;
+    padding: 0px 35px 0 10px;
+    font-family: Arial;
+}
+div#content div#links h2 {
+    color: #ef4832;
+    margin: 0 0 10px;
+}
+div#content div#links h3 {
+    color: #ef4832;
+    margin: 28px 0 10px;
+    padding: 0 0 10px 0;
+}  /* background: url(/_img/dots.png) bottom repeat-x; */
+
+div#content div#links h3.first {
+    margin:0 0 10px 0;
+    /*margin: 0 0 10px;*/
+}
+div#content div#links h3.empty {
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+}
+div#content div#links h3.no-dots {
+    background: none;
+}
+div#content div#links h3 a {
+    color: #ef4832;
+    text-decoration: none;
+}
+div#content div#links h3 a:hover {
+    text-decoration: underline;
+}
+div#content div#links .on {
+    color: #9fac3b;
+}
+div#content div#links ul.famLinks a.on {
+    color: #9fac3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div#content div#links h4 {
+    color: #363636;
+    font-family: arial;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 10px;
+}
+div#content div#links ul {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+div#content div#links ul li {
+    padding: 0 0 10px 0;
+    background: none;
+}
+div#content div#links ul li a {
+    text-decoration: none;
+}
+div#content div#links ul li a:hover {
+    text-decoration: underline;
+}
+div#content div#links ul li a:visited {
+    color:#0066ff !important;
+}  
+div#content div#links ul ul {
+    margin: 0 0 -10px 10px;
+    font-weight: bold;
+}
+div#content div#links ul ul a {
+    font-weight: normal;
+}
+div#content div#links ul.checklist {
+}
+div#content div#links ul.checklist a {
+    text-decoration: none;
+}
+div#content div#links ul.checklist li {
+    position: relative;
+}
+div#content div#links ul.checklist li ul {
+    font-weight: normal;
+}
+div#content div#links ul.indent {
+    margin-left: 10px;
+}
+div#content div#links ul.indent li {
+    position: relative;
+}
+div#content div#links div.contact {
+    margin-top: 40px;
+}
+div#content div#links div.contact p {
+    margin-bottom: 12px;
+}
+div#content div#links div.contact h4 {
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 16px;
+}  /* background: url(/_img/dots.png) top repeat-x; */
+
+div#content div#links div.panel {
+    margin-top: 40px;
+}
+div#content div#links div.panel div.dots, div#content div#links div.panel p {
+    margin-bottom: 10px;
+}
+div#content div#central {
+    float: left;
+    width: 480px;
+    /* padding-top: 20px; was not here */
+}
+div#content div#buckets {
+    float: right;
+    width: 144px;
+    margin-top: -45px; /* was -47 or 17 */
+}
+div#content div#callouts div.block,
+div#content div#buckets div.block {
+    margin-bottom: 25px;
+}
+div#content div#data {
+    float: right;
+    width: 645px;
+    /* padding-top: 25px; was not here */
+}
+
+/* =========================== */
+/* ===== Common Elements ===== */
+/* =========================== */
+
+div#content p.next {
+    text-align: right;
+    color: #0066ff;
+}
+div#content p.edit {
+    margin-top: -8px;
+}
+
+div#content div.more {
+    margin: -10px 0 45px;
+    height: 1em;
+    font-size: 10px;
+}
+div#content div.more div.tools {
+    float: right;
+    color: #aa973f;
+}
+div#content div.more div.tools ul {
+    list-style: none;
+    display: inline;
+    font-size: 10px;
+    margin: 0 0 0 15px;
+}
+div#content div.more div.tools ul li {
+    background: none;
+    display: inline;
+    padding: 0;
+}
+div#content div.announcement {
+}
+div#content div.announcement div.text {
+    float: left;
+    width: 500px;
+}
+div#content div.announcement div.shadowbox {
+    float: right;
+}
+
+div#content p.image {
+    display: inline-block;
+    padding: 4px;
+    background-color: #eceade;
+    text-align: center;
+}
+div#content p.image img {
+    display: block;
+}
+div#content p.image.right {
+    float: right;
+    margin: 0 10px 10px 20px;
+}
+div#content p.image.left {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+div#content div#callouts p.image {
+    margin: 0 4px 20px;
+}
+div#content div.three_column {
+    margin-right: -36px;
+    position: relative;
+    padding-bottom: 40px;
+    display:inline-block;
+}
+div#content div.three_column div.col_1of3 {
+    width: 268px;
+    margin-right: 23px;
+}
+div#content div.three_column div.col_2of3 {
+    width: 298px;
+    margin-right: 20px;
+}
+div#content div.three_column div.col_3of3 {
+    width: 268px;
+}
+div#content div.three_column div.shadowbox, div#content div.three_column div.shadowbox-simple {
+	background-color:#eceade;
+    margin-left: 14px;
+}
+div#content div.three_column div.low {
+    position: absolute;
+    bottom: 30px;
+    width: 268px;
+}
+div#content div.three_column div.col_2of3 div.low {
+    width: 298px;
+}
+div#content div.three_column a.more {
+    position: absolute;
+    bottom: 25px;
+}
+div#content div.three_column h3 {
+    height: 16px;
+    margin-bottom: 6px;
+}
+div#content div.panel {
+}
+div#content div.panel h3 {
+    font-size: 16px;
+    color: #ef4832;
+    margin-bottom: 6px;
+}
+div#content div#main div.panel div.dots {
+    margin: 0 0 9px;
+}
+div#content div.home div.panel {
+    margin-left: -12px;
+}
+div#content div.home div.cta {
+    float: right;
+    margin-right: -10px;
+}
+div#content div.news {
+}
+div#content div#main div.news div.dots {
+    margin: 0 0 18px;
+}
+div#content div.share {
+    padding: 5px 2px;
+}  /* background: url(/_img/dots.png) top repeat-x; */
+
+div#content div.share.nodots {
+    background: none;
+}
+div#content div.share a.more {
+    float: left;
+    margin-right: 45px;
+    margin-bottom: 10px;
+    top: 2px;
+}
+div#content div.share span.facebook {
+    float: left;
+    margin-right: 15px;
+}
+div#content div.share span.twitter {
+    float: left;
+    margin-bottom: 4px;
+}
+div#content div.portal {
+}
+div#content div.portal img {
+    margin-bottom: 20px;
+}
+div#content div.portal img.framed {
+    background-color: #F4F4ED !important;
+    margin-bottom: 10px !important;
+    padding: 4px !important;
+}
+div#content div.portal p {
+    width: 240px;
+    margin: 0 0 15px 12px;
+}
+div#content div.portal h2 {
+    padding-left: 10px;
+}
+div#content div.portal ul {
+    list-style: none;
+    width: 240px;
+    margin: 0 0 15px 12px;
+}
+div#content div.portal li {
+    padding: 9px 0;
+}  /* background: url(/_img/dots.png) top repeat-x; */
+
+div.col_1of2 {
+    width: 49%;
+    float: left;
+}
+div.col_2of2 {
+    width: 49%;
+    float: right;
+}
+div#content div.portal div.col_1of2, div#content div.portal div.col_2of2 {
+    width: 270px;
+}
+div#content div.portal div.col_1of2 {
+    margin: 0 30px 0 0;
+}
+div#content div#central div.portal div.col_1of2, div#content div#central div.portal div.col_2of2 {
+    width: 230px;
+}
+div#content div#central div.portal div.col_1of2 {
+    margin: 0 15px 0 0;
+}
+div#content div#central div.portal div.tocLeft {
+	float: left;
+    margin: 0 15px 0 0;
+    width: 300px;
+}
+div#content div#central div.portal div.tocLeft p {
+    width: 276px;
+}
+div#content div#central div.portal div.tocRight {
+	float: right;
+    margin: 0 15px 0 0;
+    width: 150px;
+    padding-top: 20px;
+}
+
+div#content div#central div.portal {
+}
+div#content div#central div.portal p, div#content div#central div.portal ul {
+    width: 200px;
+}
+div#content div#central div.portal p.noindent {
+    width: auto;
+    margin-left: 1px;
+}
+div#content div#central div#mainStory p.location,
+div#content div#central div.tocItem p.location {
+	width: 200px;
+	margin-top:0;
+	padding: 0 5px 5px 0;
+}	/* background: url(/_img/dots.png) bottom repeat-x; */
+
+div#content div#central div#mainStory p.location.wide {
+	width: 285px;
+}
+div#content div#central div.tocItem ul,
+div#content div#central div.tocItem p {
+	margin-left: 0;
+	width: 288px;
+}
+
+div#content div.quick-search {
+}
+div#content div#links div.quick-search {
+    margin-bottom: 30px;
+}
+div#content div#links div.quick-search .text {
+    float:left;
+}
+
+div#content div#links label {
+    display: block;
+    margin: 0 0 10px;
+}
+div#content div#links input.text {
+    width: 124px;
+    height: 12px;
+}
+div#content div#links input.image {
+    float: right;
+}
+
+div#content div.state-select {
+}
+div#content div.portal div.state-select { /* div#main */
+    width: 240px;
+    margin: 0 0 30px 12px;
+}
+div#content div.portal div.state-select div.dots {
+    margin: 0 0 10px;
+}
+div#content div.portal div.state-select p.state input {
+    margin-right: 25px;
+}
+div#content div#links div.state-select {
+    margin-bottom: 30px;
+}
+div#content div.state-select span.map2 {
+    display: block;
+    margin: 0 0 10px;
+}
+div#content div.state-select p {
+    margin: 0;
+}
+div#content div.state-select p.state {
+    position: relative;
+}
+div#content div#main div.portal div.state-select p.state label {
+    width: 60px;
+    margin-right: 10px;
+}
+div#content div#links div.state-select p.state label {
+    margin-bottom: 0px;
+}
+div#content div.state-select p.state select {
+    float: left;
+    width: 130px;
+    margin-top: 16px;
+}
+div#content div#links div.state-select p.state select {
+    margin-bottom: 10px;
+}
+div#content div.state-select p.state input {
+    float: right;
+    margin-top: 15px;
+}
+div#content div.state-select p.map {
+    margin-top:10px;
+    /*width:180px;*/
+    float:left;
+    margin-bottom:10px;
+}
+div#content div.state-select p.map span.map2 {
+    float:left;
+    width:100px;    
+} 
+div#content div.state-select p.map a {
+    text-decoration: none;
+}
+div#content div#links div.state-select p.map a {
+    margin-bottom: 8px;
+} 
+div#content .dotlist ul, div#content ul.dots {
+    list-style: none;
+    margin: 0 0 15px 0;
+}
+div#content .dotlist ul li, div#content ul.dots li {
+    padding: 9px 0;
+}  /* background: url(/_img/dots.png) top repeat-x; */
+
+div#content .dotlist ul ul, div#content ul.dots ul {
+    list-style: none;
+    margin: 0 0 0 10px;
+}
+div#content .dotlist ul ul li, div#content ul.dots ul li {
+    background: none;
+    padding: 2px 0;
+}
+div#content div.alert {
+    padding: 20px;
+}
+div#content div.alert div.icon {
+    float: left;
+    margin: 2px 20px 0 0;
+}
+div#content div.alert p {
+    margin: 0;
+}
+div#content ul a.language {
+    display: inline-block;
+    margin: 0 0 0 26px;
+    position: relative;
+    top: -1px;
+}
+div#content ul div.note {
+    float: right;
+    text-align: right;
+}
+div#content ul div.note p, div#content ul div.note h4 {
+    margin: 0;
+}
+div#content ul div.note a {
+    margin-top: 2px;
+    float: right;
+}
+div#content div.admin {
+}
+div#content div.admin h2 {
+}
+div#content div.admin h2 span.tools {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    float: right;
+    font-size: 10px;
+    font-weight: bold;
+}
+div#content div.admin h2 span.tools a {
+    font-weight: normal;
+    cursor: pointer;
+}
+div#content div.notes {
+    margin: 0px 10px 15px;    
+    /*margin: -15px 10px 15px;*/
+}
+div#content div.notes ul {
+    margin: 0 0 15px;
+}
+div#content div.notes ul li {
+    margin: 0;
+    padding: 30px 0 30px 70px;
+    position: relative;
+}  /* background: url(/_img/dots.png) bottom repeat-x; */
+
+div#content div.notes ul ul {
+    /*margin: 0 70px 0 0;*/
+    margin:0;
+}
+div#content div.notes ul ul li {
+    position: relative;
+    top: 15px;
+    padding-top:10px;
+    padding-left:26px;
+    padding-right:6px;
+    padding-bottom:10px;
+}    /*padding: 10px 0 10px 55px;*/
+
+div#content div.notes ul li.last {
+    background: none;
+    padding-right:0px;    
+}
+div#content div.notes dl {
+    position: relative;
+    margin: -7px 0 -7px;
+}
+div#content div.notes dl dt {
+    color: #aa973f;
+}
+div#content div.notes dl .case {
+    width: 230px;
+}
+div#content div.notes dl dd.case {
+    color: #ef4832;
+    font-weight: bold;
+}
+div#content div.notes dl dd.case a {
+    font-weight: normal;
+}
+div#content div.notes dl .reason {
+    position: absolute;
+    left: 230px;
+}
+div#content div.notes dl dt.reason {
+    top: 0;
+}
+div#content div.notes dl dd.reason {
+    top: 15px;
+}
+div#content div.notes ul ul dl {
+    margin: 0;
+}
+div#content div.notes ul ul dl .case {
+    width: 175px;
+    padding-left:6px;
+    padding-right:6px;
+}
+div#content div.notes ul ul dl .reason {
+    left: 184px;
+}
+div#content div.notes a.expand  {
+    display: block;
+    top: 30px;
+    right: 0;
+    text-decoration: none;
+    padding-right: 12px;
+    position: absolute;
+    cursor: pointer;
+    font-size:10px;
+}
+div#content div.notes a.expand span.icon {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    right: 10px;
+    left: auto !important;
+    top: 5px;
+    background-position: -275px 0;
+    cursor: pointer;
+}
+div#content div.notes .on a.expand span.icon {
+    background-position: -285px 0;
+}
+div#content div.notes a.more {
+    top: 30px;
+    right: 20px;
+    position: absolute;
+}
+
+/* make superUser dls wider */
+div#content div.notes.superuser dl {
+    position: relative;
+    margin: -7px 0 -7px;
+}
+div#content div.notes.superuser dl dt {
+    color: #363636;
+}
+div#content div.notes.superuser dl .case {
+    width: 230px;
+}
+div#content div.notes.superuser dl dd.case {
+    color: #ef4832;
+    font-weight: bold;
+}
+div#content div.notes.superuser dl dd.case.other {
+    color: #aa973f;
+    font-weight: normal;
+}
+div#content div.notes.superuser dl .reason {
+    position: absolute;
+    left: 280px;
+}
+div#content div.notes.superuser dl dt.reason {
+    top: 0;
+}
+div#content div.notes.superuser dl dd.reason {
+    top: 15px;
+}
+div#content div.notes.superuser ul ul dl {
+    margin: 0;
+}
+div#content div.notes.superuser ul ul dl .case {
+    width: 230px;
+}
+div#content div.notes.superuser ul ul dl .reason {
+    left: 280px;
+    width: 200px;
+}
+div#content div.notes.superuser ul ul dl dd.reason {
+    left: 314px;
+}
+div#content div.notes.superuser ul ul dl dt.reason span.status {
+	left: 34px;
+    position: absolute;
+	color: #aa973f;
+}
+
+
+div#content div.utility-nav {
+}
+div#content div.utility-nav div.profile {
+    width: 620px;
+}
+div#content div.utility-nav div.profile img {
+    float: left;
+}
+div#content div.utility-nav div.profile div.text {
+    float: left;
+    width: 505px;
+    margin-left: 24px;
+}
+div#content div.utility-nav div.profile div.text h4, div#content div.utility-nav div.profile div.text p, div#content div.utility-nav div.profile div.text div.dots {
+    margin: 0 0 6px;
+}
+div#content div.process {
+    width: 320px;
+    float: right;
+}
+div#content div.process h4, div#content div.process p, div#content div.process div.dots {
+    margin: 0 0 6px;
+}
+div#content div.refine {
+    font-size: 10px;
+    color: #aa973f;
+    height: 44px;
+    position: relative;
+    line-height: 44px;
+    margin-bottom: 25px;
+}    /* background: url(/_img/dots.png) top repeat-x; */
+
+div#content div.refine b {
+    color: #363636;
+}
+div#content div.refine span {
+    float: left;
+}
+div#content div.refine span.showing {
+    width: 165px;
+}
+div#content div.refine ul.tools {
+    line-height: 44px;
+    margin: 0;
+}
+div#content div#central div.portal div.refine ul.tools {
+	width: auto;
+}
+div#content div.refine ul.tools li {
+    background: none;
+    float: left;
+    padding: 0 0 0 10px;
+}
+
+/* ========================= */
+/* ===== Callout Boxes ===== */
+/* ========================= */
+
+div#content div.callout {
+    display: block;
+    position: relative;
+}
+div#content div.nrcrrfap.green {
+    width: 270px;
+    height: 211px;
+    margin-bottom: 22px;
+    font-size: 11px;
+}    /* background: url(/_img/sideblocks/nrcrrfap-homepage.png) bottom; */
+
+div#content div.nrcrrfap p {
+    position: absolute;
+    left: -9001px;
+}
+div#content div.nrcrrfap a.link-1 {
+    position: absolute;
+    color: #0066ff;
+    top: 137px;
+    left: 85px;
+}
+div#content div.nrcrrfap a.link-2 {
+    position: absolute;
+    top: 160px;
+    left: 27px;
+}
+div#content div.green a .icon.arrow, div#sb-caption a .icon.arrow {
+    background-position: -220px -15px;
+}
+div#content div.green a .icon.window {
+    background-position: -205px -15px;
+}
+div#content div.end_cta div.nrcrrfap {
+    width: 314px;
+    height: 200px;
+    margin-bottom: 22px;
+    position: relative;
+}    /* background: url(/_img/sideblocks/nrcrrfap-app-footer.png) bottom; */
+
+div#content div.end_cta div.nrcrrfap a {
+    left: 12px;
+}
+div#content div.end_cta div.nrcrrfap a.link-1 {
+    top: 112px;
+}
+div#content div.end_cta div.nrcrrfap a.link-2 {
+    top: 140px;
+}
+
+div#content div.join-newsletter.yellow {
+    width: 270px;
+    height: 260px;
+    margin-bottom: 22px;
+    position: relative;
+    color: #363636;
+}    /* background: url(/_img/buttons/join-newsletter-yellow-bg.png) bottom; */
+
+div#content div.join-newsletter h3 {
+    position: absolute;
+    left: -9001px;
+}
+div#content div.join-newsletter p {
+    margin: 0 10px;
+    position: absolute;
+}
+div#content div.join-newsletter p.block-1 {
+    top: 53px;
+}
+div#content div.join-newsletter p.block-2 {
+    top: 105px;
+}
+div#content div.join-newsletter p.block-2 input {
+    border: 0;
+    padding: 3px 4px 0;
+    margin: 2px 9px 0 0;
+    width: 160px;
+    height: 16px;
+    line-height: 0;
+    color: #636363;
+}    /* background: url(/_img/sprite_global.png) -60px -60px; */
+
+div#content div.join-newsletter p.block-3 {
+    top: 157px;
+}
+div#content div.join-newsletter p.block-3 select {
+    width: 248px;
+    margin: 3px 0 0 0;
+    color: #636363;
+}
+div#content div.join-newsletter p.block-4 {
+    top: 217px;
+}
+div#content div.join-the-conversation.red {
+    width: 270px;
+    height: 335px;
+    margin-bottom: 25px;
+    position: relative;
+    color: #bd584b;
+}    /* background: url(/_img/buttons/join-the-conversation-red.png) bottom; */
+
+div#content div.join-the-conversation p.buttons {
+    position: relative;
+    top: 106px;
+    text-align: center;
+}
+div#content div.join-the-conversation p.buttons a img {
+    padding-bottom: 7px;
+}
+div#content div.chat-T1 {
+    height:77px;
+    width:309px;
+    margin-bottom:24px;    
+}
+div#content div.chat-T23 {
+    height:68px;
+    width:190px;
+    margin-bottom:24px;    
+}
+div#content div.get-social.yellow {
+    display: block;
+    width: 145px;
+    height: 165px;
+    margin-bottom: 25px;
+    position: relative;
+}    /* background: url(/_img/sideblocks/get-social-yellow-23.png); */
+
+div#content div.get-social h3,
+div#content div.get-socialT1 h3 {
+    position: absolute;
+    left: -9001px;
+}
+div#content div.get-social span.facebook {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 17px;
+}
+div#content div.get-social span.facebook {
+    display: block;
+    left: 17px;
+    position: absolute;
+    top: 75px;
+}
+div#content div.get-social span.twitter {
+    display: block;
+    left: 17px;
+    position: absolute;
+    top: 123px;
+}
+div#content div.waiting {
+    display: block;
+    width: 145px;
+    height: 360px;
+    position: relative;
+    font-size: 11px;
+}    /* background: url(/_img/sideblocks/waiting-whats-next-green-23.png); */
+
+div#content div.waiting span.line1 {
+    display: block;
+    left: 11px;
+    position: absolute;
+    top: 232px;
+    width: 111px;
+}
+div#content div.waiting span.line2 {
+    display: block;
+    left: 11px;
+    position: absolute;
+    top: 269px;
+    width: 111px;
+}
+div#content div.waiting span.line3 {
+    display: block;
+    left: 11px;
+    position: absolute;
+    top: 306px;
+    width: 111px;
+}
+div#content div.getStarted {
+    display: block;
+    width: 300px;
+    height: 212px;
+    position: relative;
+    font-size: 11px;
+}   /* background: url(/_img/sideblocks/get-started-homepage.png); */
+
+div#content div.getStarted span.line1 {
+    display: block;
+    left: 25px;
+    top: 134px;
+    position: absolute;
+    width: 162px;
+}
+div#content div.getStarted span.line2 {
+    display: block;
+    left: 25px;
+    top: 173px;
+    position: absolute;
+    width: 162px;
+}
+div#content div.waiting-footerblock {
+    display: block;
+    width: 314px;
+    height: 200px;
+    position: relative;
+    font-size: 11px;
+}    /* background: url(/_img/sideblocks/waiting-whats-next-app-footer.png); */
+
+div#content div.waiting-footerblock span.line1 {
+    display: block;
+    left: 85px;
+    position: absolute;
+    top: 100px;
+    width: 200px;
+}
+div#content div.waiting-footerblock span.line2 {
+    display: block;
+    left: 85px;
+    position: absolute;
+    top: 125px;
+    width: 200px;
+}
+div#content div.waiting-footerblock span.line3 {
+    display: block;
+    left: 85px;
+    position: absolute;
+    top: 150px;
+    width: 200px;
+}
+div#content div.get-socialT1 {
+    display: block;
+    width: 270px;
+    height: 241px;
+    margin-bottom: 25px;
+    position: relative;
+}    /* background: url(/_img/sideblocks/get-social-yellow.png); */
+
+div#content div.get-socialT1 span.facebook {
+    display: block;
+    left: 24px;
+    position: absolute;
+    top: 125px;
+    width: 230px;
+}
+div#content div.get-socialT1 span.twitter {
+    display: block;
+    left: 24px;
+    position: absolute;
+    top: 185px;
+}
+
+
+/* ========================= */
+/* ===== Form Stuff ===== */
+/* ========================= */
+
+
+div#content ul.form {
+    margin-bottom: 40px;
+}
+div#content div#data ul.form {
+    margin-bottom: 0;
+}
+div#content h3.error {
+    color: #EF4832;
+}
+div#content ul.form > li {
+    padding: 5px 0 12px;
+    background: none;
+}
+div#content div#dvConditions ul.form > li {
+    width: 645px;
+}
+div#content ul.form li.slider {
+    position: relative;
+    padding: 25px 0;
+}
+div#content ul.form label {
+    font-weight: bold;
+    display: inline-block;
+    width: 175px;
+    padding-right: 25px;
+    float: left;
+    line-height: 16px;
+}
+div#content div.locked ul.form label {
+    width: 310px;
+}
+div#content ul.form span.error {
+    clear: both;
+    color: #EF4832;
+    float: left;
+    margin-left: 50px;
+}
+div#content ul.form input {
+}
+div#content ul.form select {
+    float: left;
+}
+div#content ul.form span.note {
+    display: block;
+    font-size: 10px;
+    color: #a18309;
+}
+div#content ul.form li.button {
+    text-align: right;
+}
+div#content ul.form div.radio, div#content ul.form div.check {
+    width: 280px;
+    float: left;
+    margin-top: -1px;
+}
+div#content div#data ul.form div.radio {
+    width: 440px;
+}
+div#content div#data ul.form div.radio.narrow {
+    width: 280px;
+}
+div#content div.locked ul.form div.radio, div#content div.locked ul.form div.check {
+    width: 310px;
+    float: left;
+}
+div#content ul.form div.radio label, div#content ul.form div.check label {
+    width: auto;
+    font-weight: normal;
+    padding: 0 10px 0 8px;
+    margin-top:2px;
+    float: left;
+}
+div#content div#data ul.form div.radio label, div#content div#data ul.form div.check label {
+    margin-top: 0;
+}
+div#content ul.form div.radio.w170 label {
+    width: 170px;
+    line-height: 15px;
+    margin-bottom: 4px;
+    margin-top: 2px !important;
+}
+div#content ul.form div.radio.w410 label {
+    width: 405px;
+    line-height: 15px;
+    margin-bottom: 4px;
+    margin-top: 2px !important;
+}
+div#content ul.form div.radio input, div#content ul.form div.check input {
+    clear:both;
+    float: left;
+    margin: 3px -2px 0 0;
+}
+div#content ul.form div.radio span.note, div#content ul.form div.check span.note {
+    clear: left;
+    position: relative;
+    top: -10px;
+    padding-left: 21px;
+}
+div#content li#dvZipParams input[type=text] {
+    line-height: 12px;
+    margin-right: 15px;
+}
+div#content li#dvZipParams select {
+    margin-top: 3px;
+}
+div#content ul.form div.radio label, div#content ul.form div.check label, div#content ul.form div.radio input, div#content ul.form div.check input {
+    line-height: 20px;
+}
+
+div#content ul.form table.formTable {
+    margin: 0 0 5px 0;
+}
+div#content ul.form table.formTable td {
+    vertical-align: top;
+    white-space: nowrap;
+    background: none;
+    padding: 0;
+}
+div#content ul.form table.formTable.wide td {
+    white-space: normal;
+}
+div#content ul.form table.formTable td label {
+    float:left;
+    padding: 0 8px 0 8px;
+}
+
+div#content ul.form table.formTable3 {
+    width: 100%;
+}
+div#content ul.form table.formTable3 td {
+    background: none;
+    padding: 3px;
+    width: 150px;
+}
+div#content ul.form table.formTable3 td label {
+    padding: 0 10px 3px 3px;
+    width: auto;
+    float: none;
+    font-weight: normal;
+}
+div#content ul.form div.vertical {
+}
+div#content ul.form div.vertical label {
+    width: 240px;
+    float: left;
+    padding: 0;
+    margin: 0 0 8px;
+}
+div#content ul.form div.vertical input {
+    margin-right: 8px;
+    float: left;
+    clear: left;
+}
+div#content ul.form div.col_1of3, div#content ul.form div.col_2of3, div#content ul.form div.col_3of3 {
+    float: left;
+    width: 160px;
+}
+div#content ul.form div.col_1of3 label, div#content ul.form div.col_2of3 label, div#content ul.form div.col_3of3 label {
+    float: left;
+    width: 120px;
+    padding: 0;
+    margin: 0 0 8px;
+}
+div#content ul.form div.col_1of3 input, div#content ul.form div.col_2of3 input, div#content ul.form div.col_3of3 input {
+    clear: left;
+    float: left;
+}
+div#content ul.form div.col_1of2, div#content ul.form div.col_2of2 {
+    float: left;
+    width: 310px;
+}
+div#content ul.form div.col_1of2 label, div#content ul.form div.col_2of2 label {
+    float: left;
+    width: 200px;
+    padding: 0;
+    margin: 0 0 8px;
+}
+div#content ul.form div.col_1of2 input, div#content ul.form div.col_2of2 input {
+    clear: left;
+    float: left;
+}
+
+div#content div.buttons {
+    height: 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+div#content div.buttons input.next {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+div#content div.buttons input.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* ============================= */
+/* ===== Graphical Headers ===== */
+/* ============================= */
+
+div#content h3.image, div#content h4.image {
+    display: block;
+    text-indent: -9001px;
+    overflow: hidden;
+}    /* background-image: url(/_img/sprite_headers.png); */
+
+div#content h3.child {
+    width: 100px;
+    background-position: 0 0;
+}
+div#content h3.sibling {
+    width: 120px;
+    background-position: 0 -20px;
+}
+div#content h3.caseworker {
+    width: 160px;
+    background-position: 0 -40px;
+}
+div#content h3.familystory {
+    width: 160px;
+    background-position: 0 -787px;
+}
+div#content h3.adopteestory {
+    width: 160px;
+    background-position: 0 -804px;
+}
+div#content div.portal h3.image {
+    width: 270px;
+    height: 85px;
+}    /* background-image: url(/_img/sprite_portal.png); */
+
+div#content div.portal h3.image.esSprite {
+    width: 270px;
+    height: 85px;
+}    /* background-image: url(/_img/sprite_portal_es.png); */
+
+div#content div#central div.portal h3.image {
+    width: 230px;
+    height: 70px;
+}
+div#content div#links h2.image {
+    width: 180px;
+    height: 22px;
+    display: block;
+    text-indent: -9001px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 0;
+}    /* background: url(/_img/sprite_headers.png) no-repeat; */
+
+div#content div.admin h2.image {
+    width: 646px;
+    height: 42px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 0;
+    clear: both;
+}    /* background: url(/_img/sprite_grid.png) no-repeat; */
+
+div#content div.admin h2.image span.text {
+    position: absolute;
+    left: -9001px;
+}
+
+/* condensed header headlines */
+div#header h2.image {
+    position: absolute;
+    top: 27px;
+    right: 50px;
+    display: block;
+    text-indent: -9001px;
+    overflow: hidden;
+}    /* background-image: url(/_img/sprite_headers.png); */
+
+div#header h2.sibling-registration {
+    background-position: 0 -220px;
+    width: 215px;
+    height: 26px;
+}
+div#header h2.family-registration {
+    background-position: 0 -250px;
+    width: 215px;
+    height: 26px;
+}
+div#header h2.child-registration {
+    background-position: 0 -280px;
+    width: 215px;
+    height: 26px;
+}
+div#header h2.sibling-edit {
+    background-position: 0 -310px;
+    width: 215px;
+    height: 26px;
+}
+div#header h2.family-edit {
+    background-position: 0 -340px;
+    width: 215px;
+    height: 26px;
+}
+div#header h2.child-edit {
+    background-position: 0 -370px;
+    width: 215px;
+    height: 26px;
+}
+div#header h2.test-site {
+    background-position: 0 -730px;
+    width: 215px;
+    height: 26px;
+}
+
+/* AUSK Tier2 rags (appear on Tier 1 pages) */
+div#content div.portal h3.au-national-adoption-recruitment-campaign { background-position: -0px -1963px; }
+div#content div.portal h3.au-adoptuskids-respite-program { background-position: 0 -1275px; } /* -770px -1000px */
+div#content div.portal h3.au-diligent-recruitment-grantees { background-position: 0px -1105px; }
+div#content div.portal h3.au-national-resource-center-for-recruitment-and-retention { background-position: -270px -1020px; }
+div#content div.portal h3.au-meet-our-team { background-position: 0 -1794px; }
+div#content div.portal h3.ff-how-to-adopt { background-position: 0px -170px; }
+div#content div.portal h3.ff-how-to-foster { background-position: -270px -255px; }
+div#content div.portal h3.ff-post-adoption-resources { background-position: 0px -340px; }
+div#content div.portal h3.ff-register { background-position: 0px -255px; }
+div#content div.portal h3.ff-request-to-be-contacted { background-position: -270px -425px; }
+div#content div.portal h3.ff-state-adoption-and-foster-care-information { background-position: -270px -340px; }
+div#content div.portal h3.ff-who-can-foster-and-adopt { background-position: -270px -170px; }
+div#content div.portal h3.fp-free-consulting-services-for-agencies { background-position: 0px -425px; }
+div#content div.portal h3.fp-free-resources { background-position: 0px 0px; }
+div#content div.portal h3.fp-how-to-photolist-and-manage-cases { background-position: -270px 0px; }
+div#content div.portal h3.fp-register-your-agency { background-position: 0px -85px; }
+div#content div.portal h3.fp-state-adoption-and-foster-care-information { background-position: -270px -340px; }
+div#content div.portal h3.fm-join-our-psa-campaign { background-position: 0px -935px; }
+div#content div.portal h3.fm-real-foster-care-and-adoption-stories { background-position: -270px -510px; }
+div#content div.portal h3.fm-meet-the-children { background-position: -270px -85px; }
+div#content div.portal h3.fm-caseworker-of-the-month { background-position: -270px -850px; }
+div#content div.portal h3.jc-nominate-a-caseworker { background-position: 0px -1020px; }
+div#content div.portal h3.jc-online-community { background-position: 0px -510px; }
+div#content div.portal h3.jc-real-foster-care-and-adoption-stories { background-position: -270px -510px; }
+div#content div.portal h3.jc-share-your-story { background-position: 0px -595px; }
+div#content div.portal h3.jc-ways-to-help { background-position: -270px -595px; }
+div#content div.portal h3.mc-search { background-position: -270px -680px; }
+div#content div.portal h3.mc-state-and-regional-photolists { background-position: 0px -680px; }
+div#content div.portal h3.na-announcements { background-position: 0px -850px; }
+div#content div.portal h3.na-caseworker-of-the-month { background-position: -270px -850px; }
+div#content div.portal h3.na-in-the-news { background-position: 0px -765px; }
+div#content div.portal h3.na-upcoming-events { background-position: -270px -765px; }
+div#content div.portal h3.ts-accessibility { background-position: 0px -1190px; }
+div#content div.portal h3.ts-forgot-password { background-position: -270px -1105px; }
+div#content div.portal h3.ts-photo-and-video-requirements { background-position: -270px -1360px; }
+div#content div.portal h3.ts-trouble-using-our-website { background-position: -270px -1190px; }
+div#content div.portal h3.ts-update-your-account { background-position: -270px -935px; }
+div#content div.portal h3.ts-update-your-profile { background-position: -270px -1275px; }
+div#content div.portal h3.os-for-families { height:217px; background-position: 0px -1360px; }
+div#content div.portal h3.os-for-professionals { height:217px; background-position: 0px -1577px; }
+div#content div.portal h3.os-success-stories { height:217px; background-position: -270px -1445px; }
+div#content div.portal h3.os-about-us { height:217px; background-position: -270px -1662px; }
+div#content div.portal h3.account-family { height:217px; background-position: -540px -1445px; }
+div#content div.portal h3.account-agency { height:217px; background-position: -540px -1662px; }
+div#content div.portal h3.fp-order-form { background-position: 0px -1879px; }
+div#content div.portal h3.ff-faq { background-position: -270px -1879px; }
+/* Tier 2 Spanish */
+div#content div.portal h3.ff-who-can-foster-and-adopt-es { background-position: 0 0; }
+div#content div.portal h3.ff-request-to-be-contacted-es { background-position: 0 -425px; }
+div#content div.portal h3.ff-how-to-adopt-es { background-position: 0 -85px; }
+div#content div.portal h3.ff-how-to-foster-es { background-position: 0 -170px; }
+div#content div.portal h3.ff-post-adoption-resources-es { background-position: 0 -340px; }
+div#content div.portal h3.ff-state-adoption-and-foster-care-information-es { background-position: 0px -510px; }
+div#content div.portal h3.ff-register-es { background-position: 0 -255px; }
+div#content div.portal h3.ff-faq-es { background-position: 0px -595px; }
+
+/* Tier 3 Rags (appear on Teir 2 pages) */
+div#content div#central div.portal h3.au-nrcrrfap-diligent-recruitment { background-position: -1000px -1190px; }
+div#content div#central div.portal h3.au-year-five-grantees { background-position: -1000px -980px; }
+div#content div#central div.portal h3.au-year-four-grantees { background-position: -1000px -910px; }
+div#content div#central div.portal h3.au-year-three-grantees { background-position: -1000px -840px; }
+div#content div#central div.portal h3.au-year-two-grantees2 { background-position: -1000px -770px; }
+div#content div#central div.portal h3.au-bridge-to-the-future { background-position: -770px -1190px; }
+div#content div#central div.portal h3.au-denvers-village { background-position: -1000px -140px; }
+div#content div#central div.portal h3.au-extreme-recruitment { background-position: -1000px -280px; }
+div#content div#central div.portal h3.au-parent-for-every-child { background-position: -1000px -210px; }
+div#content div#central div.portal h3.au-partners-for-forever-families { background-position: -1000px 0px; }
+div#content div#central div.portal h3.au-permanent-families-recruitment-project { background-position: -1000px -420px; }
+div#content div#central div.portal h3.au-project-match { background-position: -1000px -350px; }
+div#content div#central div.portal h3.au-roots-and-wings { background-position: -1000px -70px; }
+div#content div#central div.portal h3.au-permanent-families-and-lasting-connections { background-position: -770px -1330px; }
+div#content div#central div.portal h3.au-recruitment-and-kin-connection-project { background-position: -1000px -1330px; }
+div#content div#central div.portal h3.au-diligent-recruitment-of-families-for-children-in-foster-care { background-position: -1000px -1400px; }
+div#content div#central div.portal h3.au-i-care-365 { background-position: -1000px -1470px; }
+div#content div#central div.portal h3.au-diligent-recruitment-and-retention-grant { background-position: -1000px -1540px; }
+div#content div#central div.portal h3.au-step-up-diligent-recruitment-project { background-position: -1000px -1610px; }
+div#content div#central div.portal h3.au-texas-permanency-and-family-resource-development-model { background-position: -1000px -1680px; }
+div#content div#central div.portal h3.au-year-two-grantees { background-position: -1000px -700px; }
+div#content div#central div.portal h3.au-fp-free-consulting { background-position: -1000px -1260px; }
+div#content div#central div.portal h3.au-fp-free-resources { background-position: -1000px -1120px; }
+div#content div#central div.portal h3.au-meet-our-staff-and-consultants { background-position: -770px -1120px; }
+div#content div#central div.portal h3.ff-applying-to-adopt { background-position: -540px -280px; }
+div#content div#central div.portal h3.ff-being-an-adoptive-parent { background-position: -540px -630px; }
+div#content div#central div.portal h3.ff-being-matched-with-a-child { background-position: -540px -490px; }
+div#content div#central div.portal h3.ff-completing-an-adoption-home-study { background-position: -540px -350px; }
+div#content div#central div.portal h3.ff-deciding-to-pursue-adoption { background-position: -540px -210px; }
+div#content div#central div.portal h3.ff-getting-approved-to-adopt { background-position: -540px -420px; }
+div#content div#central div.portal h3.ff-legalizing-an-adoption { background-position: -1000px -490px; }
+div#content div#central div.portal h3.ff-receiving-an-adoptive-placment { background-position: -540px -560px; }
+div#content div#central div.portal h3.ff-applying-to-foster { background-position: -540px -770px; }
+div#content div#central div.portal h3.ff-being-a-foster-parent { background-position: -540px -980px; }
+div#content div#central div.portal h3.ff-completing-a-foster-home-study { background-position: -1000px -560px; }
+div#content div#central div.portal h3.ff-deciding-to-pursue-fostering { background-position: -540px -700px; }
+div#content div#central div.portal h3.ff-getting-approved-to-foster { background-position: -540px -840px; }
+div#content div#central div.portal h3.ff-receiving-a-foster-placement { background-position: -540px -910px; }
+div#content div#central div.portal h3.ff-form { background-position: -1000px -630px; }
+div#content div#central div.portal h3.ff-adoption-laws-and-resources-for-lgbt-families { background-position: -540px 0px; }
+div#content div#central div.portal h3.ff-adoption-resources-for-military-families { background-position: -540px -70px; }
+div#content div#central div.portal h3.ff-global-adoption-resources { background-position: -540px -140px; }
+div#content div#central div.portal h3.ff-adoption-and-foster-care-resources-for-minority-families { background-position: -1000px -1750px; }
+div#content div#central div.portal h3.ff-resources-for-people-with-disabilities { background-position: -1000px -1960px; }
+div#content div#central div.portal h3.ff-envisioning-your-family { background-position: -540px -1879px; }
+div#content div#central div.portal h3.fp-how-to-state-adoption-information { background-position: -1000px -1050px; }
+div#content div#central div.portal h3.fp-examples-of-our-services { background-position: -770px -420px; }
+div#content div#central div.portal h3.fp-request-our-services { background-position: -770px -490px; }
+div#content div#central div.portal h3.fp-how-to-recruit-foster-and-adoptive-families { background-position: -540px -1050px; }
+div#content div#central div.portal h3.fp-information-on-interstate-compacts { background-position: -770px -140px; }
+div#content div#central div.portal h3.fp-meeting-diligent-recruitment-requirements { background-position: -770px -280px; }
+div#content div#central div.portal h3.fp-order-form { background-position: -770px -70px; }
+div#content div#central div.portal h3.fp-quick-tips-and-tools-for-recruitment-and-retention { background-position: -540px -1190px; }
+div#content div#central div.portal h3.fp-resource-guides-and-curricula-for-child-welfare-staff { background-position: -770px 0px; }
+div#content div#central div.portal h3.fp-resources-for-interjurisdictional-placements { background-position: -770px -210px; }
+div#content div#central div.portal h3.fp-strategies-to-retain-foster-and-adoptive-families { background-position: -540px -1120px; }
+div#content div#central div.portal h3.fp-webinars-on-recruitment-and-retention { background-position: -770px -350px; }
+div#content div#central div.portal h3.fp-creating-child-profiles { background-position: -770px -770px; }
+div#content div#central div.portal h3.fp-creating-family-profiles { background-position: -770px -840px; }
+div#content div#central div.portal h3.fp-finding-children { background-position: -770px -700px; }
+div#content div#central div.portal h3.fp-finding-families { background-position: -770px -630px; }
+div#content div#central div.portal h3.fp-managing-cases-and-accounts { background-position: -770px -910px; }
+div#content div#central div.portal h3.fp-form { background-position: -770px -560px; }
+div#content div#central div.portal h3.jc-families { background-position: -770px -980px; }
+div#content div#central div.portal h3.jc-youth-and-foster-alumni { background-position: -770px -1050px; }
+div#content div#central div.portal h3.ff-common-myths-about-adoption { background-position: -540px -1260px; }
+div#content div#central div.portal h3.fp-order-form { background-position: -770px -1260px; }
+div#content div#central div.portal h3.nrcdr-fr-state-adoption-information { background-position: -540px -1330px; }
+div#content div#central div.portal h3.ff-common-myths-about-foster-care { background-position: -1000px -1820px; }
+div#content div#central div.portal h3.ff-native-children { background-position: -1000px -2030px; } /* -540px -1330px */
+/* Tier 3 Spanish */
+div#content div#central div.portal h3.ff-adoption-laws-and-resources-for-lgbt-families-es { background-position: -270px 0; }
+div#content div#central div.portal h3.ff-adoption-resources-for-military-families-es { background-position: -270px -70px; }
+div#content div#central div.portal h3.ff-global-adoption-resources-es { background-position: -270px -140px; }
+div#content div#central div.portal h3.ff-resources-for-minority-families-es { background-position: -270px -490px; }
+div#content div#central div.portal h3.ff-deciding-to-pursue-adoption-es { background-position: -270px -210px; }
+div#content div#central div.portal h3.ff-applying-to-adopt-es { background-position: -270px -280px; }
+div#content div#central div.portal h3.ff-completing-an-adoption-home-study-es { background-position: -270px -350px; }
+div#content div#central div.portal h3.ff-getting-approved-to-adopt-es { background-position: -270px -420px; }
+div#content div#central div.portal h3.ff-being-matched-with-a-child-es { background-position: -500px 0; }
+div#content div#central div.portal h3.ff-receiving-an-adoptive-placment-es { background-position: -500px -70px; }
+div#content div#central div.portal h3.ff-legalizing-an-adoption-es { background-position: -500px -140px; }
+div#content div#central div.portal h3.ff-being-an-adoptive-parent-es { background-position: -500px -210px; }
+div#content div#central div.portal h3.ff-deciding-to-pursue-fostering-es { background-position: -500px -280px; }
+div#content div#central div.portal h3.ff-applying-to-foster-es { background-position: -500px -350px; }
+div#content div#central div.portal h3.ff-completing-a-foster-home-study-es { background-position: -500px -420px; }
+div#content div#central div.portal h3.ff-getting-approved-to-foster-es { background-position: -730px 0; }
+div#content div#central div.portal h3.ff-receiving-a-foster-placement-es { background-position: -730px -70px; }
+div#content div#central div.portal h3.ff-being-a-foster-parent-es { background-position: -730px -140px; }
+div#content div#central div.portal h3.ff-form-es { background-position: -730px -210px; }
+div#content div#central div.portal h3.ff-native-children-es { background-position: -270px -560px; }
+div#content div#central div.portal h3.ff-people-with-disabilities-es { background-position: -270px -630px; }
+div#content div#central div.portal h3.ff-envisioning-your-family-es { background-position: -500px -490px; }
+
+/* right column headers */
+div#content div#links h2.for-families { background-position: 0px -60px; }
+div#content div#links h2.for-professionals { background-position: 0px -90px; }
+div#content div#links h2.nrcdr { background-position: 0px -760px; }
+div#content div#links h2.my-home { background-position: 0px -120px; }
+div#content div#links h2.meet-the-children { background-position: 0px -190px; }
+div#content div#links h2.technical-support { background-position: 0px -400px; }
+div#content div#links h2.for-the-media { background-position: 0px -430px; }
+div#content div#links h2.about-us { background-position: 0px -460px; }
+div#content div#links h2.our-services { background-position: 0px -490px; }
+div#content div#links h2.join-the-conversation { background-position: 0px -520px; }
+div#content div#links h2.news-and-announcements { background-position: 0px -550px; }
+div#content div#links h2.contact-us { background-position: 0px -580px; }
+div#content div#links h2.register { background-position: 0px -610px; }
+div#content div#links h2.informacion-en-espanol { background-position: 0px -640px; }
+div#content div#links h2.para-familias { background-position: 0px -700px; }
+
+/* my home sections */
+div#content div.admin h2.announcements {
+    background-position: 0 -0px;
+    color: #ab9c0d;
+}
+div#content div.admin h2.alerts {
+    background-position: 0 -42px;
+    color: #c56154;
+}
+div#content div.admin h2.myalerts {
+    background-position: 0 -84px;
+    color: #c56154;
+}
+div#content div.admin h2.orgalerts {
+    background-position: 0 -126px;
+    color: #c56154;
+}
+div#content div.admin h2.localerts {
+    background-position: 0 -168px;
+    color: #c56154;
+}
+div#content div.admin h2.inqalerts {
+    background-position: 0 -210px;
+    color: #c56154;
+}
+div#content div.admin h2.drafts {
+    background-position: 0 -252px;
+    color: #a381a7;
+}
+div#content div.admin h2.updates {
+    background-position: 0 -294px;
+    color: #a381a7;
+}
+div#content div.admin h2.tracker {
+    background-position: 0 -336px;
+    color: #c56154;
+}
+div#content div.admin h2.suggested {
+    background-position: 0 -378px;
+    color: #c56154;
+}
+
+
+/* for workers subpage */
+div#content div#central div.portal h3.recruitment {
+    background-position: -540px -0px;
+}
+div#content div#central div.portal h3.tips {
+    background-position: -540px -70px;
+}
+div#content div#central div.portal h3.guides {
+    background-position: -540px -140px;
+}
+div#content div#central div.portal h3.interstate {
+    background-position: -540px -210px;
+}
+div#content div#central div.portal h3.strategies {
+    background-position: -540px -280px;
+}
+div#content div#central div.portal h3.services {
+    background-position: -540px -350px;
+}
+div#content div#central div.portal h3.request {
+    background-position: -540px -420px;
+}
+
+
+div#content h4.profile-search {
+    background-position: 0 -150px;
+    width: 242px;
+    height: 16px;
+}
+div#content h4.homestudy-process {
+    background-position: 0 -170px;
+    width: 242px;
+    height: 16px;
+}
+
+/* ========================= */
+/* ===== Sprited Icons ===== */
+/* ========================= */
+
+div#dialog a span.icon,
+div#content a span.icon {
+    position: relative;
+    margin-right: -10px;
+    left: 8px;
+}
+.icon {
+    text-indent: -9001px;
+    overflow: hidden;
+}    /* background-image: url(/_img/sprite_global.png); */
+
+a.icon, span.icon {
+    display: inline-block;
+}
+div.icon {
+    display: block;
+}
+.icon.pulldown {
+    width: 9px;
+    height: 5px;
+    background-position: -190px -0;
+}
+div#footer .icon.bird {
+    width: 60px;
+    height: 60px;
+    background-position: -250px -30px;
+}
+div#content .icon.espanol {
+    width: 35px;
+    height: 8px;
+    background-position: -250px -15px;
+    overflow: hidden;
+    text-indent: -9001px;
+}
+a span.icon.espanol {
+    margin-right: -35px !important;
+    top: -1px !important;
+    left: 26px !important;
+}
+div#content .icon.rss {
+    width: 9px;
+    height: 9px;
+    background-position: -250px -0;
+}
+div#content .icon.arrow, div#dialog .icon.arrow, div#sb-caption .icon.arrow {
+    position: relative;
+    width: 10px;
+    height: 5px;
+    background-position: -220px 0;
+    top: -1px;
+}
+div#content a span.icon.arrow.marRight {
+    margin-right: 6px;
+}
+div#content .icon.magnify, div#dialog .icon.magnify {
+    position: relative;
+    width: 12px;
+    height: 11px;
+    background-position: -340px 0;
+	top: 2px;
+}
+div#content a span.icon.magnify.marRight {
+    margin-right: 6px;
+}
+div#content .icon.back {
+    position: relative;
+    width: 10px;
+    height: 5px;
+    background-position: -295px 0;
+    top: -1px;
+    margin-right: 0;
+    margin-left: -10px;
+    left: auto;
+    right: 8px;
+}
+div#content .icon.top {
+    position: relative;
+    width: 7px;
+    height: 6px;
+    background-position: -265px 0;
+    top: -1px;
+}
+div#content a span.icon.top {
+    margin-right: -7px !important;
+}
+div#dialog .icon.window,
+div#content .icon.window {
+    position: relative;
+    width: 10px;
+    height: 8px;
+    background-position: -205px 0;
+    top: 0px;
+    margin-right:10px;
+}
+div#dialog a.window,
+div#content a.window {
+    margin-right: 6px;
+    text-decoration:none;    
+}
+div#content .icon.print {
+    position: relative;
+    background-position: -235px 0;
+    height: 11px;
+    width: 10px;
+    top: 3px;
+    left: 7px;
+}
+div#content .icon.swap {
+    position: relative;
+    background-position: -250px -15px;
+    height: 11px;
+    width: 10px;
+    top: 3px;
+    left: 6px;
+}
+div#content .icon.news {
+    width: 45px;
+    height: 36px;
+    background-position: 0 -100px;
+    margin: -6px 15px 0 0;
+}
+div#content .icon.gear {
+    width: 41px;
+    height: 41px;
+    background-position: -50px -100px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.join-conversation {
+    width: 41px;
+    height: 41px;
+    background-position: -230px -260px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.meet-children {
+    width: 41px;
+    height: 41px;
+    background-position: -280px -260px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.workers {
+    width: 41px;
+    height: 41px;
+    background-position: -100px -100px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.family {
+    width: 41px;
+    height: 41px;
+    background-position: -150px -100px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.cell-phone {
+    width: 41px;
+    height: 41px;
+    background-position: -330px -305px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.bullhorn {
+    width: 41px;
+    height: 41px;
+    background-position: -380px -210px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.radio-tower {
+    width: 41px;
+    height: 41px;
+    background-position: -330px -160px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.huggers {
+    width: 41px;
+    height: 41px;
+    background-position: -280px -305px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.technical-support {
+    width: 41px;
+    height: 41px;
+    background-position: -330px -260px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.person-pencil {
+    width: 41px;
+    height: 41px;
+    background-position: -380px -260px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.padlock {
+    width: 41px;
+    height: 41px;
+    background-position: -330px -110px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.official {
+    width: 41px;
+    height: 41px;
+    background-position: -380px -160px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.important {
+    width: 41px;
+    height: 41px;
+    background-position: -330px -210px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.bigExclamation {
+    width: 40px;
+    height: 40px;
+    background-position: 0 -345px;
+    margin: -8px 15px 0 0;
+}
+div#content .icon.inf_esp {
+    width: 41px;
+    height: 41px;
+    background-position: -380px -305px;
+    margin: -8px 15px 0 0;
+}
+/*div#content .icon.house {
+    width: 42px;
+    height: 40px;
+    background-position: -200px -100px;
+    margin: -8px 15px 0 0;
+}*/
+
+div#content .icon.map {
+    width: 40px;
+    height: 25px;
+    background-position: 0 -65px;
+}
+div#content .icon.question {
+    width: 16px;
+    height: 28px;
+    background-position: -230px -40px;
+}
+div#content .icon.info {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 17px;
+}
+div#content .icon.questionmark {
+    background-position: -150px -80px;
+    position: relative;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+}
+div#content h2 a .icon.questionmark { /* fixes positioning inside an H2 */
+    top: 0;
+}
+div#content .icon.check {
+    position: absolute;
+    left: -14px;
+    top: 3px;
+    width: 11px;
+    height: 10px;
+    background-position: -120px -80px;
+}
+div#content .icon.exclamation {
+    position: absolute;
+    left: -8px;
+    top: 4px;
+    width: 4px;
+    height: 8px;
+    background-position: -140px -80px;
+}
+div#content .icon.videoAvail {
+	position: relative;
+	margin: 0px 10px -6px 0;
+	padding-top: 0px;
+	height: 20px;
+	width: 25px;
+	background-position: -5px -5px;
+}
+div#content .icon.trophy {
+    width: 57px;
+    height: 65px;
+    background-position: -250px -40px;
+    margin: 20px;
+}
+div#content .icon.house {
+    width: 42px;
+    height: 40px;
+    background-position: -200px -100px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+}
+
+div#content .icon.graph {
+    width: 38px;
+    height: 35px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -280px -115px;
+}
+div#content .icon.building {
+    width: 35px;
+    height: 38px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -280px -160px;
+}
+div#content .icon.clipboard {
+    width: 35px;
+    height: 44px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -280px -205px;
+}
+
+div#content h2.announcements .icon.info {
+    background-position: -60px -80px;
+    left: 160px;
+}
+div#content h2.alerts .icon.info {
+    background-position: -80px -80px;
+    left: 71px;
+}
+div#content h2.drafts .icon.info {
+    background-position: -100px -80px;
+    left: 107px;
+}
+div#content h2.myalerts .icon.info {
+    background-position: -80px -80px;
+    left: 107px;
+}
+div#content h2.orgalerts .icon.info {
+    background-position: -80px -80px;
+    left: 142px;
+}
+div#content h2.localerts .icon.info {
+    background-position: -80px -80px;
+    left: 151px;
+}
+div#content h2.inqalerts .icon.info {
+    background-position: -80px -80px;
+    left: 223px;
+}
+div#content h2.updates .icon.info {
+    background-position: -100px -80px;
+    left: 204px;
+}
+div#content h2.tracker .icon.info {
+    background-position: -80px -80px;
+    left: 179px;
+    margin-top:0px !important;
+}
+div#content h2.suggested .icon.info {
+    background-position: -170px -80px;
+    left: 315px;
+}
+
+/* My Home Icons */
+
+div#content div.notes div.icon {
+    position: absolute;
+}
+div#content div.notes ul div.notice {
+    width: 38px;
+    height: 38px;
+    top: 20px;
+    left: 12px;
+    background-position: -0px -150px;
+}
+div#content div.notes ul div.attention, div#pnlMain .icon.attention {
+    width: 40px;
+    height: 44px;
+    top: 16px;
+    left: 12px;
+    background-position: -50px -150px;
+}
+div#content div.notes ul div.missing, div#pnlMain .icon.missing {
+    width: 38px;
+    height: 42px;
+    top: 17px;
+    left: 12px;
+    background-position: -100px -150px;
+}
+/* Large versions */
+div#content div.notes ul div.home, div#pnlMain .icon.home {
+    width: 42px;
+    height: 40px;
+    top: 16px;
+    left: 23px; 
+    background-position: -200px -100px;
+}
+div#content div.notes ul div.single, div#pnlMain .icon.single {
+    width: 42px;
+    height: 40px;
+    top: 16px;
+    left: 0px; 
+    background-position: -250px -150px;
+}
+div#content div.notes ul div.double, div#pnlMain .icon.double {
+    width: 42px;
+    height: 40px;
+    top: 0px;
+    left: 23px; 
+    background-position: -200px -180px;
+}
+div#content div.notes ul div.group, div#pnlMain .icon.group {
+    width: 44px;
+    height: 48px;
+    top: 14px;
+    left: 12px;
+    background-position: -150px -150px;
+}
+div#content div.notes ul div.draft, div#pnlMain .icon.draft {
+    width: 42px;
+    height: 40px;
+    top: 14px;
+    left: 12px;
+    background-position: -0px -260px;
+}
+div#content div.notes ul div.active, div#pnlMain .icon.active {
+    width: 42px;
+    height: 40px;
+    top: 14px;
+    left: 12px;
+    background-position: -45px -260px;
+}
+div#content div.notes ul div.draft, div#pnlMain .icon.on-hold {
+    width: 42px;
+    height: 40px;
+    top: 14px;
+    left: 12px;
+    background-position: -90px -260px;
+}
+div#content div.notes ul div.withdrawn, div#pnlMain .icon.withdrawn {
+    width: 42px;
+    height: 40px;
+    top: 14px;
+    left: 12px;
+    background-position: -135px -260px;
+}
+div#content div.notes ul div.inactive, div#pnlMain .icon.inactive {
+    width: 42px;
+    height: 40px;
+    top: 14px;
+    left: 12px;
+    background-position: -180px -260px;
+}
+div#content div.notes ul div.placed, div#pnlMain .icon.placed {
+    width: 42px;
+    height: 40px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -180px -305px;
+}
+div#content div.notes ul div.family, div#pnlMain .icon.family {
+    width: 42px;
+    height: 40px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -200px -100px;
+}
+div#content div.notes ul div.graph, div#pnlMain .icon.graph {
+    width: 38px;
+    height: 35px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -280px -115px;
+}
+div#content div.notes ul div.building, div#pnlMain .icon.building {
+    width: 35px;
+    height: 38px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -280px -160px;
+}
+div#content div.notes ul div.clipboard, div#pnlMain .icon.clipboard {
+    width: 35px;
+    height: 44px;
+    top: 14px;
+    left: 12px;
+    margin-bottom:6px;
+    background-position: -280px -205px;
+}
+
+/* Small versions */
+
+div#content div.notes ul ul div.house {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: 20px;    
+    background-position: -250px -145px;
+    margin: -8px 15px 0 0;
+}
+div#content div.notes ul ul div.single {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: -4px; 
+    background-position: -250px -205px;
+}
+div#content div.notes ul ul div.girl {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: -4px; 
+    background-position: -415px 0;
+}
+div#content div.notes ul ul div.double {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: -4px; 
+    background-position: -250px -175px;
+}
+div#content div.notes ul ul div.mixedSib {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: -4px; 
+    background-position: -430px -220px;
+}
+div#content div.notes ul ul div.girlSib {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: -4px; 
+    background-position: -430px -250px;
+}
+div#content div.notes ul ul div.comment {
+    width: 28px;
+    height: 30px;
+    top: 12px;
+    left: 0px;
+    background-position: -250px -115px;
+}
+div#content div.notes ul ul div.aFamily {
+    width: 30px;
+    height: 30px;
+    top: 12px;
+    left: -4px; 
+    background-position: -225px -300px;
+}
+
+/* =========================== */
+/* ===== Special Effects ===== */
+/* =========================== */
+
+div.shadowbox {
+    position: relative;
+    background-position: top left;
+    padding: 12px;
+    float: left;
+    clear: left;
+    margin-bottom: 20px;
+        z-index:500
+}
+div.shadowbox div.edge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-position: top right;
+    z-index:500;
+}
+div.shadowbox div.end {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-position: bottom left;
+    z-index:500;
+}
+div.shadowbox div.corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 10px;
+    width: 10px;
+    background-position: bottom right;
+    z-index:500;    
+}
+
+/* =========================== */
+/* General Purpose             */
+/* =========================== */
+.red {
+    color: #EF4832;
+}
+.null {
+}
+/* Dummy class to prevent automatic link icons */
+
+div#content .nomargin-top {
+    margin-top: 0;
+}
+div#content .nomargin-right {
+    margin-right: 0;
+}
+div#content .nomargin-bottom {
+    margin-bottom: 0;
+}
+div#content .nomargin-left {
+    margin-left: 0;
+}
+div#content .nopadding-top {
+    padding-top: 0;
+}
+div#content .nopadding-right {
+    padding-right: 0;
+}
+div#content .nopadding-bottom {
+    padding-bottom: 0;
+}
+div#content .nopadding-left {
+    padding-left: 0;
+}
+.no-top {
+    top: 0px;
+}
+.no-right {
+    right: 0px;
+}
+.no-bottom {
+    bottom: 0px;
+}
+.no-left {
+    left: 0px;
+}
+
+/* =========================== */
+/*JQuery Custom UI Wrappers and Overrides to Adopt CSS */
+/* =========================== */
+
+/* Tabs */
+
+.ui-tabs .ui-tabs-nav li a {
+    padding: 0.1em 1em;
+}
+
+div#tabs-wrapper ul li {
+    background: none;
+    padding: .1em 0 .1em;
+}
+div#tabs-wrapper .ui-tabs .ui-tabs-panel {
+    /* First padding sets left and right margins to 0px, second padding uses default padding.  Use one or the other */ /* padding: 10px 0 10px;*/
+    padding: 10px 10px;
+}
+div#tabs-wrapper .ui-tabs .ui-tabs-nav {
+    margin: 0 0 0 0;
+    padding: 1px 0 0 2px;
+}
+div#tabs-wrapper .ui-tabs .ui-tabs-nav li a {
+    color: #1563d8;
+}
+
+/* took this out of the next line: */
+div#tabs-wrapper .ui-tabs .ui-state-active, div#tabs-wrapper .ui-widget-content .ui-state-active, div#tabs-wrapper .ui-widget-header .ui-state-active {
+    border: 1px solid #AAAAAA;
+    color: #1563D8;
+    font-weight: normal;
+}    /* background: url("images/ui-bg_highlight-soft_65_ffffff_1x100.png") repeat-x scroll 50% 50% #FFFFFF; */
+
+
+div#tabs-wrapper .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, div#tabs-wrapper .ui-tabs .ui-tabs-nav li.ui-state-disabled a, div#tabs-wrapper .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    cursor: text;
+    color: #000;
+    text-decoration:none;
+}
+div#tabs-wrapper .ui-tabs .ui-tabs-nav li a, div#tabs-wrapper .ui-tabs.ui-tabs-collapsible {
+    color: #1563D8;
+}
+/* AUSK accoridon, overwriting jquery UI settings */
+div#content div.AUSKaccordion h3.ausk-accordian {
+    font-weight: bold;
+    font-size: 13px;
+    color: #363636;
+    padding: 10px;
+    background-color: #e9f4f8
+}
+div#content div.AUSKaccordion h3.ausk-accordian.ui-accordion-header {
+    padding-right: 2em;
+}
+div.AUSKaccordion h3.ui-state-hover {
+    text-decoration: underline;
+}
+div.AUSKaccordion h3.ui-state-active, div.AUSKaccordion h3.ui-state-default {
+    border: none;
+    background: none;
+}
+div.AUSKaccordion.ui-accordion .ui-accordion-header .ui-icon {
+    left: auto;
+    right: .5em;
+}
+div.AUSKaccordion div.ui-widget-content {
+    border: none;
+}
+div.AUSKaccordion.ui-accordion .ui-accordion-content {
+    padding: 1em 1.5em 1em 0;
+}
+/* leaving these in place in case icon usage changes again
+div.AUSKaccordion.ui-accordion span.ui-icon-triangle-1-s {
+    background-position: 0 -16px;
+}
+div.AUSKaccordion.ui-accordion span.ui-icon-triangle-1-e {
+    background-position: -64px -16px;
+} */
+
+/* Photo/Video Gallery */
+
+div#content div#gallery {
+    float: right;
+    display: none;
+}
+div#content div#gallery ul li {
+    background: none;
+    padding: 0;
+}
+div#content .photo-wrapper {
+}
+div#content .photo-wrapper td {
+    background: none;
+    border-collapse: collapse;
+    padding: 4px 0px 0px 0px;
+}
+div#content .photo-wrapper td a {
+    text-decoration:none;
+}
+div#content .photo-wrapper td.prev {
+    float: left;
+}
+div#content .photo-wrapper td.next {
+    float: right;
+}
+div#content .photo-wrapper td.caption {
+    text-align: center;
+}
+.photo-wrapper .slide {
+    padding: 8px;
+    background-color: #f4f4ed;
+}
+.photo-wrapper .largeImage {
+    width: 170px;
+    height: 215px;
+}
+.photo-wrapper .smallImage {
+    width: 126px;
+    height: 160px;
+}
+.photo-wrapper .photo-controls {
+    cursor: pointer;
+    width: 20px;
+    height: 10px;
+    overflow: hidden;
+}    /* background-image: url(/_img/sprite_global.png); */
+
+.photo-wrapper .photo-controls:hover {
+    opacity: 0.5;
+}
+.photo-wrapper .player-controls:hover {
+    opacity: 0.5;
+}
+.photo-wrapper .prev {
+    float: left;
+    background-position: -310px 0;
+    margin: 0px;
+    padding: 0px;
+}
+.photo-wrapper .next {
+    float: right;
+    background-position: -310px -15px;
+    margin: 0px;
+    padding: 0px;
+}
+.photo-wrapper .prev-hide, .next-hide {
+    display: none;
+}
+.photo-wrapper .photo-count {
+    text-align: center;
+}
+.photo-wrapper .photo-name {
+    text-align: center;
+}
+.photo-wrapper .spacer {
+    height: 1.2em;
+}
+
+/* Tab settings for Photo Audio/Video */
+
+div#tabs-wrapper-mini .ui-widget-content {
+    border: none;
+}
+div#tabs-wrapper-mini .ui-tabs .ui-tabs-panel {
+    padding: 0;
+}
+div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li a {
+    padding: 0.1em 1em;
+    font-size: 11px;
+}
+div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li a:hover {
+    cursor: pointer;
+    text-decoration:underline !important;
+}
+div#tabs-wrapper-mini #tabs-wrapper .ui-tabs-panel {
+    padding: 0px;
+}
+div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li.ui-tabs-selected a, div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li.ui-state-disabled a, div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    cursor: text;
+    color: #000;
+}
+div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li.ui-tabs-selected a:hover, div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li.ui-state-disabled a:hover, div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li.ui-state-processing a:hover {
+    text-decoration: none !important;
+}
+div#tabs-wrapper-mini .ui-tabs .ui-tabs-nav li a, div#tabs-wrapper-mini .ui-tabs.ui-tabs-collapsible {
+    cursor: pointer;
+    color: #1563D8;
+}
+div#tabs-pav {
+    width: 187px;
+}
+div#tabs-pav ul, ol p {
+    margin-bottom: 0px;
+}
+
+/* Additions to JQuery UI */
+
+#dialog-login {
+    display:none;
+}
+
+#dialog-login form a {
+    color:#0066ff;
+    text-decoration:none;
+}
+#dialog-login form a:hover {
+    text-decoration:underline;
+}
+#dialog-login .validateTips {
+    /*background-color:#fef1ec;*/
+    color:#ef4832;
+    border:1px solid #ef4832;
+}
+/* Wrapper for Image Galleries and AUSKPlayer Videos */
+#sb-title-inner, #sb-info-inner, #sb-loading-inner, div.sb-message {
+    font-family: arial;
+    color: #cedf4f;
+    font-weight:bolder;
+}
+#sb-container {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    text-align: left;
+    visibility: hidden;
+    display: none;
+}
+#sb-overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#sb-wrapper {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+/*	padding:10px;
+	background-color:#fff;
+	border: 1px solid #cedf4f;*/
+}
+#sb-wrapper-inner {
+    position: relative;
+    border: 0px solid #303030;
+    overflow: hidden;
+    height: 100px;
+}
+#sb-body {
+    position: relative;
+    height: 100%;
+}
+#sb-body-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#sb-player.html {
+    height: 100%;
+    overflow: auto;
+}
+#sb-body img {
+}
+#sb-loading {
+    position: relative;
+    height: 100%;
+}
+#sb-loading-inner {
+    position: absolute;
+    font-size: 14px;
+    line-height: 24px;
+    height: 24px;
+    top: 50%;
+    margin-top: -12px;
+    width: 100%;
+    text-align: center;
+}
+#sb-loading-inner span {
+    padding-left: 34px;
+    display: inline-block;
+}    /* background: url(/_inc/css/images/loading.gif) no-repeat; */
+
+#sb-title, #sb-info {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#sb-title, #sb-title-inner {
+    height: 28px;
+    line-height: 26px;
+	padding-bottom: 3px;
+}
+#sb-title-inner {
+    font-size: 14px;
+}
+#sb-info, #sb-info-inner {
+    height: 30px;
+    line-height: 30px;
+}
+#sb-info-inner {
+    font-size: 12px;
+}
+#sb-nav {
+    float: right;
+    height: 30px;
+    padding: 2px 0;
+    width: 55%;
+}
+#sb-nav a {
+    display: block;
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-left: 16px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    }
+#sb-top {
+    float: right;
+    height: 28px;
+    width: 28px;
+}
+#sb-top a {
+    display: block;
+    /*float: right;*/
+    height: 28px;
+    width: 28px;
+    margin-left: 0px;
+	cursor: pointer;
+    background-repeat: no-repeat;
+    }
+#sb-nav-next {
+    width:52px !important;
+    margin-left: 15px !important;
+}    /* background-image: url(/_inc/css/images/next_arrow.png); */
+
+#sb-nav-previous {
+    width:52px !important;
+}    /* background-image: url(/_inc/css/images/previous_arrow.png); */
+
+#sb-counter {
+    float: left;
+    width: 45%;
+}
+#sb-counter a {
+    padding: 0 4px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+#sb-counter a.sb-counter-current {
+    text-decoration: underline;
+}
+#sb-info,#sb-info-inner{height:auto;line-height:20px;} 
+#sb-caption {clear:both;font-family:Arial;font-weight:normal;font-size:12px;height:auto;line-height:18px;color:#fff;} 
+#sb-caption a {
+	color: #A5D8E8;
+    font-weight: bold;
+    line-height: 24px;
+    /*text-decoration: none;*/
+}
+div.sb-message {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
+div.sb-message a:link, div.sb-message a:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* In page advisory boxes */
+
+div#content .extraInfo, div#content div#holder .extraInfo {
+    border:1px solid #000;
+    background-color:#def0f6;
+    padding:10px;
+    margin-bottom:12px;
+}
+/* VAM Style Resets */
+
+div#content #ValidationSummary1 {
+   color: #ef4832;
+   border: 1px solid #ef4832;
+   /* background: #fef1ec url(/_inc/css/images/ui-bg_highlight-soft_75_fef1ec_1x100.png) 50% top repeat-x; */
+}
+div#content #ValidationSummary1 table.VAMValSummaryHeader {
+    visibility: inherit;    
+    display: block;    
+    margin:4px 16px 0px 16px;
+}
+div#content #ValidationSummary1 table.VAMValSummaryHeader td, div#content table.VAMValSummaryHeader th {
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:10px;
+    padding-bottom:16px;    
+    color:#ef4832;
+    text-align: left;  
+}    /* background: url("/_img/dots.png") repeat-x scroll center bottom transparent; */  
+
+div#content #ValidationSummary1 .VAMValSummaryErrors {
+    color: #ef4832;
+    text-decoration: none !important;
+    margin-top:0px;
+    margin-left:16px;
+    margin-right:16px;
+    margin-bottom:10px;        
+}
+div#content #ValidationSummary1 ul.VAMValSummaryErrors li {
+    margin-left:16px;
+    margin-right:16px;
+    background:none;
+    padding-right:10px;
+    text-indent:-10px;
+    color: #ef4832;        
+}
+div#content div#pnlMain .dataLine {
+    margin-bottom:6px;
+}
+div#content div#pnlMain .icon {
+    float:left;
+    margin-top:-10px;
+    margin-right:20px;
+    margin-bottom:6px;
+}
+div#content div#pnlMain .inline-text {
+    margin-top:0px;
+    width:400px;
+}
+div#content div#data div#pnlMain .inline-toggle {
+    margin-top:-16px;
+}
+div#content div#data div#pnlMain a.expand  {
+    display: block;
+    float:right;
+    top: 0px;
+    right: 0;
+    text-decoration: none;
+    padding-right: 12px;
+    cursor: pointer;
+    font-size:10px;
+    position: relative;
+    width:100px;
+}
+div#content div#data div#pnlMain a.expand span.icon {
+    position:absolute;
+    display: block;
+    width: 7px;
+    height: 7px;
+    right: 0px;
+    left: 104px !important;
+    top: 14px;
+    background-position: -275px 0;
+    cursor: pointer;
+}
+div#content div#data div#pnlMain .on a.expand span.icon {
+    background-position: -285px 0;
+}
+div#content div#data td#liCaseNum a.expand  {
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 10px;
+    padding-right: 12px;
+    position: relative;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    width: 45px;
+}
+div#content div#data td#liCaseNum a.expand span.icon {
+    background-position: -275px 0;
+    cursor: pointer;
+    display: block;
+    height: 8px;
+    left: 45px !important;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 7px;
+}
+div#content div#data td#liCaseNum.on a.expand span.icon {
+    background-position: -285px 0;
+}
+div#content div#data td#liCaseNum {
+	padding-right: 1px;
+}
+div#content div#data div#pnlMainForm div.formLine {
+    padding: 0 0 5px 0;
+}
+div#content div#data div#pnlMainForm div.formLine div.formLabel {
+    padding: 0;
+}
+div#content img.nrccfap {
+	margin-bottom: 10px;
+}
+div#content div.topLine div.topH1 {
+    width: 500px;
+    float: left;
+    padding-right: 5px;
+}
+div#content div.topLine div.rightLink {
+    width: 140px;
+    float: right;
+    text-align: right;
+    padding-top: 5px;
+}
+div#content div.topLine div.top2H1 {
+    width: 380px;
+    float: left;
+    padding-right: 5px;
+}
+div#content div.topLine div.right2Link {
+    width: 260px;
+    float: right;
+    text-align: right;
+    padding-top: 5px;
+}
+div#content ul li.formH3 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #9FAC3B;
+	background:none;
+}
+
+/* from form.css ---------------------------------------------------------------------------------------------------------   */
+
+div#content .red {
+    color: #EF4832;
+}
+
+div#content .bold {
+    font-weight: bold;
+}
+
+div#content .floatLeft {
+    float: left;
+}
+
+div#content .pushmidright {
+    display: block;
+    margin-left: 132px;
+}
+
+div#content .moveToRight {
+    text-align: right;
+    margin-bottom: 4px;
+}
+div#content .moveToRight.mar15bot {
+    float: right;
+    margin-bottom: 15px;
+}
+div#content table td.moveToRight {
+    padding-right: 0;
+}
+div#content .cnta {
+    width: 700px;
+}
+
+div#content span.formItem {
+    font-weight: bold;
+}
+div#content div.formLabel span.formItem.req:before {
+		content: '* ';
+		color: #c00;
+		font-weight: bold;
+}
+div#content div.formLabel span.formItem.cln:after {
+		content: ':';
+		font-weight: bold;
+}
+div#content div.formLabel span.formItem.wq {
+    padding-right: 20px;
+}
+div#content div#titleAndErrors {
+    margin-bottom: 12px;
+} 
+div#wrapper div#content a.rcEdit,
+div#dialog a.rcEdit {
+    background-color: Yellow;
+    color: #000;
+    font-size: 10px;
+    padding: 0px 2px 0px 2px;
+    border: 1px solid #000;
+    text-decoration: none;
+    z-index: 600 !important;
+    display:none;
+}
+
+div#wrapper div#content a.rcEdit:hover,
+div#dialog a.rcEdit:hover {
+    background-color: #c00;
+    border: 1px solid #c00;    
+    color: #fff;
+}
+
+div#wrapper div#content a.rcEdit.rcEditButtonHide,
+div#dialog a.rcEdit.rcEditButtonHide {
+    display:inline;
+}
+
+div#wrapper div#content div.highlightEdit,
+div#dialog div.highlightEdit {
+	background-color: #ffdee5;
+}
+
+div.accessAuth {
+    border-width: 1px;
+    border-style: solid;
+    background-color: #FFF6DD;
+    margin: 24px 0 15px 60px;
+    padding: 24px;
+}
+div.formLine {
+    clear: both;
+    padding: 5px 0 12px 0;
+    background: none;
+}
+div.formLine span.formNotes {
+    font-style: italic;
+}
+div.formLine span.Multivam {
+    margin-top: -6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+div.formLine div.formRight span.phExt {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
+}
+div.formLine div.marginLeft {
+    margin-left: 45px;
+}
+div.formLine div.formRight {
+    /* Defines the right part of the line */
+    display: block;
+    margin-left: 245px;
+}
+div.formLine div.formLabel {
+    /* Defines left side of the line */
+    float: left;
+    display: block;
+    padding-right:20px; /* to allow for (?) icon */
+    margin-top:3px; /* to center lable with form element */
+    width: 225px; /* padding: 3px 6px 12px 0px; */
+    text-align: right;
+}
+div.formLine div.formLabel.full {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+div.formLine div.formLabel.left {
+    margin-right: 10px;
+    width: auto;
+    text-align: left;
+}
+div#data div.formLine div.formLabel.full table td {
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+div.formLine div.formLeft {
+    /* Defines left side of the line */
+    float: left;
+    display: block;
+    width: 225px;
+}
+div.formLine div.formRight.withLabel {
+	margin-top: 3px
+}
+div#content div.formLine table {
+    width: auto;
+    margin: 0;
+}
+div#content div.formLine table td {
+    background: none;
+    padding: 0;
+}
+div.formLine table td label {
+    padding: 0 20px 0 0;
+}
+div.formLine table.formTable3 {
+    width: 100%;
+}
+div.formLine table.formTable3 td {
+    background: none;
+    padding: 2px 1px 2px 1px;
+}
+div.formLine table.formTable3 td label {
+    padding: 0 0 0 0;
+    width: auto;
+    float: none;
+    font-weight: normal;
+}
+div#data div.moveToRight table {
+    width: auto;
+    margin: 0;
+}
+div#data div.moveToRight table td {
+    background: none;
+    padding: 0;
+}
+div#data div.moveToRight table td label {
+    padding: 0 20px 0 0;
+}
+div.moveToRight table.formTable3 {
+    width: auto;
+}
+div.moveToRight table.formTable3 td {
+    background: none;
+    padding: 2px 10px 2px 3px;
+}
+div.moveToRight table.formTable3 td label {
+    padding: 0 0 0 0;
+    width: auto;
+    float: none;
+    font-weight: normal;
+}
+
+/* some finer grain to defeat other selectors */
+
+div#data div.formLine table, 
+div#data div.moveToRight table,
+div#central div.formLine table {
+    width: auto;
+    margin: 0;
+}
+div#data div.formLine table td, div#data div.moveToRight table {
+    background: none;
+    padding: 0;
+}
+div#data div.formLine table td label, div#data div.moveToRight table {
+    padding: 0 20px 0 0;
+}
+
+div#data div.formLine table td input[type="checkbox"] + label  {
+    display: block;
+    margin-top: -17px;
+    padding-left: 26px;
+}
+div#data div.formLine table td input[type="checkbox"]  {
+    margin-top:6px;
+}
+div#data div.formLine table td input[type="radio"] + label  {
+    display: block;
+    margin-top: -17px;
+    padding-left: 26px;
+}
+div#data div.formLine div.formRight.narrow table td input[type="radio"] + label {
+    display: inline-block;
+    padding-left: 2px;
+}
+div#data div.formLine table td input[type="radio"]  {
+    margin-top:6px;
+}
+div#data div.formLine>.otherText {
+    margin-right:0;
+    margin-left:0 !important;
+}
+#txtTribe {
+    display:block;
+    float:left;
+    margin-left:16em !important;
+    margin-top:-58px;    
+}
+#txtOtherHowHear, #txtOtherHHConf {
+    display:block;
+    float:left;
+    margin-left:32em !important;
+    margin-top:-18px;    
+}
+div#data table.formTable3 td,
+div#central table.formTable3 td {
+    background: none;
+    padding: 2px 10px 2px 3px;
+}
+
+div#data table.caseChangeTable {
+    width: auto;
+    float: left;
+    margin-left: 76px;
+
+}
+div#data table.caseChangeTable td {
+    padding:0px;
+    vertical-align: top;
+    padding-top:6px;
+    padding-right:10px;
+    padding-bottom:8px;
+    padding-left:0px;
+}    /* background: url(/_img/dots.png) bottom repeat-x; */
+
+div#data table.caseChangeTable td.icon {
+    padding-right:6px;
+}
+div#data table.caseChangeTable td.case {
+    width: 120px;
+    padding-right:6px;
+}
+div#data table.caseChangeTable td.reason {
+    width: 220px;
+    font-weight: bold;
+}
+div#data table.caseChangeTable td span.explain {
+    color: #aa973f;
+    font-weight: normal;
+}
+div#data table.caseChangeTable td.datePaddingLeft {
+    width: 76px;
+}
+div#data table.caseChangeTable td.date {
+    width:90px;
+    padding-right:20px;
+}
+div#data table.caseChangeTable td.action-link {
+    font-size:10px;
+    text-align:right;
+    width:156px;
+    padding-right:20px;
+}
+div#data table.caseChangeTable td.action-linkPaddingLeft {
+    width: 130px;
+}
+div#data table.caseChangeTable div.home {
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    left: 14px;
+    background-position: -250px -145px;
+    margin: 0 auto;
+}
+div#data table.caseChangeTable div.double {
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    left: 14px;
+    background-position: -250px -175px;
+    margin: 0 auto;
+}
+div#data table.caseChangeTable div.mixedSib {
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    left: 14px;
+    background-position: -430px -220px;
+}
+div#data table.caseChangeTable div.girlSib {
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    left: 14px;
+    background-position: -430px -250px;
+}
+div#data table.caseChangeTable div.single {
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    left: 20px;
+    background-position: -250px -205px;
+    margin: 0 auto;
+}
+div#data table.caseChangeTable div.girl {
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    left: 20px;
+    background-position: -415px 0;
+    margin: 0 auto;
+}
+
+div#data table.alertTable2 {
+    width: auto;
+    margin-top: 20px;
+    margin-right: 70px;
+    margin-left: 50px;
+}
+div#data table.alertTable2 td {
+    background: none;
+    padding: 6px;
+    vertical-align: top;
+    margin: 0 15px 0 15px;
+    color: #aa973f;
+}
+div#data table.alertTable2 td.icon {
+    width: 30px;
+}
+div#data table.alertTable2 td div.dots {
+    margin-bottom: 0;
+}
+div#data table.alertTable2 td.case {
+    width: 130px;
+}
+div#data table.alertTable2 td.case a {
+    color: #ef4832;
+    font-weight: bold;
+    text-decoration: none;
+}
+div#data table.alertTable2 td.reason {
+    width: 170px;
+}
+div#data table.alertTable2 td span {
+    color: #363636;
+    font-weight: normal;
+}
+
+div#content div#data table.alertTable2 div.double {
+    width: 24px;
+    height: 25px;
+    top: 14px;
+    left: 14px;
+    background-position: -200px -200px;
+    margin: 0 auto;
+}
+div#content div#data table.alertTable2 div.single {
+    width: 12px;
+    height: 24px;
+    top: 14px;
+    left: 20px;
+    background-position: -250px -200px;
+    margin: 0 auto;
+    position: absolute;
+    display: block;
+}
+
+div.childAgencyContactInformation div.formLine {
+    padding: 0px 0 6px 0;
+}
+
+.asterisk {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+/* Put here for login form - should be fixed... */
+div#dialog-login label, div#dialog-login input {
+    display: block;
+}
+div#dialog-login input.text {
+    margin-bottom: 8px;
+    width: 95%;
+    padding: 4px;
+}
+div#dialog-login fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 4px;
+}
+div#dialog-login .ui-dialog .ui-state-error {
+    padding: 4px;
+}
+div#dialog-login .validateTips {
+    border: 0;
+    padding: 3px;
+}
+
+/* layouts for Organization / Location mgmt */
+div#data div.dataLine {
+    padding-top: 4px;
+    clear: left;
+}
+div#data div.dataLine div.dataLeft {
+    float: left;
+    width: 290px;
+    clear: left;
+    text-align: right;
+    margin-right: 10px;
+}
+div#data div.dataLine div.dataRight {
+    float: left;
+    width: 320px;
+}
+
+div#data div.dataLine div.dataRight a {
+    margin-right:-10px;
+}
+
+
+div#data div#tabs div.dataLine div.dataLeft { /* tabs are narrower */
+	width: 280px;
+}
+
+/* tables in Organization / Location mgmt */
+div#data table.fullTable {
+    width: 100%;
+    margin-right: 30px;
+}
+div#data table.fullTable td {
+    padding-left: 10px;
+}
+div#data table.fullTable td.center {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+div#data table.fullTable th {
+    padding-left: 10px;
+    background-color: #def0f6; /* #9FAC3B */
+}
+div#data table.fullTable th.row {
+    background-color: #FFFFFF; /* #9FAC3B */
+}
+div#data table.fullTable th.center {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+div#data table.fullTable tr.last td {
+    background: none;
+}
+div#data table.halfTable {
+    width: 320px;
+    margin-right: 30px;
+}
+div#data table.halfTable td {
+    background: none;
+}
+div#data table.halfTable td.dLabel {
+    font-size: 12px;
+    font-weight: normal;
+    width: 215px;
+    padding-right: 5px;
+}
+div#data table.halfTable td.bold {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ajax alerts are outside the wrapper  */
+table.fullTable {
+    width: 100%;
+    margin-right: 30px;
+}
+table.fullTable td {
+    padding-left: 10px;
+}
+table.fullTable th {
+    padding-left: 10px;
+    background-color: #C9D0E4; /* #9FAC3B */
+    color: #A18309;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/* child profile ... */
+
+div#content div#tabs-wrapper div.notes ul li {
+    padding: 30px 0 30px 0;
+    color: #9FAC3B;
+    font-weight: bold;
+}
+div#content div#tabs-wrapper div.notes ul li span.formItem {
+    color: #363636;
+}
+div#content div#tabs-wrapper div.notes ul li a {
+    font-weight: normal;
+}
+div#content div#tabs-wrapper div.notes table td {
+    color: #363636;
+    font-weight: normal;
+}
+div#content div#tabs-wrapper div.notes table td.p35 { /* used to control width of col 1 in 2 col table */
+    width: 35%;
+}
+div#data.search div#tabs-wrapper div#disabilities div.disability ul {
+    margin-left: 65px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+div#data.search div#tabs-wrapper div#disabilities div.disability ul li {
+    padding: 0pt 0pt 6px 10px;
+    color: #363636;
+    font-weight: normal;
+}    /* background: url("/_img/bg_li.png") no-repeat scroll 1px 6px transparent; */
+
+div#data.search div#tabs-wrapper div#disabilities div.disability h4 {
+    color: #363636;
+    font-size: 11px;
+}
+
+div#data.search div#tabs-wrapper div#disabilities ul div.disability ul li {
+    top: 0;
+}
+
+/* I think we can replace the definition "div#content div.dots.space" with this one (adopt.css line 576) */
+div#content div.space {
+    margin: 30px 0;
+}
+
+/* Family Child display */
+div#familyParentingExp div.photos {
+    float: left;
+    height: 100px;
+    width: 158px;
+}
+div#familyParentingExp div.photos div.icon {
+    height: 56px;
+    width: 50px;
+    margin: 12px 20px 0 66px;
+    display: block;
+    overflow: hidden;
+    text-indent: -9001px;
+}    /* background-image: url("/_img/sprite_global.png"); */
+
+div#familyParentingExp div.photos div.question {
+    background-position: -120px -200px;
+}
+div#familyParentingExp div.photos div.boy {
+    background-position: -60 -200px;
+}
+div#familyParentingExp div.photos div.girl {
+    background-position: 0px -200px;
+}
+div#familyParentingExp div.famchildRight {
+    margin-left: 30px;
+    /*float: right;*/
+}
+div#familyParentingExp div.famchildRight table {
+    margin-right: 50px;
+}
+div#familyParentingExp div.famchildRight table td {
+    padding-right: 10px;
+}
+div#familyParentingExp div.dots {
+    margin: 12px 0 3px 0;
+}
+div#familyParentingExp .photos {
+    margin: 0px 30px 30px 0;
+}
+
+/* Child Preference tab */
+div#content div#familyChildPref table.fullTable th.nodots, div#content div#familyChildPref table.fullTable td.nodots {
+    background: none;
+}
+div#content div#familyChildPref table.fullTable th.moveRight {
+    text-align: right;
+}
+
+div#content div#familyChildPref table.fullTable td table tr td {
+    background: none;
+    font-weight: bold;
+    padding: 1px 10px 1px 0;
+}
+
+div#content div#familyChildPref table.fullTable td table tr td:first-child {
+    width: 80px;
+    font-weight: normal;
+}
+
+div#content div#familyMemberStatus a {
+    /*text-decoration: none;*/
+}
+
+/* buttons */
+div#content a.button, div#content div#main a.button, div#content input.button, div#content div#main input.button {
+    color: #ffffff;
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+    padding: 5px 10px 5px 10px;
+    margin: 2px 5px 2px 5px;
+    text-transform: uppercase;
+}
+div#content input.button.file 
+{
+    color:#000;
+    font-size: 12px;
+    font-family: arial;
+    font-weight:normal;
+    height: 20px;
+	width:200px;
+}
+
+div#content a.button:link, div#content div#main a.button:link, div#content div#central a.button:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+div#content a.button:visited, div#content div#main a.button:visited, div#content div#central a.button:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+div#content a.button:hover, div#content div#main a.button:hover, div#content div#central a.button:hover {
+    color: #EDECE6;
+    text-decoration: none;
+}
+
+div#content a.button.red[disabled=disabled] {
+    color: #b64c3f;
+    text-decoration: none;
+    cursor: default;
+}
+div#content a.button.blue[disabled=disabled] {
+    color: #6b9fb1;
+    text-decoration: none;
+    cursor: default;
+}
+div#content a.button.green[disabled=disabled] {
+    color: #848d3e;
+    text-decoration: none;
+    cursor: default;
+}
+div#content a.button.go.dblClick {
+    color: #000;
+}
+div#content input.rapid {
+    color: #ffffff;
+    font-size: 10px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-decoration: none;
+    height: 20px;
+    padding: 4px 10px 4px 10px;
+    margin: 2px 5px 2px 5px !important;
+    text-transform: uppercase;
+    border: none;
+    /* background: #FFFFFF url(/_img/buttons/button_blue.png) right no-repeat; */
+}
+
+div#content input.rapid:hover {
+    color: #EDECE6;
+    cursor: pointer;
+}
+
+/* ChildFocus styling */
+div#content div#data div.childfocus {
+    margin: 0 0 20px 0px;
+}    /* background: url(/_img/bg_body.png) repeat #f8f9f4; */
+
+div#content div#data div.childfocus table {
+    padding: 0 ;
+	margin:0;
+}
+div#content div#data div.childfocus > table td {
+    padding: 5px;
+    vertical-align: top;
+    background: none;
+}
+div#content div#data div.childfocus > table td img {
+    padding: 10px;
+	margin-right:4px;
+}
+div#content div#data div.childfocus > table td h3 {
+    padding-top: 8px;
+	margin-bottom:0;
+}
+div#content div#data div.childfocus > table td.linked {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+div#content div#data div.childfocus table.narrowResults {
+    width: 200px;
+}
+div#content div#data div.childfocus table.narrowResults td {
+    width: 200px;
+}   /* background: url(/_img/dots.png) bottom repeat-x; */
+
+div#content div#data div.childfocus table.narrowResults th.row {
+    width: 90px;
+}
+
+/* gets rid of green dots in AddCreateSiblingWizard.ascx */
+div#content div#holder ul li {
+    background: none;
+}
+/*
+div#content div.childWarning {
+    width: auto;
+    background-color: #fcf3f0;
+    border-color: #CC0011;
+    border-style: dotted;
+    border-width: 1px;
+    clear: both;
+    margin: 24px 0 8px 0;
+    padding: 10px 10px;
+} */
+
+div#content div.childWarning {
+    width: auto;
+    background-color: #eee;
+    border-color: #b4b4b4;
+    border-style: solid;
+    border-width: 1px;
+    clear: both;
+    margin: 24px 0px 8px;
+    padding: 15px;
+}
+
+div#content div.childWarning p {
+    margin-bottom: 2px;
+}
+
+div#content div.childWarning ol {
+    margin-left: 10px;
+	list-style-type: none;
+}
+
+div#content table.caseStatus {
+    width: 200px;
+    margin-left: 50px;
+}
+
+div#content table.caseStatus tr.noDots td {
+    background: none;
+}
+div#content table.formTableR tr td {
+    background: none;
+    vertical-align: top;
+}
+div#content table.formTableR tr td:first-child {
+    font-weight: bold;
+}
+div#content div#data table.formTable5 {
+	width: auto;
+	margin: 0;
+}
+div#content div#data table.formTable5 td {
+	background: none;
+}
+div#content div#data table.formTable6 {
+	width: auto;
+	margin: 0;
+}
+div#content div#data table.formTable6 td {
+	background: none;
+	margin-top: -3px;
+	padding: 0 4px 0 4px;
+}
+        
+/* settings for timeout dialogue */
+div#timeout-dialog {
+    background: #FFFFFF url("/_img/warning.png") no-repeat 15px 15px;
+}
+div.timeout-dialog .ui-dialog-titlebar-close {
+    display: none;
+}
+div#timeout-dialog p {
+    margin-left: 75px;
+}
+div#timeout-dialog p#timeout-question {
+    margin-top: 25px;
+}
+#timeout-countdown {
+    font-weight: bold;
+}
+
+/* charts for family activity demographic charts */
+div#content div#familyActivityHistory div.chartDemo {
+    width: 206px;
+    height: 158px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+figure {
+	display: table;
+}
+figure img {
+    display: table-cell;
+    width: auto;
+}
+figure.imageCaptionFloatLeft {
+	float:left;
+	margin: 5px 15px 0px 0px;
+}
+figure.imageCaptionFloatRight {
+	float:right;
+	margin: 5px 0px 0px 15px;
+}
+figure.videoLeft, figure.imageCaptionLeft {
+	margin:0 auto 0 0;
+}
+figure.videoRight, figure.imageCaptionRight {
+	margin:0 0 0 auto;
+}
+figure.videoCenter, figure.imageCaptionCenter {
+	margin:0 auto;
+}
+figcaption {
+	display: table-caption;
+    caption-side: bottom;
+    background: #fff none repeat scroll 0% 0%;
+    padding: 0px 0px 10px;
+	font-size: 11px;	
+}
+/* Organic Search GSC */
+
+.gsc-above-wrapper-area {
+    border-bottom: none !important;
+    padding: 0 !important;
+}
+.gsc-table-result {
+	margin: 8px 0 0 0 !important;
+}
+.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-image-box, span.gs-fileFormat {
+    margin-left: 8px !important;
+}
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+	font-size: 12px !important;
+	margin-top: 0 !important;
+}
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+    font-size: 16px;
+}
+table.gsc-table-result td.gsc-table-cell-thumbnail,
+table.gsc-table-result td.gsc-table-cell-thumbnail.gsc-thumbnail,
+table.gsc-table-result td.gsc-thumbnail,
+table.gsc-table-result td.gsc-table-cell-snippet-close {
+    padding: 6px 0px 20px 0 !important;
+}
+.gsc-webResult .gsc-result {
+	margin: 0px 0  6px 0 !important;
+	padding: 6px 0 6px 0 !important;
+	border:0 !important;	
+}
+.gsc-table-cell-thumbnail, .gs-promotion-image-cell, .gsc-thumbnail {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.gcsc-branding, table.gsc-resultsHeader {
+	display:none !important;
+}
+.gs-image-box.gs-web-image-box.gs-web-image-box-portrait, .gs-image-box.gs-web-image-box.gs-web-image-box-landscape {
+	overflow:visible !important;
+	height:100% !important;
+}
+.gs-result img.gs-image, .gs-result img.gs-promotion-image {
+    border: none !important;
+}

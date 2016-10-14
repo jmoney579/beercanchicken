@@ -1,0 +1,169 @@
+/* State Partner Sites    statePartner.css                 */
+/* This CSS will provide the basic layout of the page.     */
+/* Each page will also call a CSS specifically for          */
+/* each state which will include the top navigation        */
+/* header and buttons.  For example, Washington DC will    */
+/* call statePartner_dc.css.                               */
+
+body {
+	/* Overrides Adopt.css Backgrounds */
+	background: none;
+	background-color: transparent;
+}
+
+#container {
+	width: 960px; /* Reset width in state style */
+	background: none;
+	margin: auto;
+}
+
+div#content {
+	margin-top: 0px;
+	min-height: 500px;
+}
+div#content div#main div#data, div#content div#main div#central {
+	float: none;
+}
+div#content {
+	margin-top: 0px;
+	min-height: 500px;
+}
+/*********** Page Layout ***********/
+#stateHeader {
+	background: none;
+	background-color: transparent;
+	margin: 10px auto auto;
+	line-height: normal;
+}
+#stateHeader h1 span {
+	display: none;
+}
+/* Top Navigation Buttons */
+#stateHeader a {
+	float: left;
+	color: #000;
+	margin: 0 15px 0 15px;
+	padding: 5px 8px 5px 8px;
+	display: inline-block;
+	font-weight: bold;
+	width: 80px;
+}
+/* Top Navigation button color and margin from header logo */
+#stateHeader ul {
+	height: 2px;
+	color: #000;
+	background-color: #fff;
+	padding: 1px 0 23px 246px;
+}
+#stateHeader ul li {
+	float: left;
+	display: block;
+}
+
+/* Left Navigation: State logo and Search/Browse links */
+#left {
+	float: left;
+	padding: 0 35px 0 35px;
+	width: 180px;
+}
+#left a {
+	font-size: 12px;
+}
+
+/* Main Content Page Elements */
+
+div#content {
+	background: none;
+	padding: 20px 0 30px 0px;
+	background-color: #FFF;
+}
+div#content div#central {
+	width: 648px;
+}
+div#content div#central input[type=text] {
+	margin-right: 160px;
+}
+div#content a.button {
+	border: none;
+	color: White;
+}
+div#content a.button:visited {
+	border: none;
+}
+div#content a.button:hover {
+	border: none;
+	color: Gray;
+}
+div#content div#main div.hr, div#content div#main div.dots {
+	margin: 0 0px 18px;
+}
+div#content div#main div#central ul li {
+	list-style: none outside none;
+	padding: 14px 0 12px;
+	margin: 0;
+}
+div#content ul li, div#dialog ul li {
+	background: none;
+	list-style: disc outside none;
+	margin-left: 25px;
+	padding: 0 0 6px 4px;
+}
+
+div#main {
+	float: left;
+	width: 648px !important;
+	float: left;
+	display: block;
+	clear: none;
+	margin-top: 14px;
+	overflow: hidden;
+}
+div#content div#central {
+}
+div#content div#nonNav {
+	float: left;
+	width: 730px;
+}
+div#content #ValidationSummary1 {
+	margin-bottom: 12px;
+}
+div#content H2.subheading {
+	font-size: 16px;
+	font-weight: bold;
+	clear: both;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+div#content div.refine ul.tools li {
+	margin: 0;
+}
+
+#stateFooter {
+	padding-top: 16px;
+	display: block;
+	clear: both;
+	color: #999999;
+	background-color: #fff;
+}
+#stateFooter p {
+	color: #333;
+	text-align: center;
+	padding-top: 16px;
+	font-size: 12px;
+}
+div#content div.formLine table.formTable3 {
+       width: auto;
+}
+div#content div.formLine table.formTable3 td {
+       background: none;
+       padding: 2px 1px 2px 1px;
+}
+div.formLine {
+       padding-bottom: 2px;
+}
+
+
+
+
+
+

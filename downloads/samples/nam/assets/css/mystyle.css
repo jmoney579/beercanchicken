@@ -1,0 +1,359 @@
+/***********************************************************************************
+*   Virginia Department of Social Services - National Adoption Month               *
+*   Designed by Jacques Walker       				                               *
+*   Utilized: bootstrap framework		     								       *
+*   Contact: jacques [at] jacqueswalker.com                                        *
+*   Copyright 2016                                                                 *
+***********************************************************************************/
+
+@CHARSET "US-ASCII";
+
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+body, html{
+	height: 100%;
+	}
+body{
+	font-family: "Raleway",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+p{
+	line-height: 23px;
+}
+h3.vdss{
+	margin-top: 8px;
+	}
+.big-pic{
+	display: block;
+	height: 88vh;
+	background-color: #006699;
+	background: url('../img/main_header.jpg') no-repeat center center transparent;
+	background-size: cover;
+	}
+.welcome {
+    color: #FFF;
+    top: 8%;
+    left: 3%;
+}
+.welcome.pull-right {
+    left: -2%;
+	}
+.welcome h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 48px;
+    margin-bottom: 3px;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+}
+.welcome p{
+	font-size: 17px;
+	}
+.dark_back{
+	background: url('../img/header_block.png') center center repeat transparent;
+	}
+.dark_text{
+	color: #40403f;
+	}
+.dark_text h1{
+	border-bottom: 1px solid #40403f;
+	border-top: 1px solid #40403f;
+}
+.hashtag {
+    background: url(../img/hash_tag.png) repeat center center transparent;
+    color: #fff;
+    top: 89%;
+    position: absolute;
+    right: 0;
+    font-size: 27px;
+    padding: 10px 18px;
+	min-width: 258px;
+	/*z-index: 9999;*/
+}
+.hashtag a{
+	color: #FFF;
+	}
+.hashtag a:hover{
+	color: #CCC;
+	text-decoration: none;
+	}
+.fixed_top4{
+	position: fixed;
+	z-index: 9999;
+	top: 162px !important;
+	}
+.fixed_top3{
+	position: fixed;
+	z-index: 9999;
+	top: 108px !important;
+	}
+.fixed_top2{
+	position: fixed;
+	z-index: 9999;
+	top: 54px !important;
+	}
+.fixed_top{
+	position: fixed;
+	z-index: 9999;
+	top: 0 !important;
+	}
+.big-pic .hashtag{
+	top: 74%;
+	}
+.nav li a{
+	padding: 10px 25px;
+	}
+.navbar {
+    min-height: 60px;
+    box-shadow: 0px 1px 8px #000;
+}
+.navbar-inverse{
+	background-color: #082f43;
+	border-color: transparent;
+	font-size: 21px;
+	}
+.navbar-bottom{
+	border-radius: 0px;
+	}
+.navbar-nav > li > a {
+    padding-bottom: 25px;
+    padding-top: 4vh;
+  	text-transform: uppercase;
+}
+.navbar-toggle{
+	margin-top: 17px;
+	}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: none;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
+	background-color: transparent;
+}
+.navbar-brand{
+	height: 70px;
+	padding-top: 2.3vh;
+}
+.ad_search{
+	background-color: #041f2d;
+	}
+.rule{
+	border-right: 1px solid #FFF;
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;*/
+}
+.rule2{
+	border-right: 1px solid #0a0a0a;
+}
+.row{
+	min-height: 480px;
+	color: #636363;
+	}
+.row h1{
+	text-transform: uppercase;
+	}
+.qoute{
+	margin-top: 20px;
+	}
+.pagecontent{
+	min-height: 600px;
+	}
+.no-top{
+	margin-top: -2px;
+}
+div.col-md-4>img.img-responsive{
+	padding-bottom: 5px;
+}
+.subheader1{
+	min-height: 400px;
+	background: url("../img/subheader1.jpg") left center transparent;
+}
+.subheader2{
+	min-height: 400px;
+	background: url("../img/subheader2.jpg") center center transparent;
+}
+.subheader3{
+	min-height: 400px;
+	background: url("../img/subheader3.jpg") right center transparent;
+}
+.parallax { 
+	position: relative;
+    height: 100%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.subheader h2{
+	font-size: 40px;
+}
+.pageheader{
+	min-height: 400px;
+	background: url("../img/about_bkgd.jpg") no-repeat center top transparent;
+	background-size: cover;
+	border-bottom: 7px solid #CCC;
+	box-shadow: 0 1px 0 #CCC;
+	color: #FFF;
+	margin-top:91px;
+}
+.pageheader h2{
+	font-size: 40px;
+}
+footer{
+	border-top: 2px solid #CCC;
+	min-height: 235px;
+	background-color: #082f43;
+	padding-top: 10px;
+	color: #999;
+}
+footer .col-md-4{
+	min-height: 210px;
+}
+footer p{
+	font-size: 13px;
+}
+.footer_nav {
+    text-transform: uppercase;
+    font-size: 17px;
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 1px 0px 0px rgba(255,255,255,.1);
+    text-align: right;
+    margin-bottom: 10px;
+}
+.footer_nav a{
+		color: #FFF;
+		}
+.footer_nav a:hover{
+		color: #CCC;
+		text-decoration: none;
+		}
+.footer_nav li{
+	display: inline;
+	}
+.footer_nav li a{
+	margin: 3px 10px;
+	}
+.soc_icons img{
+	width: 55px;
+	opacity: .80;
+	}
+.soc_icons img:hover{
+	opacity: 1;
+	}
+/*-------------------  Adoption Form Overides --------------*/
+ol.ui-slider-scale.ui-helper-reset {
+    display: none;
+}
+.screenReaderContext{
+	display: none;
+	}
+select#minSib {
+    display: none;
+}
+.adopt_search{
+	display: block;
+	padding: 10px 30px;
+	margin: 10px;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	background-color: #3f3f3f;
+	width: 118px;
+	color: #FFF;
+	}
+a.adopt_search{
+	color: #d7d7d7;
+	}
+#sb-container{
+	display: none;
+	}
+table.tblRace tr td{
+	font-size: 12px !important;
+	}
+table.tblRace{
+	margin-top: 3px;
+	margin-left: 10px;
+	}
+.callout.adoption input{
+	height: 18px;
+	}
+.callout.adoption input[type="radio"]{
+	height: 15px;
+	}
+.callout.adoption table td{
+	font-size: 13px;
+	}
+.raceSelect{
+	display: none;
+	}
+.dis_level{
+	display: none;
+	}
+tr.sectBorder, td.sectBorder{
+	border-top: 1px solid #CCC; 
+	border-left: 1px solid #CCC
+	}
+.smart-slider-select{
+	padding-top: 10px;
+	}
+.minmax{
+	padding-top: 13px;
+	}
+td.fieldheader{
+	font-size: 17px !important;
+	}
+.ui-slider-horizontal .ui-slider-handle {
+    padding: 1px;
+}
+#rdlstRaceComposition label{
+    margin-bottom: 0px;
+    display: block;
+    float: left;
+    margin-top: 4px;
+}
+#rdlstRaceComposition input[type="radio"]{
+	float: left;
+	}
+span.ui-slider-tooltip.ui-widget-content.ui-corner-all {
+    display: none;
+}
+.ui-state-hover span.ui-slider-tooltip.ui-widget-content.ui-corner-all {
+    display: block;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    background-color: #5b5b5b !important;
+}
+div#smart-slider .ui-slider .ui-state-active .ui-slider-tooltip, .ui-slider .ui-state-focus .ui-slider-tooltip, .ui-slider .ui-state-hover .ui-slider-tooltip {
+    width: 4em !important;
+    margin-left: -1.7em !important;
+}
+#searchdata th{
+	padding: 8px 9px;
+	}
+table.cc_search a{
+	color: darkred;
+	}
+table.cc_search a:hover{
+	color: #afafaf !important;
+	}
+#quicklinks{
+	margin-left: 28px;
+	width: 285px;
+	}
+#quicklinks tr:hover{
+	background-color: transparent;
+	}
+#quicklinks td a:hover{
+	color: #006699 !important;
+	}
+#quicklinks td{
+	font-weight: normal !important;
+	}
+/*----Fancy Boox Overides---*/
+.fancybox-skin{
+	background-color: #082f43;
+	}
+iframe{
+	border: none;
+	}
+@media (max-width: 991px){
+	h3.vdss{
+	margin-top: 20px;
+	}
+}

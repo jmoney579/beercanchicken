@@ -1,0 +1,175 @@
+body {
+    background: url(/_img/bg_body.png) repeat #f8f9f4;
+}
+div#header {
+    background: url(/_img/bg_header.png) repeat-x #FFFFFF;
+}
+div#header div.primary-nav a, div#header div.secondary-nav a, div#header div.admin a {
+    background-image: url(/_img/1308090101/sprite_nav.png);
+}
+div#header div.utility-nav ul li.tfacebook a, div#header div.utility-nav ul li.ttwitter a, div#header div.utility-nav ul li.tyoutube a {
+    background-image: url(/_img/1511130131/sprite_global.png);
+}
+div#content div.photos ul.controls li.back a, div#content div.photos ul.controls li.next a,
+.icon, .photo-wrapper .photo-controls, div#familyParentingExp div.photos div.icon {
+    background-image: url("/_img/1511130131/sprite_global.png");
+}
+/* div#header div.utility-nav input#main_search {
+    background: url(/_img/1511130131/sprite_global.png) -60px -40px;
+} */
+div#content div.join-newsletter p.block-2 input {
+    background: url(/_img/1511130131/sprite_global.png) -60px -60px;
+}
+div#header.condensed {
+    background: url(/_img/bg_header-con.png);
+}
+div#header.condensed div.dots, div#content div.dots, div#dialog div.dots,
+div#content div#links div.contact h4, div#content div.share,
+div#content div.portal li, div#content .dotlist ul li, div#content ul.dots li,
+div#content div.refine {
+    background: url(/_img/dots.png) top repeat-x;
+}
+div#content-top {
+    background: url(/_img/content-top.png) top left no-repeat;
+}
+div#content-bottom {
+    background: url(/_img/content-bottom.png) top left no-repeat;
+}
+div#content {
+    background: url(/_img/content-mid.png) top left repeat-y;
+}
+div#content ul li, div#dialog ul li {
+    background: url(/_img/bg_li.png) 6px 6px no-repeat;
+}
+div#content ul li li, div#dialog ul li li {
+    background: url(/_img/bg_li_open.png) 1px 6px no-repeat;
+}
+div#content .rcWrapper ul li {
+    background: url(/_img/bg_li.png) 12px 6px no-repeat;
+}
+div#content .rcWrapper ul li li {
+    background: url(/_img/bg_li_open.png) 6px 12px no-repeat;
+}
+div#content div.photos p.caption {
+    background: #FFFFFF url(/_img/dots.png) bottom repeat-x;
+}
+div#content table th, div#content table td, div#dialog table th, div#dialog table td, 
+div#content div#links h3, div#content div#central div#mainStory p.location,
+div#content div#central div.tocItem p.location, div#content div.notes ul li,
+div#data table.caseChangeTable td, div#content div#data div.childfocus table.narrowResults td {
+    background: url(/_img/dots.png) bottom repeat-x;
+}
+div#content ul.tabs li, div#dialog ul.tabs li {
+    background: url(/_img/vdots.png) right repeat-y;
+}
+div#content div.nrcrrfap.green {
+    background: url(/_img/sideblocks/nrcrrfap-homepage.png) bottom;
+}
+div#content div.end_cta div.nrcrrfap {
+    background: url(/_img/sideblocks/nrcrrfap-app-footer.png) bottom; 
+}
+div#content div.join-newsletter.yellow {
+    background: url(/_img/buttons/join-newsletter-yellow-bg.png) bottom;
+}
+div#content div.join-the-conversation.red {
+    background: url(/_img/buttons/join-the-conversation-red.png) bottom;
+}
+div#content div.get-social.yellow {
+    background: url(/_img/sideblocks/get-social-yellow-23.png);
+}
+div#content div.get-social.ESgsT2 {
+    background: url(/_img/sideblocks/get_social_small_tier23_ES.png);
+}
+div#content div.waiting {
+    background: url(/_img/sideblocks/waiting-whats-next-green-23.png);
+}
+div#content div.waiting.WsbES {
+    background: url(/_img/sideblocks/waiting_tier23_ES.png);
+}
+div#content div.getStarted {
+    background: url(/_img/sideblocks/get-started-homepage.png);
+}
+div#content div.waiting-footerblock {
+    background: url(/_img/sideblocks/waiting-whats-next-app-footer.png);
+}
+div#content div.get-socialT1 {
+    background: url(/_img/sideblocks/get-social-yellow.png);
+}
+div#content div.get-socialT1.ESgsT1 {
+    background: url(/_img/sideblocks/get_social_tier1_ES.png);
+}
+div#content h3.image, div#content h4.image,
+div#header h2.image, div#content div#links h2.image {
+    background: url(/_img/1408271239/sprite_headers.png) no-repeat;
+}
+div#content div.portal h3.image {
+    background-image: url(/_img/1601260524/sprite_portal.png);
+}
+div#content div.portal h3.image.esSprite {
+    background-image: url(/_img/1601260524/sprite_portal_es.png);
+}
+div#content div.admin h2.image {
+    background: url(/_img/1110191208/sprite_grid.png) no-repeat;
+}
+div.shadowbox, div.shadowbox div.edge, div.shadowbox div.end, div.shadowbox div.corner {
+    background-image: url(/_img/shadowbox.png);
+}
+div.profile, div.profile div.edge, div.profile div.end, div.profile div.corner, div.alert, div.alert div.edge,
+div.alert div.end, div.alert div.corner, div.process, div.process div.edge, div.process div.end, div.process div.corner {
+    background-image: url(/_img/shadowbox_light.png) !important;
+}
+div#tabs-wrapper .ui-tabs .ui-state-active, div#tabs-wrapper .ui-widget-content .ui-state-active, div#tabs-wrapper .ui-widget-header .ui-state-active {
+    background: url("/_inc/css/images/ui-bg_highlight-soft_65_ffffff_1x100.png") repeat-x scroll 50% 50% #FFFFFF;
+}
+#sb-loading-inner span {
+    background: url(/_inc/css/images/loading.gif) no-repeat;
+}
+#sb-nav-close {
+    background-image: url(/_inc/css/images/close.png);
+}
+#sb-top-close {
+    background-image: url(/_inc/css/images/close.png);
+}
+#sb-nav-next {
+    background-image: url(/_inc/css/images/next_arrow.png);
+}
+#sb-nav-previous {
+    background-image: url(/_inc/css/images/previous_arrow.png);
+}
+#sb-nav-play {
+    background-image: url(/_inc/css/images/play.png);
+}
+#sb-nav-pause {
+    background-image: url(/_inc/css/images/pause.png);
+}
+div#content #ValidationSummary1 {
+   background: #fef1ec url(/_inc/css/images/ui-bg_highlight-soft_75_fef1ec_1x100.png) 50% top repeat-x;
+}
+div#content #ValidationSummary1 table.VAMValSummaryHeader td, div#content table.VAMValSummaryHeader th {
+    background: url("/_img/dots.png") repeat-x scroll center bottom transparent;
+} 
+div#data.search div#tabs-wrapper div#disabilities div.disability ul li {
+    background: url("/_img/bg_li.png") no-repeat scroll 1px 6px transparent;
+}
+div#content a.button.go, div#content input.button.go, div#content a.button.red, div#content input.button.red {
+    background: #FFFFFF url(/_img/buttons/button_red.png) right no-repeat;
+}
+div#content a.button.back, div#content input.button.back, div#content a.button.blue, div#content input.button.blue {
+    background: #FFFFFF url(/_img/buttons/button_blue.png) right no-repeat;
+}
+div#content a.button.other, div#content input.button.other, div#content a.button.green, 
+ div#content input.button.green, div#content a.button.link, div#content input.button.link {
+    background: #FFFFFF url(/_img/buttons/button_green.png) right no-repeat;
+}
+div#content a.button.auto, div#content input.button.auto, div#content a.button.purple, div#content input.button.purple {
+    background: #FFFFFF url(/_img/buttons/button_purple.png) right no-repeat;
+}
+div#content input.rapid {
+    background: #FFFFFF url(/_img/buttons/button_blue.png) right no-repeat;
+}
+div#content div#data div.childfocus {
+    background: url(/_img/bg_body.png) repeat #f8f9f4;
+}
+div#wrapper a#back-to-top {
+    background: url(/_img/abtt-sprite.png);
+}

@@ -1,0 +1,169 @@
+﻿@media print {
+
+    @page :left {
+        margin-left: .5in;
+        margin-right: .5in;
+    }
+    @page :right {
+        margin-left: .5in;
+        margin-right: .5in;
+    }
+    body {
+        background:none;
+        background-color:#fff;
+    }
+    div#wrapper {
+        width:auto;
+    }
+    div#header {
+        width:100%;
+        margin: 0;
+        background-color:#fff;
+        border:0;
+    }
+    div#header div.logo {
+        display:none;
+    }
+    div#header div.logo-print {
+        display:block;
+        background: none;
+        background-color:#fff;
+        border:0;
+        margin-left:-14px;
+    }
+    div#header div.utility-nav {
+        display:none;
+    }
+    div#header div.primary-nav {
+        display:none;
+    }
+    div#header div.secondary-nav {
+        display:none;
+    }
+    div#header div.admin {
+        display:none;
+    }
+    div#wrapper div.super {
+        display:none;
+    }
+    div#content-top {
+        display:none;
+    }
+    div#content {
+        background:none;
+        padding-left:0px;
+        padding-right:0px;
+        padding-top:20px;    
+    }
+    div#content div#breadcrumb, div#content div#breadcrumb div#hr, div#content div#hr {
+        display:none;
+    }
+    div#content div.hr, div#dialog div.hr {
+        display:none;
+    }
+    div#content div#links, div#content div#callouts, div#content div#buckets {
+        display:none;
+    }
+    div#wrapper div#content a.rcEdit {
+        display:none;
+    }
+    div#content h2 span.note a.top, div#dialog h2 span.note a.top {
+        color:#FFF;
+        text-decoration:none;
+    }
+    div#content .icon.top {
+        background:none;
+        background-position: -265px 0;
+        height: 6px;
+        position: relative;
+        top: -1px;
+        width: 7px;
+    }
+    div#content div#central {
+        padding-right:0;
+        padding-left:0;
+        width: 100%;
+    }
+    div#content div#main {
+        padding-right:0;
+        padding-left:0;
+        width: 100%;
+    }
+    div#content div#data {
+        padding-right:0;
+        padding-left:0;    
+        width: 100%;
+    }
+    div#content div#data.results {
+        padding-right:0;
+        padding-left:0;
+        width: 100%;
+    }
+    div#content div.refine {
+        display:none;
+    }
+    div#content a.button {
+        display:none;
+    }
+    div#content div.topLine div.rightLink {
+     display:none;
+    }
+    div#content div.portal h3.image {
+        background-color: #fff;
+        background-image: none !important;
+        display: inline !important;
+    }
+    div#content-bottom {
+        background:none;
+        width:100%;
+        border-top: 1px solid #D7D7C4;
+        border-bottom: 1px solid #F3F3ED;
+        height: 3px;
+    }
+    div#footer {
+        display:none;
+        height: 50px;
+        margin: 20px;
+        padding:0px 0 0px 0px;
+        width:100%;
+    }
+    div#footer ul {
+        display:none;
+    }
+    div#footer h3 {
+        margin-top:0px;
+        margin-left:0px;
+        padding-left:20px;
+    }
+    div#content div#data table {
+    	margin: 0;
+    }
+    div#content div#data table td p {
+    	margin-bottom: 5px;
+    }
+    div#content div#data table th, div#content table td {
+        font-size: 14px;
+		text-align: left;
+		padding: 3px 5px 3px 0;
+		vertical-align: top;
+		background: none;
+		border-bottom: dotted 1px black
+	}
+    div#content div#data table th {
+    	font-weight: bold;
+    }
+	div#content div#data table td ul {
+		margin-bottom: 0;
+	}
+	div#content div#data div.formLine div.dots,
+	div#content div#data div.formLine div.photos {
+		display: none;
+	}
+	div#content div#data div#familyChildPref h3 {
+		margin-bottom: 2px;
+	}
+	div#content div#data div#familyChildPref p {
+		margin: 2px;
+	}
+/* End @media print */
+}
