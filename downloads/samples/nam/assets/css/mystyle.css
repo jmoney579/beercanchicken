@@ -77,6 +77,15 @@ h3.vdss{
 	color: #CCC;
 	text-decoration: none;
 	}
+.hashtag p{
+	margin-top: 4px;
+	}
+.hashtag.div_1.fixed_top p{
+	margin-top: 15px;
+	}
+.hashtag.div_1.fixed_top {
+	padding: 12px 18px;
+	}
 .fixed_top4{
 	position: fixed;
 	z-index: 9999;
@@ -120,9 +129,10 @@ h3.vdss{
     padding-top: 4vh;
   	text-transform: uppercase;
 }
-.navbar-toggle{
-	margin-top: 17px;
-	}
+.navbar-toggle {
+    margin-top: 14px;
+    margin-left: 11px;
+}
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: none;
 }
@@ -355,5 +365,19 @@ iframe{
 @media (max-width: 991px){
 	h3.vdss{
 	margin-top: 20px;
+	}
+}
+@media (max-width: 767px){
+	.hashtag{
+		padding: 10px 18px;
+	}
+	.hashtag p{
+		margin-top: 6px;
+	}
+	.hashtag.div_1.fixed_top{
+		padding: 10px 18px;
+	}
+	.hashtag.div_1.fixed_top p{
+		margin-top: 6px;
 	}
 }

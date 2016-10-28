@@ -13,14 +13,14 @@ $(document).ready(function(){
 				 $('nav').removeClass('navbar-fixed-top');				 
 			 }
 		/* Code for fixed hashtags */
-		/*var navHeight2 = $(window).height() - 150;
+		var navHeight2 = $(window).height() - 150;
 			 if ($(window).scrollTop() > navHeight2) {
 				 $('.div_1').addClass('fixed_top');
 			 }
 			 else {
 				 $('.div_1').removeClass('fixed_top');				 
 			 }			
-		var navHeight3 = $(window).height() + 1050;
+		/*var navHeight3 = $(window).height() + 1050;
 			 if ($(window).scrollTop() > navHeight3) {
 				 $('.div_2').addClass('fixed_top2');
 			 }
