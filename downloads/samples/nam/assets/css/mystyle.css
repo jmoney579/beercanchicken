@@ -88,22 +88,22 @@ h3.vdss{
 	}
 .fixed_top4{
 	position: fixed;
-	z-index: 9999;
+	z-index: 9998;
 	top: 162px !important;
 	}
 .fixed_top3{
 	position: fixed;
-	z-index: 9999;
+	z-index: 9998;
 	top: 108px !important;
 	}
 .fixed_top2{
 	position: fixed;
-	z-index: 9999;
+	z-index: 9998;
 	top: 54px !important;
 	}
 .fixed_top{
 	position: fixed;
-	z-index: 9999;
+	z-index: 9998;
 	top: 0 !important;
 	}
 .big-pic .hashtag{
@@ -358,6 +358,9 @@ table.cc_search a:hover{
 /*----Fancy Boox Overides---*/
 .fancybox-skin{
 	background-color: #082f43;
+	}
+.fancybox-overlay{
+	z-index: 9999;
 	}
 iframe{
 	border: none;
