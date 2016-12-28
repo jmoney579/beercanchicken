@@ -83,17 +83,20 @@ p{
 	transform: rotate(-180deg);
 	}
 .site_title {
-    background: url('../img/site_title_back.png') repeat center center transparent;
-    height: 67px;
-    border-top: 2px solid #FFF;
-    top: 462px;
-    position: relative;
-    width: 100%;
-	cursor: pointer;
-	}
+    background: black;
+    height: 100%;
+    /* border-top: 2px solid #FFF; */
+    /* top: 462px; */
+    position: fixed;
+    width: 53px;
+    cursor: pointer;
+    z-index: 103;
+    left: 173px;
+    top: 0;
+}
 .site_title h1{	
 	color: #FFF;
-    	float: right;
+    float: right;
 	margin: 4px 0px 5px 0px;
 	font-size: 52px;
 	text-transform: uppercase;
@@ -105,9 +108,9 @@ p{
 	padding-right: 15px;
 	}
 img.dropdown_nav {
-    	width: 56px;
-    	margin: 16px 22px 0 0;
-   	cursor: pointer;
+    width: 102px;
+    margin: 16px 22px 0 7px;
+    cursor: pointer;
 }
 .snaptotop .big-pic {
     	background-size: cover;
@@ -122,13 +125,11 @@ img.dropdown_nav {
 	display: none;
 	}
 .navbar{
-	display: none;
-	/*padding: 0 10%;*/
+	/*display: none;
+	padding: 0 10%;*/
 	margin-bottom: 0;
 	}
-.navbar-bottom{
-	border-radius: 0px;
-	}
+
 .navbar-nav > li > a {
 	padding-bottom: 19px;
 	padding-top: 20px;
@@ -159,6 +160,34 @@ img.dropdown_nav {
     display: block;
     margin: 8px 0 0 0;
 	color: #FFF;
+}
+/* CSS used here will be applied after bootstrap.css */
+.navbar-fixed-left {
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  top: 0;
+  z-index: 102;
+  background-color: #000;
+  border-color: #080808;
+  opacity: 0.86;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 139px;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 160px;
+}
+
+.container {
+  height: 1000px;
+}
+
+.wrapper {
+  margin-left: 140px;
 }
 .row{
 	min-height: 250px;
@@ -553,18 +582,21 @@ a.block_left {
 }
 /*end grid*/
 /*Video Header Styling */
-video.vid_header {
-    	width: 100%;
-    	height: auto;
-	position: relative;
+.vid_header, .big_header {
+    	/* width: 100%; */
+    	height: 100vh;
+		position: relative;
 }
-
+.big_header{
+	background: url('../img/lake_big_header.jpg') center center transparent;
+	background-size: cover;
+	}
 .snaptotop .vid_header {
     display: none;
 }
-.site_title {
+/* .site_title {
     top: 375px;
-}
+} */
 .super_title{
 	background-image:none;
 	background-color: rgba(0, 0, 0, 0.4);
@@ -579,12 +611,7 @@ video.vid_header {
     background:none;
     height: 512px;
 }
-.navbar{
-	margin-top: -17px;
-}
-.navbar-nav {
-    margin-top: 17px;
-}
+
 .down_arrow{
 	display: none;
 }
