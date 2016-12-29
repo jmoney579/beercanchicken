@@ -206,6 +206,7 @@ img.dropdown_nav {
   background-color: #000;
   border-color: #080808;
   opacity: 0.75;
+  width: 177px;
 }
 
 .navbar-fixed-left .navbar-nav > li {
