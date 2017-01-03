@@ -218,7 +218,7 @@ p{
   z-index: 103;
   background-color: #000;
   border-color: #080808;
-  opacity: 0.75;
+  opacity: 0.80;
   width: 177px;
 }
 
@@ -348,6 +348,7 @@ div.col-md-4>img.img-responsive{
 .subheader h2.smaller{
 	font-size: 36px;
 }
+
 footer{
 	border-top: 2px solid #CCC;
 	min-height: 290px;
@@ -362,6 +363,15 @@ footer .col-md-4{
 footer p{
 	font-size: 13px;
 }
+content footer.container-fluid {
+    margin-left: -17px;
+    margin-right: -15px;
+    padding-left: 9px;
+}
+/* footer.container-fluid{
+	padding-left: 0px;
+	margin-left: -18px;
+	} */
 h4.contact_title {
   	margin-bottom: 14px;
   	text-transform: uppercase;
