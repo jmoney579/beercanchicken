@@ -757,6 +757,11 @@ a.block_left {
 	margin-bottom: 12px;
 	padding: 5px;
 	}
+.award_holder{
+	position: absolute;
+	left: 0;
+	right: 0;
+	}
 /*End Styling */
 @media (min-width: 1000px){
 	.stomped{
