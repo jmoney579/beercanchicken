@@ -763,6 +763,16 @@ a.block_left {
     margin-top: 9px;
     float: right;
 }
+.portfolio_item .award_holder img{
+    width: 46px !important;
+    margin-left: -56px;
+    margin-top: -183px !important;
+}
+.portfolio_item .award_holder{
+	margin-left: -80px;
+	margin-top: 10px;
+	z-index: 1;
+}
 /*End Styling */
 @media (min-width: 1000px){
 	.stomped{
