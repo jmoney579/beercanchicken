@@ -148,6 +148,7 @@
 					{y: 9, label: "Microsoft Office"  },
 					{y: 8, label: "Instructional Design"  },
 					{y: 8, label: "Course Development"  },
+					{y: 8, label: "Project Management"  },
 					]
 				}	
 				]
