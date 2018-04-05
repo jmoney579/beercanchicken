@@ -32,10 +32,10 @@
 	   $(window).bind('scroll', function() {
 	   var navHeight = $( window ).height() - 78;
 			 if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('navbar-fixed-top');
+				 $('nav').addClass('navbar-inverse');
 			 }
 			 else {
-				 $('nav').removeClass('navbar-fixed-top');
+				 $('nav').removeClass('navbar-inverse');
 			 }
 		});
 	});
@@ -47,12 +47,14 @@
 
     <!-- Navigation -->
     <div class=big-pic>
-	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 welcome">
-	<h1><b>Welcome</b> Text</h1>
-	<p>Tagline with something interesting to catch the visitors attention.  It should be stricking but not so to question the quality of our work.</p>
+	<div class="col-md-12 text-center welcome">
+	<img src="assets/img/purmosa_logo_home_stroke_text.png" alt="Purmosa Logo in white outline"/>
 	</div>
+    <div class="col-md-12 text-center learn_more">
+        <p>Learn More</p>
+    </div>
 	</div>
-    <nav class="navbar navbar-inverse navbar-bottom" role="navigation">
+    <nav class="navbar  navbar-bottom navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -62,7 +64,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="assets/img/p_logo.png" alt="Purmosa Logo"/></a>
+                <a class="navbar-brand" href="#"><img src="assets/img/purmosa_logo_white_small.png" alt="Purmosa Logo"/></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

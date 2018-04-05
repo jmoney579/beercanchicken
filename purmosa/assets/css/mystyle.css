@@ -13,15 +13,14 @@ p{
 
 .big-pic{
 	display: block;
-	height: 88vh;
+	height: 100vh;
 	background-color: #006699;
-	background: url('../img/header_1.jpg') no-repeat center center transparent;
+	background: url('../img/header.jpg') no-repeat center center transparent;
 	background-size: cover;
 	}
 .welcome {
     color: #FFF;
     top: 20%;
-    left: 5%;
 }
 .welcome h1 {
     text-transform: uppercase;
@@ -32,6 +31,16 @@ p{
 .welcome p{
 	font-size: 17px;
 	}
+.welcome img {
+    width: 30vh;
+    padding-top: 10vh;
+}
+.learn_more {
+    margin-top: 31vh;
+    background-color: purple;
+    color: #FFF;
+    padding-top: 7px;
+}
 .navbar{
 	min-height: 91px;
 }
@@ -39,9 +48,16 @@ p{
 	border-radius: 0px;
 	}
 .navbar-nav > li > a {
-    padding-bottom: 32px;
-    padding-top: 5vh;
   	text-transform: uppercase;
+    color: #FFF;
+    padding-top: 5vh;
+}
+.navbar-brand>img {
+    width: 120px;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:active{
+    background-color: transparent;
+    color: #CCC;
 }
 .navbar-toggle{
 	margin-top: 27px;
@@ -51,7 +67,7 @@ p{
 }
 .navbar-brand{
 	height: 70px;
-	padding-top: 2.3vh;
+	padding-top: 1.3vh;
 }
 .crew {
     background: url('../img/crew_logo.png') no-repeat center center #2b0733;
