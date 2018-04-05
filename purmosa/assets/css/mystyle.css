@@ -39,7 +39,13 @@ p{
     margin-top: 31vh;
     background-color: purple;
     color: #FFF;
-    padding-top: 7px;
+}
+.learn_more p{
+    display: block;
+    width: 154px;
+    margin: 0 auto 1px;
+    background-color: #FFF;
+    padding: 8px 0;
 }
 .navbar{
 	min-height: 91px;
