@@ -21,6 +21,7 @@ p{
 .welcome {
     color: #FFF;
     top: 20%;
+    /*height: 270px;*/
 }
 .welcome h1 {
     text-transform: uppercase;
@@ -33,12 +34,22 @@ p{
 	}
 .welcome img {
     width: 30vh;
-    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 .learn_more {
-    margin-top: 31vh;
+    /* margin-top: 28vh; */
     background-color: purple;
     color: #FFF;
+    position: absolute;
+    top: 70%;
+}
+.learn_more_arrow{
+    position: absolute;
+    top: 77%;
+}
+.learn_more_arrow img {
+    margin-top: 16px;
+    width: 35px;
 }
 .learn_more p{
     display: block;
@@ -57,17 +68,21 @@ p{
   	text-transform: uppercase;
     color: #FFF;
     padding-top: 5vh;
+    text-align: right;
 }
 .navbar-brand>img {
     width: 120px;
 }
-.navbar-nav > li > a:hover, .navbar-nav > li > a:active{
+.navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus{
     background-color: transparent;
     color: #CCC;
 }
 .navbar-toggle{
 	margin-top: 27px;
 	}
+.navbar-toggle span.icon-bar {
+    background-color: #FFF;
+}
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: none;
 }
