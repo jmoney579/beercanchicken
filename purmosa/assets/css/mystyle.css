@@ -10,6 +10,13 @@ body{
 p{
 	line-height: 23px;
 }
+h1 {
+    text-transform: uppercase;
+    font-size: 59px;
+    font-weight: bold;
+    color: #006699;
+    border-bottom: 1px solid #cecece;
+}
 
 .big-pic{
 	display: block;
@@ -91,27 +98,44 @@ p{
 	padding-top: 1.3vh;
 }
 .crew {
-    background: url('../img/crew_logo.png') no-repeat center center #2b0733;
-    color: #CCC;
     font-size: 14px;
-    min-height: 426px;
-    border-top: 7px solid #CCC;
-    border-bottom: 7px solid #CCC;
 }
 .crew p{
 	line-height: 21px;
 	font-size: 16px;
 }
+.exec_pic img {
+    /* margin-left: -39px; */
+    position: relative;
+    z-index: -1;
+    margin-bottom: 10px;
+}
 .homie{
 	min-height: 100px;
-	/* background-color: #2b0733; */
-	margin: 127px 0 103px 0;
+}
+.homie h2 {
+    text-transform: uppercase;
+    color: purple;
+    font-size: 65px;
+    width: 369px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    z-index: 1;
+    opacity: 0.85;
 }
 .homie h3{
-	text-transform: uppercase;
-	color: #ededed;
-	font-size: 30px;
+    text-transform: uppercase;
+    color: green;
+    width: 400px;
+    font-weight: bold;
+    font-size: 35px;
+    z-index: 1;
+    opacity: 0.85;
 }
+.homie span.overlap{
+    color: #FFF;
+}
+
 .rule{
 	border-right: 1px solid #FFF;
 	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;*/
