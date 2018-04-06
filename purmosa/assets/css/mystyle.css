@@ -27,7 +27,7 @@ h1 {
 	}
 .welcome {
     color: #FFF;
-    top: 20%;
+    top: 25%;
     /*height: 270px;*/
 }
 .welcome h1 {
@@ -45,7 +45,7 @@ h1 {
 }
 .learn_more {
     /* margin-top: 28vh; */
-    background-color: purple;
+    background-color: #800080;
     color: #FFF;
     position: absolute;
     top: 70%;
@@ -115,7 +115,7 @@ h1 {
 }
 .homie h2 {
     text-transform: uppercase;
-    color: purple;
+    color: #800080;
     font-size: 65px;
     width: 369px;
     font-weight: bold;
@@ -158,18 +158,50 @@ h1 {
 div.col-md-4>img.img-responsive{
 	padding-bottom: 5px;
 }
-.subheader{
-	min-height: 400px;
-	background: url("../img/qoute_bkgd.jpg") no-repeat center center transparent;
-	background-size: cover;
-	border-top: 7px solid #CCC;
-	border-bottom: 7px solid #CCC;
-	box-shadow: 0 1px 0 #CCC;
-	color: #FFF;
-	margin-top:10px;
+.clearfix{
+	clear: both;
+	}
+.subheader {
+    min-height: 400px;
+    background: url(../img/powerpoint2.png) no-repeat right bottom #800080;
+	background: url(../img/powerpoint2.png) no-repeat right bottom, -moz-linear-gradient(top, #270028 0%, #800080 100%); /* FF3.6-15 */
+	background: url(../img/powerpoint2.png) no-repeat right bottom, -webkit-linear-gradient(top, #270028 0%,#800080 100%); /* Chrome10-25,Safari5.1-6 */
+	background: url(../img/powerpoint2.png) no-repeat right bottom, linear-gradient( #270028, #800080); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#270028', endColorstr='#800080',GradientType=0 );
+    /* background-size: 541px; */
+    border-top: 7px solid #CCC;
+    border-bottom: 7px solid #CCC;
+    box-shadow: 0 1px 0 #CCC;
+    color: #FFF;
+    margin-top: 10px;
 }
 .subheader h2{
 	font-size: 40px;
+}
+.subheader .col-sm-4{
+	clear:both;
+	}
+.action_call {
+    width: 335px;
+    margin-top: 10px;
+}
+.action_call h3 {
+    margin: 6px 0 6px 0;
+    background-color: #E702F5;
+    padding: 7px;
+}
+.action_call h3 a{
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	}
+.action_call h3 a:hover{
+	color: #ccc;
+	}
+.action_call img {
+    width: 51px;
+    margin-left: 5px;
+    margin-top: 5px;
 }
 .pageheader{
 	min-height: 400px;
@@ -185,8 +217,9 @@ div.col-md-4>img.img-responsive{
 }
 footer{
 	border-top: 2px solid #CCC;
-	min-height: 235px;
-	background-color: #080808;
+	min-height: 347px;
+	background: url('../img/footer_logo.png') no-repeat center right #172434;
+	background-size: 553px;
 	padding-top: 10px;
 	color: #999;
 }
@@ -194,5 +227,29 @@ footer .col-md-4{
 	min-height: 210px;
 }
 footer p{
-	font-size: 13px;
+	font-size: 14px;
+}
+footer .action_call h3{
+	width: 237px;
+	color: #FFF;
+	background-color: #0398F6;
+	text-transform: uppercase;
+	}
+footer .action_call p {
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 19px;
+    line-height: 24px;
+}
+footer .tagline{
+	text-transform: uppercase;
+	color: #4286C3;
+	margin-top: 30px;
+	/* background-color: #131F2D; */
+	}
+footer .tagline p {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 47PX;
+    font-style: italic;
 }
