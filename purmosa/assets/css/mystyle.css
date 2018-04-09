@@ -204,7 +204,7 @@ div.col-md-4>img.img-responsive{
     margin-top: 5px;
 }
 .pageheader{
-	min-height: 400px;
+	min-height: 200px;
 	background: url("../img/about_bkgd.jpg") no-repeat center top transparent;
 	background-size: cover;
 	border-bottom: 7px solid #CCC;
@@ -219,9 +219,10 @@ footer{
 	border-top: 2px solid #CCC;
 	min-height: 347px;
 	background: url('../img/footer_logo.png') no-repeat center right #172434;
-	background-size: 583px;
+	background-size: contain;
 	padding-top: 10px;
 	color: #999;
+	overflow: auto;
 }
 footer .col-md-4{
 	min-height: 210px;
@@ -229,6 +230,9 @@ footer .col-md-4{
 footer p{
 	font-size: 14px;
 }
+/*  footer .action_call{
+	margin-left: 15px;
+	}  */
 footer .action_call h3{
 	width: 237px;
 	color: #FFF;
@@ -246,19 +250,25 @@ footer .tagline{
 	color: #4286C3;
 	margin-top: 30px;
 	/* background-color: #131F2D; */
+	padding-left: 0px;
+	padding-right: 0px;
 	}
 footer .tagline p {
     font-size: 40px;
     font-weight: bold;
     line-height: 47PX;
     font-style: italic;
+	margin-left: 10px;
 }
 footer .copyright {
     background-color: #0F1821;
     /* min-height: 45px; */
     margin-top: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 footer .copyright p {
     font-size: 15px;
     margin-top: 5px;
+	margin-right: 10px;
 }
