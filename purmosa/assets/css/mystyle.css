@@ -144,7 +144,7 @@ h1 {
 	border-right: 1px solid #0a0a0a;
 }
 .row{
-	min-height: 370px;
+	min-height: 366px;
 	}
 .qoute{
 	margin-top: 20px;
@@ -219,7 +219,7 @@ footer{
 	border-top: 2px solid #CCC;
 	min-height: 347px;
 	background: url('../img/footer_logo.png') no-repeat center right #172434;
-	background-size: 553px;
+	background-size: 583px;
 	padding-top: 10px;
 	color: #999;
 }
@@ -252,4 +252,13 @@ footer .tagline p {
     font-weight: bold;
     line-height: 47PX;
     font-style: italic;
+}
+footer .copyright {
+    background-color: #0F1821;
+    /* min-height: 45px; */
+    margin-top: 5px;
+}
+footer .copyright p {
+    font-size: 15px;
+    margin-top: 5px;
 }
