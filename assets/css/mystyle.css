@@ -773,6 +773,9 @@ a.block_left {
 	margin-top: 10px;
 	z-index: 1;
 }
+.one_line .award_holder img {
+    margin-top: -156px !important;
+}
 /*End Styling */
 @media (min-width: 1000px){
 	.stomped{
