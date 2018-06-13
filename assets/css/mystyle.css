@@ -98,7 +98,7 @@ p{
     /* top: 462px; */
     position: fixed;
     width: 53px;
-    cursor: pointer;
+    /* cursor: pointer; */
     z-index: 103;
     left: 0px;
     top: 0;

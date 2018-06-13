@@ -48,7 +48,7 @@
 					{y: 5, label: "jQuery"  },					
 					/*{y: 5, label: "Wordpress"  },
 					{y: 5, label: "Evoq(DNN)"  },*/	
-					{y: 5, label: "Content Management*"  },		
+					{y: 7, label: "Content Management*"  },		
 					{y: 6, label: "Bootstrap"  },								
 					{y: 8, label: "CSS 3"  },
 					{y: 8, label: "HTML 5"  },
@@ -148,7 +148,7 @@
 					{y: 9, label: "Microsoft Office"  },
 					{y: 8, label: "Instructional Design"  },
 					{y: 8, label: "Course Development"  },
-					{y: 8, label: "Project Management"  },
+					{y: 9, label: "Project Management"  },
 					]
 				}	
 				]

@@ -1,5 +1,5 @@
 			$(document).ready(function(){
-			$(".site_title").click(function(){
+			$(".dropdown_nav").click(function(){
 					if ($(".navbar").is(":hidden")){
 						$(".navbar").fadeIn();
 						$(".updates").fadeIn();
